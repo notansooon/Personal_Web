@@ -1,0 +1,34 @@
+{
+    "pageImage": [
+      {
+        "name": "Home",
+        "path": "/",
+        "image": "https://dataismlab.com/media/1712982735022_hu1b1b65cf8689c39993d7ad5f00770cba_511743_1200x0_resize_q75_lanczos.jpg"
+      },
+      {
+        "name": "People",
+        "path": "/people",
+        "image": "https://example.com/images/people.png"
+      },
+      {
+        "name": "Projects",
+        "path": "/projects",
+        "image": "https://dataismlab.com/media/ALGO_image.png"
+      },
+      {
+        "name": "Contact",
+        "path": "/contact",
+        "image": "https://example.com/images/contact.png"
+      },
+      {
+        "name": "Apply",
+        "path": "/apply",
+        "image": "https://example.com/images/apply.png"
+      },
+      {
+        "name": "About",
+        "path": "/about",
+        "image": "https://example.com/images/about.png"
+      }
+    ]
+  }
