@@ -4,7 +4,33 @@
 
 
 body {
-    background-color: gray;
-    font-family: 'Latos' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:gray;
+    font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif,Playfair Display;
+
+
+  }
+h2{
+    font-size:150%;
 }
-   
+
+h1 {
+    font-size: 200%;
+}
+
+@font-face {
+    font-family: "Playfair Display Italics";
+    src: url('/Users/aryanpalit/WebstormProjects/dlqf_website/src/fonts /PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url('/Users/aryanpalit/WebstormProjects/dlqf_website/src/fonts /PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
