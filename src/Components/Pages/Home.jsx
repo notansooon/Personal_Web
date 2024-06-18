@@ -13,7 +13,7 @@ const Home = () => {
         const windowPosition = window.scrollY;
         const windowHeight = window.innerHeight;
         const newOpacity = Math.max(1 - windowPosition / (windowHeight / 4) , 0)
-        const newImageOpacity = Math.min(0.85 - windowPosition / (windowHeight / 4) , 100)
+        const newImageOpacity = Math.min(0.85 - windowPosition / (windowHeight / 2.5) , 100)
         setScrollTop(newOpacity)
         setImageOpacity(newImageOpacity)
 
@@ -29,7 +29,7 @@ const Home = () => {
       }, []);
     return (
 
-
+        <>
         <div
             className="relative px-[20px] pt-[175px] sm:px-[50px] md:px-[100px] min-h-screen flex flex-col items-center justify-center"
             style={{
@@ -49,7 +49,7 @@ const Home = () => {
                     Our mission centers on exploring AI/Machine Learning, Big Data Analytics,
                     and High Performance Computing for transformative applications in this field.
                 </p>
-                <ul className=" m-auto mt-[850px] py-2 px-4 bg-blue-600 w-[170px] text-white rounded-lg shadow-lg hover:bg-blue-700 transition" to="/people">
+                <ul className=" m-auto  mb-[100px] mt-[850px] py-2 px-4 bg-blue-600 w-[170px] text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
                     <li>
                         <Link
                             to="/people"
@@ -62,6 +62,7 @@ const Home = () => {
                   
             </div>
         </div>
+        </>
     );
 };
 
