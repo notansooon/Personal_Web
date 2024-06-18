@@ -25,6 +25,11 @@ function Contact() {
         <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
         <span>Message</span>
         </div>
+
+
+        <div class="btn">
+          <button> Send</button>
+        </div>
         
         
         <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a></p>
