@@ -7,3 +7,18 @@
   
   
 }
+
+.inputbox {
+  position: relative;
+  width: 500px;
+  color:aqua;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.25);
+  background-color: #1b2b3a;
+  border-radius: 5px;
+  outline: none;
+}

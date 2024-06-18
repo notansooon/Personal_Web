@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+
 function Contact() {
 
 
@@ -13,7 +14,7 @@ function Contact() {
         
         <p className=" text-2.5xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
         <div class="inputbox">
-          <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
+          <input required="required" /> 
           <span>Name</span>
         </div>
         <div class="inputbox">
