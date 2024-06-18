@@ -24,7 +24,7 @@ function Projects() {
           </section>
 
           <section className=" font-serif mb-16 text-white">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Skill Vs Luck Replication Study</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ">Skill Vs Luck Replication Study</h2>
             <p className="italic mb-6 text-lg md:text-xl lg:text-2xl">Alex Jaimes, Ryan Bradley, Ben Cummings</p>
             <div className="text-lg md:text-xl lg:text-2xl">
               <p className=" font-serif mb-4">
