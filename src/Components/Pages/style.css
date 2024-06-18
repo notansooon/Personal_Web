@@ -34,14 +34,28 @@
   pointer-events: none;
   font-size: 1em;
   text-transform: uppercase;
+  transition: 0.5s;
   
 }
 
 .inputbox input:valid ~ span ,
-.inputbox input:valid ~ span 
+.inputbox input:focus ~ span 
 {
   color: #00dfc4;
   transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background-color: #1b2b3a;
+  border-left: 1px solid #00dfc4;
+  border-right: 1px solid #00dfc4;
+  letter-spacing: 0.2em;
+  
+}
+
+.inputbox input:valid ,
+.inputbox input:focus  
+{
+  border: 1px solid #00dfc4;
 }
 
 .btn {

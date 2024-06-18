@@ -18,11 +18,11 @@ function Contact() {
           <span>Name</span>
         </div>
         <div class="inputbox">
-        <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
+        <input required="required" /> 
         <span>Email</span>
         </div>
         <div class="inputbox">
-        <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
+        <input required="required"/> 
         <span>Message</span>
         </div>
 
