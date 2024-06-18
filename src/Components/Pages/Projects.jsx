@@ -9,7 +9,7 @@ function Projects() {
         <img className="w-full h-[500px] object-cover" src={projectImage.image} alt="Projects" />
         <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-12">
           <section className=" font-serif mb-16 text-white">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Algorithmic Trading</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6">Algorithmic Trading</h2>
             <div className="text-lg md:text-xl lg:text-2xl">
               <p className=" font-serif mt-6 mb-4">
                 Within the dataism research lab, we've established a dedicated team focused on the development and refinement of sophisticated algorithmic trading strategies. Our approach revolves around leveraging advanced statistical inference models to uncover meaningful patterns and insights within financial data. These models serve as the cornerstone of our methodology, enabling us to extract actionable signals from the vast amount of information available in the markets.
@@ -24,7 +24,7 @@ function Projects() {
           </section>
 
           <section className=" font-serif mb-16 text-white">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold ">Skill Vs Luck Replication Study</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl">Skill Vs Luck Replication Study</h2>
             <p className="italic mb-6 text-lg md:text-xl lg:text-2xl">Alex Jaimes, Ryan Bradley, Ben Cummings</p>
             <div className="text-lg md:text-xl lg:text-2xl">
               <p className=" font-serif mb-4">

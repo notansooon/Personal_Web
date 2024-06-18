@@ -1,5 +1,4 @@
 
-
 .custom-placeholder::placeholder {
   font-size: 30px; /* Custom font size for placeholder */
   color: #ccc; /* Custom color for placeholder text */
@@ -21,12 +20,33 @@
   background-color: #1b2b3a;
   border-radius: 5px;
   outline: none;
+  color: #fff;
+  font-size: 1em;
 }
+
+.inputbox span {
+  position: absolute;
+  left: 0%;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  
+}
+
+.inputbox input:valid ~ span ,
+.inputbox input:valid ~ span 
+{
+  color: #00dfc4;
+  transform: translateX(10px) translateY(-7px);
+}
+
 .btn {
   border: 2px solid rgb(255, 255, 255, 0.25);
   color: black;
   background-color: white;
 }
+
 .btn:hover{
     border: 2px solid cyan;
     color: cyan;
