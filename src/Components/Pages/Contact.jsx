@@ -13,16 +13,16 @@ function Contact() {
         
         <p className=" text-2.5xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
         <div class="inputbox">
-          <input className='border-white border-2 rounded-lg h-[60px] w-full bg-gray-800 custom-placeholder' type="text"  /> 
+          <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
           <span>Name</span>
         </div>
         <div class="inputbox">
-        <input className='border-white border-2 rounded-lg h-[60px] w-full bg-gray-800 custom-placeholder' type="text"  /> 
-        <span>Name</span>
+        <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
+        <span>Email</span>
         </div>
         <div class="inputbox">
-        <input className='border-white border-2 rounded-lg h-[60px] w-full bg-gray-800 custom-placeholder' type="text"  /> 
-        <span>Name</span>
+        <input className='border-white border-2 rounded-lg h-[60px] w-[500px] bg-gray-800 custom-placeholder' type="text"  /> 
+        <span>Message</span>
         </div>
         
         
