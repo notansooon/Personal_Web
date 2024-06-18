@@ -1,12 +1,17 @@
 import React from 'react';
+import './style.css';
 
 function Contact() {
   return (
-    <div className="container mx-auto p-4 pt-[150px]">
+    <div className="container mx-auto p-2 pt-[150px]">
       <h1 className="text-6xl text-center mb-10">Contact</h1>
       <div className="mb-8">
         
-        <p className=" text-4xl mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
+        <p className=" text-2.5xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
+        
+        <input className='border-white border-2 rounded-lg h-[60px] w-full bg-gray-800 custom-placeholder' placeholder="Name" type="text"  /> 
+        <input className='border-white border-2 rounded-lg h-[60px] w-full mt-5 bg-gray-800 custom-placeholder' placeholder="Email" type="text" />
+        <input className='border-white border-2 rounded-lg w-full h-[300px] mt-5 bg-gray-800 custom-placeholder' placeholder="Message" type="text" />
         <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a></p>
         <address className="not-italic mb-4">
           Pamplin Hall, 880 West Campus Drive<br />
