@@ -12,8 +12,10 @@ function Contact() {
       <div className="mb-8">
         
         <p className=" text-2.5xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
+        <div class="inputbox">
+          <input className='border-white border-2 rounded-lg h-[60px] w-full bg-gray-800 custom-placeholder' placeholder="Name" type="text"  /> 
+        </div>
         
-        <input className='border-white border-2 rounded-lg h-[60px] w-full bg-gray-800 custom-placeholder' placeholder="Name" type="text"  /> 
         <input className='border-white border-2 rounded-lg h-[60px] w-full mt-5 bg-gray-800 custom-placeholder' placeholder="Email" type="text" />
         <input className='border-white border-2 rounded-lg w-full h-[300px] mt-5 bg-gray-800 custom-placeholder' placeholder="Message" type="text" />
         <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a></p>
