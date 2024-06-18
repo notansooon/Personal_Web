@@ -6,7 +6,16 @@
 body {
     background-color:gray;
     font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif,Playfair Display;
+
+
   }
+h2{
+    font-size:150%;
+}
+
+h1 {
+    font-size: 200%;
+}
 
 @font-face {
     font-family: "Playfair Display Italics";
