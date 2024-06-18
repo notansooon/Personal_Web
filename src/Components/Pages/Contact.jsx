@@ -2,6 +2,10 @@ import React from 'react';
 import './style.css';
 
 function Contact() {
+
+
+
+  
   return (
     <div className="container mx-auto p-2 pt-[150px]">
       <h1 className="text-6xl text-center mb-10">Contact</h1>

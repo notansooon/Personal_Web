@@ -1,11 +1,35 @@
 import React from 'react';
 import data from '../image.json';
+import { useState, useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 
 const Home = () => {
     const homeImage = data.pageImage.find(item => item.name === 'Home');
+    const [scrollTop, setScrollTop] = useState(1);
+    const [imageOpacity, setImageOpacity] = useState(80);
 
+    const handleScroll = () => {
+        const windowPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const newOpacity = Math.max(1 - windowPosition / (windowHeight / 4) , 0)
+        const newImageOpacity = Math.min(0.85 - windowPosition / (windowHeight / 4) , 100)
+        setScrollTop(newOpacity)
+        setImageOpacity(newImageOpacity)
+
+    } 
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll); 
+
+
+        return () => {
+          window.removeEventListener('scroll', handleScroll); 
+        };
+      }, []);
     return (
+
+
         <div
             className="relative px-[20px] pt-[175px] sm:px-[50px] md:px-[100px] min-h-screen flex flex-col items-center justify-center"
             style={{
@@ -14,18 +38,18 @@ const Home = () => {
                 backgroundPosition: 'center',
             }}>
 
-            <div className="absolute inset-0 bg-black opacity-50"></div> 
+            <div className="absolute inset-0 bg-black" style={{opacity: imageOpacity}}></div> 
             <div className="relative  z-10 text-center text-white">
-                <h1 className=" text-4xl md:text-5xl font-serif mb-6">
+                <h1 className="text-4xl md:text-5xl font-serif mb-6" style={{opacity: scrollTop}}>
                     Dataism Laboratory for Quantitative Finance
                 </h1>
-                <p className="text-xl md:text-2xl font-serif leading-relaxed mb-10">
+                <p className="text-xl md:text-2xl font-serif leading-relaxed mb-10" style={{opacity: scrollTop}}>
                     Established in 2024, The Dataism Lab at Virginia Tech is an interdisciplinary
                     hub focused on advancing Quantitative Finance and Econometrics through cutting-edge technologies.
                     Our mission centers on exploring AI/Machine Learning, Big Data Analytics,
                     and High Performance Computing for transformative applications in this field.
                 </p>
-                <ul className=" m-auto mt-[450px] py-2 px-4 bg-blue-600 w-[170px] text-white rounded-lg shadow-lg hover:bg-blue-700 transition" to="/people">
+                <ul className=" m-auto mt-[850px] py-2 px-4 bg-blue-600 w-[170px] text-white rounded-lg shadow-lg hover:bg-blue-700 transition" to="/people">
                     <li>
                         <Link
                             to="/people"
@@ -35,8 +59,8 @@ const Home = () => {
                         </Link>
                     </li>
                   </ul>
+                  
             </div>
-            <div className="absolute bottom-0 h-[200px] w-full bg-gray-800"></div>
         </div>
     );
 };

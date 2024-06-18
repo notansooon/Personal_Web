@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="flex items-center justify-between p-4 z-[100] w-full fixed bg-gray-800 h-[90px]">
+        <div className="flex items-center justify-between p-4 z-[100] w-full absolute bg-gray-800 h-[90px]">
             <h1 className="text-white text-4xl font-bold cursor-pointer pl-5">DLQF</h1>
             <div className="m-5">
                 <ul className="flex space-x-4">
