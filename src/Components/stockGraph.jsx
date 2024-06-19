@@ -24,7 +24,7 @@ const StockMarketGraph = () => {
     const [error, setError] = useState(null);
 
     // Replace 'YOUR_API_KEY' with your actual Alpha Vantage API key
-    const apiKey = 'YOUR_API_KEY';
+    const apiKey = 'XQYBPVM4RIHWIHYQ';
 
     // Function to fetch live stock data
     const fetchStockData = async () => {
@@ -75,10 +75,11 @@ const StockMarketGraph = () => {
         labels: stockData.map(point => point.x),
         datasets: [{
             label: stockSymbol,
-            data: stockData.map(point => ({ x: point.x, y: point.y })),
+            data: stockData,
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             borderColor: 'rgba(75, 192, 192, 1)',
             pointRadius: 1,
+            parsing: false
         }],
     };
 
