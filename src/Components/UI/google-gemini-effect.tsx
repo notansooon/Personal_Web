@@ -2,7 +2,7 @@
 import { cn } from "../utils/cn.ts";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
-import '/Users/aryanpalit/WebstormProjects/dlqf_website/src/Components/Pages/style.css';
+
 
 const transition = {
     duration: 0,
