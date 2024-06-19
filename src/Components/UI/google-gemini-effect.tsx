@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "/Users/aryanpalit/WebstormProjects/dlqf_website/src/Components/utils/cn";
+import { cn } from "../utils/cn.ts";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 import '/Users/aryanpalit/WebstormProjects/dlqf_website/src/Components/Pages/style.css';
