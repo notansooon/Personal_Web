@@ -6,12 +6,11 @@ import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import { Route, Routes } from 'react-router-dom';
 import People from "./Components/Pages/People";
-import {NextUIProvider} from "@nextui-org/react";
+
 
 function App() {
   return (
     <>
-    <NextUIProvider>
         <Navbar />
 
         <Routes >
@@ -23,9 +22,6 @@ function App() {
             <Route path='/Contact' element = {<Contact />} />
 
         </Routes>
-
-    </NextUIProvider>
-
     </>
   );
 }
