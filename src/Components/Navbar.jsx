@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="flex items-center justify-between p-4 z-[100] w-full absolute bg-gray-800 h-[90px]">
+        <div className="font-serif flex items-center justify-between p-4 z-[100] w-full absolute bg-black-800 h-[90px]">
             <h1 className="text-white text-4xl font-bold cursor-pointer pl-5">DLQF</h1>
             <div className="m-5">
                 <ul className="flex space-x-4">
                     <li>
                         <Link
                             to="/"
-                            className="bg-transparent text-white font-bold hover:text-gray-300"
+                            className="bg-transparent text-white font hover:text-gray-300"
                         >
                             Home
                         </Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="/about"
-                            className="bg-white text-black font-bold cursor-pointer hover:bg-gray-200"
+                            className="bg-transparent text-white hover:text-gray-300"
                         >
                             About
                         </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="/people"
-                            className="bg-transparent text-white font-bold cursor-pointer hover:text-gray-300"
+                            className="bg-transparent text-white font cursor-pointer hover:text-gray-300"
                         >
                             People
                         </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="/projects"
-                            className="bg-transparent text-white font-bold cursor-pointer hover:text-gray-300"
+                            className="bg-transparent text-white font cursor-pointer hover:text-gray-300"
                         >
                             Projects
                         </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="/contact"
-                            className="bg-transparent text-white font-bold cursor-pointer hover:text-gray-300"
+                            className="bg-transparent text-white font cursor-pointer hover:text-gray-300"
                         >
                             Contact
                         </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <li>
                         <Link
                             to="/apply"
-                            className="bg-transparent text-white font-bold cursor-pointer hover:text-gray-300"
+                            className="bg-transparent text-white font cursor-pointer hover:text-gray-300"
                         >
                             Apply
                         </Link>
