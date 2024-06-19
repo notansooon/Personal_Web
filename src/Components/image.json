@@ -29,6 +29,10 @@
         "name": "About",
         "path": "/about",
         "image": "https://example.com/images/about.png"
+      },
+      {
+        "name": "Logo",
+        "image": ""
       }
     ]
   }
