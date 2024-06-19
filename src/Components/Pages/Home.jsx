@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     const homeImage = data.pageImage.find(item => item.name === 'Home');
     const [scrollTop, setScrollTop] = useState(1);
-    const [imageOpacity, setImageOpacity] = useState(80);
+    const [imageOpacity, setImageOpacity] = useState(.85);
 
     const handleScroll = () => {
         const windowPosition = window.scrollY;
         const windowHeight = window.innerHeight;
         const newOpacity = Math.max(1 - windowPosition / (windowHeight / 4) , 0)
-        const newImageOpacity = Math.min(0.85 - windowPosition / (windowHeight / 2.5) , 100)
+        const newImageOpacity = Math.min(0.85 - windowPosition / (windowHeight / 2) , 100)
         setScrollTop(newOpacity)
         setImageOpacity(newImageOpacity)
 

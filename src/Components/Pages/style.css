@@ -9,11 +9,16 @@
   
   
 }
+.inputMessage input {
+  padding: 50px;
 
+}
 .inputbox {
   position: relative;
-  width: 500px;
+  width: 100%;
   color:aqua;
+  margin-top: 20px;
+
 }
 
 .inputbox input {
@@ -59,12 +64,14 @@
 }
 
 .btn {
+  margin-top: 30px;
   border: 2px solid rgb(255, 255, 255, 0.25);
   color: black;
   background-color: white;
 }
 
 button{
+  text-align: center;
   position: relative;
   border: none;
   transition: .4s ease-in;

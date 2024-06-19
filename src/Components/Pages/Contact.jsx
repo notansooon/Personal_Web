@@ -8,7 +8,7 @@ function Contact() {
 
   
   return (
-    <div className="container mx-auto p-2 pt-[150px]">
+    <div className="container mx-auto p-2 pt-[150px] text-white">
       <h1 className="text-6xl text-center mb-10">Contact</h1>
       <div className="mb-8">
         
@@ -21,8 +21,8 @@ function Contact() {
         <input required="required" /> 
         <span>Email</span>
         </div>
-        <div class="inputbox">
-        <input required="required"/> 
+        <div class="inputbox" >
+        <input required="required" style={{paddingBottom: 150}}/> 
         <span>Message</span>
         </div>
 
