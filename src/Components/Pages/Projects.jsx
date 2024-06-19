@@ -11,7 +11,7 @@ function Projects() {
 
         {/* Content Overlay */}
         <div className="relative z-10 container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-60 space-y-16">
-          <section className="bg-opacity-75 bg-gray-900 p-6 rounded-lg shadow-lg">
+          <section className="bg-opacity-0 bg-gray-900 p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl md:text-5xl lg:text-6xl mb-6">Algorithmic Trading</h2>
             <div className="text-lg md:text-xl lg:text-2xl space-y-4">
               <p>
@@ -26,7 +26,7 @@ function Projects() {
             </div>
           </section>
 
-          <section className="bg-opacity-75 bg-gray-900 p-6 rounded-lg shadow-lg">
+          <section className="bg-opacity-0 bg-gray-900 p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl md:text-5xl lg:text-6xl">Skill Vs Luck Replication Study</h2>
             <p className="italic mb-6 text-lg md:text-xl lg:text-2xl">Alex Jaimes, Ryan Bradley, Ben Cummings</p>
             <div className="text-lg md:text-xl lg:text-2xl space-y-4">
