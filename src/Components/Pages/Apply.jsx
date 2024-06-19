@@ -4,12 +4,14 @@ import React from 'react';
 const Apply = () => {
     return (
         <div className="container mx-auto px-4 py-8 font-serif">
+
+            
             <header className="text-center mb-12">
                 <h1 className="text-4xl md:text-5xl mb-4 text-white">Apply to DLQF</h1>
                 <p className="text-lg md:text-xl text-white">Join the Dataism Laboratory for Quantitative Finance</p>
             </header>
 
-            <section className="mb-12">
+            <section className="bg-opacity-50 bg-gray-900 p-6 rounded-lg shadow-lg mb-12">
                 <p className="text-white mb-8">
                     Membership for the Dataism Laboratory for Quantitative Finance (DLQF) is accessible to faculty, staff, and matriculated students in good standing at Virginia Polytechnic Institute and State University. We extend invitations to participants from diverse academic backgrounds. Transfer students and freshmen must have completed a minimum of one semester before eligibility. We urge these individuals to explore our website and participate in interest meetings to engage with current members.
                 </p>
