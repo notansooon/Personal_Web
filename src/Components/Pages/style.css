@@ -66,8 +66,8 @@
 .btn {
   margin-top: 30px;
   border: 2px solid rgb(255, 255, 255, 0.25);
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #1b2b3a;
 }
 
 button{
@@ -88,6 +88,6 @@ button::after{
 
 .btn:hover{
     border: 2px solid cyan;
-    color: cyan;
-    background-color: rgba(18, 18, 18, 0.95);;
+    color: #00dfc4;
+    background-color: rgb(18, 18, 18);;
 }

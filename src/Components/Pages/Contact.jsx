@@ -4,34 +4,31 @@ import './style.css';
 
 function Contact() {
 
-
-
-  
   return (
     <div className="container mx-auto p-2 pt-[150px] text-white">
-      <h1 className="text-6xl text-center mb-10">Contact</h1>
-      <div className="mb-8">
-        
-        <p className=" text-2.5xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
-        <div class="inputbox">
-          <input required="required" /> 
+      <h1 className="text-5xl text-center mb-10 font-bold">Contact</h1>
+      <div className="mb-8 font-serif">
+
+        <p className=" text-2xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or join the team.</p>
+        <div className="inputbox">
+          <input required="required" />
           <span>Name</span>
         </div>
-        <div class="inputbox">
-        <input required="required" /> 
+        <div className="inputbox">
+        <input required="required" />
         <span>Email</span>
         </div>
-        <div class="inputbox" >
-        <input required="required" style={{paddingBottom: 150}}/> 
+        <div className="inputbox" >
+        <input required="required" style={{paddingBottom: 150}}/>
         <span>Message</span>
         </div>
 
 
-        <div class="btn">
+        <div className="btn px-3 py-4 rounded">
           <button> Send</button>
         </div>
-        
-        
+
+
         <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a></p>
         <address className="not-italic mb-4">
           Pamplin Hall, 880 West Campus Drive<br />

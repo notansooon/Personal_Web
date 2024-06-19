@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import data from '../image.json';
+
+
+
+
 
 function Projects() {
   const projectImage = data.pageImage.find(item => item.name === 'Projects');
