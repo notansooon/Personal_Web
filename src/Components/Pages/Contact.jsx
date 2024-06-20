@@ -40,8 +40,8 @@ function Contact() {
           //style={{ backgroundImage: `url(${pamplinHallImage})` }}
       >
         <div>
-          <section  className="bg-opacity-50 bg-gray-900 p-6 rounded-lg shadow-lg inset-0">
-            <h2 className="text-2xl font-bold">Our Location</h2>
+          <section  className="bg-opacity-80 bg-gray-900 p-6 rounded-lg shadow-lg inset-0 font-serif">
+            <h2 className="text-2xl font-bold ">Our Location</h2>
             <address className="not-italic mb-4">
               Pamplin Hall, 880 West Campus Drive<br/>
               Blacksburg, VA 24060<br/>
