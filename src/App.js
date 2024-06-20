@@ -15,7 +15,11 @@ function App() {
     <>
         
         <Navbar />
-        <TradingViewTicker />
+        <div className="z-20">
+            <TradingViewTicker />
+
+        </div>
+
 
         <Routes >
             <Route path="/" element={<Home />} />
