@@ -24,7 +24,7 @@ function Contact() {
         </div>
 
 
-        <div className="btn px-3 py-4 rounded">
+        <div class="btn">
           <button> Send</button>
         </div>
 

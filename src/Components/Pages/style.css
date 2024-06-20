@@ -13,6 +13,54 @@
   padding: 50px;
 
 }
+
+
+.applyBox {
+  position: relative;
+  width: 16%;
+  color:white;
+  margin-top: 20px;
+
+}
+
+.applyBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.25);
+  background-color: #1b2b3a;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 1em;
+}
+
+.applyBox span {
+  position: absolute;
+  left: 0%;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 0.5s;
+  
+}
+
+.applyBox input:valid ~ span ,
+.applyBox input:focus ~ span 
+{
+  color: white;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background-color: #1b2b3a;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  letter-spacing: 0.2em;
+  
+}
+
+
+
 .inputbox {
   position: relative;
   width: 100%;
@@ -65,6 +113,12 @@
 
 .btn {
   margin-top: 30px;
+  margin-left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+
   border: 2px solid rgb(255, 255, 255, 0.25);
   color: white;
   background-color: #1b2b3a;
