@@ -42,22 +42,22 @@ const Apply = () => {
 
                 </form>
                 </section>
-                <section>
+                <section className="bg-opacity-50 bg-gray-900 p-6 shadow-lg mb-12">
                 <h2 className="text-2xl md:text-3xl mb-4 text-white">Step 2: The Project</h2>
                 <p className="text-white mb-8">
                     Selected applicants meeting the minimum thresholds will receive a two-part project and a tentative interview. DLQF will hold a "project meeting" to allow applicants to voice questions and concerns before proceeding. Additionally, tutoring sessions will be available for those who require assistance.
                 </p>
 
-                <div className="bg-gray-100 p-6 rounded-md shadow-md mb-8">
+                <div className="p-6 rounded-md mb-8">
                     <h3 className="text-xl md:text-2xl mb-4 text-white">Project Details:</h3>
                     <div className="mb-6">
-                        <h4 className="text-lg md:text-xl mb-2 text-white-600">Part I: Essay on Quantitative Finance</h4>
-                        <p className="text-gray-700 mb-2">
+                        <h4 className="text-lg md:text-xl mb-2 text-white">Part I: Essay on Quantitative Finance</h4>
+                        <p className="text-white mb-2">
                             Minimum Threshold: Between 1,000 and 1,500 words. Applicants will receive detailed expectations for this essay. Creativity and articulate organization are encouraged. The essay should provide a beginner-level understanding of financial concepts and their application to quantitative finance, including methods, statistical concepts, etc.
                         </p>
                     </div>
                     <div>
-                        <h4 className="text-lg md:text-xl mb-2 text-white-600">Part II: Applying the Concepts</h4>
+                        <h4 className="text-lg md:text-xl mb-2 text-white">Part II: Applying the Concepts</h4>
                         <p className="text-white">
                             Minimum Threshold: Presentation with 10-12 slides, incorporating the sections detailed above. Applicants must apply the concepts discussed in their essay to a relevant research study. They should explain pricing models and propose any alternative approaches. Additionally, a one-page thesis write-up and 1-2 pages of supporting analysis and literature review are required.
                         </p>
@@ -65,7 +65,7 @@ const Apply = () => {
                 </div>
                 </section>
 
-                <section>
+                <section className= "bg-opacity-50 bg-gray-900 p-6 shadow-lg mb-12">
                 <h2 className="text-2xl md:text-3xl mb-4 text-white">Step 3: The Interview</h2>
                 <p className="text-white mb-8">
                     Applicants who meet the minimum thresholds of the project will undergo a three-part interview:
