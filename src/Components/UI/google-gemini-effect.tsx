@@ -143,6 +143,7 @@ export const GoogleGeminiEffect = ({
                 <defs>
                     <filter id="blurMe">
                         <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+
                     </filter>
                 </defs>
             </svg>
