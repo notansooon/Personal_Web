@@ -13,8 +13,9 @@ import React from "react";
 function App() {
   return (
     <>
-        <TradingViewTicker />
+        
         <Navbar />
+        <TradingViewTicker />
 
         <Routes >
             <Route path="/" element={<Home />} />

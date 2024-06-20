@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <>
            
-            <div className="font-serif flex items-center justify-between p-4 z-[100] w-full absolute bg-black-800 h-[90px]">
+            <div className="font-serif flex items-center justify-between mt-5 p-4 z-[100] w-full absolute bg-black-800 h-[90px]">
                 <h1 className="text-white text-4xl font-bold cursor-pointer pl-5">DLQF</h1>
                 <div className="m-5">
                     <ul className="flex space-x-4">
