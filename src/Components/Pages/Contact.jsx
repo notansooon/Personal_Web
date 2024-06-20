@@ -81,32 +81,41 @@ function Contact() {
         </div>
 
 
-        <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a></p>
-        <address className="not-italic mb-4">
-          Pamplin Hall, 880 West Campus Drive<br />
-          Blacksburg, VA 24060<br />
-          United States
-        </address>
-        <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
+
+
+
        
       </div>
 
       <div
-        className="w-full bg-cover bg-center h-96 text-white flex items-center justify-center"
-        //style={{ backgroundImage: `url(${pamplinHallImage})` }}
+          className="w-full bg-cover bg-center h-96 text-white flex items-center justify-center"
+          //style={{ backgroundImage: `url(${pamplinHallImage})` }}
       >
-        <div className="bg-black bg-opacity-50 p-8 rounded">
-          <h2 className="text-2xl font-bold">Our Location</h2>
-          <p>Pamplin Hall, 880 West Campus Drive, Blacksburg, VA 24060, United States</p>
+        <div>
+          <section  className="bg-opacity-80 bg-gray-900 p-6 rounded-lg shadow-lg inset-0 font-serif">
+            <h2 className="text-2xl font-bold ">Our Location</h2>
+            <address className="not-italic mb-4">
+              Pamplin Hall, 880 West Campus Drive<br/>
+              Blacksburg, VA 24060<br/>
+              United States
+            </address>
+            <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a>
+            </p>
+            <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
+
+          </section>
+
+
         </div>
-        
-      </div>
-      <iframe
-          className="w-full h-64"
-          src={`https://www.google.com/maps?q=37.22876,-80.42462&hl=es;z=14&output=embed`}
-          allowFullScreen
-          title="Pamplin Hall Location"
+        <iframe
+            className="w-full h-64"
+            src={`https://www.google.com/maps?q=37.22876,-80.42462&hl=es;z=14&output=embed`}
+            allowFullScreen
+            title="Pamplin Hall Location"
         ></iframe>
+
+      </div>
+
     </div>
     </>
   );
