@@ -39,15 +39,20 @@ function Contact() {
           className="w-full bg-cover bg-center h-96 text-white flex items-center justify-center"
           //style={{ backgroundImage: `url(${pamplinHallImage})` }}
       >
-        <div className="bg-black bg-opacity-50 p-8 rounded">
-          <h2 className="text-2xl font-bold">Our Location</h2>
-          <address className="not-italic mb-4">
-            Pamplin Hall, 880 West Campus Drive<br/>
-            Blacksburg, VA 24060<br/>
-            United States
-          </address>
-          <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a></p>
-          <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
+        <div>
+          <section  className="bg-opacity-50 bg-gray-900 p-6 rounded-lg shadow-lg inset-0">
+            <h2 className="text-2xl font-bold">Our Location</h2>
+            <address className="not-italic mb-4">
+              Pamplin Hall, 880 West Campus Drive<br/>
+              Blacksburg, VA 24060<br/>
+              United States
+            </address>
+            <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a>
+            </p>
+            <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
+
+          </section>
+
 
         </div>
         <iframe
