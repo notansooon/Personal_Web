@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import data from '../image.json';
 import { Link } from 'react-router-dom';
+import homeImage from '../assets/Untitled design (6).png';  // Adjust the path as needed
 
 const Home = () => {
-    const homeImage = data.pageImage.find(item => item.name === 'Home');
     const [scrollTop, setScrollTop] = useState(1);
     const [imageOpacity, setImageOpacity] = useState(.85);
     const widgetContainerRef = useRef(null);
@@ -75,40 +74,42 @@ const Home = () => {
             </div>
 
             <div
-                className="relative px-[20px] pt-[175px] sm:px-[50px] md:px-[100px] min-h-screen flex flex-col items-center justify-center"
+                className="relative px-4 sm:px-8 md:px-12 lg:px-20 pt-20 md:pt-32 min-h-screen flex flex-col items-center justify-center"
                 style={{
-                    backgroundImage: `url(${homeImage.image})`,
+                    backgroundImage: `url(${homeImage})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
+                    backgroundAttachment: 'fixed'
                 }}
             >
                 <div className="absolute inset-0 bg-black" style={{ opacity: imageOpacity }}></div>
-                <div className="relative z-10 text-center text-white">
-                    <h1 className="text-4xl md:text-5xl font-serif mb-6" style={{ opacity: scrollTop }}>
+                <div className="relative z-10 text-center text-white max-w-4xl mx-auto">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6" style={{ opacity: scrollTop }}>
                         Dataism Laboratory for Quantitative Finance
                     </h1>
-                    <p className="text-xl md:text-2xl font-serif leading-relaxed mb-10" style={{ opacity: scrollTop }}>
+                    <p className="text-lg sm:text-xl md:text-2xl font-serif leading-relaxed mb-10" style={{ opacity: scrollTop }}>
                         Established in 2024, The Dataism Lab at Virginia Tech is an interdisciplinary
                         hub focused on advancing Quantitative Finance and Econometrics through cutting-edge technologies.
                         Our mission centers on exploring AI/Machine Learning, Big Data Analytics,
                         and High Performance Computing for transformative applications in this field.
                     </p>
-                    <ul className="m-auto mb-[100px] mt-[850px] py-2 px-4 bg-blue-600 w-[170px] text-white rounded-lg shadow-lg hover:bg-blue-700 transition">
-                        <li>
-                            <Link
-                                to="/people"
-                                className="bg-transparent text-white font-bold hover:text-gray-300"
-                            >
-                                Meet the Team
-                            </Link>
-                        </li>
-                    </ul>
+                    <div className="m-auto mt-[850px]">
+                        <ul className="py-2 px-4 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition w-full sm:w-auto">
+                            <li>
+                                <Link
+                                    to="/people"
+                                    className="block text-center bg-transparent text-white font-bold hover:text-gray-300"
+                                >
+                                    Meet the Team
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>
     );
 };
 
-//yo
-
 export default Home;
+
