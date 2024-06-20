@@ -36,12 +36,7 @@ function Contact() {
           United States
         </address>
         <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
-        <iframe
-          className="w-full h-64"
-          src={`https://www.google.com/maps?q=37.22876,-80.42462&hl=es;z=14&output=embed`}
-          allowFullScreen
-          title="Pamplin Hall Location"
-        ></iframe>
+       
       </div>
 
       <div
@@ -52,7 +47,14 @@ function Contact() {
           <h2 className="text-2xl font-bold">Our Location</h2>
           <p>Pamplin Hall, 880 West Campus Drive, Blacksburg, VA 24060, United States</p>
         </div>
+        
       </div>
+      <iframe
+          className="w-full h-64"
+          src={`https://www.google.com/maps?q=37.22876,-80.42462&hl=es;z=14&output=embed`}
+          allowFullScreen
+          title="Pamplin Hall Location"
+        ></iframe>
     </div>
   );
 }
