@@ -12,6 +12,7 @@ const Apply = () => {
             </header>
 
             <section className="bg-opacity-50 bg-gray-900 p-6 rounded-lg shadow-lg mb-12">
+                <form>
                 <p className="text-white mb-8">
                     Membership for the Dataism Laboratory for Quantitative Finance (DLQF) is accessible to faculty, staff, and matriculated students in good standing at Virginia Polytechnic Institute and State University. We extend invitations to participants from diverse academic backgrounds. Transfer students and freshmen must have completed a minimum of one semester before eligibility. We urge these individuals to explore our website and participate in interest meetings to engage with current members.
                 </p>
@@ -25,7 +26,9 @@ const Apply = () => {
                     <li>Unofficial transcripts</li>
                     <li>Statement of interest: A one-page document explaining (1) why you are interested, (2) what you can contribute, and (3) what you hope to gain by being a member of DLQF.</li>
                 </ul>
-
+                </form>
+                </section>
+                <section>
                 <h2 className="text-2xl md:text-3xl mb-4 text-white">Step 2: The Project</h2>
                 <p className="text-white mb-8">
                     Selected applicants meeting the minimum thresholds will receive a two-part project and a tentative interview. DLQF will hold a "project meeting" to allow applicants to voice questions and concerns before proceeding. Additionally, tutoring sessions will be available for those who require assistance.
@@ -46,7 +49,9 @@ const Apply = () => {
                         </p>
                     </div>
                 </div>
+                </section>
 
+                <section>
                 <h2 className="text-2xl md:text-3xl mb-4 text-white">Step 3: The Interview</h2>
                 <p className="text-white mb-8">
                     Applicants who meet the minimum thresholds of the project will undergo a three-part interview:
