@@ -4,67 +4,14 @@ import { useEffect, useRef } from 'react';
 
 const Apply = () => {
 
-    const widgetContainerRef = useRef(null);
-   
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
-        script.async = true;
-        script.innerHTML = JSON.stringify({
-            symbols: [
-                {
-                    proName: "FOREXCOM:SPXUSD",
-                    title: "S&P 500 Index"
-                },
-                {
-                    proName: "FOREXCOM:NSXUSD",
-                    title: "US 100 Cash CFD"
-                },
-                {
-                    proName: "FX_IDC:EURUSD",
-                    title: "EUR to USD"
-                },
-                {
-                    proName: "BITSTAMP:BTCUSD",
-                    title: "Bitcoin"
-                },
-                {
-                    proName: "BITSTAMP:ETHUSD",
-                    title: "Ethereum"
-                }
-            ],
-            showSymbolLogo: true,
-            isTransparent: true,
-            displayMode: "adaptive",
-            colorTheme: "dark",
-            locale: "en"
-        });
-
-        if (widgetContainerRef.current) {
-            widgetContainerRef.current.appendChild(script);
-        }
-    }, []);
-
-    
-    return (
-
+    return(
         <>
 
-        <div className="tradingview-widget-container" ref={widgetContainerRef}>
-                <div className="tradingview-widget-container__widget"></div>
-                <div className="tradingview-widget-copyright">
-                    <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
-                        
-                    </a>
-                </div>
-        </div>
 
         <div className="container mx-auto px-4 py-8 font-serif">
 
 
-            <header className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl mb-4 text-white">Apply to DLQF</h1>
+            <header className="text-center mb-12"><h1 className="text-4xl md:text-5xl mb-4 text-white">Apply to DLQF</h1>
                 <p className="text-lg md:text-xl text-white">Join the Dataism Laboratory for Quantitative Finance</p>
             </header>
 

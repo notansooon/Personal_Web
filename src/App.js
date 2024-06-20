@@ -6,11 +6,14 @@ import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import { Route, Routes } from 'react-router-dom';
 import People from "./Components/Pages/People";
+import TradingViewTicker from "./Components/UI/ticker-tape";
+import React from "react";
 
 
 function App() {
   return (
     <>
+        <TradingViewTicker />
         <Navbar />
 
         <Routes >
