@@ -25,7 +25,7 @@ const Apply = () => {
                     <input type='file'></input>
                     <span> Updated resume</span>
                 </div>
-                <div class='applyBox'>
+                <div className='applyBox'>
                     <input type='file'></input>
                     <span> Unofficial transcripts</span>
                 </div>
@@ -33,12 +33,12 @@ const Apply = () => {
 
 
                     <p className='w-full text-white mt-3'> Statement of interest: A one-page document explaining (1) why you are interested, (2) what you can contribute, and (3) what you hope to gain by being a member of DLQF</p>
-                    <div class='applyBox' >
+                    <div className='applyBox' >
                     <input type='file' ></input>
                     <span>Statement</span>
                 </div>
 
-                <button class='btn'>Submit</button>
+                <button className='btn rounded'>Submit</button>
 
                 </form>
                 </section>
