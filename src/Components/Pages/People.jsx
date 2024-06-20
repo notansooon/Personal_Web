@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useRef } from 'react';
+import { Profile } from '../UI/Profile';
 
 
 
@@ -59,7 +60,9 @@ useEffect(() => {
                     </a>
                 </div>
      </div>
-    <div>People</div>
+
+
+    < Profile />
 
     </>
     
