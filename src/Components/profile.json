@@ -1,0 +1,37 @@
+{
+    "profile": [
+      {
+        "name": "Ben Cummings",
+        "description": "Benjamin Cummings is studying financial tech within the college of science at Virginia Tech. His focus extends across various financial domains, encompassing analysis of stock market trends, handling of corporate finance, and application of regression analysis methods."
+      },
+      {
+        "name": "Ali Habibnia",
+        "description": "",
+        "image": "https://example.com/images/people.png"
+      },
+      {
+        "name": "Projects",
+        "path": "/projects",
+        "image": "https://dataismlab.com/media/ALGO_image.png"
+      },
+      {
+        "name": "Contact",
+        "path": "/contact",
+        "image": "https://example.com/images/contact.png"
+      },
+      {
+        "name": "Apply",
+        "path": "/apply",
+        "image": "https://example.com/images/apply.png"
+      },
+      {
+        "name": "About",
+        "path": "/about",
+        "image": "https://example.com/images/about.png"
+      },
+      {
+        "name": "Logo",
+        "image": ""
+      }
+    ]
+  }
