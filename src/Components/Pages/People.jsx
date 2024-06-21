@@ -13,9 +13,12 @@ const People = () => {
     <>
 
     
-    <Profile user={"Ben Cummings"} />
-    <Profile user={"Ben Cummings"}/>
-
+<div className="flex flex-nowrap overflow-x-auto">
+      <Profile user={"Ben Cummings"} />
+      <Profile user={"Ben Cummings"} />
+      <Profile user={"Ben Cummings"} />
+      
+    </div>
     </>
     
   )
