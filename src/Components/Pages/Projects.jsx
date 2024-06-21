@@ -39,7 +39,7 @@ function Projects() {
           <section className="bg-opacity-50 bg-gray-900 p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl md:text-5xl lg:text-5xl">Skill Vs Luck Replication Study</h2>
             <p className="italic mb-6 text-lg md:text-xl lg:text-xl">Alex Jaimes, Ryan Bradley, Ben Cummings</p>
-            <div className="text-lg md:text-xl lg:text-2xl space-y-4">
+            <div className="text-lg md:text-xl lg:text-xl space-y-4">
               <p>
                 The Dataism Lab is currently exploring the possibility of replicating a seminal study published in 2005 by Cuthbertson, Nitzsche, and O’Sullivan. This study delves into the intriguing question of whether the performance of individual UK mutual funds can be attributed to skill or luck. Using statistical bootstrapping techniques, the authors found that while most funds' performance could be chalked up to luck, there existed a small subset with "bad skill" and an even smaller subset with "good skill". The paper shed light on the disproportionate impact of extreme funds on overall performance analysis.
               </p>
