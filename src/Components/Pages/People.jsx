@@ -12,8 +12,9 @@ const People = () => {
   return (
     <>
 
-    <div>People</div>
+    
     <Profile user={"Ben Cummings"} />
+    <Profile user={"Ben Cummings"}/>
 
     </>
     

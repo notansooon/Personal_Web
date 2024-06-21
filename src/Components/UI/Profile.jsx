@@ -15,11 +15,11 @@ export const Profile = ({user}) => {
     }
   }
 
-  const truncatedDescription = truncateString(profile.description, 200);
+  const truncatedDescription = truncateString(profile.description, 300);
 
 
   return (
-    <div className="relative bg-white p-2 pb-[200px] w-[500px] shadow-lg mb-12 ml-10 mt-[250px] ">
+    <div className="relative bg-gray-400 p-2 pb-[100px] w-[500px] shadow mb-12 ml-10 mt-[250px] " style={{ borderRadius: '10%' }}>
 
       <div className='absolute top-[-150px] left-[30%] transform '>
         <img className='m-auto object-fill w-[200px] h-[200px]' style={{ borderRadius: '50%' }} src='https://dataismlab.com/author/ben-cummings/avatar_hu546a42ec33fce78256da8ecdd017fc89_13394_270x270_fill_q75_lanczos_center.jpeg'/>
@@ -29,7 +29,8 @@ export const Profile = ({user}) => {
 
       <div className='text-black'>
 
-      <p className='text-4xl text-center mt-20'>Ben Cumming</p>
+      <h1 className='text-4xl text-center bold mt-10 shadow p-2'>Ben Cumming</h1>
+      <h2 className=' text-center bold opacity-50' > Derivatives Researcher</h2>
       </div>
       <div>
       <p className='mt-3 p-2'>{truncatedDescription} </p>
