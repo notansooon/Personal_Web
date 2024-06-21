@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useRef } from 'react';
-
+import logo from "../Components/Pages/dataismLogo.png";
 
 const Navbar = () => {
- 
+
 
     return (
         <>
-           
+
             <div className="font-serif flex items-center justify-between mt-5 p-4 z-[100] w-full absolute bg-black-800 h-[90px]">
-                <h1 className="text-white text-4xl font-bold cursor-pointer pl-5">DLQF</h1>
+                <Link to="/" className="flex items-center pl-5">
+                    <img src={logo} alt="DLQF Logo" className="h-10 w-10 mr-2" />  {/* Adjust height and width as needed */}
+                </Link>
                 <div className="m-5">
                     <ul className="flex space-x-4">
                         <li>
