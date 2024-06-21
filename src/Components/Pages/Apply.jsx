@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect, useRef } from 'react';
 
 
 const Apply = () => {
@@ -42,7 +41,7 @@ const Apply = () => {
                     <span>Statement</span>
                 </div>
 
-                <button className='btn rounded'>Submit</button>
+                <button className='btn rounded shadow-lg'>Submit</button>
 
                 </form>
                 </section>
