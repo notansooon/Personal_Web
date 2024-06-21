@@ -19,7 +19,7 @@ export const Profile = ({user}) => {
 
 
   return (
-    <div className="relative bg-gray-400 p-2 pb-[100px] w-[500px] shadow mb-12 ml-10 mt-[250px] " style={{ borderRadius: '10%' }}>
+    <div className="relative bg-gray-400 p-2 pb-[100px] w-[500px] shadow mb-12 ml-10 mt-[250px] " style={{ borderRadius: '8px' }}>
 
       <div className='absolute top-[-150px] left-[30%] transform '>
         <img className='m-auto object-fill w-[200px] h-[200px]' style={{ borderRadius: '50%' }} src='https://dataismlab.com/author/ben-cummings/avatar_hu546a42ec33fce78256da8ecdd017fc89_13394_270x270_fill_q75_lanczos_center.jpeg'/>
