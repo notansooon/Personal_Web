@@ -13,7 +13,7 @@ const People = () => {
     <>
 
     
-<div className="flex flex-nowrap overflow-x-auto">
+<div className="flex flex-nowrap overflow-x-auto ml-[6%]">
       <Profile user={"Ben Cummings"} />
       <Profile user={"Ben Cummings"} />
       <Profile user={"Ben Cummings"} />
