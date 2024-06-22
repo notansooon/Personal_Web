@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import homeImage from '../assets/Untitled design (6).png';  // Adjust the path as needed
+import homeImage from '../assets/home.png';  // Adjust the path as needed
 
 const Home = () => {
     const [scrollTop, setScrollTop] = useState(1);

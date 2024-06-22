@@ -2,36 +2,80 @@
     "profile": [
       {
         "name": "Ben Cummings",
-        "description": "Benjamin Cummings is studying financial tech within the college of science at Virginia Tech. His focus extends across various financial domains, encompassing analysis of stock market trends, handling of corporate finance, and application of regression analysis methods."
+        "description": "",
+        "Title": "Derivative Researcher",
+        "About": "Benjamin Cummings is studying financial tech within the college of science at Virginia Tech. His focus extends across various financial domains, encompassing analysis of stock market trends, handling of corporate finance, and application of regression analysis methods.",
+        "image": "src/ProfilePicture/ben.jpg"
       },
       {
         "name": "Ali Habibnia",
-        "description": ""
+        "description": "",
+        "About": [
+          "I am an Assistant Professor in the Department of Economics and the Computational Modeling and Data Analytics, College of Science, Virginia Tech.\n",
+          "My research focuses on the intersection of statistical machine learning and big data econometrics, with a particular interest in high-dimensional nonlinear time-series analysis", 
+          "and their applications in macroeconomic/financial forecasting and estimation of big financial networks.\n",
+          "I also work occasionally as a consultant for financial firms and governmental organizations for all businesses related to pattern recognition and knowledge discovery,",
+          "especially computer modeling and forecasting. I have been in the industry for a few years, working as a trader and portfolio strategist and developing different algorithmic trading strategies."
+        ]
+
         
       },
       {
         "name": "Roshan Sanyal",
-        "description": "Roshan Sanyal graduated from Virginia Tech in 2023 with a degree in Computational Modeling and Data Analytics. His experience lies in statistical learning, AI/ML, and data analysis. He is currently working at The Boeing Company as a Lean Engineering Project Manager."
+        "description": "",
+        "About": [
+          "Roshan Sanyal graduated from Virginia Tech in 2023 with a degree in Computational Modeling and Data Analytics.",
+          "His experience lies in statistical learning, AI/ML, and data analysis.",
+          "He is currently working at The Boeing Company as a Lean Engineering Project Manager."
+        ]
+      },
+      {
+        "name": "Gaurav Shah",
+        "description": "",
+        "About": [
+          "Gaurav Shah graduated from Virginia Tech in 2023 with a bachelor’s degree in Computational Modeling and Data Analytics (CMDA) and Economics.", 
+          "Gaurav is currently pursuing his Master’s in Computer Science from Virginia Tech. His current research is focused on causal inference,",
+          "more specifically treatment effect analysis and in trying to use advanced machine learning techniques to obtain estimates on the effects", 
+          "of regulations in the banking sector. After graduating, he aims to utilize his experience to contribute to strategic decision-making,", 
+          "particularly in the domain of financial regulation."
+        ]
+                     
+      },
+      {
+        "name": "Raseen Nirjhar",
+        "description":"",
+        "About": [
+          "Raseen Nirjhar is a Master’s student in the Computer Science department at Virginia Tech.", 
+          "His research is in using advanced machine learning techniques to Forecast and Model Financial Limit Order Book data.",
+          "His thesis is in using advanced Machine Learning Techniques (particularly Deep Learning) to forecast Limit Order Book data."
+        ]
+      },
+      {
+        "name": "Ryan Bradley",
+        "description":"",
+        "About": [
+          "Ryan Bradley is a Sophomore pursuing Computer Science within the College of Engineering.", 
+          "His experience lies in market sentiment analysis and algorithmic trading strategies."
+        ]
         
       },
       {
-        "name": "Contact",
-        "path": "/contact",
-        "image": "https://example.com/images/contact.png"
+        "name": "Alex Jaimes",
+        "description":"",
+        "About": [
+          "Alex Jaimes is a senior in the CMDA program at VT. His experience lies in high performance computing,",
+          "statistical learning and inference, and numerical analysis. He currently leads the CMDA Computing Consultants."
+        ]
+
       },
       {
-        "name": "Apply",
-        "path": "/apply",
-        "image": "https://example.com/images/apply.png"
-      },
-      {
-        "name": "About",
-        "path": "/about",
-        "image": "https://example.com/images/about.png"
-      },
-      {
-        "name": "Logo",
-        "image": ""
+        "name": "Paul Chau",
+        "description": "",
+        "About": [
+          "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.", 
+          "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
+        ]
+        
       }
     ]
   }
