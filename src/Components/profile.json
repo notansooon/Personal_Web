@@ -9,6 +9,7 @@
       },
       {
         "name": "Ali Habibnia",
+        "Title": "Assistant Professor of Economics",
         "description": "",
         "About": [
           "I am an Assistant Professor in the Department of Economics and the Computational Modeling and Data Analytics, College of Science, Virginia Tech.\n",
@@ -22,6 +23,7 @@
       },
       {
         "name": "Roshan Sanyal",
+        "Title": "Graduate Researcher",
         "description": "",
         "About": [
           "Roshan Sanyal graduated from Virginia Tech in 2023 with a degree in Computational Modeling and Data Analytics.",
@@ -31,6 +33,7 @@
       },
       {
         "name": "Gaurav Shah",
+        "Title": "Graduate Researcher",
         "description": "",
         "About": [
           "Gaurav Shah graduated from Virginia Tech in 2023 with a bachelor’s degree in Computational Modeling and Data Analytics (CMDA) and Economics.", 
@@ -43,6 +46,7 @@
       },
       {
         "name": "Raseen Nirjhar",
+        "Title": "Graduate Researcher",
         "description":"",
         "About": [
           "Raseen Nirjhar is a Master’s student in the Computer Science department at Virginia Tech.", 
@@ -52,6 +56,7 @@
       },
       {
         "name": "Ryan Bradley",
+        "Title": "Assistant Researcher",
         "description":"",
         "About": [
           "Ryan Bradley is a Sophomore pursuing Computer Science within the College of Engineering.", 
@@ -61,7 +66,8 @@
       },
       {
         "name": "Alex Jaimes",
-        "description":"",
+        "Title": "Statistics Researcher",
+        "description": "",
         "About": [
           "Alex Jaimes is a senior in the CMDA program at VT. His experience lies in high performance computing,",
           "statistical learning and inference, and numerical analysis. He currently leads the CMDA Computing Consultants."
@@ -70,6 +76,7 @@
       },
       {
         "name": "Paul Chau",
+        "Title": "Assistant Researcher",
         "description": "",
         "About": [
           "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.", 

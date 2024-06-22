@@ -5,7 +5,7 @@ import Roshan from '../../ProfilePicture/roshan.jpg'
 import Ryan from '../../ProfilePicture/ryan.jpg'
 import Raseen from '../../ProfilePicture/Raseen.jpg'
 import Gaurav from '../../ProfilePicture/Gaurav.jpg'
-//import Home from '../profile.json'
+import Home from '../profile.json'
 import { Profile } from '../UI/Profile';
 
 
@@ -13,7 +13,7 @@ import { Profile } from '../UI/Profile';
 
 const People = () => {
 
-  //const find = Home.profile.find(pic => pic.name === "Ben Cummings")
+  
 
   
 
@@ -21,14 +21,14 @@ const People = () => {
     <>
 
     
-    <div className="flex flex-nowrap overflow-x-auto ml-[6%]">
-      <Profile user={"Ali Habibnia"} pic={Ali}/>
+    <div className="flex  overflow-x-auto ml-[6%]">
+      <Profile user={"Ali Habibnia"} pic={Ali} />
       <Profile user={"Roshan Sanyal"} pic={Roshan}/>
       <Profile user={"Ben Cummings"} pic={Ben}/>
       
       
     </div>
-    <div className="flex flex-nowrap overflow-x-auto ml-[6%]">
+    <div className="flex  overflow-x-auto ml-[6%]">
       <Profile user={"Gaurav Shah"} pic={Gaurav}/>
       <Profile user={"Raseen Nirjhar"} pic={Raseen}/>
       <Profile user={"Ryan Bradley"} pic={Ryan}/>
