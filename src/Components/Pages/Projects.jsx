@@ -1,6 +1,8 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
 import { GoogleGeminiEffectDemo } from "../GeminiEffect";
+import IconButton from "../utils/IconButton";
+import {FaLinkedin} from "react-icons/fa";
 
 function Projects() {
   const widgetContainerRef = useRef(null);
@@ -81,6 +83,21 @@ function Projects() {
               </p>
             </div>
           </section>
+        </div>
+        <div className= "flex h-screen">
+          <IconButton
+
+              text="LinkedIn"
+              
+
+          >
+            <FaLinkedin size= {20}>
+
+            </FaLinkedin>
+
+
+          </IconButton>
+
         </div>
       </div>
     </>
