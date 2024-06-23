@@ -25,10 +25,15 @@ export const Profile = ({ user, pic }) => {
                     class='img'
                     src={pic} alt={`${user}'s profile`} />
           </div>
-          <span> Person</span>
-          <p class="job"> Job Title</p>
-          <button> Click
-          </button>
+          <span> {user}</span>
+          <p class="job">{profile.Title}</p>
+          <div className=" space-x-10 mt-5 flex justify-center duration-500" >
+          <FontAwesomeIcon icon={faLinkedin} size="3x"
+            className="hover:z-50 hover:scale-150"/>
+          <FontAwesomeIcon icon={faEnvelope} size="3x"
+            className="hover:z-50 hover:scale-150"/>
+            </div>
+          
           </div>
         
         </>

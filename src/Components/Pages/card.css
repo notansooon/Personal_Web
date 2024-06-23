@@ -9,6 +9,14 @@
     margin: 30px;
     font-family: inherit;
   }
+
+  .card:hover {
+    background: pink;
+    scale: 125%;
+    z-index: 50;
+    transition: 1000ms;
+    color: #ffffff;
+}
   
   .card span {
     font-weight: 600;
@@ -37,7 +45,7 @@
     margin-top: 20px;
   }
   
-  .card button {
+  .card .FontAwesomeIcon {
     padding: 8px 25px;
     display: block;
     margin: auto;
@@ -49,7 +57,7 @@
     font-weight: 600;
   }
   
-  .card button:hover {
+  .card .FontAwesomeIcon:hover {
     background: #212121;
     color: #ffffff;
 }
