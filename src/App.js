@@ -15,7 +15,7 @@ function App() {
   return (
       <>
 
-          <Navbar/>
+          <Navbar className="p-16"/>
           <div className="z-20">
               <TradingViewTicker/>
 
