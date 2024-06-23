@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
 import IconButton from "../utils/IconButton";
-import {FaLinkedin} from "react-icons/fa";
+import {FaLinkedin, FaWhatsapp, FaWeibo, FaFacebook} from "react-icons/fa";
 
 function Projects() {
   const widgetContainerRef = useRef(null);
@@ -83,9 +83,21 @@ function Projects() {
             </div>
           </section>
         </div>
-        <div className= "flex h-screen font-sans font-semibold">
+        <div className= "flex h-screen items-center justify-center font-sans font-semibold gap-4">
           <IconButton color="bg-blue-500" text="LinkedIn">
             <FaLinkedin size= {30}></FaLinkedin>
+          </IconButton>
+
+          <IconButton color="bg-blue-500" text="Facebook">
+            <FaFacebook size= {30}></FaFacebook>
+          </IconButton>
+
+          <IconButton color="bg-green-500" text="Whatsapp">
+            <FaWhatsapp size= {30}></FaWhatsapp>
+          </IconButton>
+
+          <IconButton color="bg-red-500" text="Weibo">
+            <FaWeibo size= {30}></FaWeibo>
           </IconButton>
 
         </div>
