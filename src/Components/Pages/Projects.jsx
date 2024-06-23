@@ -1,7 +1,8 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
 import IconButton from "../utils/IconButton";
-import {FaLinkedin, FaWhatsapp, FaWeibo, FaFacebook} from "react-icons/fa";
+import {FaLinkedin, FaWhatsapp, FaWeibo, FaFacebook, FaEnvelope} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 function Projects() {
   const widgetContainerRef = useRef(null);
@@ -98,6 +99,14 @@ function Projects() {
 
           <IconButton color="bg-red-500" text="Weibo">
             <FaWeibo size= {30}></FaWeibo>
+          </IconButton>
+
+          <IconButton color="Black" text="Twitter">
+            <FaXTwitter size= {30}></FaXTwitter>
+          </IconButton>
+
+          <IconButton color="bg-red-500" text="Mail">
+            <FaEnvelope size= {30}></FaEnvelope>
           </IconButton>
 
         </div>
