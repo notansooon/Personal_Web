@@ -10,7 +10,7 @@ const Navbar = () => {
 
             <div className="font-serif flex items-center justify-between mt-5 p-4 z-[100] w-full absolute bg-black-800 h-[90px]">
                 <Link to="/" className="flex items-center pl-5">
-                    <img src={logo} alt="DLQF Logo" className="h-40 w-30 pt-10 mr-2" />  {/* Adjust height and width as needed */}
+                    <img src={logo} alt="DLQF Logo" className="h-48 mt-5 w-auto pt-10 mr-2" />  {/* Adjust height and width as needed */}
                 </Link>
                 <div className="m-5">
                     <ul className="flex space-x-4">

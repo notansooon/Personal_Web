@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
-import { GoogleGeminiEffectDemo } from "../GeminiEffect";
 import IconButton from "../utils/IconButton";
 import {FaLinkedin} from "react-icons/fa";
 
@@ -84,18 +83,9 @@ function Projects() {
             </div>
           </section>
         </div>
-        <div className= "flex h-screen">
-          <IconButton
-
-              text="LinkedIn"
-              
-
-          >
-            <FaLinkedin size= {20}>
-
-            </FaLinkedin>
-
-
+        <div className= "flex h-screen font-sans font-semibold">
+          <IconButton color="bg-blue-500" text="LinkedIn">
+            <FaLinkedin size= {30}></FaLinkedin>
           </IconButton>
 
         </div>

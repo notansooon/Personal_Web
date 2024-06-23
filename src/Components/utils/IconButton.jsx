@@ -1,25 +1,27 @@
-import {useRef} from "react";
-import  React from "react";
+import { useRef } from "react";
+import React from "react";
 
-export default function IconButton(children, color, text, {...props}) {
+
+export default function IconButton({ children, color, text, ...props }) {
     const [hovered, setHovered] = React.useState(false);
-    const ref = useRef(null)
-    return(
+    const ref = useRef(null);
+
+    return (
         <button
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
-
             {...props}
-            className={'flex p-2 items-center rounded-lg text-white"${"color"||bg-black}'}
+            className={`flex pt-2 items-center justify-center rounded-lg text-white ${color || 'bg-black'}`}
         >
             {children}
             <div
-                style={{width: hovered ? ref.current?.offsetWidth || 0:0}}
-                className="overflow-x-hidden transition-all duration-300 ease-out">
-                <span
-                    ref={ref}
-                    className="px-1.5">{text}</span>
+                style={{ width: hovered ? ref.current?.offsetWidth || 0 : 0 }}
+                className="overflow-x-hidden transition-all duration-300 ease-out"
+            >
+        <span ref={ref} className="px-1.5">
+          {text}
+        </span>
             </div>
         </button>
-    )
+    );
 }
