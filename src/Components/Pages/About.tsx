@@ -1,5 +1,5 @@
 import React from 'react';
-import TradingViewTicker from "../UI/ticker-tape";
+
 
 const About = () => {
     return (
@@ -15,15 +15,22 @@ const About = () => {
             </section>
 
             <div>
-                <section>
-                    <h2>Research Topic
-                        <p>
-                            Our research focuses on the intersection of machine learning and big data econometrics, with
-                            a particular focus in high-dimensional nonlinear time-series analysis and their applications
-                            in macroeconomic/financial forecasting and estimation of big financial networks.
-                        </p>
-                    </h2>
+                <div>
+                    <section>
+                        <h2>Research Topic
+                            <p>
+                                Our research focuses on the intersection of machine learning and big data econometrics,
+                                with
+                                a particular focus in high-dimensional nonlinear time-series analysis and their
+                                applications
+                                in macroeconomic/financial forecasting and estimation of big financial networks.
+                            </p>
+                        </h2>
+                        </section>
 
+                </div>
+
+                <div>
                     <section>
                         <h2>Machine Learning and Finance
                             <p>
@@ -32,19 +39,24 @@ const About = () => {
                             </p>
                         </h2>
                     </section>
+                </div>
 
+                <div>
+                    <section>
+                        <h2>Nonlinear Time Series Analysis
+                            <p>
+                                Nonlinear time series analysis delves into intricate patterns within time-varying data,
+                                crucial in understanding market dynamics. Within our lab, we utilize these techniques to
+                                uncover hidden correlations and forecast market movements more accurately, enhancing
+                                risk
+                                management and portfolio optimization strategies.
+                            </p>
+                        </h2>
                     </section>
 
-                <section>
-                    <h2>Nonlinear Time Series Analysis
-                        <p>
-                            Nonlinear time series analysis delves into intricate patterns within time-varying data,
-                            crucial in understanding market dynamics. Within our lab, we utilize these techniques to
-                            uncover hidden correlations and forecast market movements more accurately, enhancing risk
-                            management and portfolio optimization strategies.
-                        </p>
-                    </h2>
-                </section>
+                </div>
+
+
             </div>
         </div>
     );

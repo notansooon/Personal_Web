@@ -15,57 +15,37 @@ import { Profile } from '../UI/Profile';
 
 
 const People = () => {
+    return (
+        <>
+            <h1 className="text-white text-6xl mt-24 text-center">Meet the Team</h1>
+            <h1 className="text-white text-4xl mt-24 text-center">Principal Investigators</h1>
 
-  
+            <div className="flex flex-wrap justify-center mt-12">
+                <Profile user={"Ali Habibnia"} pic={Ali} />
+            </div>
 
-  
+            <h1 className="text-white text-4xl mt-24 text-center">Graduate Researchers</h1>
+            <div className="flex flex-wrap justify-center mt-12">
+                <Profile user={"Raseen Nirjhar"} pic={Raseen} />
+                <Profile user={"Roshan Sanyal"} pic={Roshan} />
+                <Profile user={"Gaurav Shah"} pic={Gaurav} />
+            </div>
 
-  return (
-    <>
+            <h1 className="text-white text-4xl mt-24 text-center">Founding Researchers</h1>
+            <div className="flex flex-wrap justify-center mt-12">
+                <Profile user={"Ryan Bradley"} pic={Ryan} />
+                <Profile user={"Ben Cummings"} pic={Ben} />
+                <Profile user={"Alex Jaimes"} pic={Alex} />
+            </div>
 
-    <h1 className='text-white text-6xl mt-[100px] text-center'>Meet the Team</h1>
-    <h1 className='text-white text-4xl mt-[150px] text-center'>Principal Investigators</h1>
-
-    
-    <div className="flex overflow-x-auto justify-center">
-  
-      <Profile user={"Ali Habibnia"} pic={Ali} />
-  
-    </div>
-<h1 className='text-white text-4xl mt-[150px] text-center'>Graduate Researchers </h1>
-    <div className="flex justify-center overflow-x-auto">
-      <Profile user={"Raseen Nirjhar"} pic={Raseen} />
-      <Profile user={"Roshan Sanyal"} pic={Roshan}/>
-      <Profile user={"Gaurav Shah"} pic={Gaurav}/>
-    
-      
-    </div>
-      
-      
-    <h1 className='text-white text-4xl mt-[150px] text-center'>Founding Researchers</h1>
-    <div className="flex  overflow-x-auto justify-center">
-      <Profile user={"Ryan Bradley"} pic={Ryan}/>
-  
-      <Profile user={"Ben Cummings"} pic={Ben}/>
-      <Profile user={"Alex Jaimes"} pic={Alex}/>
-      
-      
-      
-    </div>
-
-    <h1 className='text-white  text-4xl mt-[150px] text-center'>Researchers</h1>
-    <div className="flex  overflow-x-auto justify-center">
-      <Profile user={"Paul Chau"} pic={Paul}/>
-      <Profile user={"William Etzler"} pic={Unknown}/>
-      <Profile user={"Ben Facciani"} pic={Ben_f}/>
-      
-      
-      
-    </div>
-   
-    </>
-    
-  )
+            <h1 className="text-white text-4xl mt-24 text-center">Researchers</h1>
+            <div className="flex flex-wrap justify-center mt-12">
+                <Profile user={"Paul Chau"} pic={Paul} />
+                <Profile user={"William Etzler"} pic={Unknown} />
+                <Profile user={"Ben Facciani"} pic={Ben_f} />
+            </div>
+        </>
+    );
 }
 
 export default People
