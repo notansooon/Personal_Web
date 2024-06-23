@@ -22,7 +22,7 @@ export const Profile = ({user, pic}) => {
 
 
   return (
-    <div className="relative bg-gray-400 p-2 pb-[10px] w-[500px] bg-gradient-to-t from-cyan-500 to-black shadow mb-12 ml-10 mt-[250px] hover:z-50 hover:scale-125 duration-700 cursor-pointer " style={{ borderRadius: '8px' }}>
+    <div className="relative bg-gray-400 p-2 pb-[10px] w-[500px] bg-gradient-to-t from-cyan-500 to-black shadow mb-12 ml-10 mt-[250px] hover:z-50 hover:scale-125  cursor-pointer " style={{ borderRadius: '8px', transition: "400ms" }}>
       
       <div className='absolute top-[-150px] left-[30%] transform '>
         
