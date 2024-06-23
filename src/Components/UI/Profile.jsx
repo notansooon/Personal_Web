@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../profile.json';
+import '../Pages/card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +16,25 @@ export const Profile = ({ user, pic }) => {
     const truncatedDescription = truncateString(profile.description, 100);
 
     return (
+        <>
+          <div class="card">
+          <div class="card-border-top">
+          </div>
+          <div class="img">
+          <img
+                    class='img'
+                    src={pic} alt={`${user}'s profile`} />
+          </div>
+          <span> Person</span>
+          <p class="job"> Job Title</p>
+          <button> Click
+          </button>
+          </div>
+        
+        </>
+
+
+        /*
         <div
             className="relative bg-gray-400 p-4 pb-10 max-w-md bg-gradient-to-t from-cyan-500 to-black shadow-lg mb-12 mx-auto mt-16 hover:z-50 hover:scale-105 cursor-pointer rounded-lg transition-transform duration-400">
 
@@ -41,7 +61,8 @@ export const Profile = ({ user, pic }) => {
                 className="mt-3 p-2">
                 <p>{truncatedDescription}</p>
             </div>
-        </div>
+        </div> 
+        */
     );
 }
 
