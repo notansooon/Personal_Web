@@ -5,7 +5,10 @@ import Roshan from '../../ProfilePicture/roshan.jpg'
 import Ryan from '../../ProfilePicture/ryan.jpg'
 import Raseen from '../../ProfilePicture/Raseen.jpg'
 import Gaurav from '../../ProfilePicture/Gaurav.jpg'
-import Home from '../profile.json'
+import Alex from '../../ProfilePicture/alex.jpg'
+import Paul from '../../ProfilePicture/paul.jpg'
+import Unknown from '../../ProfilePicture/unknown.jpg'
+import Ben_f from '../../ProfilePicture/ben_f.jpg'
 import { Profile } from '../UI/Profile';
 
 
@@ -20,21 +23,46 @@ const People = () => {
   return (
     <>
 
+    <h1 className='text-white text-6xl mt-[100px] text-center'>Meet the Team</h1>
+    <h1 className='text-white text-4xl mt-[150px] text-center'>Principal Investigators</h1>
+
     
-    <div className="flex  overflow-x-auto ml-[6%]">
+    <div className="flex overflow-x-auto justify-center">
+  
       <Profile user={"Ali Habibnia"} pic={Ali} />
+  
+    </div>
+<h1 className='text-white text-4xl mt-[150px] text-center'>Graduate Researchers </h1>
+    <div className="flex justify-center overflow-x-auto">
+      <Profile user={"Raseen Nirjhar"} pic={Raseen} />
       <Profile user={"Roshan Sanyal"} pic={Roshan}/>
-      <Profile user={"Ben Cummings"} pic={Ben}/>
-      
-      
-    </div>
-    <div className="flex  overflow-x-auto ml-[6%]">
       <Profile user={"Gaurav Shah"} pic={Gaurav}/>
-      <Profile user={"Raseen Nirjhar"} pic={Raseen}/>
+    
+      
+    </div>
+      
+      
+    <h1 className='text-white text-4xl mt-[150px] text-center'>Founding Researchers</h1>
+    <div className="flex  overflow-x-auto justify-center">
       <Profile user={"Ryan Bradley"} pic={Ryan}/>
+  
+      <Profile user={"Ben Cummings"} pic={Ben}/>
+      <Profile user={"Alex Jaimes"} pic={Alex}/>
+      
       
       
     </div>
+
+    <h1 className='text-white  text-4xl mt-[150px] text-center'>Researchers</h1>
+    <div className="flex  overflow-x-auto justify-center">
+      <Profile user={"Paul Chau"} pic={Paul}/>
+      <Profile user={"William Etzler"} pic={Unknown}/>
+      <Profile user={"Ben Facciani"} pic={Ben_f}/>
+      
+      
+      
+    </div>
+   
     </>
     
   )

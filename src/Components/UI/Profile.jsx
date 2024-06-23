@@ -22,9 +22,10 @@ export const Profile = ({user, pic}) => {
 
 
   return (
-    <div className="relative bg-gray-400 p-2 pb-[10px] w-[500px] bg-gradient-to-t from-cyan-500 to-black shadow mb-12 ml-10 mt-[250px] " style={{ borderRadius: '8px' }}>
-
+    <div className="relative bg-gray-400 p-2 pb-[10px] w-[500px] bg-gradient-to-t from-cyan-500 to-black shadow mb-12 ml-10 mt-[250px] hover:z-50 hover:scale-125 duration-700 cursor-pointer " style={{ borderRadius: '8px' }}>
+      
       <div className='absolute top-[-150px] left-[30%] transform '>
+        
         <img className='m-auto object-fill w-[200px] h-[200px]' style={{ borderRadius: '50%' }} src={pic}/>
       </div>
 
@@ -35,8 +36,8 @@ export const Profile = ({user, pic}) => {
       <h1 className='text-4xl text-center bold mt-10 shadow p-2'>{user}</h1>
       <h2 className=' text-2xl text-center bold opacity-50' > {profile.Title}</h2>
       <div className="flex justify-center space-x-[20%] mt-3">
-      <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      <FontAwesomeIcon icon={faEnvelope} size="2x" />
+      <FontAwesomeIcon icon={faLinkedin} size="2x" className='hover:z-50 hover:scale-150 duration-500'/>
+      <FontAwesomeIcon icon={faEnvelope} size="2x" className='hover:z-50 hover:scale-150 duration-500'/>
       </div>
       
       </div>
