@@ -5,7 +5,7 @@ import homeImage from '../assets/home.png';  // Adjust the path as needed
 const Home = () => {
     const [scrollTop, setScrollTop] = useState(1);
     const [imageOpacity, setImageOpacity] = useState(.85);
-    const widgetContainerRef = useRef(null);
+    
 
     const handleScroll = () => {
         const windowPosition = window.scrollY;
@@ -51,8 +51,8 @@ const Home = () => {
                         Our mission centers on exploring AI/Machine Learning, Big Data Analytics,
                         and High Performance Computing for transformative applications in this field.
                     </p>
-                    <div className="m-auto mt-[850px]">
-                        <ul className="py-2 px-4 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition w-full sm:w-auto">
+                    <div className=" m-auto mt-[750px] mb-[400px]">
+                        <ul className="py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition w-10 sm:w-auto">
                             <li>
                                 <Link
                                     to="/people"

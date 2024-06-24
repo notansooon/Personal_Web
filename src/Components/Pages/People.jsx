@@ -39,7 +39,7 @@ const People = () => {
             </div>
 
             
-            <div className="flex  justify-around mt-12">
+            <div className="flex flex-wrap justify-around mt-12">
                 <Profile user={"Paul Chau"} pic={Paul} />
                 <Profile user={"William Etzler"} pic={Unknown} />
                 <Profile user={"Ben Facciani"} pic={Ben_f} />

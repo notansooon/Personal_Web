@@ -84,7 +84,7 @@ function Projects() {
             </div>
           </section>
         </div>
-        <div className= "flex h-screen items-center justify-center font-sans font-semibold gap-4">
+        <div className= "flex mt-20 mb-[100px] items-center justify-center font-sans font-semibold gap-4">
           <IconButton color="bg-blue-500" text="LinkedIn">
             <FaLinkedin size= {30}></FaLinkedin>
           </IconButton>
