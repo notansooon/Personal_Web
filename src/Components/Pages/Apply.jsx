@@ -7,7 +7,7 @@ const Apply = () => {
         <>
 
 
-        <div className="container mx-auto px-4 py-8 font-serif">
+        <div className="container mx-auto px-4 py-8 font-serif ">
 
 
             <header className="text-center mb-12"><h1 className="text-4xl md:text-5xl mb-4 text-white">Apply to DLQF</h1>

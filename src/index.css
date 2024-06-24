@@ -4,12 +4,23 @@
 
 
 body {
+
     background-color: rgb(41, 20, 20);
     font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 
 
 
   }
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
 h2{
     font-size:150%;
 }
