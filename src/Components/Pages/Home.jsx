@@ -41,6 +41,8 @@ const Home = () => {
                 }}
             >
                 <div className="absolute inset-0 bg-black" style={{ opacity: imageOpacity }}></div>
+
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7207085853481799680" height="542" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
                 <div className="relative z-10 text-center text-white max-w-4xl mx-auto">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6" style={{ opacity: scrollTop }}>
                         Dataism Laboratory for Quantitative Finance

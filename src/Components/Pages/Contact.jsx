@@ -8,11 +8,18 @@ import {FaXTwitter} from "react-icons/fa6";
 function Contact() {
 
 
+  
+   
 
+
+  
   return (
     <>
 
 
+
+
+      
       <div className="container mx-auto p-2 pt-[150px] text-white">
         <h1 className="text-5xl text-center mb-10 font-bold">Contact</h1>
         <div className="mb-8 font-serif">
@@ -99,6 +106,7 @@ function Contact() {
       </div>
     </>
   );
+  
 }
 
 export default Contact;
