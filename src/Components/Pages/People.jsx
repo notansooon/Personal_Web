@@ -10,7 +10,7 @@ import Paul from '../../ProfilePicture/paul.jpg'
 import Unknown from '../../ProfilePicture/unknown.jpg'
 import Ben_f from '../../ProfilePicture/ben_f.jpg'
 
-import homeImage from '../assets/home3.jpg';  
+import homeImage from '../assets/home.png';  
 import { Profile } from '../UI/Profile';
 
 
