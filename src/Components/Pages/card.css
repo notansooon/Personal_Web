@@ -1,7 +1,7 @@
 .card {
     width: 522px;
     height: 385px;
-    background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda);
+    background-image: linear-gradient(144deg,black, gray 50%, darkblue);
     border: none;
     border-radius: 10px;
     padding-top: 10px;
@@ -11,7 +11,7 @@
   }
 
   .card:hover {
-    background: pink;
+    background: gray;
     scale: 125%;
     z-index: 50;
     transition: 1000ms;

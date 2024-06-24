@@ -16,10 +16,7 @@ function App() {
       <>
 
           <Navbar className="p-16"/>
-          <div className="z-20">
-              <TradingViewTicker/>
-
-          </div>
+          
 
 
           <Routes>

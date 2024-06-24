@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className="font-sans flex font-medium items-center justify-between mt-5 p-4 z-[100] w-full absolute bg-transparent pt-12 h-[90px]">
             <Link to="/" className="flex items-center pl-5">
-                <img src={logo} alt="DLQF Logo" className="h-20 w-auto mr-2" /> {/* Adjust height and width as needed */}
+                
             </Link>
             <div className="m-5">
                 <ul className="navbar-ul">

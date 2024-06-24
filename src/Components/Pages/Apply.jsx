@@ -7,10 +7,10 @@ const Apply = () => {
         <>
 
 
-        <div className="container mx-auto px-4 py-8 font-serif">
+        <div className="container mx-auto  px-4 py-8 font-serif">
 
 
-            <header className="text-center mb-12"><h1 className="text-4xl md:text-5xl mb-4 text-white">Apply to DLQF</h1>
+            <header className="text-center mb-12 mt-[100px]"><h1 className="text-4xl md:text-5xl mb-4 text-white">Apply to DLQF</h1>
                 <p className="text-lg md:text-xl text-white">Join the Dataism Laboratory for Quantitative Finance</p>
             </header>
 
