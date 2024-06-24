@@ -28,7 +28,7 @@ const People = () => {
         </div>
       </div>
       <div className=' text-center p-4 md:p-8'>
-          <h1 className='text-3xl text-center md:text-5xl font-bold'>Meet The Team</h1>
+          <h1 className='text-white text-3xl text-center md:text-5xl font-bold'>Meet The Team</h1>
       </div>
       
       <div className="content">
