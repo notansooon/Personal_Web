@@ -14,9 +14,17 @@ function Projects() {
     <>
 
 
-      <div className="relative min-h-screen text-white font-serif overflow-hidden">
+      <div className="relative min-h-screen text-white font-serif overflow-hidden ">
+        <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+          <div
+              className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+              style={{
+                clipPath:
+                    'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              }}
+          />
+        </div>
         {/* Gemini Effect Background */}
-
 
 
         {/* Content Overlay */}
@@ -84,29 +92,29 @@ function Projects() {
             </div>
           </section>
         </div>
-        <div className= "flex mt-20 mb-[100px] items-center justify-center font-sans font-semibold gap-4">
+        <div className="flex mt-20 mb-[100px] items-center justify-center font-sans font-semibold gap-4">
           <IconButton color="bg-blue-500" text="LinkedIn">
-            <FaLinkedin size= {30}></FaLinkedin>
+            <FaLinkedin size={30}></FaLinkedin>
           </IconButton>
 
           <IconButton color="bg-blue-500" text="Facebook">
-            <FaFacebook size= {30}></FaFacebook>
+            <FaFacebook size={30}></FaFacebook>
           </IconButton>
 
           <IconButton color="bg-green-500" text="Whatsapp">
-            <FaWhatsapp size= {30}></FaWhatsapp>
+            <FaWhatsapp size={30}></FaWhatsapp>
           </IconButton>
 
           <IconButton color="bg-red-500" text="Weibo">
-            <FaWeibo size= {30}></FaWeibo>
+            <FaWeibo size={30}></FaWeibo>
           </IconButton>
 
           <IconButton color="Black" text="Twitter">
-            <FaXTwitter size= {30}></FaXTwitter>
+            <FaXTwitter size={30}></FaXTwitter>
           </IconButton>
 
           <IconButton color="bg-red-500" text="Mail">
-            <FaEnvelope size= {30}></FaEnvelope>
+            <FaEnvelope size={30}></FaEnvelope>
           </IconButton>
 
         </div>
