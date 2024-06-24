@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import homeImage from '../assets/home.png';
 import Example from "../UI/Newsletter";
 
+
+
 const Home = () => {
     const [scrollTop, setScrollTop] = useState(1);
     const [imageOpacity, setImageOpacity] = useState(.85);
