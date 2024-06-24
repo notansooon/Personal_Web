@@ -3,16 +3,10 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className= "text-white">
-            <section
-                className='relative w-full min-h-screen md:h-screen flex md:block flex-col justify-center'>
-                <img
-                    className="pointer-events-none select-none"
-                    src='/logo512.png'
-                    alt='Logo'
-                    style={{ objectFit: 'cover', objectPosition: '75%' }}
-                />
-            </section>
+
+
+        <div className="text-white">
+
 
             <div>
                 <div>
@@ -26,7 +20,7 @@ const About = () => {
                                 in macroeconomic/financial forecasting and estimation of big financial networks.
                             </p>
                         </h2>
-                        </section>
+                    </section>
 
                 </div>
 
