@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import homeImage from '../assets/home.png';  // Adjust the path as needed
+import homeImage from '../assets/home.png';  
 
 const Home = () => {
     const [scrollTop, setScrollTop] = useState(1);
@@ -28,46 +28,11 @@ const Home = () => {
 
     return (
         <>
+        </>
 
             
 
-            <div
-                className="relative px-4 sm:px-8 md:px-12 lg:px-20 pt-20 md:pt-32 min-h-screen flex flex-col items-center justify-center"
-                style={{
-                    backgroundImage: `url(${homeImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundAttachment: 'fixed'
-                }}
-            >
-                <div className="absolute inset-0 bg-black" style={{ opacity: imageOpacity }}></div>
-
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7207085853481799680" height="542" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                <div className="relative z-10 text-center text-white max-w-4xl mx-auto">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif mb-6" style={{ opacity: scrollTop }}>
-                        Dataism Laboratory for Quantitative Finance
-                    </h1>
-                    <p className="text-lg sm:text-xl md:text-2xl font-serif leading-relaxed mb-10" style={{ opacity: scrollTop }}>
-                        Established in 2024, The Dataism Lab at Virginia Tech is an interdisciplinary
-                        hub focused on advancing Quantitative Finance and Econometrics through cutting-edge technologies.
-                        Our mission centers on exploring AI/Machine Learning, Big Data Analytics,
-                        and High Performance Computing for transformative applications in this field.
-                    </p>
-                    <div className=" m-auto mt-[750px] mb-[400px]">
-                        <ul className="py-2 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition w-10 sm:w-auto">
-                            <li>
-                                <Link
-                                    to="/people"
-                                    className="block text-center bg-transparent text-white font-bold hover:text-gray-300"
-                                >
-                                    Meet the Team
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </>
+           
     );
 };
 
