@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect, useRef } from 'react';
 import './style.css';
 import IconButton from "../utils/IconButton";
 import {FaEnvelope, FaFacebook, FaLinkedin, FaWeibo, FaWhatsapp} from "react-icons/fa";
