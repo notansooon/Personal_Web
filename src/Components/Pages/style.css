@@ -63,7 +63,7 @@
 
 .inputbox {
   position: relative;
-  width: 100%;
+  width: 50%;
   color: aqua;
   margin-top: 20px;
 
@@ -71,13 +71,13 @@
 
 .inputbox input {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid rgb(255, 255, 255, 0.25);
   background-color: #1b2b3a;
   border-radius: 5px;
   outline: none;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .inputbox span {
@@ -114,6 +114,7 @@
 .btn {
   margin-top: 30px;
   margin-left: 0%;
+  width: 20%;
   padding: 10px 25px;
   border: 2px solid rgb(255, 255, 255, 0.25);
   color: white;

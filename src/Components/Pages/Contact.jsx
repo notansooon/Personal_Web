@@ -20,11 +20,11 @@ function Contact() {
 
 
       
-      <div className="container mx-auto p-2 pt-[150px] text-white">
-        <h1 className="text-5xl text-center mb-10 font-bold">Contact</h1>
-        <div className="mb-8 font-serif">
+      <div className="container  p-2 pt-[150px] text-white">
+        
+        <div className="mb-8 font-serif ml-20">
 
-          <p className=" text-2xl text-white mb-4">Please feel free to contact us if you want to collaborate with us or
+          <p className="text-2xl text-white drop-shadow mb-4">Please Feel free to contact us if you want to collaborate with us or
             join the team.</p>
           <div className="inputbox">
             <input required="required"/>
@@ -39,15 +39,48 @@ function Contact() {
             <span>Message</span>
           </div>
 
-
-          <div class="btn">
+          <   div class='btn'>
             <button> Send</button>
           </div>
+          
 
 
         </div>
+        
+        
+      </div>
 
-        <div className="flex h-screen items-center justify-center font-sans font-semibold gap-4">
+        <div
+            className="w-[500px] ml-[60%] mt-[-475px]  text-white items-center justify-center"
+           
+        >
+          <div>
+            <section className="bg-opacity-80 bg-gray-900 p-6 rounded-lg shadow-lg inset-0 font-serif">
+              <h2 className="text-2xl font-bold ">Our Location</h2>
+              <address className="not-italic mb-4">
+                Pamplin Hall, 880 West Campus Drive<br/>
+                Blacksburg, VA 24060<br/>
+                United States
+              </address>
+              <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a>
+              </p>
+              <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
+
+            </section>
+
+
+          </div >
+          <iframe
+              className="w-full h-64  mt-10"
+              src={`https://www.google.com/maps?q=37.22876,-80.42462&hl=es;z=14&output=embed`}
+              allowFullScreen
+              title="Pamplin Hall Location"
+          ></iframe>
+
+        </div>
+      
+
+        <div className="flex h-screen mt-[-450px] ml-[10%] items-center  font-sans font-semibold gap-4">
           <IconButton color="bg-blue-500" text="LinkedIn">
             <FaLinkedin size={30}></FaLinkedin>
           </IconButton>
@@ -74,36 +107,10 @@ function Contact() {
 
         </div>
 
-        <div
-            className="w-full bg-cover bg-center h-96 text-white flex items-center justify-center"
-            //style={{ backgroundImage: `url(${pamplinHallImage})` }}
-        >
-          <div>
-            <section className="bg-opacity-80 bg-gray-900 p-6 rounded-lg shadow-lg inset-0 font-serif">
-              <h2 className="text-2xl font-bold ">Our Location</h2>
-              <address className="not-italic mb-4">
-                Pamplin Hall, 880 West Campus Drive<br/>
-                Blacksburg, VA 24060<br/>
-                United States
-              </address>
-              <p className="mb-4">Email: <a href="mailto:habibnia@vt.edu" className="text-blue-500">habibnia@vt.edu</a>
-              </p>
-              <p className="mb-4">Directions: Enter Pamplin Hall and head to room 3016</p>
+        
+        
 
-            </section>
-
-
-          </div>
-          <iframe
-              className="w-full h-64"
-              src={`https://www.google.com/maps?q=37.22876,-80.42462&hl=es;z=14&output=embed`}
-              allowFullScreen
-              title="Pamplin Hall Location"
-          ></iframe>
-
-        </div>
-
-      </div>
+      
     </>
   );
   
