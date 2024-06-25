@@ -40,9 +40,7 @@ const Home = () => {
                     </p>
                 </div>
                 <Example />
-                <div className="fixed-bottom text-center text-white bg-gray-800 py-4">
-                    This is a fixed element at the bottom of the page.
-                </div>
+
             </div>
         </>
     );
