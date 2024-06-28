@@ -1,0 +1,22 @@
+.news-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.news-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.news-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.news-content p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "News Article 1",
+    "description": "Description for news article 1.",
+    "link": "#"
+  },
+  {
+    "title": "News Article 2",
+    "description": "Description for news article 2.",
+    "link": "#"
+  },
+  {
+    "title": "News Article 3",
+    "description": "Description for news article 3.",
+    "link": "#"
+  }
+]
