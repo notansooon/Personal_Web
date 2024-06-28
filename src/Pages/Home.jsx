@@ -4,7 +4,8 @@ import Sponsor from "../Components/Sponsor";
 import Example from "../Components/subscribe";
 import NewsSection from "../Components/news-section";
 import {FileUpload} from "../Components/forms";
-import NewsletterForm from "../Components/subscribe";
+import subscribe from "../Components/subscribe";
+import Subscribe from "../Components/subscribe";
 
 const Home = () => {
     return (
@@ -29,9 +30,11 @@ const Home = () => {
 
 
             </div>
-            <NewsletterForm classname="bg-transparent">
+            <Subscribe>
 
-            </NewsletterForm></>
+            </Subscribe>
+
+        </>
 
 
 
