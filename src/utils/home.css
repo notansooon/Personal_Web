@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 16px;
+}
+
+.iframe-container {
+    flex-shrink: 0;
+}
+
+.landing-page-header {
+    margin-top: 8px;
+}
+
+.text-container p {
+    color: #0369a1; /* Equivalent to text-sky-700 in Tailwind CSS */
+}
+
+
+.sponsor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.sponsor-svg {
+    max-width: 100%;
+    height: auto;
+}

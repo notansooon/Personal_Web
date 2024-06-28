@@ -1,50 +1,28 @@
-import { Link } from "react-router-dom";
-import React from 'react';
-import logo from "../Pages/dataismLogo.png";
-import '../utils/navbar.css'; // Import the custom CSS
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../utils/navbar.css';
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleNav = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
-        <div className="font-sans flex font-medium items-center justify-between mt-5 p-4 z-[100] w-full absolute bg-transparent pt-12 h-[90px]">
-            <Link to="/" className="flex items-center pl-5">
-                
-            </Link>
-            <div className="m-5">
-                <ul className="navbar-ul">
-                    <li className="navbar-li">
-                        <Link to="/" className="navbar-link">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="navbar-li">
-                        <Link to="/about" className="navbar-link">
-                            About
-                        </Link>
-                    </li>
-                    <li className="navbar-li">
-                        <Link to="/people" className="navbar-link">
-                            People
-                        </Link>
-                    </li>
-                    <li className="navbar-li">
-                        <Link to="/projects" className="navbar-link">
-                            Projects
-                        </Link>
-                    </li>
-                    <li className="navbar-li">
-                        <Link to="/contact" className="navbar-link">
-                            Contact
-                        </Link>
-                    </li>
-                    <li className="navbar-li">
-                        <Link to="/apply" className="navbar-link">
-                            Apply
-                        </Link>
-                    </li>
-                </ul>
+        <nav className="navbar-container">
+            <div className="logo">MyApp</div>
+            <div className="hamburger" onClick={toggleNav}>&#9776;</div>
+            <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+                <Link to="/">Home</Link>
+                <Link to="/About">About</Link>
+                <Link to="/services">People</Link>
+                <Link to="/Projects">Projects</Link>
+                <Link to="/Contact">Contact</Link>
             </div>
-        </div>
+        </nav>
     );
 };
 
 export default Navbar;
+
