@@ -1,7 +1,7 @@
 "use client";
 import { useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import { GoogleGeminiEffect } from "./UI/google-gemini-effect"; // Adjust the import path accordingly
+import { GoogleGeminiEffect } from "./google-gemini-effect"; // Adjust the import path accordingly
 
 export function GoogleGeminiEffectDemo() {
     const ref = useRef(null);

@@ -77,4 +77,29 @@ body {
 .navbar-link:hover::after {
     transform: scaleY(1);
     opacity: 1;
+
+.mobile-menu-button {
+     display: block;
+}
+
+.mobile-menu {
+     display: none;
+}
+
+    @media (max-width: 768px) {
+        .mobile-menu {
+            display: block;
+            width: 100%;
+            background-color: white;
+        }
+
+        .navbar-ul {
+            flex-direction: column;
+        }
+
+        .navbar-link {
+            display: block;
+            padding: 12px;
+        }
+    }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../profile.json';
+import data from '../assets/profile.json';
 import '../Pages/card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';

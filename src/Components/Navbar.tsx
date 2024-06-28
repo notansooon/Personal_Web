@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from 'react';
-import logo from "../Components/Pages/dataismLogo.png";
-import './utils/navbar.css'; // Import the custom CSS
+import logo from "../Pages/dataismLogo.png";
+import '../utils/navbar.css'; // Import the custom CSS
 
 const Navbar = () => {
     return (
