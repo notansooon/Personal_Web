@@ -1,5 +1,5 @@
 import React from 'react';
-const Banner = (imageUrl, height, children) => {
+export const Banner = (imageUrl, height, children) => {
     const BannerStyle = {
         height: `${height}px`,
         backgroundImage: `url(${imageUrl})`,
