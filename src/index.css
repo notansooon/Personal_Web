@@ -7,8 +7,7 @@
 
 body {
 
-    background: linear-gradient(to right, #a1e0ff, #beaefa);
-    filter: blur(10%);
+    background: White;
     font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 
 
@@ -28,6 +27,33 @@ body {
     font-size-adjust: inherit;
     color: rgba(0, 50, 75, 1);
 ;
+}
+
+.Banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height:450px
+}
+
+.BannerImage{
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    position: absolute;
+
+}
+
+.BannerText{
+    font-family: "DM Serif Display", serif;
+    text-align: center;
+    color: Black;
+    font-size: 70px;
+    font-weight: 900;
+    align-content: center;
+    line-height: 82px;
 }
 
 

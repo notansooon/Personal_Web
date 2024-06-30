@@ -1,5 +1,7 @@
 import React from 'react';
-export const Banner = (imageUrl, height, children) => {
+import image from './BannerImage.png'
+
+export const ApplyBanner = (imageUrl = image, height, children) => {
     const BannerStyle = {
         height: `${height}px`,
         backgroundImage: `url(${imageUrl})`,
@@ -15,5 +17,4 @@ export const Banner = (imageUrl, height, children) => {
             {children}
         </div>
     )
-
 }
