@@ -9,6 +9,7 @@ import People from "./Pages/People";
 
 import HttpStatusCodes from "./HttpStatusCodes/HttpStatusCode";
 import React from "react";
+import Footer from "./Components/Footer";
 
 
 
@@ -28,6 +29,7 @@ function App() {
               <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
 
           </Routes>
+          <Footer></Footer>
 
       </>
   );
