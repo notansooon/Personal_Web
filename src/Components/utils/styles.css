@@ -1,0 +1,14 @@
+
+.hexagon {
+  width: 250px;
+  height: 250px;
+  border-color: black;
+  background-color: #64C7CC;
+  position: relative;
+  rotate: -90deg;
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  overflow: hidden;
+  margin-top: 300px;
+}
+
+

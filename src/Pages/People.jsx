@@ -9,6 +9,7 @@ import Alex from '../ProfilePicture/alex.jpg'
 import Paul from '../ProfilePicture/paul.jpg'
 import Unknown from '../ProfilePicture/unknown.jpg'
 import Ben_f from '../ProfilePicture/ben_f.jpg'
+import Team from '../Components/Profile'
 
 
 
@@ -19,6 +20,14 @@ import Ben_f from '../ProfilePicture/ben_f.jpg'
 const People = () => {
     return (
         <>
+            <Team user="Ali Habibnia" pic={Ali} />
+            <div className='flex justify-center space-x-[10%]'>
+            <Team user="Ben Cummings" pic={Ben}/>
+            <Team />
+            <Team />
+            </div>
+            
+          
 
 
         </>

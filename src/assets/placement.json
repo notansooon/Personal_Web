@@ -1,0 +1,29 @@
+{
+    "placement": [
+      {
+        "name": "CapitalOne",
+        "image": "https://th.bing.com/th/id/OIP._SX4HdK0xvya86-Ot19oYQAAAA?rs=1&pid=ImgDetMain"
+      },
+      {
+        "name": "Citi",
+        "image": "https://th.bing.com/th/id/OIP.mfgKUs753RKGOEuz2YauOgHaHa?rs=1&pid=ImgDetMain"
+        
+      },
+      {
+        "name": "Boeing",
+        "image": "https://pnghq.com/wp-content/uploads/boeing-logo-png-transparent-svg-vector-93694-1536x457.png"
+      },
+      {
+        "name": "J.P.Morgan",
+        "image": "https://logodownload.org/wp-content/uploads/2021/04/jp-morgan-logo-0-2048x2048.png"
+                     
+      },
+      {
+        "name": "magnus",
+        "image": "Graduate Researcher"
+        
+                     
+      }
+      
+    ]
+  }
