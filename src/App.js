@@ -29,7 +29,7 @@ function App() {
               <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
 
           </Routes>
-          <Footer></Footer>
+          <Footer />
 
       </>
   );

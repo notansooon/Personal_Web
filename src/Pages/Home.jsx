@@ -6,6 +6,7 @@ import NewsSection from "../Components/news-section";
 import {FileUpload} from "../Components/forms";
 import subscribe from "../Components/subscribe";
 import Subscribe from "../Components/subscribe";
+import { Placement } from '../Components/Placement';
 
 const Home = () => {
     return (
@@ -30,9 +31,11 @@ const Home = () => {
 
 
             </div>
-            <Subscribe>
+            <Subscribe />
 
-            </Subscribe>
+            <Placement />
+
+          
 
         </>
 
