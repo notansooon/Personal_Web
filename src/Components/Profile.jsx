@@ -16,7 +16,6 @@ const Team = ({ user, pic }) => {
     return (
         <>
             <div>
-
                 <div className="relative flex justify-center ">
                     <div className="hexagon">
 
@@ -24,7 +23,6 @@ const Team = ({ user, pic }) => {
                         
                     </div>
                 </div>
-
                 <div className="flex flex-col items-center justify-center mt-1 text-black">
                         <h1
                             className="text-4xl justify-center font-bold">{user}</h1>
@@ -37,11 +35,8 @@ const Team = ({ user, pic }) => {
                             <FontAwesomeIcon icon={faEnvelope} size="2x"
                                                 className="hover:z-50 hover:scale-150 duration-500" />
                 </div>
-
             </div>
         </>
-
-        
     );
 }
 
