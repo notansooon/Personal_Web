@@ -107,12 +107,31 @@ export const Info = ({ user }) => {
 
             
             
-            <div className=' text-3xl ml-32 flex space-x-52'>
+            <div className=' text-3xl ml-[100px] flex space-x-80'>
                 <h1 className='font-bold mt-20'>Interests</h1>
                 
                 <h1 className=' font-bold mt-20'>Education</h1>
 
             </div>
+            
+            
+            
+            
+            <div className='text-2xl ml-[100px] flex space-x-24'>
+                <div>
+                    {profile.interest && profile.interest.map((interest, index) => (
+                        <p key={index}>• {interest}</p>
+                    ))}
+                </div>
+        </div>
+
+        
+        <div>
+                    {profile.education && profile.education.map((education, index) => (
+                        <p key={index}>• {education}</p>
+                    ))}
+                </div>
+           
             
         </div>
         </>

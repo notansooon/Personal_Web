@@ -23,7 +23,7 @@ const People = () => {
             <Team user="Ali Habibnia" pic={Ali} />
             <div className='flex justify-center space-x-[10%]'>
             <Team user="Ben Cummings" pic={Ben}/>
-            <Team />
+            <Team user="Gaurav Shah" pic={Gaurav}/>
             <Team />
             </div>
             
