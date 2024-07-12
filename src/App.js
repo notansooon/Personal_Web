@@ -4,12 +4,14 @@ import Home from './Pages/Home';
 import Apply from "./Pages/Apply";
 import About from './Pages/About.tsx';
 import Contact from './Pages/Contact';
+import ProfilePage from './Pages/ProfilePage.jsx';
 import { Route, Routes } from 'react-router-dom';
 import People from "./Pages/People";
 
 import HttpStatusCodes from "./HttpStatusCodes/HttpStatusCode";
 import React from "react";
 import Footer from "./Components/Footer";
+
 
 
 
@@ -26,7 +28,10 @@ function App() {
               <Route path="/Projects" element={<Projects/>}/>
               <Route path="/About" element={<About/>}/>
               <Route path='/Contact' element={<Contact/>}/>
+              <Route path='/ProfilePage/:name' element={<ProfilePage />}/>
+
               <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
+              <Route path='/*' element={<HttpStatusCodes/>}/>
 
           </Routes>
           <Footer />
