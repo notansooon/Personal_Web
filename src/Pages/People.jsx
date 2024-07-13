@@ -20,11 +20,12 @@ import Team from '../Components/Profile'
 const People = () => {
     return (
         <>
-            <Team user="Ali Habibnia" pic={Ali} />
+            <Team />
             <div className='flex justify-center space-x-[10%]'>
             <Team user="Ben Cummings" pic={Ben}/>
             <Team user="Gaurav Shah" pic={Gaurav}/>
-            <Team />
+            <Team user="Ali Habibnia" pic={Ali} />
+            
             </div>
             
           

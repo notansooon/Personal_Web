@@ -17,15 +17,10 @@ const ProfilePage = () => {
 
   return (
     <>
-      <div className='mb-[300px]'>
-        <div className=' ml-[-70%]  '>
+      <div className='mb-[300px] mt-36'>
+       
           <Profile user={name} />
-          
 
-        </div>
-        <div className='mt-[-30%] ml-[30%]'>
-          <Info user={name} />
-        </div>
 
       </div>
       
