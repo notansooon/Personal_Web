@@ -11,4 +11,11 @@
   margin-top: 300px;
 }
 
+.square {
 
+  width: 551px;
+  height: 445px;
+  border-color: black;
+  background-color: #64C7CC;
+
+}

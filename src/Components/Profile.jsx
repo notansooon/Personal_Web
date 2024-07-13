@@ -14,7 +14,7 @@ const Team = ({ user, pic }) => {
     const navigate = useNavigate();
 
     const profile = data.profile.find(profile => profile.name === user);
-    //const title = data.profile.find(profile => profile.name === user);
+    
 
     const clickHandler = (name) => {
        
