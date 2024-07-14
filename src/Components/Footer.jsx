@@ -9,7 +9,7 @@ import virginiaMap from '../assets/logos/Screenshot 2024-07-15 at 1.21.37 AM.s
 
 const Footer = () => {
     return (
-        <div className="max-w-[1240px] mx-auto py-8 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-black">
+        <div className="max-w-[100%] py-8 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-black">
             <div>
                 <h1 className='w-full text-3xl font-bold'>DLQF</h1>
                 <p className="py-4">ewfwefqeff fwfkwjw rjnfwfkj JWLnrwkf ernjreknfa;/ rjkefg ragkl vlrfgrwjfg gnkrwg jkw fkgv wslksnwf wjka gvrj</p>
