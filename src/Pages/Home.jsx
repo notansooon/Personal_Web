@@ -7,6 +7,7 @@ import {FileUpload} from "../Components/forms";
 import subscribe from "../Components/subscribe";
 import Subscribe from "../Components/subscribe";
 import { Placement } from '../Components/Placement';
+import BlogSlider from "../Components/BlogSlider";
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
 
                     <div className='mt-52 space-y-10' >
                     
-                    <NewsSection />
+                    <BlogSlider/>
                     <Subscribe />
 
 
