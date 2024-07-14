@@ -33,6 +33,7 @@ const Home = () => {
             </div>
             <Subscribe />
 
+
             <Placement />
 
           
