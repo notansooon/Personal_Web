@@ -30,24 +30,26 @@ const Home = () => {
 
                     </div>
 
-                </div>
-                <div>
-                    <h1>Stay Updated </h1>
+                    <div className='mt-52' >
+                    <h1 className='text-container font-bold text-2.5xl'>Stay Updated </h1>
                     <NewsSection />
                     <Subscribe />
 
 
+                    </div>
+
                 </div>
                 
-
                 
 
+                
+                
 
             </div>
            
 
-
             <Placement />
+            
 
           
 
