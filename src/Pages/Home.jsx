@@ -34,6 +34,7 @@ const Home = () => {
                 <div>
                     <h1>Stay Updated </h1>
                     <NewsSection />
+                    <Subscribe />
 
 
                 </div>
