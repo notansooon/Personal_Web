@@ -31,7 +31,7 @@ const Home = () => {
                     </div>
 
                     <div className='mt-52' >
-                    <h1 className='text-container font-bold text-2.5xl'>Stay Updated </h1>
+                    
                     <NewsSection />
                     <Subscribe />
 

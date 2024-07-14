@@ -4,6 +4,8 @@
 }
 
 .news-title {
+    display: flex;
+    justify-content: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #333;

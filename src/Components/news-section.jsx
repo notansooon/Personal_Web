@@ -14,7 +14,7 @@ const NewsSection = () => {
 
     return (
         <div className="news-section">
-            <h2 className="news-title">Latest News</h2>
+            <h2 className="news-title">Stay Updated On Our Latest News</h2>
             <ul className="news-list">
                 {newsData.map((news, index) => (
                     <li key={index} className="news-item">
