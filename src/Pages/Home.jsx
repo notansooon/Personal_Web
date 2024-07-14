@@ -8,30 +8,42 @@ import subscribe from "../Components/subscribe";
 import Subscribe from "../Components/subscribe";
 import { Placement } from '../Components/Placement';
 
+
 const Home = () => {
     return (
 
 
         <>
-            <div className="container">
-                <div className="content-container">
+            <div className="contain">
+                <div className='content-container' >
                     <div className="text-container">
                         <h1 className="landing-page-header">Dataism Laboratory for Quantitative Finance</h1>
-                        <p>
-                            Established in 2024, The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on
-                            advancing Quantitative Finance and Econometrics through cutting-edge technologies.
-                            Our mission centers on exploring AI/Machine Learning, Big Data Analytics, and High
-                            Performance
-                            Computing for transformative applications in this field.
-                        </p>
+                        <div className=' text-2xl mt-10 items-center justify-center flex flex-col'>
+                            <p>The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on advancing</p>
+                            <p>Quantitative Finance and Econometrics through cutting-edge technologies. Our </p>
+                            <p> mission centers on exploring AI/Machine Learning, Big Data Analytics, and High Performance</p>
+                            <p>Computing for transformative applications in this field.</p>
+
+
+                        </div>
+                        
 
                     </div>
 
                 </div>
+                <div>
+                    <h1>Stay Updated </h1>
+                    <NewsSection />
+
+
+                </div>
+                
+
+                
 
 
             </div>
-            <Subscribe />
+           
 
             <Placement />
 

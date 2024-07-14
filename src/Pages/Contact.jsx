@@ -8,14 +8,25 @@ function Contact() {
   return (
     <>
        <div className="ml-[100px] flex h-screen items-center  space-x-60 justify-center">
-      <div className="flex flex-col mt-[-300px]">
+      <div className="flex flex-col  mt-[-156px]">
+       
+       
         <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
+          
+          
           <div className="text-2xl ">
           <p className="">Need to get in touch with us? Fill out</p>
           <p>this form or directly email us at </p>
           <p>idk@gmail.com</p>
           </div>
-        <Link to="/Sponsor">Sponsor Us</Link>
+
+
+        
+          <Link  className='mt-24 font-bold text-4xl text-blue-500' to="/Sponsor">➤Become A Sponsor</Link>
+
+
+       
+        
 
 
 
