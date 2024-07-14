@@ -14,6 +14,7 @@ const Home = () => {
 
 
         <>
+            
             <div className="contain">
                 <div className='content-container' >
                     <div className="text-container">
@@ -30,7 +31,7 @@ const Home = () => {
 
                     </div>
 
-                    <div className='mt-52' >
+                    <div className='mt-52 space-y-10' >
                     
                     <NewsSection />
                     <Subscribe />
@@ -39,16 +40,32 @@ const Home = () => {
                     </div>
 
                 </div>
-                
-                
 
                 
                 
+                <Placement />
+                <div className='text-container text-2xl mt-10 items-center justify-center flex flex-col'>
+
+                
+                <p>At The Dataism Lab, we are dedicated to fostering and training our members to gain the </p>
+                <p>knowledge and skills necessary to excel in real-world corporate environments. By engaging with</p> 
+                <p>industry experts and participating in collaborative projects, our members are well-equipped to</p>
+                <p>translate their academic insights into practical solutions that drive innovation and growth in the</p>
+                <p>financial and econometric sectors.</p>
+
+
+
+                </div>
+                
+
+                
+               
 
             </div>
-           
 
-            <Placement />
+            
+
+            
             
 
           
