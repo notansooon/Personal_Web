@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const blogs = [
     {
         id: 1,
         title: 'Blog Title 1',
         excerpt: 'This is a short summary of the first blog post...',
-        image: 'path_to_image_1.jpg',
+        image: 'path_to_image_2.jpg',
         link: '/blog/1',
     },
     {
@@ -30,7 +31,7 @@ const BlogSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         customPaging: i => (
-            <div className="w-2 h-2 bg-gray-400 rounded-full cursor-pointer"></div>
+            <div className="w-2 h-2 bg-gray-400 rounded-full cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-125"></div>
         ),
         appendDots: dots => (
             <div>
@@ -44,14 +45,14 @@ const BlogSlider = () => {
         <div className="max-w-7xl mx-auto py-16 px-4">
             <Slider {...settings}>
                 {blogs.map((blog) => (
-                    <div key={blog.id} className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
-                        <div className="flex flex-col justify-center">
+                    <div key={blog.id} className="flex flex-col md:flex-row gap-8 p-4">
+                        <div className="flex flex-col justify-center md:w-1/2">
                             <h2 className="text-2xl font-bold mb-4">{blog.title}</h2>
                             <p className="mb-4">{blog.excerpt}</p>
                             <Link to={blog.link} className="text-blue-500 hover:underline">Read more</Link>
                         </div>
-                        <div>
-                            <img src={blog.image} alt={blog.title} className="w-full h-full object-cover" />
+                        <div className="md:w-1/2">
+                            <img src={blog.image} alt={blog.title} className="size-1/2" />
                         </div>
                     </div>
                 ))}
@@ -61,4 +62,6 @@ const BlogSlider = () => {
 };
 
 export default BlogSlider;
-;
+
+
+
