@@ -34,7 +34,7 @@ const Home = () => {
 
                     <div className='mt-52 space-y-10' >
                     
-                    <BlogSlider/>
+                    
                     <Subscribe />
 
 
