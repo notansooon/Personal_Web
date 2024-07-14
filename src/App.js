@@ -6,6 +6,7 @@ import About from './Pages/About.tsx';
 import Contact from './Pages/Contact';
 import ProfilePage from './Pages/ProfilePage.jsx';
 import SponsorPage from './Pages/SponsorPage.jsx';
+import ResearchPage from './Pages/Research.jsx';
 import { Route, Routes } from 'react-router-dom';
 import People from "./Pages/People";
 
@@ -31,6 +32,7 @@ function App() {
               <Route path='/Contact' element={<Contact/>}/>
               <Route path='/ProfilePage/:name' element={<ProfilePage />}/>
               <Route path='/Sponsor' element={<SponsorPage />}/>
+              <Route path='/Research' element={<ResearchPage/>}/>
               <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
               <Route path='/*' element={<HttpStatusCodes/>}/>
 
