@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 
-import { ApplyBanner } from '../Components/Banner';
+
 import image from '../Components/BannerImage.png'
 
 const Apply = () => {
