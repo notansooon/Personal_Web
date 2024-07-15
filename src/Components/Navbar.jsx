@@ -14,7 +14,7 @@ const Navbar = () => {
             <nav className="navbar-container w-full z-50 shadow-md flex justify-between items-center p-4">
                 <div className="logo">MyApp</div>
                 <div className="hamburger" onClick={toggleNav}>&#9776;</div>
-                <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+                <div className={`nav-links isOpen ? 'open' : ''}`}>
                     <Link to="/">Home</Link>
                     <Link to="/About">About</Link>
                     <Link to="/People">People</Link>

@@ -29,7 +29,7 @@ const Footer = () => {
                     <li className='py-2 text-sm'>People</li>
                     <li className='py-2 text-sm'>Contact</li>
                 </ul>
-                <img className='size-1/2' src={virginiaMap} alt=''/>
+
             </div>
         </div>
     )
