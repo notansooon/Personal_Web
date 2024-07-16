@@ -4,12 +4,7 @@ import { Profile, Info } from '../Components/Profile';
 
 import data from '../assets/data/profile.json';
 import '../Components/utils/styles.css';
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
+import {motion} from 'framer-motion'
 
 const ProfilePage = () => {
 
@@ -17,14 +12,21 @@ const ProfilePage = () => {
 
   return (
     <>
-      <div className='mb-[300px] mt-36'>
-       
-          <Profile user={name} />
+        <motion.div
+            initial={{opacity: 0, y: 20}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.5}}
+            className="contain"
+        >
+            <div className='mb-[300px] mt-36'>
+
+                <Profile user={name}/>
 
 
-      </div>
-      
-      
+            </div>
+
+        </motion.div>
+
 
     </>
   )

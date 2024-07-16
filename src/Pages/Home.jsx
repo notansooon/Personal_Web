@@ -6,6 +6,7 @@ import Subscribe from "../Components/Newsletter";
 import { Placement } from '../Components/Placement';
 import NewsWire from '../Components/NewsWire';
 import data from '../assets/data/home.json';
+import {motion} from 'framer-motion'
 
 const Home = () => {
     const [content, setContent] = useState(null);
@@ -23,31 +24,40 @@ const Home = () => {
 
     return (
         <>
-            <div className="contain">
-                <div className='content-container'>
-                    <div className="text-container">
-                        <h1 className="landing-page-header">{data.landingPageHeader}</h1>
-                        <div className='text-2xl mt-10 items-center justify-center flex flex-col border-b-4 pb-10'>
-                            {data.introParagraphs.map((paragraph, index) => (
-                                <p key={index}>{paragraph}</p>
-                            ))}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="contain"
+            >
+                <div className="contain">
+                    <div className='content-container'>
+                        <div className="text-container">
+                            <h1 className="landing-page-header">{data.landingPageHeader}</h1>
+                            <div className='text-2xl mt-10 items-center justify-center flex flex-col border-b-4 pb-10'>
+                                {data.introParagraphs.map((paragraph, index) => (
+                                    <p key={index}>{paragraph}</p>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className='mt-52 space-y-10'>
+                            <NewsWire/>
+                            <Subscribe/>
                         </div>
                     </div>
 
-                    <div className='mt-52 space-y-10'>
-                        <NewsWire />
-                        <Subscribe />
+                    <Placement/>
+
+                    <div className='text-container text-2xl mt-10 items-center justify-center flex flex-col'>
+                        {data.footerParagraphs.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                        ))}
                     </div>
                 </div>
 
-                <Placement />
+            </motion.div>
 
-                <div className='text-container text-2xl mt-10 items-center justify-center flex flex-col'>
-                    {data.footerParagraphs.map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                    ))}
-                </div>
-            </div>
         </>
     );
 };
