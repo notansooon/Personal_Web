@@ -1,36 +1,47 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../utils/navbar.css';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [nav, setNav] = useState(false);
 
-    const toggleNav = () => {
-        setIsOpen(!isOpen);
+    const handleNav = () => {
+        setNav(!nav);
     };
 
+    const navItems = [
+        { id: 1, text: 'Home', link: '/' },
+        { id: 2, text: 'About', link: '/about' },
+        { id: 3, text: 'Projects', link: '/projects' },
+        { id: 5, text: 'Contact', link: '/contact' },
+        { id: 6, text: 'Apply', link: '/apply' }
+    ];
+
     return (
-        <>
-
-            <div className=' absolute top-0'>
-                <nav className="navbar-container w-full z-50 shadow-md flex justify-between items-center p-4">
-                    <div className="logo">MyApp</div>
-                    <div className="hamburger" onClick={toggleNav}>&#9776;</div>
-                    <div className={`nav-links isOpen ? 'open' : ''}`}>
-                        <Link to="/">Home</Link>
-                        <Link to="/About">About</Link>
-                        <Link to="/People">People</Link>
-                        <Link to="/Projects">Projects</Link>
-                        <Link to="/Research">Research</Link>
-                        <Link to="/Contact">Contact</Link>
-                        <Link to="/Apply"> Apply</Link>
-
-                    </div>
-                </nav>
+        <div className='bg-transparent flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black'>
+            <h1 className='w-full text-3xl font-bold text-black'>REACT.</h1>
+            <ul className='hidden md:flex'>
+                {navItems.map(item => (
+                    <li key={item.id} className='p-4 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
+                        <Link to={item.link}>{item.text}</Link>
+                    </li>
+                ))}
+            </ul>
+            <div onClick={handleNav} className='block md:hidden'>
+                {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
             </div>
-        </>
+            <ul className={nav ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r text-white border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'}>
+                <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
+                {navItems.map(item => (
+                    <li key={item.id} className='p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600'>
+                        <Link to={item.link} onClick={() => setNav(false)}>{item.text}</Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 };
 
 export default Navbar;
+
 
