@@ -27,15 +27,15 @@ const People = () => {
                 </div>
                 <div className="flex justify-center mb-4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-40 justify-items-center">
-                        <Team user="Ben Cummings" pic={Ben} />
-                        <Team user="Gaurav Shah" pic={Gaurav} />
+                        <Team user="Raseen Nirjhar" pic={Raseen} />
+                        <Team user="Roshan Sanyal" pic={Roshan} />
                         <Team user="Gaurav Shah" pic={Gaurav} />
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
                     <Team user="Ben Cummings" pic={Ben} />
-                    <Team />
-                    <Team />
+                    <Team user="Ryan Bradley" pic={Ryan}/>
+                    <Team user="Alex Jaimes" pic={Alex}/>
                     <Team />
                 </div>
             </div>
