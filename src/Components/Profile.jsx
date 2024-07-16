@@ -65,7 +65,7 @@ export const Profile = ({ user, pic }) => {
         <>
            <div className="flex justify-center space-x-10">
          
-            <div className='mt-[-300px] relative'>
+            <div className='mt-[-150px] relative'>
                 <div className="flex justify-center">
                     <div className="hexagon">
                         <img className="object-fill h-[100%] w-[100%] rotate-90" src={pic} alt={`${user}'s profile pic`} />
@@ -133,27 +133,7 @@ export const Profile = ({ user, pic }) => {
                 
             </div>
 
-            {/*
-            <div className='text-3xl flex space-x-80'>
-                    <h1 className='font-bold mt-20'>Interests</h1>
-                    <h1 className='font-bold mt-20'>Education</h1>
-                </div>
-
-                <div className='text-2xl ml-[100px] flex space-x-24'>
-                    <div>
-                        {profile.interest && profile.interest.map((interest, index) => (
-                            <p key={index}>• {interest}</p>
-                        ))}
-                    </div>
-
-                    <div className=''>
-                        <div>
-                            {profile.education && profile.education.map((education, index) => (
-                                <p key={index}>• {education}</p>
-                            ))}
-                        </div>
-                    </div>
-                </div>*/}
+            
         </div>
         </>
     );
