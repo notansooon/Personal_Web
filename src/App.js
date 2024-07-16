@@ -20,7 +20,6 @@ import Footer from "./Components/Footer";
 function App() {
   return (
       <>
-          <div className="flex flex-col min-h-screen">
               <Navbar className="p-16"/>
 
               <Routes>
@@ -38,11 +37,6 @@ function App() {
 
               </Routes>
               <Footer />
-
-          </div>
-
-
-
       </>
   );
 }
