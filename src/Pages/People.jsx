@@ -21,21 +21,22 @@ const People = () => {
     return (
         <>
             <div className="container mx-auto p-4">
+                <h1 className='flex justify-center font-bold text-4xl mt-20'>Meet The Team</h1>
                 <div className="flex justify-center mb-4">
-                <Team user="Ali Habibnia" pic={Ali} />
+                    <Team user="Ali Habibnia" pic={Ali} />
                 </div>
                 <div className="flex justify-center mb-4">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-40 justify-items-center">
                         <Team user="Ben Cummings" pic={Ben} />
                         <Team user="Gaurav Shah" pic={Gaurav} />
                         <Team user="Gaurav Shah" pic={Gaurav} />
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
-                <Team user="Ben Cummings" pic={Ben} />
-                <Team />
-                <Team />
-                <Team />
+                    <Team user="Ben Cummings" pic={Ben} />
+                    <Team />
+                    <Team />
+                    <Team />
                 </div>
             </div>
             

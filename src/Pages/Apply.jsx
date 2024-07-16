@@ -20,7 +20,7 @@ const jobs = {
 };
 
 const JobSection = ({ sector, jobs }) => (
-    <div className="bg-white shadow-lg rounded-lg p-6 mb-8">
+    <div className="bg-white bg-opacity-35 shadow-lg rounded-lg p-6 mb-8">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">{sector}</h2>
         <ul>
             {jobs.map((job, index) => (
@@ -44,7 +44,7 @@ const JobSection = ({ sector, jobs }) => (
 
 const ApplicationPage = () => {
     return (
-        <div className="bg-gray-100 min-h-screen py-12">
+        <div className="min-h-screen py-12">
             <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-center">
                     Job Postings
