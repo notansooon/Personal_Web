@@ -4,7 +4,6 @@ import Sponsor from "../Components/Sponsor";
 import {FileUpload} from "../Components/forms";
 import Subscribe from "../Components/Newsletter";
 import { Placement } from '../Components/Placement';
-import BlogSlider from "../Components/BlogSlider";
 import NewsWire from '../Components/NewsWire'
 
 

@@ -20,24 +20,28 @@ import Footer from "./Components/Footer";
 function App() {
   return (
       <>
+          <div className="flex flex-col min-h-screen">
+              <Navbar className="p-16"/>
 
-          <Navbar className="p-16"/>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+                  <Route path="/People" element={<People/>}/>
+                  <Route path="/Apply" element={<Apply/>}/>
+                  <Route path="/Projects" element={<Projects/>}/>
+                  <Route path="/About" element={<About/>}/>
+                  <Route path='/Contact' element={<Contact/>}/>
+                  <Route path='/ProfilePage/:name' element={<ProfilePage />}/>
+                  <Route path='/Sponsor' element={<SponsorPage />}/>
+                  <Route path='/Research' element={<ResearchPage/>}/>
+                  <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
+                  <Route path='/*' element={<HttpStatusCodes/>}/>
 
-          <Routes>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/People" element={<People/>}/>
-              <Route path="/Apply" element={<Apply/>}/>
-              <Route path="/Projects" element={<Projects/>}/>
-              <Route path="/About" element={<About/>}/>
-              <Route path='/Contact' element={<Contact/>}/>
-              <Route path='/ProfilePage/:name' element={<ProfilePage />}/>
-              <Route path='/Sponsor' element={<SponsorPage />}/>
-              <Route path='/Research' element={<ResearchPage/>}/>
-              <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
-              <Route path='/*' element={<HttpStatusCodes/>}/>
+              </Routes>
+              <Footer />
 
-          </Routes>
-          <Footer />
+          </div>
+
+
 
       </>
   );

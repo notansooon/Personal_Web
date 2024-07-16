@@ -5,7 +5,7 @@ import {
     FaWhatsapp,
     FaEnvelope
 } from 'react-icons/fa'
-import virginiaMap from '../assets/logos/Screenshot 2024-07-15 at 1.21.37 AM.svg'
+import Button from './/IconButton'
 
 const Footer = () => {
     return (
