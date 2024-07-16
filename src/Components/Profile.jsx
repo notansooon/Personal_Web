@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../assets/profile.json';
+import data from '../assets/data/profile.json';
 
 import '../Components/utils/styles.css';
 import { useNavigate } from 'react-router-dom';

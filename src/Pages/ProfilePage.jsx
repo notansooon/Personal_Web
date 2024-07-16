@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Profile, Info } from '../Components/Profile';
 
-import data from '../assets/profile.json';
+import data from '../assets/data/profile.json';
 import '../Components/utils/styles.css';
 
 
