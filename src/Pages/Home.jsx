@@ -17,7 +17,7 @@ const Home = () => {
                 <div className='content-container' >
                     <div className="text-container">
                         <h1 className="landing-page-header">Dataism Laboratory for Quantitative Finance</h1>
-                        <div className=' text-2xl mt-10 items-center justify-center flex flex-col'>
+                        <div className=' text-2xl mt-10 items-center justify-center flex flex-col border-b-4 pb-10'>
                             <p>The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on advancing</p>
                             <p>Quantitative Finance and Econometrics through cutting-edge technologies. Our </p>
                             <p> mission centers on exploring AI/Machine Learning, Big Data Analytics, and High Performance</p>
