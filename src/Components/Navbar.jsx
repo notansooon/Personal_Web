@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-            
+
             <div className=' absolute top-0'>
                 <nav className="navbar-container w-full z-50 shadow-md flex justify-between items-center p-4">
                     <div className="logo">MyApp</div>
