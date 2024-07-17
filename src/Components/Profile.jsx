@@ -19,7 +19,7 @@ const Team = ({ user, pic }) => {
 
     return (
         <div>
-            <div className="relative flex justify-center" onClick={() => clickHandler(profile.name)}>
+            <div className="relative flex justify-center cursor-pointer" onClick={() => clickHandler(profile.name)}>
                 <div className="hexagon">
                     <img className="object-fill h-[100%] w-[100%] rotate-90" src={pic} alt={`${user}'s profile pic`} />
                 </div>
@@ -65,7 +65,7 @@ export const Profile = ({ user, pic }) => {
             </div>
 
             <div className="bg-white shadow-lg rounded-lg p-6 mb-8 h-[100%] bg-opacity-10">
-                <div className='max-w-3xl mx-auto min-h-10'>
+                <div className='max-w-3xl mx-auto min-h-96 '>
                     <p className="text-base lg:text-lg tracking-wider leading-relaxed">{profile.About}</p>
 
                     <div className='flex justify-around h-[100%] mt-10'>
