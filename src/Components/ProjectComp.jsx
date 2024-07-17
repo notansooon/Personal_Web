@@ -4,12 +4,15 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const ProjectComp = ({ status, title, description, roles }) => {
     return (
-        <div className='border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white'>
+        <div className='border rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow border-blue-400 duration-300 bg-white'>
             <h2 className='text-2xl font-semibold mb-4'>{title}</h2>
             <p className='text-gray-700 mb-4'>{description}</p>
+
             <p className={`text-sm ${status === 'ongoing' ? 'text-green-500' : 'text-gray-500'}`}>
                 {status === 'ongoing' ? 'Ongoing Project' : 'Completed Project'}
             </p>
+           
+           
             {status === 'ongoing' && roles && (
                 <div className='mt-4'>
                     <p className='text-gray-700 mb-2'>Roles Needed:</p>
