@@ -19,3 +19,21 @@
   background-color: #64C7CC;
 
 }
+
+
+.text-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden-text {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-out, opacity 0.5s ease-out;
+}
+
+.text-container:hover .hidden-text {
+  max-height: 500px;
+  opacity: 1;
+}

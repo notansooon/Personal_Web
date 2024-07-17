@@ -1,9 +1,10 @@
 import React from 'react';
  // Import any additional CSS if needed
+ import '../Components/utils/styles.css'
 
 const About = () => {
     return (
-        <div className="bg-gray-100 py-10">
+        <div className=" py-10">
             <div className="container mx-auto px-4 lg:px-20">
                 {/* Hero Section */}
                 <section className="relative text-center mb-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/path/to/hero-image.jpg)' }}>
@@ -34,24 +35,38 @@ const About = () => {
                     <h2 className="text-4xl font-semibold text-gray-900">Research Focus</h2>
                     <p className="mt-4 text-lg text-gray-700">Explore our diverse areas of research</p>
                     <div className="grid lg:grid-cols-3 gap-10 mt-10">
+                       
+                       
+                       
+                       
+                       
                         <div className="relative flex items-end bg-cover bg-center bg-no-repeat h-80" style={{ backgroundImage: 'url(/path/to/research-ai.jpg)' }}>
-                            <div className="bg-black bg-opacity-50 p-4 w-full">
-                                <h3 className="text-2xl font-semibold text-white">Artificial Intelligence</h3>
-                                <p className="mt-2 text-gray-200">Advancing AI technologies to solve complex problems and improve human lives.</p>
+                            <div className="bg-black bg-opacity-50 p-4 w-full text-container">
+                                <h3 className="text-2xl font-semibold text-white">Algorithmic Development </h3>
+                                <p className="mt-2 text-gray-200 hidden-text">Our team designs, implements, and refines AI and ML algorithms tailored for various financial applications, including trading strategies, risk management, and market analysis. Our mission is to revolutionize the financial industry by creating cutting-edge algorithmic solutions that enable more accurate predictions, smarter trading strategies, and enhanced financial decision-making processes. We aim to bridge the gap between theoretical research and practical applications, ensuring our algorithms are both scientifically robust and practically effective.
+                                </p>
                             </div>
                         </div>
+
+
                         <div className="relative flex items-end bg-cover bg-center bg-no-repeat h-80" style={{ backgroundImage: 'url(/path/to/research-biotech.jpg)' }}>
-                            <div className="bg-black bg-opacity-50 p-4 w-full">
-                                <h3 className="text-2xl font-semibold text-white">Biotechnology</h3>
-                                <p className="mt-2 text-gray-200">Innovating in biotechnology to drive medical and environmental breakthroughs.</p>
+                            <div className="bg-black bg-opacity-50 p-4 w-full text-container">
+                                <h3 className="text-2xl font-semibold text-white">Client Services</h3>
+                                <p className="mt-2 text-gray-200 hidden-text">We create tailored trading algorithms and financial models that align with the specific needs and strategies of each investment bank, ensuring optimal performance and competitive advantage.
+                                    Our Client Services Sector at DLQF is dedicated to providing innovative and tailored solutions for investment banks. We specialize in designing, developing, and implementing cutting-edge technologies that enhance the operational efficiency, strategic decision-making, and overall performance of our clients in the financial industry.
+                                </p>
                             </div>
                         </div>
                         <div className="relative flex items-end bg-cover bg-center bg-no-repeat h-80" style={{ backgroundImage: 'url(/path/to/research-quantum.jpg)' }}>
-                            <div className="bg-black bg-opacity-50 p-4 w-full">
-                                <h3 className="text-2xl font-semibold text-white">Quantum Computing</h3>
-                                <p className="mt-2 text-gray-200">Exploring quantum computing to revolutionize computing power and efficiency.</p>
+                            <div className="bg-black bg-opacity-50 p-4 w-full text-container">
+                                <h3 className="text-2xl font-semibold text-white">Academic Research</h3>
+                                <p className="mt-2 text-gray-200 hidden-text">Our team conducts pioneering research on a wide range of topics within quantitative finance, including asset pricing, risk management, market microstructure, financial econometrics, and algorithmic trading. Our Academic Research Sector at DLQF is a vibrant hub of innovation and intellectual rigor, dedicated to exploring a myriad of topics within the field of quantitative finance. Comprising a dedicated team of graduate students and faculty members, our sector is committed to advancing the frontiers of financial research through cutting-edge studies and interdisciplinary collaboration.</p>
                             </div>
                         </div>
+
+
+
+
                     </div>
                 </section>
 
