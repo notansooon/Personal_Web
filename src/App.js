@@ -2,7 +2,7 @@ import  Navbar from './Components/Navbar';
 import Projects from './Pages/Projects';
 import Home from './Pages/Home';
 import Apply from "./Pages/Apply";
-import About from './Pages/About.tsx';
+import About from './Pages/About.jsx';
 import Contact from './Pages/Contact';
 import ProfilePage from './Pages/ProfilePage.jsx';
 import SponsorPage from './Pages/SponsorPage.jsx';
@@ -36,7 +36,9 @@ function App() {
                   <Route path='/*' element={<HttpStatusCodes/>}/>
 
               </Routes>
-              <Footer />
+              <Footer className='flex-end'>
+
+              </Footer>
       </>
   );
 }
