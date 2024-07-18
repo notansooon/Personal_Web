@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import {AnimatePresence, motion} from "framer-motion";
+import IconButton from "../Components/IconButton";
+import {FaFacebook, FaLinkedin, FaWeibo, FaWhatsapp} from "react-icons/fa";
+import {FaXTwitter} from "react-icons/fa6";
 
 
 
@@ -40,6 +43,7 @@ const ContactUs = () => {
             <Modal isVisible={!!selectedInquiry} onClose={handleClose}>
                 <ContactForm onClose={handleClose} />
             </Modal>
+            <SocialMedia/>
         </motion.div>
     );
 };
@@ -140,6 +144,55 @@ const ContactForm = ({ onClose }) => {
     );
 };
 
+const SocialMedia = () => {
+    return (
+        <div className='container mx-auto py-4'>
+            <div className='text-center mb-4'>
+                <h4 className='text-lg font-semibold'>
+                    Follow Us On
+                </h4>
+            </div>
+            <div className="flex justify-center items-center gap-4">
+                <IconButton
+                    color='bg-blue-500'
+                    text='LinkedIn'
+                    className='bg-blue'
+                >
+                    <FaLinkedin className='text-white w-6 h-6' />
+                </IconButton>
+
+                <IconButton
+                    color='bg-green-600'
+                    text='Whatsapp'
+
+                >
+                    <FaWhatsapp className='text-white w-6 h-6' />
+                </IconButton>
+
+                <IconButton
+                    color='bg-blue-800'
+                    text='Facebook'
+                >
+                    <FaFacebook className='text-white w-6 h-6' />
+                </IconButton>
+
+                <IconButton
+                    color='bg-black'
+                    text='Twiiter'
+                >
+                    <FaXTwitter className='text-white w-6 h-6' />
+                </IconButton>
+
+                <IconButton
+                    color='bg-red-600'
+                    text='Weibo'
+                >
+                    <FaWeibo className='text-white w-6 h-6' />
+                </IconButton>
+            </div>
+        </div>
+    );
+}
 
 const Modal = ({ isVisible, onClose, children }) => {
     return (
@@ -164,8 +217,6 @@ const Modal = ({ isVisible, onClose, children }) => {
         </AnimatePresence>
     );
 };
-
-
 
 
 export default ContactUs;
