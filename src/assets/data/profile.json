@@ -1,140 +1,125 @@
 {
-    "profile": [
-      {
-        "name": "Ben Cummings",
-        "interest": ["Quantitative Finance", "Algorithmic Trading", "Trend Analysis"],
-        "Title": "Derivative Researcher",
-        "Sector": ["Vice Presidents, Project Managers"],
-        "role": "VP Of Client Services",
-        "education": ["BS in Finance, 2025", "AS in Science, 2023"],
-        "About": "Benjamin Cummings is studying financial tech within the college of science at Virginia Tech. His focus extends across various financial domains, encompassing analysis of stock market trends, handling of corporate finance, and application of regression analysis methods."
-      },
-      {
-        "name": "Ali Habibnia",
-        "interest": ["Big Data Econometrics", "Statistical Machine Learning", "Deep Learning", 
-          "Nonlinear Econometric Analysis", "Forecasting", "Computational Finance", "Quantum Machine Learning", "Systemic Risk"
-        ],
-        "sector": "Principal Investigator",
-        "Title": "Assistant Professor of Economics",
-        "education": ["MS in Economics, 2010",
-          "BS in Economics, 2007"
-        ],
-        "About": [
-          "I am an Assistant Professor in the Department of Economics and the Computational Modeling and Data Analytics, College of Science, Virginia Tech.\n",
-          "My research focuses on the intersection of statistical machine learning and big data econometrics, with a particular interest in high-dimensional nonlinear time-series analysis", 
-          "and their applications in macroeconomic/financial forecasting and estimation of big financial networks.\n",
-          "I also work occasionally as a consultant for financial firms and governmental organizations for all businesses related to pattern recognition and knowledge discovery,",
-          "especially computer modeling and forecasting. I have been in the industry for a few years, working as a trader and portfolio strategist and developing different algorithmic trading strategies."
-        ]
-
-        
-      },
-      {
-        "name": "Roshan Sanyal",
-        "interest": ["Quantitative Finance", "Algorithmic Trading", "Data Analysis"],
-        "Title": "Graduate Researcher",
-        "sector": ["Vice Presidents, Project Managers"],
-        "role": "VP Of Client Services",
-        "education": ["BS in Computational Modeling and Data Analytics, 2023"],
-        "About": [
-          "Roshan Sanyal graduated from Virginia Tech in 2023 with a degree in Computational Modeling and Data Analytics.",
-          "His experience lies in statistical learning, AI/ML, and data analysis.",
-          "He is currently working at The Boeing Company as a Lean Engineering Project Manager."
-        ]
-      },
-      {
-        "name": "Gaurav Shah",
-        "interest": ["Policy Analysis", "Machine Learning", "Treatment Effect Analysis"],
-        "Title": "Graduate Researcher",
-        "sector": ["Vice Presidents, Project Managers"],
-        "education": ["MS in Computer Science, 2024", "BS in CMDA and Economics, 2023"],
-        "About": [
-          "Gaurav Shah graduated from Virginia Tech in 2023 with a bachelor’s degree in Computational Modeling and Data Analytics (CMDA) and Economics.", 
-          "Gaurav is currently pursuing his Master’s in Computer Science from Virginia Tech. His current research is focused on causal inference,",
-          "more specifically treatment effect analysis and in trying to use advanced machine learning techniques to obtain estimates on the effects", 
-          "of regulations in the banking sector. After graduating, he aims to utilize his experience to contribute to strategic decision-making,", 
-          "particularly in the domain of financial regulation."
-        ]
-                     
-      },
-      {
-        "name": "Forrest Meng",
-
-      },
-      {
-        "name": "Raseen Nirjhar",
-        "interest": ["Big Data in Econometrics", "Deep Learning", "Machine Learning", "Social Computing"],
-        "Title": "Graduate Researcher",
-        "education": ["MS in Computer Science, 2024", "BS in Computer Science, 2023"],
-        "About": [
-          "Raseen Nirjhar is a Master’s student in the Computer Science department at Virginia Tech.", 
-          "His research is in using advanced machine learning techniques to Forecast and Model Financial Limit Order Book data.",
-          "His thesis is in using advanced Machine Learning Techniques (particularly Deep Learning) to forecast Limit Order Book data."
-        ]
-      },
-      {
-        "name": "Ryan Bradley",
-        "interest": ["Secure Computing", "Blockchain Technology", "Algorithmic Trading"],
-        "Title": "Assistant Researcher",
-        "education": ["BS in Computer Science, 2026"],
-        "About": [
-          "Ryan Bradley is a Sophomore pursuing Computer Science within the College of Engineering.", 
-          "His experience lies in market sentiment analysis and algorithmic trading strategies."
-        ]
-        
-      },
-      {
-        "name": "Alex Jaimes",
-        "interest": ["High Performance Computing", "Statistical Inference and Learning", "Numerical Analysis"],
-        "Title": "Statistics Researcher",
-        "education": ["BS in Computational Modeling and Data Analytics, 2024", "MEng in Computer Science, 2025"],
-        "About": [
-          "Alex Jaimes is a senior in the CMDA program at VT. His experience lies in high performance computing,",
-          "statistical learning and inference, and numerical analysis. He currently leads the CMDA Computing Consultants."
-        ]
-
-      },
-      {
-        "name": "Paul Chau",
-        "interest": ["Economic Forecasting", "Corporate Finance", "Quantitative Finance", "Macroeconomic Models"],
-        "Title": "Assistant Researcher",
-        "education": ["BS in Finance, 2025"],
-        "About": [
-          "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.", 
-          "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
-        ]
-        
-      },
-      {
-        "name": "Ben Facciani",
-        "interest": ["Investment management", "Blockchain technology", "Quantitative investing", "Market analysis"],
-        "Title": "Assistant Researcher",
-        "sector": "Academic Research",
-        "role": "Undergraduate Research Assistant",
-        "education": ["BS in Computational Modeling and Data Analytics, 2027"],
-        "About": [
-          "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.", 
-          "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
-        ]
-        
-      },
-      {
-        "name": "William Etzler",
-        "interest": ["Green Finance", "Big Data Analytics", "Geospacial Technology"],
-        "Title": "Assistant Researcher",
-        "education": ["BS in Economics, 2024"],
-        "About": [
-          "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.", 
-          "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
-        ]
-        
-      },
-
-      {
-        "name": "Alexander Ardiaz",
-        "Title": "Undergraduate Researcher",
-        "sector": "Academic Research"
-
-      }
-    ]
+  "profile": [
+    {
+      "name": "Ben Cummings",
+      "interest": ["Quantitative Finance", "Algorithmic Trading", "Trend Analysis"],
+      "title": "Derivative Researcher",
+      "sector": ["Vice Presidents, Project Managers"],
+      "role": "VP Of Client Services",
+      "education": ["BS in Finance, 2025", "AS in Science, 2023"],
+      "about": "Benjamin Cummings is studying financial tech within the college of science at Virginia Tech. His focus extends across various financial domains, encompassing analysis of stock market trends, handling of corporate finance, and application of regression analysis methods."
+    },
+    {
+      "name": "Ali Habibnia",
+      "interest": ["Big Data Econometrics", "Statistical Machine Learning", "Deep Learning", "Nonlinear Econometric Analysis", "Forecasting", "Computational Finance", "Quantum Machine Learning", "Systemic Risk"],
+      "sector": "Principal Investigator",
+      "title": "Assistant Professor of Economics",
+      "education": ["MS in Economics, 2010", "BS in Economics, 2007"],
+      "about": [
+        "I am an Assistant Professor in the Department of Economics and the Computational Modeling and Data Analytics, College of Science, Virginia Tech.",
+        "My research focuses on the intersection of statistical machine learning and big data econometrics, with a particular interest in high-dimensional nonlinear time-series analysis",
+        "and their applications in macroeconomic/financial forecasting and estimation of big financial networks.",
+        "I also work occasionally as a consultant for financial firms and governmental organizations for all businesses related to pattern recognition and knowledge discovery,",
+        "especially computer modeling and forecasting. I have been in the industry for a few years, working as a trader and portfolio strategist and developing different algorithmic trading strategies."
+      ]
+    },
+    {
+      "name": "Roshan Sanyal",
+      "interest": ["Quantitative Finance", "Algorithmic Trading", "Data Analysis"],
+      "title": "Graduate Researcher",
+      "sector": ["Vice Presidents, Project Managers"],
+      "role": "VP Of Client Services",
+      "education": ["BS in Computational Modeling and Data Analytics, 2023"],
+      "about": [
+        "Roshan Sanyal graduated from Virginia Tech in 2023 with a degree in Computational Modeling and Data Analytics.",
+        "His experience lies in statistical learning, AI/ML, and data analysis.",
+        "He is currently working at The Boeing Company as a Lean Engineering Project Manager."
+      ]
+    },
+    {
+      "name": "Gaurav Shah",
+      "interest": ["Policy Analysis", "Machine Learning", "Treatment Effect Analysis"],
+      "title": "Graduate Researcher",
+      "sector": ["Vice Presidents, Project Managers"],
+      "education": ["MS in Computer Science, 2024", "BS in CMDA and Economics, 2023"],
+      "about": [
+        "Gaurav Shah graduated from Virginia Tech in 2023 with a bachelor’s degree in Computational Modeling and Data Analytics (CMDA) and Economics.",
+        "Gaurav is currently pursuing his Master’s in Computer Science from Virginia Tech. His current research is focused on causal inference,",
+        "more specifically treatment effect analysis and in trying to use advanced machine learning techniques to obtain estimates on the effects",
+        "of regulations in the banking sector. After graduating, he aims to utilize his experience to contribute to strategic decision-making,",
+        "particularly in the domain of financial regulation."
+      ]
+    },
+    {
+      "name": "Forrest Meng"
+    },
+    {
+      "name": "Raseen Nirjhar",
+      "interest": ["Big Data in Econometrics", "Deep Learning", "Machine Learning", "Social Computing"],
+      "title": "Graduate Researcher",
+      "education": ["MS in Computer Science, 2024", "BS in Computer Science, 2023"],
+      "about": [
+        "Raseen Nirjhar is a Master’s student in the Computer Science department at Virginia Tech.",
+        "His research is in using advanced machine learning techniques to Forecast and Model Financial Limit Order Book data.",
+        "His thesis is in using advanced Machine Learning Techniques (particularly Deep Learning) to forecast Limit Order Book data."
+      ]
+    },
+    {
+      "name": "Ryan Bradley",
+      "interest": ["Secure Computing", "Blockchain Technology", "Algorithmic Trading"],
+      "title": "Assistant Researcher",
+      "education": ["BS in Computer Science, 2026"],
+      "about": [
+        "Ryan Bradley is a Sophomore pursuing Computer Science within the College of Engineering.",
+        "His experience lies in market sentiment analysis and algorithmic trading strategies."
+      ]
+    },
+    {
+      "name": "Alex Jaimes",
+      "interest": ["High Performance Computing", "Statistical Inference and Learning", "Numerical Analysis"],
+      "title": "Statistics Researcher",
+      "education": ["BS in Computational Modeling and Data Analytics, 2024", "MEng in Computer Science, 2025"],
+      "about": [
+        "Alex Jaimes is a senior in the CMDA program at VT. His experience lies in high performance computing,",
+        "statistical learning and inference, and numerical analysis. He currently leads the CMDA Computing Consultants."
+      ]
+    },
+    {
+      "name": "Paul Chau",
+      "interest": ["Economic Forecasting", "Corporate Finance", "Quantitative Finance", "Macroeconomic Models"],
+      "title": "Assistant Researcher",
+      "education": ["BS in Finance, 2025"],
+      "about": [
+        "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.",
+        "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
+      ]
+    },
+    {
+      "name": "Ben Facciani",
+      "interest": ["Investment management", "Blockchain technology", "Quantitative investing", "Market analysis"],
+      "title": "Assistant Researcher",
+      "sector": "Academic Research",
+      "role": "Undergraduate Research Assistant",
+      "education": ["BS in Computational Modeling and Data Analytics, 2027"],
+      "about": [
+        "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.",
+        "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
+      ]
+    },
+    {
+      "name": "William Etzler",
+      "interest": ["Green Finance", "Big Data Analytics", "Geospacial Technology"],
+      "title": "Assistant Researcher",
+      "education": ["BS in Economics, 2024"],
+      "about": [
+        "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.",
+        "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
+      ]
+    },
+    {
+      "name": "Alexander Ardiaz",
+      "title": "Undergraduate Researcher",
+      "sector": "Academic Research"
+    }
+  ]
 }
