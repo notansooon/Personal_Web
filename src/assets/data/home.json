@@ -1,10 +1,16 @@
 {
-  "landingPageHeader": "Dataism Laboratory for Quantitative Finance",
+  "landingPageHeader": "Pioneering Excellence at Dataism Laboratory",
   "introParagraphs": [
     "The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on advancing",
     "Quantitative Finance and Econometrics through cutting-edge technologies. Our",
     "mission centers on exploring AI/Machine Learning, Big Data Analytics, and High Performance",
     "Computing for transformative applications in this field."
+  ],
+  "NewsPageHeader": "A Journey Beyond Boundaries",
+  "NewsParagraphs": [
+    "Embark on a transformative journey with Dataism Lab,",
+    "Stay informed with our newsletter for the latest updates and insights,",
+    "ensuring you're at the forefront of groundbreaking discoveries and advancements in AI, Machine Learning, and Big Data Analytics."
   ],
   "footerParagraphs": [
     "At The Dataism Lab, we are dedicated to fostering and training our members to gain the",

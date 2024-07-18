@@ -5,8 +5,9 @@ import React from 'react';
 const About = () => {
     return (
         <div className=" py-10">
-            <div className="container mx-auto px-4 lg:px-20">
+            <div className="mx-auto px-4 lg:px-20">
                 {/* Hero Section */}
+                
                 <section className="relative text-center mb-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/path/to/hero-image.jpg)' }}>
                     <div className="bg-black bg-opacity-50 p-10">
                         <h1 className="text-5xl lg:text-7xl font-bold text-white">About Our Research Lab</h1>
@@ -15,26 +16,35 @@ const About = () => {
                 </section>
 
                 {/* Mission Section */}
-                <section className="relative mb-16 flex flex-col lg:flex-row items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/path/to/mission-image.jpg)' }}>
-                    <div className="bg-white bg-opacity-75 p-10 lg:w-1/2">
-                        <h2 className="text-4xl font-semibold text-gray-800">Our Mission</h2>
-                        <p className="mt-4 text-gray-600">Our mission is to conduct pioneering research that advances scientific understanding and technological innovation. We strive to create a collaborative environment that fosters creativity and excellence.</p>
-                    </div>
-                </section>
+                <div className="relative mb-16 flex  flex-col lg:flex-row  bg-cover bg-center bg-no-repeat bg-transparent bg-opacity-75" style={{ backgroundImage: 'url(/path/to/mission-image.jpg)' }}>
+                    <div className=" p-14 lg:w-3/4">
+                        <h2 className="text-4xl font-semibold p-5   text-gray-800">Who we Are</h2>
+                        <div className="mt-4 text-2xl text-gray-600">
+                        <p >Founded in 2024, The Dataism Lab at Virginia Tech stands as an interdisciplinary powerhouse dedicated to pushing the boundaries of Quantitative Finance and Econometrics. At our core, we specialize in harnessing cutting-edge technologies such as AI/Machine Learning, Big Data Analytics, and High Performance Computing. Our mission revolves around leveraging these innovations to drive transformative applications and shape the future of financial sciences.
 
-                {/* Vision Section */}
-                <section className="relative mb-16 flex flex-col lg:flex-row items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/path/to/vision-image.jpg)' }}>
-                    <div className="bg-white bg-opacity-75 p-10 lg:w-1/2 lg:ml-auto">
-                        <h2 className="text-4xl font-semibold text-gray-800">Our Vision</h2>
-                        <p className="mt-4 text-gray-600">Our vision is to be a global leader in research and development, contributing to societal advancement through innovative solutions and knowledge dissemination.</p>
+
+
+
+
+
+</p>
+
+                        </div>
                     </div>
-                </section>
+
+
+                    
+                </div>
+
+
 
                 {/* Research Focus Section */}
                 <section className="text-center mb-16">
-                    <h2 className="text-4xl font-semibold text-gray-900">Research Focus</h2>
+                    <h2 className="text-4xl font-semibold text-gray-900">Sectors</h2>
                     <p className="mt-4 text-lg text-gray-700">Explore our diverse areas of research</p>
-                    <div className="grid lg:grid-cols-3 gap-10 mt-10">
+                    
+                    <div className="grid lg:grid-cols-3 gap-10 ">
+                        
                        
                        
                        
@@ -69,6 +79,16 @@ const About = () => {
 
                     </div>
                 </section>
+
+                {/* Vision Section */}
+                <section className="relative mb-16 flex flex-col lg:flex-row items-center bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/path/to/vision-image.jpg)' }}>
+                    <div className="bg-white bg-opacity-75 p-10 lg:w-1/2 lg:ml-auto">
+                        <h2 className="text-4xl font-semibold text-gray-800">Our Vision</h2>
+                        <p className="mt-4 text-gray-600">Our vision is to be a global leader in research and development, contributing to societal advancement through innovative solutions and knowledge dissemination.</p>
+                    </div>
+                </section>
+
+                
 
                 {/* Contact Section */}
                 <section className="text-center">
