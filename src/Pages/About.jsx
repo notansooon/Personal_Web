@@ -15,7 +15,7 @@ const About = () => {
                 <div className="mx-auto px-4 lg:px-20">
                     {/* Hero Section */}
 
-                    <section className="relative text-center mb-16 bg-cover bg-center bg-no-repeat"
+                    <section className="hero-section relative text-center mb-16 bg-cover bg-center bg-no-repeat"
                              style={{backgroundImage: 'url(/path/to/hero-image.jpg)'}}>
                         <div className="bg-black bg-opacity-50 p-10">
                             <h1 className="text-5xl lg:text-7xl font-bold text-white">About Our Research Lab</h1>

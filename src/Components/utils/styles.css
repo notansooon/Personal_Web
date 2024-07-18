@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hero-section{
+
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+}
 
 .hexagon {
   width: 250px;
@@ -19,6 +33,7 @@
   background-color: #64C7CC;
 
 }
+
 
 
 .text-container {

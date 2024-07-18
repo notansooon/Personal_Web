@@ -7,7 +7,7 @@
 
 body {
 
-    background: linear-gradient(rgb(255, 254, 254), rgb(26, 29, 28));
+    background:#f8f9fa;
     font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 
 
@@ -19,51 +19,10 @@ body {
     width: 100%;
 }
 
-.landing-page-header{
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-    font-size-adjust: inherit;
-    color: rgba(0, 50, 75, 1);
-;
-}
-
-.Banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    height:450px
-}
-
-.BannerImage{
-    width: 100%;
-    height: auto;
-    opacity: 70%;
-    position: absolute;
-
-}
-
-.BannerText{
-    font-family: "DM Serif Display", serif;
-    text-align: center;
-    color: Black;
-    font-size: 70px;
-    font-weight: 900;
-    align-content: center;
-    line-height: 82px;
-}
 
 
-.slick-dots li.slick-active div {
-    @apply bg-black w-3 h-3 transform scale-125 transition-all duration-300;
-}
 
-.slick-dots li div {
-    @apply bg-gray-400 w-2 h-2 rounded-full transition-all duration-300;
-}
+
 
 
 

@@ -50,8 +50,12 @@ const Header = () => {
             <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
                 Contact Us
             </h2>
-            <p className="text-sm text-gray-600 mb-8">
-                Welcome to our lab. We are eager to collaborate and assist you with any inquiries. Please select the type of inquiry below.
+            <p className="text-sm leading-loose tracking-wide text-gray-600 mb-8">
+                Partner with us to leverage our expertise, state-of-the-art resources, and research capabilities to
+                stay ahead in the competitive landscape of quantitative finance. At the Dataism Laboratory for
+                Quantitative Finance at Virginia Tech, we collaborate closely with sponsors and industry partners to
+                develop cutting-edge financial technologies and advanced quantitative models. Join us in advancing the
+                forefront of quantitative finance innovation and driving impactful solutions for the financial industry.
             </p>
         </div>
     );
