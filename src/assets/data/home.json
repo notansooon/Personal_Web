@@ -1,22 +1,28 @@
 {
-  "landingPageHeader": "Pioneering Excellence at Dataism Laboratory",
-  "introParagraphs": [
-    "The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on advancing",
-    "Quantitative Finance and Econometrics through cutting-edge technologies. Our",
-    "mission centers on exploring AI/Machine Learning, Big Data Analytics, and High Performance",
-    "Computing for transformative applications in this field."
-  ],
-  "NewsPageHeader": "A Journey Beyond Boundaries",
+  "NewsPageHeader": "Latest News",
   "NewsParagraphs": [
-    "Embark on a transformative journey with Dataism Lab,",
-    "Stay informed with our newsletter for the latest updates and insights,",
-    "ensuring you're at the forefront of groundbreaking discoveries and advancements in AI, Machine Learning, and Big Data Analytics."
+    "Welcome to the latest news section.",
+    "Here you will find the latest updates from our research lab."
+  ],
+  "researchAreas": [
+    {
+      "title": "Innovative Financial Technologies",
+      "description": "Harnessing the power of AI, Machine Learning, and Big Data Analytics, we develop state-of-the-art financial models and tools.",
+      "image": "/path/to/research-ai.jpg"
+    },
+    {
+      "title": "High-Performance Computing",
+      "description": "Leveraging powerful computational resources, we tackle complex financial problems with unprecedented speed and accuracy.",
+      "image": "/path/to/research-biotech.jpg"
+    },
+    {
+      "title": "Transformative Research",
+      "description": "Our interdisciplinary team conducts pioneering research that bridges theoretical concepts with practical applications.",
+      "image": "/path/to/research-quantum.jpg"
+    }
   ],
   "footerParagraphs": [
-    "At The Dataism Lab, we are dedicated to fostering and training our members to gain the",
-    "knowledge and skills necessary to excel in real-world corporate environments. By engaging with",
-    "industry experts and participating in collaborative projects, our members are well-equipped to",
-    "translate their academic insights into practical solutions that drive innovation and growth in the",
-    "financial and econometric sectors."
+    "Thank you for visiting our website.",
+    "Stay tuned for more updates."
   ]
 }

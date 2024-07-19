@@ -5,27 +5,50 @@ import jpmorganLogo from '../assets/logos/J_P_Morgan_Logo_2008_1.svg.png';
 import capitalOneLogo from '../assets/logos/Capital_One_logo.svg';
 import magnusLogo from '../assets/logos/magnus.png';
 import sigLogo from '../assets/logos/Sig_idkoseRPEU_1.svg';
-export const Placement = () => {
-    return (
-        <>
-            <section className="companies mt-20 xl:mt-48 relative z-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-wrap justify-center xl:justify-between items-center gap-8 xl:gap-12">
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={jpmorganLogo}
-                             alt="JPMorgan Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={capitalOneLogo}
-                             alt="Capital One Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/6 md:w-1/8 lg:w-1/10" src={citiLogo} alt="Citi Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={boeingLogo}
-                             alt="Boeing Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={magnusLogo}
-                             alt="Magnus Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={sigLogo} alt="SIG Logo"/>
-                    </div>
-                </div>
-            </section>
+import { Card, Typography } from "@material-tailwind/react";
 
-        </>
+// Array of custom logos
+const customLogos = [
+    { src: boeingLogo, alt: 'Boeing Logo' },
+    { src: citiLogo, alt: 'Citi Logo' },
+    { src: jpmorganLogo, alt: 'JP Morgan Logo' },
+    { src: capitalOneLogo, alt: 'Capital One Logo' },
+    { src: magnusLogo, alt: 'Magnus Logo' },
+    { src: sigLogo, alt: 'SIG Logo' }
+];
+
+const Placement = () => {
+    return (
+        <section className="py-8 px-8 lg:py-20">
+            <Card
+                className="container mx-auto text-center py-10 px-6 bg-transparent"
+
+            >
+                <Typography
+                    variant="h6"
+                    className="mb-4 uppercase !text-black"
+                >
+                    Awesome Product
+                </Typography>
+                <Typography variant="h2" color="black" className="mb-10">
+                    Trusted by over 2,000,000+ <br /> Web Developers
+                </Typography>
+
+                <div className="flex flex-wrap items-center justify-center gap-6">
+                    {customLogos.map((logo, index) => (
+                        <img
+                            key={index}
+                            src={logo.src}
+                            alt={logo.alt}
+                            className="w-36"
+                        />
+                    ))}
+                </div>
+            </Card>
+        </section>
     );
 }
+
+export default Placement;
+
 

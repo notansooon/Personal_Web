@@ -3,7 +3,7 @@ import '../utils/home.css';
 import Sponsor from "../Components/Sponsor";
 import { FileUpload } from "../Components/forms";
 import Subscribe from "../Components/Newsletter";
-import { Placement } from '../Components/Placement';
+import Placement from '../Components/Placement';
 import NewsWire from '../Components/NewsWire';
 import data from '../assets/data/home.json';
 import { motion } from 'framer-motion';
@@ -141,13 +141,13 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="mt-14 space-y-10">
+                            {/*<div className="mt-14 space-y-10">
                                 <NewsWire />
                                 <Subscribe />
-                            </div>
+                            </div>*/}
                         </div>
 
-                        <Placement />
+                        <Placement/>
 
                         <div className="text-container text-lg md:text-xl mt-10 items-center justify-center flex flex-col">
                             {data.footerParagraphs.map((paragraph, index) => (
