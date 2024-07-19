@@ -11,20 +11,15 @@ function Projects() {
       
       <div className='relative flex flex-col justify-center items-center p-8'>
 
-        <div className='h-[400px]  w-screen '>
+        <header className='relative h-[400px]  w-full overflow-hidden '>
 
-          <div className='w-full h-full'>
-            <img className=" top-0 left-0 h-full w-full " src='https://th.bing.com/th/id/OIP.6m-bfQdZT9JzxQgI9YXkPgHaDt?rs=1&pid=ImgDetMain'/>
-            <div className='absolute top-[5%] p-4 md:p-8 text-black'>
-              <h1 className='text-3xl md:text-5xl'>Project Blogs</h1>
-              <p className='text-5xl mt-6 ml-12'>Where Ambition Begins...</p>
-            </div>
-
+          <div className='absolute top-[5%] p-4 md:p-8 text-black'>
+            <h1 className='text-3xl md:text-5xl'>Project Blogs</h1>
+            <p className='text-5xl mt-6 ml-12'>Where Ambition Begins...</p>
           </div>
 
 
-
-        </div>
+        </header>
 
 
         <div className='w-screen h-28 bg-gray-600 text-3xl text-white'>
@@ -36,20 +31,23 @@ function Projects() {
 
         </div>
 
-        
 
         <div className='w-screen max-w-6xl mt-10  '>
-          
-          
+
+
           <div className='text-3xl  '>
             <h1> Algorithmic Development </h1>
           </div>
           <div className='w-full h-5 border-b-4 '></div>
           <div className='mt-2'>
-            
+
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-              <ProjectComp status="ongoing" title="Ongoing Project 1" description="Detailed description of ongoing project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["UI/UX Designer", "Software Engineer"]} />
-              <ProjectComp status="ongoing" title="Ongoing Project 2" description="Detailed description of ongoing project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["Data Scientist", "Backend Developer"]} />
+              <ProjectComp status="ongoing" title="Ongoing Project 1"
+                           description="Detailed description of ongoing project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula."
+                           roles={["UI/UX Designer", "Software Engineer"]}/>
+              <ProjectComp status="ongoing" title="Ongoing Project 2"
+                           description="Detailed description of ongoing project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula."
+                           roles={["Data Scientist", "Backend Developer"]}/>
             </div>
           </div>
 
@@ -59,9 +57,10 @@ function Projects() {
           </div>
           <div className='w-full h-5 border-b-4 '></div>
           <div className='mt-2'>
-            
+
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-              <ProjectComp status="ongoing" title="Ongoing Project 1" description="Detailed description of ongoing project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["UI/UX Designer", "Software Engineer"]} />
+              <ProjectComp status="ongoing" title="Ongoing Project 1"
+                           description="Detailed description of ongoing project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["UI/UX Designer", "Software Engineer"]} />
               <ProjectComp status="ongoing" title="Ongoing Project 2" description="Detailed description of ongoing project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["Data Scientist", "Backend Developer"]} />
             </div>
           </div>
