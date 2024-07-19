@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaWhatsapp, FaWeibo, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import IconButton from "./IconButton";
 
 const ProjectComp = ({ status, title, description, roles }) => {
     return (
@@ -23,24 +24,44 @@ const ProjectComp = ({ status, title, description, roles }) => {
                     </ul>
                     <p className='text-gray-700 mb-2'>Contact for more information:</p>
                     <div className='flex space-x-2'>
-                        <button className='p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200'>
-                            <FaLinkedin />
-                        </button>
-                        <button className='p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200'>
-                            <FaWhatsapp />
-                        </button>
-                        <button className='p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200'>
-                            <FaWeibo />
-                        </button>
-                        <button className='p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200'>
-                            <FaFacebook />
-                        </button>
-                        <button className='p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200'>
-                            <FaEnvelope />
-                        </button>
-                        <button className='p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-200'>
-                            <FaXTwitter />
-                        </button>
+                        <IconButton
+                            color='bg-blue-500'
+                            text='LinkedIn'
+                            className='bg-blue'
+                        >
+                            <FaLinkedin className='text-white w-6 h-6' />
+                        </IconButton>
+
+                        <IconButton
+                            color='bg-green-600'
+                            text='Whatsapp'
+
+                        >
+                            <FaWhatsapp className='text-white w-6 h-6' />
+                        </IconButton>
+
+                        <IconButton
+                            color='bg-blue-800'
+                            text='Facebook'
+                        >
+                            <FaFacebook className='text-white w-6 h-6' />
+                        </IconButton>
+
+                        <IconButton
+                            color='bg-black'
+                            text='Twiiter'
+
+                        >
+                            <FaXTwitter className='text-white w-6 h-6' />
+                        </IconButton>
+
+                        <IconButton
+                            color='bg-red-600'
+                            text='Weibo'
+                        >
+                            <FaWeibo className='text-white w-6 h-6' />
+                        </IconButton>
+
                     </div>
                 </div>
             )}
