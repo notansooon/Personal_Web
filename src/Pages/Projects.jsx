@@ -7,6 +7,8 @@ import { animate } from 'framer-motion';
 
 function Projects() {
   const {ref: myRef, inView: visible} = useInView({triggerOnce: true, threshold: 1})
+  const {ref: cRef, inView: Avisible} = useInView({triggerOnce: true, threshold: 1})
+  const {ref: ARef, inView: Cvisible} = useInView({triggerOnce: true, threshold: 1})
   
 
   
@@ -46,7 +48,11 @@ function Projects() {
 
 
           <div className='text-3xl  '>
-            <h1>Algorithmic Development</h1>
+          <h1 ref={cRef}> 
+              <span className={`${Avisible ? 'render' : ''}`} data-text='Algorithmic Development'>
+                Algorithmic Development
+              </span>
+            </h1>
           </div>
           <div className='w-full h-5 border-b-4 border-black '></div>
           <div className='mt-2'>
@@ -63,7 +69,11 @@ function Projects() {
 
 
           <div className='text-3xl mt-10 '>
-            <h1> Client Services </h1>
+          <h1 ref={ARef}> 
+              <span className={`${Cvisible ? 'render' : ''}`} data-text='Client Service'>
+                Client Service
+              </span>
+            </h1>
           </div>
           <div className='w-full h-5 border-b-4 border-black '></div>
           <div className='mt-2'>
@@ -79,8 +89,8 @@ function Projects() {
           
           <div className='text-3xl mt-10 '>
             <h1 ref={myRef}> 
-              <span className={`${visible ? 'render' : ''}`} data-text='Algorithmic Development'>
-                Algorithmic Development
+              <span className={`${visible ? 'render' : ''}`} data-text='Academic Research'>
+                Academic Research
               </span>
             </h1>
           </div>
