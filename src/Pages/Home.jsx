@@ -6,6 +6,7 @@ import Subscribe from "../Components/Newsletter";
 import Placement from '../Components/Placement';
 import NewsWire from '../Components/NewsWire';
 import data from '../assets/data/home.json';
+import ContactUs from './Contact';
 import { motion } from 'framer-motion';
 import useScrollAnimation from '../Components/UI/Custom-scroll-hook'; // Adjust the path according to your project structure
 
@@ -154,6 +155,14 @@ const Home = () => {
                                 <p className="text-gray-700 mb-4" key={index}>{paragraph}</p>
                             ))}
                         </div>
+
+                        <section className="text-center">
+                        
+
+
+                        < ContactUs />
+                        
+                        </section>
                     </div>
                 </motion.section>
             </motion.div>

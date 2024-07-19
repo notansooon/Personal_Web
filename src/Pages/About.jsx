@@ -7,6 +7,7 @@ import AboutContent from "../Components/about-content";
 
 
 
+
 const About = () => {
     return (
         <motion.div
@@ -22,13 +23,7 @@ const About = () => {
                     <AboutContent/>
 
                     {/* Contact Section */}
-                    <section className="text-center">
-                        
-
-
-                        < ContactUs />
-                        
-                    </section>
+                    
                 </div>
             </div>
         </motion.div>
