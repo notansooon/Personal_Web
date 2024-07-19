@@ -48,7 +48,7 @@ function Projects() {
 
 
           <div className='text-3xl  '>
-          <h1 ref={cRef}> 
+            <h1 ref={cRef}> 
               <span className={`${Avisible ? 'render' : ''}`} data-text='Algorithmic Development'>
                 Algorithmic Development
               </span>
