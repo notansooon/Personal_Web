@@ -20,6 +20,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
       <>
+          <div className= 'app-container'>
               <Navbar className="p-16"/>
 
               <Routes>
@@ -36,9 +37,11 @@ function App() {
                   <Route path='/*' element={<HttpStatusCodes/>}/>
 
               </Routes>
-              <Footer className='flex-end'>
+              <Footer>
 
               </Footer>
+          </div>
+
       </>
   );
 }
