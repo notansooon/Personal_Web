@@ -5,25 +5,53 @@ import jpmorganLogo from '../assets/logos/J_P_Morgan_Logo_2008_1.svg.png';
 import capitalOneLogo from '../assets/logos/Capital_One_logo.svg';
 import magnusLogo from '../assets/logos/magnus.png';
 import sigLogo from '../assets/logos/Sig_idkoseRPEU_1.svg';
+import '../Components/utils/styles.css'
 export const Placement = () => {
     return (
         <>
-            <section className="companies mt-20 xl:mt-48 relative z-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-wrap justify-center xl:justify-between items-center gap-8 xl:gap-12">
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={jpmorganLogo}
-                             alt="JPMorgan Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={capitalOneLogo}
-                             alt="Capital One Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/6 md:w-1/8 lg:w-1/10" src={citiLogo} alt="Citi Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={boeingLogo}
-                             alt="Boeing Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={magnusLogo}
-                             alt="Magnus Logo"/>
-                        <img className="company_logo w-2/5 sm:w-1/4 md:w-1/6 lg:w-1/8" src={sigLogo} alt="SIG Logo"/>
-                    </div>
+            
+                
+            <div className="logos ">
+                <div className='logos-slide item1'>
+                    <img className='object-fill h-[100%] w-[100%]' src={jpmorganLogo} alt="JPMorgan Logo" />
                 </div>
-            </section>
+                <div className='logos-slide item2'>
+                    <img className='object-fill h-[100%] w-[100%]'src={capitalOneLogo} alt="Capital One Logo" />
+                </div>
+                <div className='logos-slide item3'>
+                    <img className='object-fill h-[100%] w-[100%]'src={citiLogo} alt="Citi Logo" />
+                </div>
+                <div className='logos-slide item4'>
+                    <img className='object-fill h-[100%] w-[100%]' src={boeingLogo} alt="Boeing Logo" />
+                </div>
+                <div className='logos-slide item5'>
+                    <img className='object-fill h-[100%] w-[100%]' src={magnusLogo} alt="Magnus Logo" />
+                </div>
+                <div className='logos-slide item6'>
+                    <img className='object-fill h-[100%] w-[100%]' src={sigLogo} alt="SIG Logo" />
+                </div>
+                
+            </div>
+
+            {/* <div className="logos-slide">
+                    <img src={jpmorganLogo} alt="JPMorgan Logo" />
+                    <img src={capitalOneLogo} alt="Capital One Logo" />
+                    <img src={citiLogo} alt="Citi Logo" />
+                    <img src={boeingLogo} alt="Boeing Logo" />
+                    <img src={magnusLogo} alt="Magnus Logo" />
+                    <img src={sigLogo} alt="SIG Logo" />
+                </div>
+                <div className="logos-slide">
+                    <img src={jpmorganLogo} alt="JPMorgan Logo" />
+                    <img src={capitalOneLogo} alt="Capital One Logo" />
+                    <img src={citiLogo} alt="Citi Logo" />
+                    <img src={boeingLogo} alt="Boeing Logo" />
+                    <img src={magnusLogo} alt="Magnus Logo" />
+                    <img src={sigLogo} alt="SIG Logo" />
+                </div>*/}
+
+                    
+
 
         </>
     );

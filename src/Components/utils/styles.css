@@ -94,6 +94,69 @@
     width: 100%;
   }
 }
+.logos {
+  border: 1px solid transparent;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  margin-top: 5rem;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0, 0, 0),
+    rgba(0,0, 0, 1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+
+@keyframes slide {
+  
+  to {
+    left: -200px;
+  }
+}
+
+.logos-slide {
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation: slide 30s linear infinite ;
+
+}
+
+.item1 {
+
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+
+}
+.item2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+
+}
+.item3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+
+}
+.item4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+
+}
+.item5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+
+}
+.item6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+
+}
+
+
 
 .type {
   font-size: 30px;
