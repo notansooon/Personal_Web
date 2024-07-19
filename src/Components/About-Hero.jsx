@@ -478,9 +478,13 @@ const SvgComponent = () => {
 const HeroTextComponent = () => {
     return (
         <div className="mt-10 lg:mt-0">
-            <h2 className="typewriter-h1 mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-               Money
+            <div className='w-[480px]'>
+            <h2 className="about mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
+               Get to Knows Us
             </h2>
+
+            </div>
+            
             <span className=" block mb-4 text-lg font-semibold text-primary">
                 Who We Are
             </span>
