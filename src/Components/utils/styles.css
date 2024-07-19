@@ -52,3 +52,45 @@
   max-height: 500px;
   opacity: 1;
 }
+
+.render {
+  position: relative;
+  font-size: 30px;
+  line-height: 36px;
+  color: transparent;
+  -webkit-text-stroke: 0.3vw transparent;
+  text-transform: uppercase;
+}
+
+.render::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: black;
+  -webkit-text-stroke: 0vw transparent;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  animation: animate 3s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width: 20%;
+  }
+  40% {
+    width: 40%;
+  }
+  70% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}

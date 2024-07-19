@@ -1,7 +1,17 @@
 import React from 'react';
+import { useRef, useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import ProjectComp from '../Components/ProjectComp';
+import { isVisible } from '@testing-library/user-event/dist/utils';
+import { animate } from 'framer-motion';
 
 function Projects() {
+  const {ref: myRef, inView: visible} = useInView({triggerOnce: true, threshold: 1})
+  
+
+  
+
+
   return (
     <>
 
@@ -36,7 +46,7 @@ function Projects() {
 
 
           <div className='text-3xl  '>
-            <h1> Algorithmic Development </h1>
+            <h1>Algorithmic Development</h1>
           </div>
           <div className='w-full h-5 border-b-4 border-black '></div>
           <div className='mt-2'>
@@ -68,7 +78,11 @@ function Projects() {
 
           
           <div className='text-3xl mt-10 '>
-            <h1> Academic Research </h1>
+            <h1 ref={myRef}> 
+              <span className={`${visible ? 'render' : ''}`} data-text='Algorithmic Development'>
+                Algorithmic Development
+              </span>
+            </h1>
           </div>
           <div className='w-full h-5 border-b-4 border-black'></div>
           <div className='mt-2'>
