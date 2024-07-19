@@ -44,7 +44,7 @@ export function AboutContent() {
                         className="h-[480px] w-full lg:max-w-md mx-auto rounded-2xl p-14 bg-cover bg-center flex flex-col justify-center"
                         style={{ backgroundImage: `url(${bgImage2})` }}
                     >
-                        
+
                     </div>
                 </div>
                 <div className="grid grid-cols-1 items-center place-items-center gap-16 lg:grid-cols-2">
