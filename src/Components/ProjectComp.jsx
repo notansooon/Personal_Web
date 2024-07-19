@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLinkedin, FaWhatsapp, FaWeibo, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import IconButton from "./IconButton";
+import {AnimatedTooltipPreview} from "./ToolTip";
 
 const ProjectComp = ({ status, title, description, roles }) => {
     return (
@@ -22,6 +23,7 @@ const ProjectComp = ({ status, title, description, roles }) => {
                             <li key={index} className='text-gray-700'>{role}</li>
                         ))}
                     </ul>
+                    <AnimatedTooltipPreview></AnimatedTooltipPreview>
                     <p className='text-gray-700 mb-2'>Contact for more information:</p>
                     <div className='flex space-x-2'>
                         <IconButton
