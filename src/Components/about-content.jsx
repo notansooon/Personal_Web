@@ -1,6 +1,8 @@
 import React from "react";
 import { CursorArrowRaysIcon } from "@heroicons/react/24/solid";
 import { Typography, Button } from "@material-tailwind/react";
+import bgImage1 from '../assets/Images/1712711055874.jpeg'; // replace with your actual path
+import bgImage2 from '../assets/Images/1712985343744.jpeg' // replace with your actual path
 
 function Option({ title, children }) {
     return (
@@ -35,7 +37,10 @@ export function AboutContent() {
             </div>
             <div className="lg:space-y-24 space-y-12">
                 <div className="grid grid-cols-1 items-center place-items-center gap-16 lg:grid-cols-2">
-                    <div className="h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-gray-900 p-14">
+                    <div
+                        className="h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl p-14 bg-cover bg-center"
+                        style={{ backgroundImage: `url(${bgImage1})` }}
+                    >
                         <Typography variant="h6" className="mb-4" color="white">
                             WEBSITE VISITORS
                         </Typography>
@@ -84,7 +89,10 @@ export function AboutContent() {
                             and understand the impact on your bottom line.
                         </Option>
                     </div>
-                    <div className="h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-gray-900 p-14">
+                    <div
+                        className="h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl p-14 bg-cover bg-center"
+                        style={{ backgroundImage: `url(${bgImage2})` }}
+                    >
                         <Typography variant="h6" className="mb-4" color="white">
                             SOCIAL ACTIVITIES
                         </Typography>
