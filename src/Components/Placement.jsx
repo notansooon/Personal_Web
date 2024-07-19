@@ -21,18 +21,16 @@ const Placement = () => {
     return (
         <section className="py-8 px-8 lg:py-20">
             <Card
-                className="container mx-auto text-center py-10 px-6 bg-transparent"
+                className="container mx-auto -mt-6 text-center py-10 px-6 bg-transparent"
 
             >
-                <Typography
-                    variant="h6"
-                    className="mb-4 uppercase !text-black"
-                >
-                    Awesome Product
-                </Typography>
+
                 <Typography variant="h2" color="black" className="mb-10">
-                    Trusted by over 2,000,000+ <br /> Web Developers
+                    Placement
                 </Typography>
+                <p className='mb-10 -mt-6'>companies where our students have secured placements,
+                showcasing their skills and the exceptional quality of our programs</p>
+
 
                 <div className="flex flex-wrap items-center justify-center gap-6">
                     {customLogos.map((logo, index) => (
