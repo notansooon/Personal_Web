@@ -43,7 +43,7 @@ const Home = () => {
                 <div className="text-white h-screen w-screen relative">
                     <div className="w-full h-full">
                         <img
-                            className="absolute top-0 left-0 h-full w-full object-cover"
+                            className="absolute top-0 left-0 h-full w-full object-cover aria"
                             src="https://dataismlab.com/media/ALGO_image.png"
                             alt="movie"
                         />
