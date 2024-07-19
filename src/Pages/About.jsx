@@ -2,6 +2,7 @@ import React from 'react';
 import '../Components/utils/styles.css';
 import { motion } from 'framer-motion';
 import AboutHero from "../Components/About-Hero";
+import ContactUs from './Contact';
 
 
 
@@ -128,17 +129,11 @@ const About = () => {
 
                     {/* Contact Section */}
                     <section className="text-center">
-                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900">Contact Us</h2>
-                        <p className="mt-4 text-lg text-gray-700">Get in touch with us for collaboration and
-                            inquiries</p>
-                        <div className="mt-8">
-                            <a
-                                href="mailto:info@researchlab.com"
-                                className="bg-blue-600 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-700"
-                            >
-                                info@researchlab.com
-                            </a>
-                        </div>
+                        
+
+
+                        < ContactUs />
+                        
                     </section>
                 </div>
             </div>
