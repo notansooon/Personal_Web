@@ -6,6 +6,99 @@ import {
     Typography,
 } from "@material-tailwind/react";
 import { UserGroupIcon } from "@heroicons/react/24/solid";
+import Ben from '../ProfilePicture/ben.jpg'
+import Ali from '../ProfilePicture/ali.jpg'
+import Roshan from '../ProfilePicture/roshan.jpg'
+import Ryan from '../ProfilePicture/ryan.jpg'
+import Raseen from '../ProfilePicture/Raseen.jpg'
+import Gaurav from '../ProfilePicture/Gaurav.jpg'
+import Alex from '../ProfilePicture/alex.jpg'
+import Paul from '../ProfilePicture/paul.jpg'
+import Unknown from '../ProfilePicture/unknown.jpg'
+import Ben_f from '../ProfilePicture/ben_f.jpg'
+import Team from '../Components/Profile'
+
+
+const members = [
+    {
+        img: Ali,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Ben,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
+
+const algo = [
+    {
+        img: Ali,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Ben,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
+
+const services = [
+    {
+        img: Ali,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Ben,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
 
 function TeamCard({ img, name, title, desc }) {
     return (
@@ -43,33 +136,14 @@ function TeamCard({ img, name, title, desc }) {
     );
 }
 
-const members = [
-    {
-        img: `https://www.material-tailwind.com/img/avatar1.jpg`,
-        name: "Ryan Samuel",
-        title: "Co-Founder",
-        
-    },
-    {
-        img: `https://www.material-tailwind.com/img/avatar2.jpg`,
-        name: "Jordan Michael",
-        title: "Front-End Developer",
-        
-    },
-    {
-        img: `https://www.material-tailwind.com/img/avatar5.jpg`,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
-        
-    },
-];
+
 
 export function People() {
     return (
         <section className="py-8 px-8 lg:py-28">
 
 
-            <div className="container px-6 py-10 mx-auto">
+            <div className="container  px-6 py-10 mx-auto">
                 <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">our team</h1>
 
                 <p className="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
@@ -86,7 +160,7 @@ export function People() {
             </div>
 
 
-            <div className="container mx-auto">
+            <div className="container mx-auto ">
                 <div className="mb-10 lg:mb-20">
                     <IconButton size="lg">
                         <UserGroupIcon className="h-6 w-6" />
@@ -111,15 +185,82 @@ export function People() {
 
 
                 <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%]">
-                    {members.map((props, key) => (
+                    {algo.map((props, key) => (
                         <TeamCard key={key} {...props} />
                     ))}
                 </div>
 
 
-
+                
 
             </div>
+
+
+            <div className="container mx-auto mt-[-500px]">
+                <div className="mb-10 lg:mb-20">
+                    
+                    <Typography
+                        variant="h2"
+                        color="blue-gray"
+                        className="mt-6 mb-3 text-3xl lg:text-4xl"
+                    >
+                        Algorithmic Developer
+                    </Typography>
+                    <Typography
+                        variant="lead"
+                        className="font-normal !text-gray-500 max-w-xl"
+                    >
+                        We&apos;re constantly trying to express ourselves and actualize our
+                        dreams. If you have the opportunity to play this game of life you
+                        need to appreciate every moment.
+                    </Typography>
+                </div>
+
+
+
+                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%]">
+                    {members.map((props, key) => (
+                        <TeamCard key={key} {...props} />
+                    ))}
+                </div>
+
+            </div>
+
+
+            <div className="container mx-auto mt-[-500px]">
+                <div className="mb-10 lg:mb-20">
+                    
+                    <Typography
+                        variant="h2"
+                        color="blue-gray"
+                        className="mt-6 mb-3 text-3xl lg:text-4xl"
+                    >
+                        Client Servies
+                    </Typography>
+                    <Typography
+                        variant="lead"
+                        className="font-normal !text-gray-500 max-w-xl"
+                    >
+                        We&apos;re constantly trying to express ourselves and actualize our
+                        dreams. If you have the opportunity to play this game of life you
+                        need to appreciate every moment.
+                    </Typography>
+                </div>
+
+
+
+                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%]">
+                    {members.map((props, key) => (
+                        <TeamCard key={key} {...props} />
+                    ))}
+                </div>
+
+            </div>
+
+
+
+
+
         </section>
     );
 }
