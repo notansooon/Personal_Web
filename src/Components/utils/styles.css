@@ -122,7 +122,7 @@
   overflow: hidden;
 
   animation: 
-        typing 2s steps(19),
+        typing 2s steps(14) forwards,
         cursor .4s step-end infinite alternate
 
 }
