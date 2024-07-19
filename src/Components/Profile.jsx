@@ -40,6 +40,21 @@ const Team = ({ user, pic }) => {
 
 export default Team;
 
+export const HeroTextTeam = () => {
+    return (
+        <div className="mt-5 lg:mt-0">
+            <div className='w-full'>
+            <h2 className="about mb-5 leading-tight -tracking-tighter text-3xl font-bold text-dark sm:text-[40px]/[48px]">
+               Meet Our Team
+            </h2>
+
+            </div>
+            
+            
+        </div>
+    );
+};
+
 export const Profile = ({ user, pic }) => {
     const profile = data.profile.find(profile => profile.name === user);
 
