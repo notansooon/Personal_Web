@@ -48,25 +48,44 @@ const members = [
         img: `https://www.material-tailwind.com/img/avatar1.jpg`,
         name: "Ryan Samuel",
         title: "Co-Founder",
-        desc: "Artist is a term applied to a person who engages in an activity deemed to be an art.",
+        
     },
     {
         img: `https://www.material-tailwind.com/img/avatar2.jpg`,
         name: "Jordan Michael",
         title: "Front-End Developer",
-        desc: "And I love you like Kanye loves Kanye. We need to restart the human foundation.",
+        
     },
     {
         img: `https://www.material-tailwind.com/img/avatar5.jpg`,
         name: "Nora Hazel",
         title: "UI/UX Designer",
-        desc: "If you have the opportunity to play this game of life you need to appreciate every moment.",
+        
     },
 ];
 
 export function People() {
     return (
         <section className="py-8 px-8 lg:py-28">
+
+
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">our team</h1>
+
+                <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+                    Each member brings unique skills and perspectives, working collaboratively to achieve excellence. Get to know the people behind our success and discover the stories that inspire our journey.
+                </p>
+
+                <div class="flex items-center justify-center">
+                    <div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+                        <button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">design</button>
+                        <button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">development</button>
+                        <button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">marketing</button>
+                    </div>
+                </div>
+            </div>
+
+
             <div className="container mx-auto">
                 <div className="mb-10 lg:mb-20">
                     <IconButton size="lg">
@@ -88,11 +107,18 @@ export function People() {
                         need to appreciate every moment.
                     </Typography>
                 </div>
-                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+
+
+                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%]">
                     {members.map((props, key) => (
                         <TeamCard key={key} {...props} />
                     ))}
                 </div>
+
+
+
+
             </div>
         </section>
     );
