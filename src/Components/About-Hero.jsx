@@ -479,7 +479,7 @@ const HeroTextComponent = () => {
     return (
         <div className="mt-10 lg:mt-0">
             <h2 className="typewriter-h1 mb-5 text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-                Make your customers happy by giving services.
+               Money
             </h2>
             <span className=" block mb-4 text-lg font-semibold text-primary">
                 Who We Are

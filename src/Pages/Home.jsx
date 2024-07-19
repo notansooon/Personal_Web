@@ -49,7 +49,11 @@ const Home = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
                         <div className="absolute top-[20%] left-4 md:left-8 p-4 md:p-8">
-                            <h1 className="text-3xl md:text-5xl font-bold">Welcome To Dataism</h1>
+                            <div className='w-[660px]'>
+                                <h1 className="text-3xl md:text-5xl font-bold type">Welcome To Dataism</h1>
+
+                            </div>
+                            
                             <p className="text-gray-300 mt-4 md:mt-10 text-lg md:text-2xl">Established in 2024, The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on advancing Quantitative Finance and Econometrics through cutting-edge technologies.</p>
                         </div>
                     </div>
