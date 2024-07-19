@@ -55,8 +55,8 @@ const People = () => {
         </div>
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-            <div class="flex flex-col items-center size-72">
-                <img class="object-cover w-full rounded-xl aspect-square" src={Ali} />
+            <div className="flex flex-col items-center size-5/12">
+                <img className="object-cover w-full rounded-xl aspect-square" src={Ali} />
 
                 <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
 
@@ -65,7 +65,7 @@ const People = () => {
                 
             </div>
 
-            <div class="flex flex-col items-center size-80">
+            <div class="flex flex-col items-center size-5/12">
                 <img class="object-cover w-full rounded-xl aspect-square" src={Ben} />
 
                 <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
@@ -75,7 +75,7 @@ const People = () => {
                 
             </div>
 
-            <div class="flex flex-col items-center size-80">
+            <div class="flex flex-col items-center size-5/12">
                 <img class="object-cover w-full rounded-xl aspect-square" src={Raseen} />
 
                 <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Bob Rob</h1>
