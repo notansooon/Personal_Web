@@ -2,7 +2,7 @@ import React from 'react';
 import '../Components/utils/styles.css';
 import { motion } from 'framer-motion';
 import AboutHero from "../Components/About-Hero";
-import ContactUs from './Contact';
+
 
 
 
@@ -128,13 +128,7 @@ const About = () => {
                     </section>
 
                     {/* Contact Section */}
-                    <section className="text-center">
-                        
-
-
-                        < ContactUs />
-                        
-                    </section>
+                    
                 </div>
             </div>
         </motion.div>
