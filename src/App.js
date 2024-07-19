@@ -36,7 +36,7 @@ function App() {
                   <Route path='/*' element={<HttpStatusCodes/>}/>
 
               </Routes>
-              <Footer className='flex-end'>
+              <Footer>
 
               </Footer>
       </>
