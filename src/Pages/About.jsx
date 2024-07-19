@@ -16,9 +16,9 @@ const About = () => {
                         className="hero-section relative text-center mb-16 bg-cover bg-center bg-no-repeat"
                         style={{ backgroundImage: 'url(/path/to/hero-image.jpg)' }}
                     >
-                        <div className="bg-black bg-opacity-50 p-10">
-                            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white">About Our Research Lab</h1>
-                            <p className="mt-4 text-lg md:text-xl lg:text-2xl text-gray-200">
+                        <div className=" flex flex-col mx-auto w-full text-black p-10 ">
+                            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold">About Our Research Lab</h1>
+                            <p className="mt-4 text-lg md:text-xl lg:text-2xl">
                                 Innovating the future through groundbreaking research
                             </p>
                         </div>
@@ -30,8 +30,8 @@ const About = () => {
                         style={{ backgroundImage: 'url(/path/to/mission-image.jpg)' }}
                     >
                         <div className="p-6 md:p-14 lg:w-3/4">
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800">Who We Are</h2>
-                            <div className="mt-4 text-lg md:text-xl lg:text-2xl text-gray-600">
+                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Who We Are</h2>
+                            <div className="mt-4 text-lg md:text-xl lg:text-2xl">
                                 <p>
                                     Founded in 2024, The Dataism Lab at Virginia Tech stands as an interdisciplinary
                                     powerhouse dedicated to pushing the boundaries of Quantitative Finance and Econometrics.
@@ -67,7 +67,7 @@ const About = () => {
                                  style={{ backgroundImage: 'url(/path/to/research-biotech.jpg)' }}>
                                 <div className="bg-black bg-opacity-50 p-4 w-full text-container">
                                     <h3 className="text-xl md:text-2xl font-semibold text-white">Client Services</h3>
-                                    <p className="mt-2 text-sm md:text-base text-gray-200 hidden-text">
+                                    <p className="mt-2 text-sm md:text-base hidden-text">
                                         We create tailored trading algorithms and financial models that align with the specific
                                         needs and strategies of each investment bank, ensuring optimal performance and competitive
                                         advantage. Our Client Services Sector at DLQF is dedicated to providing innovative and
@@ -82,7 +82,7 @@ const About = () => {
                                  style={{ backgroundImage: 'url(/path/to/research-quantum.jpg)' }}>
                                 <div className="bg-black bg-opacity-50 p-4 w-full text-container">
                                     <h3 className="text-xl md:text-2xl font-semibold text-white">Academic Research</h3>
-                                    <p className="mt-2 text-sm md:text-base text-gray-200 hidden-text">
+                                    <p className="mt-2 text-sm md:text-base hidden-text">
                                         Our team conducts pioneering research on a wide range of topics within quantitative finance,
                                         including asset pricing, risk management, market microstructure, financial econometrics,
                                         and algorithmic trading. Our Academic Research Sector at DLQF is a vibrant hub of innovation
@@ -102,8 +102,8 @@ const About = () => {
                         style={{ backgroundImage: 'url(/path/to/vision-image.jpg)' }}
                     >
                         <div className="bg-white bg-opacity-75 p-6 md:p-10 lg:w-1/2 lg:ml-auto">
-                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800">Our Vision</h2>
-                            <p className="mt-4 text-gray-600">
+                            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Our Vision</h2>
+                            <p className="mt-4">
                                 Our vision is to be a global leader in research and development, contributing to societal
                                 advancement through innovative solutions and knowledge dissemination.
                             </p>

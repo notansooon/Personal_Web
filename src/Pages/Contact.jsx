@@ -207,6 +207,7 @@ const SocialMedia = () => {
                 <IconButton
                     color='bg-black'
                     text='Twiiter'
+
                 >
                     <FaXTwitter className='text-white w-6 h-6' />
                 </IconButton>

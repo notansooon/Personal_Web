@@ -7,17 +7,12 @@
 
 body {
 
-    background: linear-gradient(222deg, #a1f5f5, #bcbdff, #fdfdfd, #deddff, #deddff);
-    background-size: 1000% 1000%;
-
-    -webkit-animation: AnimationName 5s ease infinite;
-    -moz-animation: AnimationName 5s ease infinite;
-    animation: AnimationName 5s ease infinite;
+    background: #e4ecfa;
     font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 
-
-
   }
+
+
 
 .inquiry-card {
     perspective: 1000px;
