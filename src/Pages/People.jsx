@@ -29,61 +29,74 @@ const People = () => {
                 className="contain"
             >
                 <div className="w-full">
-                    <div className="top-0 overflow-hidden pt-10 pb-12 lg:pt-[50px] lg:pb-[90px] bg-transparent dark:bg-dark">
-                        <div className='flex justify-end'>
+                    
+
+                    <div className=" top-0 overflow-hidden pt-10 pb-12 lg:pt-[50px] lg:pb-[90px] bg-transparent dark:bg-dark">
+                        <div className='flex justify-end '>
                             <HeroTextTeam />
+
                         </div>
                     </div>
 
-                    <section className="bg-white dark:bg-gray-900">
-                        <div className="container px-6 py-10 mx-auto">
-                            <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our Team</h1>
+                    <section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
+        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">our team</h1>
 
-                            <p className="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
-                                Each member brings unique skills and perspectives, working collaboratively to achieve excellence. Get to know the people behind our success and discover the stories that inspire our journey.
-                            </p>
+        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+            Each member brings unique skills and perspectives, working collaboratively to achieve excellence. Get to know the people behind our success and discover the stories that inspire our journey.
+        </p>
 
-                            <div className="flex items-center justify-center">
-                                <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
-                                    <button className="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">Administrative</button>
-                                    <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">Development</button>
-                                    <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">Marketing</button>
-                                </div>
-                            </div>
+        <div class="flex items-center justify-center">
+            <div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+                <button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">design</button>
+                <button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">development</button>
+                <button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">marketing</button>
+            </div>
+        </div>
 
-                            <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-                                <div className="flex flex-col items-center aspect-square rounded-xl bg-gray-400">
-                                    <div className="w-full h-2/3 overflow-hidden">
-                                        <img className="w-full h-full object-cover" src={Ben} alt="Team Member" />
-                                    </div>
+        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
+            <div class="flex flex-col items-center size-80">
+                <img class="object-cover w-full rounded-xl aspect-square" src={Ali} />
 
-                                    <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
+                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
 
-                                    <p className="mt-2 text-gray-500 capitalize dark:text-gray-300">Yes</p>
-                                </div>
+                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">Yes</p>
 
-                                <div className="flex flex-col items-center">
-                                    <img className="object-cover w-full rounded-xl aspect-square" src={Ben} alt="Team Member" />
+                
+            </div>
 
-                                    <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
+            <div class="flex flex-col items-center size-80">
+                <img class="object-cover w-full rounded-xl aspect-square" src={Ben} />
 
-                                    <p className="mt-2 text-gray-500 capitalize dark:text-gray-300">Yes</p>
-                                </div>
+                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
 
-                                <div className="flex flex-col items-center">
-                                    <img className="object-cover w-full rounded-xl aspect-square" src={Raseen} alt="Team Member" />
+                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">Yes</p>
 
-                                    <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Bob Rob</h1>
+                
+            </div>
 
-                                    <p className="mt-2 text-gray-500 capitalize dark:text-gray-300"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+            <div class="flex flex-col items-center size-80">
+                <img class="object-cover w-full rounded-xl aspect-square" src={Raseen} />
+
+                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Bob Rob</h1>
+
+                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300"></p>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
                 </div>
+
             </motion.div>
+
+
         </>
     );
 }
 
-export default People;
+export default People
