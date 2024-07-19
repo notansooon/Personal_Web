@@ -66,10 +66,35 @@ const Header = () => {
 };
 
 
+
 const InquiryCard = ({ title, onClick }) => {
+    const [style, setStyle] = useState({});
+
+    const handleMouseMove = (e) => {
+        const card = e.currentTarget;
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        const rotateX = -y / 5;
+        const rotateY = x / 5;
+
+        setStyle({
+            transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+        });
+    };
+
+    const handleMouseLeave = () => {
+        setStyle({
+            transform: 'perspective(1000px) rotateX(0) rotateY(0)',
+        });
+    };
+
     return (
         <div
-            className="cursor-pointer bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+            className="inquiry-card cursor-pointer bg-white p-6 rounded-lg shadow-lg transition-transform transform-gpu"
+            style={style}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
             onClick={onClick}
         >
             <h3 className="text-xl font-semibold text-gray-800">
@@ -78,6 +103,9 @@ const InquiryCard = ({ title, onClick }) => {
         </div>
     );
 };
+
+
+
 
 
 const ContactForm = ({ onClose }) => {
