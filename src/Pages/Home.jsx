@@ -48,7 +48,7 @@ const Home = () => {
                             src="https://dataismlab.com/media/ALGO_image.png"
                             alt="movie"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-gray-700 to-transparent"></div>
                         <div className="absolute top-[20%] left-4 md:left-8 p-4 md:p-8">
                             <div className='w-screen type'>
                                 <h1 className="text-3xl md:text-5xl font-bold">Welcome To Dataism</h1>
