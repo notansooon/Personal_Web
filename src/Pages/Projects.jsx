@@ -38,7 +38,7 @@ function Projects() {
           <div className='text-3xl  '>
             <h1> Algorithmic Development </h1>
           </div>
-          <div className='w-full h-5 border-b-4 '></div>
+          <div className='w-full h-5 border-b-4 border-black '></div>
           <div className='mt-2'>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -55,7 +55,7 @@ function Projects() {
           <div className='text-3xl mt-10 '>
             <h1> Client Services </h1>
           </div>
-          <div className='w-full h-5 border-b-4 '></div>
+          <div className='w-full h-5 border-b-4 border-black '></div>
           <div className='mt-2'>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -70,7 +70,7 @@ function Projects() {
           <div className='text-3xl mt-10 '>
             <h1> Academic Research </h1>
           </div>
-          <div className='w-full h-5 border-b-4 '></div>
+          <div className='w-full h-5 border-b-4 border-black'></div>
           <div className='mt-2'>
             
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
