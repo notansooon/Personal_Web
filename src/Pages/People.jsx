@@ -55,7 +55,7 @@ const People = () => {
         </div>
 
         <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-            <div class="flex flex-col items-center size-80">
+            <div class="flex flex-col items-center size-72">
                 <img class="object-cover w-full rounded-xl aspect-square" src={Ali} />
 
                 <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
