@@ -1,6 +1,9 @@
 import React from "react";
 import { Avatar, Typography, Button } from "@material-tailwind/react";
 
+
+
+
 export function NewsWire() {
     return (
         <>

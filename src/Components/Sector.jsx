@@ -6,41 +6,50 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
+import React from "react";
+import {Link} from "react-router-dom";
+import Sectors from '../Pages/Sectors'
 
 const Sector = () => {
     return (
         <section className="container mx-auto p-4">
             <div className="flex flex-wrap justify-center gap-4">
-                <SectorCard />
-                <SectorCard />
-                <SectorCard />
+                <SectorCard title="Algorithmic Trading" />
+                <SectorCard title="Client Services" />
+                <SectorCard title="Academic Research" />
             </div>
         </section>
     );
 }
 
-function SectorCard() {
+const SectorCard = ({ title }) => {
     return (
         <div className="w-full max-w-xs md:max-w-sm lg:max-w-md">
             <Card className="w-full">
                 <CardHeader floated={false} shadow={false} className="rounded-none">
                     <Typography
-                        variant="small"
+                        variant="h6"
                         color="blue-gray"
-                        className="font-medium"
+                        className="font-semibold font-sans"
                     >
-                        Enterprise
-                    </Typography>
-                    <Typography
-                        color="blue-gray"
-                        className="mt-1 mb-2 text-[20px] font-bold"
-                    >
-                        Autodesk looks to future of 3D printing with Project Escher
+                        {title}
                     </Typography>
                 </CardHeader>
 
+                <CardBody>
+                    <Typography
+                        color="blue-gray"
+                        className="mt-1 mb-2 text-[16px] font-normal"
+                    >
+                        {/* Replace this placeholder text with actual content for each sector */}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
+                    </Typography>
+                </CardBody>
+
                 <CardFooter className="pt-0 px-4">
-                    <Button>Read More</Button>
+                    <Link to={'/Sectors'}>
+                        <Button>Read More</Button>
+                    </Link>
                 </CardFooter>
             </Card>
         </div>
@@ -48,3 +57,4 @@ function SectorCard() {
 }
 
 export default Sector;
+
