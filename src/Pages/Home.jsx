@@ -5,11 +5,12 @@ import '../utils/home.css';
 
 
 import Placement from '../Components/Placement';
-import NewsWire from '../Components/NewsWire';
+
 import data from '../assets/data/home.json';
 import ContactUs from './Contact';
 import useScrollAnimation from '../Components/UI/Custom-scroll-hook';
-import HomeHero from "../Components/Home-Hero"; // Adjust the path according to your project structure
+import HomeHero from "../Components/Home-Hero";
+import NewsWireCarousel from "../Components/NewsWireCarousel"; // Adjust the path according to your project structure
 
 const Home = () => {
     const [content, setContent] = useState(null);
@@ -78,21 +79,13 @@ const Home = () => {
 
                 >
                     <div className="contain px-4 md:px-16 lg:px-24 py-14">
-                        <div className="content-container">
-                            <div className="text-container">
-                                <h1 className="landing-page-header text-3xl md:text-4xl font-bold">{data.NewsPageHeader}</h1>
-                                <div className="text-lg md:text-xl mt-10 items-center justify-center flex flex-col border-b-4 pb-10">
-                                    {data.NewsParagraphs.map((paragraph, index) => (
-                                        <p className="text-gray-700 mb-4" key={index}>{paragraph}</p>
-                                    ))}
-                                </div>
-                            </div>
 
-                            <div className="mt-14 space-y-10">
-                                <NewsWire />
+
+                            <div className="space-y-10">
+                                <NewsWireCarousel />
 
                             </div>
-                        </div>
+
 
                         <Placement/>
 
