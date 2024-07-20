@@ -17,6 +17,7 @@ import Paul from '../ProfilePicture/paul.jpg'
 import Unknown from '../ProfilePicture/unknown.jpg'
 import Ben_f from '../ProfilePicture/ben_f.jpg'
 import Team from '../Components/Profile'
+import { useEffect, useState } from "react";
 
 
 const members = [
@@ -130,7 +131,14 @@ const services = [
 
 
 
+
+
+
+
+
 function TeamCard({ img, name, title, desc }) {
+
+    
     return (
         <Card color="transparent" shadow={false}>
             <CardHeader shadow={false} floated={false} className="!m-0 w-40">
@@ -169,6 +177,24 @@ function TeamCard({ img, name, title, desc }) {
 
 
 export function People() {
+
+   
+
+    const scrollHandler = (event) => {
+
+        const value = parseInt(event.target.getAttribute('data-scroll'));
+
+        
+        window.scrollTo({
+            top: value,
+            behavior: 'smooth'
+        })
+
+
+
+    }
+
+
     return (
         <section className="py-8 px-8 lg:py-28">
 
@@ -182,10 +208,10 @@ export function People() {
 
                 <div className="flex items-center justify-center">
                     <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
-                        <button className="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">Executive</button>
-                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">Algorithmic </button>
-                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">Client Servies</button>
-                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">Academic Researcher</button>
+                        <button className="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12" data-scroll='400px' onClick={scrollHandler}>Executive</button>
+                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12" data-scroll='1000px' onClick={scrollHandler}>Algorithmic </button>
+                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" data-scroll='1600px' onClick={scrollHandler}>Client Servies</button>
+                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" data-scroll='2200px' onClick={scrollHandler}>Academic Researcher</button>
                     </div>
                 </div>
             </div>
@@ -193,9 +219,7 @@ export function People() {
 
             <div className="container mx-auto ">
                 <div className="mb-10 lg:mb-20">
-                    <IconButton size="lg">
-                        <UserGroupIcon className="h-6 w-6" />
-                    </IconButton>
+                   
                     <Typography
                         variant="h2"
                         color="blue-gray"
