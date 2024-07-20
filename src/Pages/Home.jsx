@@ -75,7 +75,7 @@ const Home = () => {
                 <section
                     ref={sectionRef3}
                     className="relative mb-16 flex flex-col lg:flex-row bg-cover bg-center bg-no-repeat fadeInUp"
-                    style={{ backgroundImage: 'url(/path/to/newswire-image.jpg)' }}
+
                 >
                     <div className="contain px-4 md:px-16 lg:px-24 py-14">
                         <div className="content-container">
@@ -101,10 +101,7 @@ const Home = () => {
                                 <p className="text-gray-700 mb-4" key={index}>{paragraph}</p>
                             ))}
                         </div>
-
-                        <section className="text-center">
-                            <ContactUs />
-                        </section>
+                        
                     </div>
                 </section>
             </div>
