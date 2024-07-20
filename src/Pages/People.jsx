@@ -216,117 +216,98 @@ export function People() {
                 </div>
             </div>
 
+            <div className="container mx-auto">
 
-            <div className="container mx-auto ">
-                <div className="mb-10 lg:mb-20">
-                   
-                    <Typography
-                        variant="h2"
-                        color="blue-gray"
-                        className="mt-6 mb-3 text-3xl lg:text-4xl"
-                    >
-                        The Executive Team
-                    </Typography>
-                    <Typography
-                        variant="lead"
-                        className="font-normal !text-gray-500 max-w-xl"
-                    >
-                        We&apos;re constantly trying to express ourselves and actualize our
-                        dreams. If you have the opportunity to play this game of life you
-                        need to appreciate every moment.
-                    </Typography>
-                </div>
+    <div className="mb-10 lg:mb-20">
+        <Typography
+            variant="h2"
+            color="blue-gray"
+            className="mt-6 mb-3 text-3xl lg:text-4xl"
+        >
+            The Executive Team
+        </Typography>
+        <Typography
+            variant="lead"
+            className="font-normal !text-gray-500 max-w-xl"
+        >
+            We&apos;re constantly trying to express ourselves and actualize our
+            dreams. If you have the opportunity to play this game of life you
+            need to appreciate every moment.
+        </Typography>
+    </div>
 
+    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        {algo.map((props, key) => (
+            <TeamCard key={key} {...props} />
+        ))}
+    </div>
 
+    
+    <div className="mt-10 lg:mt-20 flex flex-col items-center lg:items-end">
+        <div className="w-full lg:w-auto mb-10 lg:mb-20">
+            <Typography
+                variant="h2"
+                color="blue-gray"
+                className="mt-6 mb-3 text-3xl lg:text-4xl"
+            >
+                Algorithmic Developer
+            </Typography>
+        </div>
 
-                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%]">
-                    {algo.map((props, key) => (
-                        <TeamCard key={key} {...props} />
-                    ))}
-                </div>
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {algo.map((props, key) => (
+                <TeamCard key={key} {...props} />
+            ))}
+        </div>
+    </div>
 
+   
+    <div className="mt-10 lg:mt-20">
+        <div className="mb-10 lg:mb-20">
+            <Typography
+                variant="h2"
+                color="blue-gray"
+                className="mt-6 mb-3 text-3xl lg:text-4xl"
+            >
+                Client Services
+            </Typography>
+            <Typography
+                variant="lead"
+                className="font-normal !text-gray-500 max-w-xl"
+            >
+                We&apos;re constantly trying to express ourselves and actualize our
+                dreams. If you have the opportunity to play this game of life you
+                need to appreciate every moment.
+            </Typography>
+        </div>
 
-                
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {members.map((props, key) => (
+                <TeamCard key={key} {...props} />
+            ))}
+        </div>
+    </div>
 
-            </div>
+   
+    <div className="mt-10 lg:mt-20 flex flex-col items-center lg:items-end">
+        <div className="w-full lg:w-auto mb-10 lg:mb-20">
+            <Typography
+                variant="h2"
+                color="blue-gray"
+                className="mt-6 mb-3 text-3xl lg:text-4xl"
+            >
+                Academic Researcher
+            </Typography>
+        </div>
 
-            
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {services.map((props, key) => (
+                <TeamCard key={key} {...props} />
+            ))}
+        </div>
+    </div>
 
-            <div className="container mx-auto mt-[-500px] flex flex-col items-end ">
-                
-                
-                <div className="w-full lg:w-auto mb-10 lg:mb-20">
-                    <Typography
-                        variant="h2"
-                        color="blue-gray"
-                        className="mt-6 mb-3 text-3xl lg:text-4xl"
-                    >
-                        Algorithmic Developer
-                    </Typography>
-                </div>
-
-                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%] ">
-                    {algo.map((props, key) => (
-                        <TeamCard key={key} {...props} />
-                    ))}
-                </div>
-                </div>
-
-          
-            
-
-
-            <div className="container mx-auto mt-[-500px]">
-                <div className="mb-10 lg:mb-20">
-                    
-                    <Typography
-                        variant="h2"
-                        color="blue-gray"
-                        className="mt-6 mb-3 text-3xl lg:text-4xl"
-                    >
-                        Client Servies
-                    </Typography>
-                    <Typography
-                        variant="lead"
-                        className="font-normal !text-gray-500 max-w-xl"
-                    >
-                        We&apos;re constantly trying to express ourselves and actualize our
-                        dreams. If you have the opportunity to play this game of life you
-                        need to appreciate every moment.
-                    </Typography>
-                </div>
-
-
-
-                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%]">
-                    {members.map((props, key) => (
-                        <TeamCard key={key} {...props} />
-                    ))}
-                </div>
-
-            </div>
-
-            <div className="container mx-auto mt-[-500px] flex flex-col items-end ">
-                
-                
-                <div className="w-full lg:w-auto mb-10 lg:mb-20">
-                    <Typography
-                        variant="h2"
-                        color="blue-gray"
-                        className="mt-6 mb-3 text-3xl lg:text-4xl"
-                    >
-                        Academic Researcher
-                    </Typography>
-                </div>
-
-                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%] ">
-                    {services.map((props, key) => (
-                        <TeamCard key={key} {...props} />
-                    ))}
-                </div>
-                </div>
-
-
+</div>
 
 
 
