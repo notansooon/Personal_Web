@@ -28,8 +28,8 @@ const members = [
     },
     {
         img: Ben,
-        name: "Jordan Michael",
-        title: "Front-End Developer",
+        name: "Ben Cumming",
+        title: "VP of Client Services",
         
     },
     {
@@ -60,9 +60,9 @@ const algo = [
         
     },
     {
-        img: Alex,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
+        img: Ben_f,
+        name: "Ben Facciani",
+        title: "Algorithmic Developer",
         
     },
     {
@@ -73,9 +73,9 @@ const algo = [
     },
 ];
 
-const services = [
+const acedemic = [
     {
-        img: Ali,
+        img: Paul,
         name: "Ali Habihnia",
         title: "Principle Investigator",
         
@@ -99,6 +99,36 @@ const services = [
         
     },
 ];
+
+const services = [
+    {
+        img: Alex,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Roshan,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
+
+
+
 
 function TeamCard({ img, name, title, desc }) {
     return (
@@ -152,9 +182,10 @@ export function People() {
 
                 <div className="flex items-center justify-center">
                     <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
-                        <button className="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">design</button>
-                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">development</button>
-                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">marketing</button>
+                        <button className="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">Executive</button>
+                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">Algorithmic </button>
+                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">Client Servies</button>
+                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">Academic Researcher</button>
                     </div>
                 </div>
             </div>
@@ -211,7 +242,7 @@ export function People() {
                 </div>
 
                 <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%] ">
-                    {members.map((props, key) => (
+                    {algo.map((props, key) => (
                         <TeamCard key={key} {...props} />
                     ))}
                 </div>
@@ -250,6 +281,26 @@ export function People() {
                 </div>
 
             </div>
+
+            <div className="container mx-auto mt-[-500px] flex flex-col items-end ">
+                
+                
+                <div className="w-full lg:w-auto mb-10 lg:mb-20">
+                    <Typography
+                        variant="h2"
+                        color="blue-gray"
+                        className="mt-6 mb-3 text-3xl lg:text-4xl"
+                    >
+                        Academic Researcher
+                    </Typography>
+                </div>
+
+                <div className="col-span-2 grid gap-10 md:grid-cols-2 lg:grid-cols-4 aspect-square size-[70%] ">
+                    {services.map((props, key) => (
+                        <TeamCard key={key} {...props} />
+                    ))}
+                </div>
+                </div>
 
 
 
