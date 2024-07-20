@@ -8,7 +8,8 @@ import NewsWire from '../Components/NewsWire';
 import data from '../assets/data/home.json';
 import ContactUs from './Contact';
 import { motion } from 'framer-motion';
-import useScrollAnimation from '../Components/UI/Custom-scroll-hook'; // Adjust the path according to your project structure
+import useScrollAnimation from '../Components/UI/Custom-scroll-hook';
+import HomeHero from "../Components/Home-Hero"; // Adjust the path according to your project structure
 
 const Home = () => {
     const [content, setContent] = useState(null);
@@ -41,24 +42,7 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 className="contain"
             >
-                <div className="text-white h-screen w-screen relative">
-                    <div className="w-full h-full">
-                        <img
-                            className="absolute top-0 left-0 h-full w-full object-cover aria"
-                            src="https://dataismlab.com/media/ALGO_image.png"
-                            alt="movie"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-r from-gray-700 to-transparent"></div>
-                        <div className="absolute top-[20%] left-4 md:left-8 p-4 md:p-8">
-                            <div className='w-screen type'>
-                                <h1 className="text-3xl md:text-5xl font-bold">Welcome To Dataism</h1>
-
-                            </div>
-                            
-                            <p className="text-gray-300 mt-4 md:mt-10 text-lg md:text-2xl">Established in 2024, The Dataism Lab at Virginia Tech is an interdisciplinary hub focused on advancing Quantitative Finance and Econometrics through cutting-edge technologies.</p>
-                        </div>
-                    </div>
-                </div>
+                <HomeHero/>
 
                 <motion.section
                     ref={sectionRef1}
