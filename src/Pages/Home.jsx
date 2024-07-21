@@ -1,5 +1,6 @@
 import React from 'react';
 import '../utils/home.css';
+import useScrollAnimation from '../Components/UI/Custom-scroll-hook';
 
 
 
@@ -13,6 +14,15 @@ import Sector from "../Components/Sector";
 import {Typography} from "@material-tailwind/react";
 
 const Home = () => {
+
+    const animationVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+    };
+
+    const [sectionRef1, controls1] = useScrollAnimation();
+    const [sectionRef2, controls2] = useScrollAnimation();
+    const [sectionRef3, controls3] = useScrollAnimation();
 
     return (
         <>
