@@ -8,10 +8,11 @@ import Sector from "../Components/Sector";
 const About = () => {
     return (
         <>
-            <div className="contain fadeInUp ">
-
-                <AboutHero/>
-
+            <div className="py-10">
+                <div className="mx-auto px-4 lg:px-20">
+               
+                    <AboutHero/>
+                </div>
 
             </div>
 
