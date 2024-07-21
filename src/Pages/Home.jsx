@@ -24,7 +24,7 @@ const Home = () => {
                     <Typography variant='h3' className='text-center'>
                         The sectors that we work on
                     </Typography>
-                    <Sector/>
+                    <Sector clas></Sector>
                 </section>
 
                 <section
