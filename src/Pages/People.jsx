@@ -30,7 +30,7 @@ const execu = [
     },
     {
         img: Ben,
-        name: "Ben Cumming",
+        name: "Ben Cummings",
         title: "VP of Client Services",
         
     },
