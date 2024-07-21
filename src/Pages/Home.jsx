@@ -16,6 +16,9 @@ import { motion } from 'framer-motion';
 import Newsletter from '../Components/Newsletter';
 
 const Home = () => {
+
+
+    
     return (
         <>
             <div className="contain fadeInUp">
