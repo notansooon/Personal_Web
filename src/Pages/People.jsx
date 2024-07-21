@@ -67,15 +67,10 @@ const algo = [
         title: "Algorithmic Developer",
         
     },
-    {
-        img: Roshan,
-        name: "Roshan Sanyal",
-        title: "VP Of Algorithmic Development",
-        
-    },
+    
 ];
 
-const acedemic = [
+const academic = [
     {
         img: Paul,
         name: "Ali Habihnia",
@@ -94,12 +89,7 @@ const acedemic = [
         title: "UI/UX Designer",
         
     },
-    {
-        img: Roshan,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
-        
-    },
+    
 ];
 
 const services = [
@@ -310,7 +300,7 @@ export function People() {
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((props, key) => (
+            {academic.map((props, key) => (
                 <TeamCard key={key} {...props} />
             ))}
         </div>
