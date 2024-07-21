@@ -12,7 +12,7 @@ const JobList = () => {
                 'Computer Science, Finance, Financial Technology, and related majors.\n',
             responsibilities:'Oversee the development of state-of-the-art trading algorithms.\n' +
                 'Lead and mentor a team of developers in creating AI and ML algorithms for financial forecasting and analysis.\n',
-   
+
             status: 'Active'
         },
         { title: 'Client Services Analyst',
