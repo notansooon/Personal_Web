@@ -6,7 +6,7 @@ const HomeHero = () => {
         <div className="relative min-h-screen w-full bg-[url('https://www.vt.edu/content/vt_edu/en/admissions/undergraduate/visit/campus-photo-tour/jcr:content/content/adaptiveimage_926934412.transform/xl-medium/image.jpg')] bg-bottom bg-cover bg-no-repeat">
             <div className="absolute inset-0 h-full w-full bg-black/70" />
             <div className="grid min-h-screen px-8">
-                <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
+                <div className="container relative z-10 my-auto mx-auto grid text-left">
                     <Typography
                         variant="h1"
                         color="white"
