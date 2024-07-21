@@ -42,7 +42,7 @@ const Home = () => {
                     className="relative mb-16 flex flex-col lg:flex-row bg-cover bg-center bg-no-repeat fadeInUp bg-gray-200">
                     <div className="contain px-4 md:px-16 lg:px-24 py-14">
                         <div className="space-y-10">
-                            <NewsWireCarousel />
+                            
                         </div>
                         
                     </div>
