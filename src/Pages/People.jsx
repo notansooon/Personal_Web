@@ -233,9 +233,7 @@ export function People() {
             variant="lead"
             className="font-normal !text-gray-500 max-w-xl"
         >
-            We&apos;re constantly trying to express ourselves and actualize our
-            dreams. If you have the opportunity to play this game of life you
-            need to appreciate every moment.
+           
         </Typography>
     </div>
 
@@ -278,9 +276,7 @@ export function People() {
                 variant="lead"
                 className="font-normal !text-gray-500 max-w-xl"
             >
-                We&apos;re constantly trying to express ourselves and actualize our
-                dreams. If you have the opportunity to play this game of life you
-                need to appreciate every moment.
+               
             </Typography>
         </div>
 
