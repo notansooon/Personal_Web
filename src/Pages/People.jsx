@@ -219,7 +219,7 @@ export function People() {
                 </div>
             </div>
 
-            <div className="container mx-auto">
+            <div className="container ">
 
     <div className="mb-10 lg:mb-20">
         <Typography
@@ -246,7 +246,7 @@ export function People() {
     </div>
 
     
-    <div className="mt-10 lg:mt-20 flex flex-col items-center lg:items-end">
+    <div className="mt-10 lg:mt-20 flex flex-col">
         <div className="w-full lg:w-auto mb-10 lg:mb-20">
             <Typography
                 variant="h2"
@@ -292,7 +292,7 @@ export function People() {
     </div>
 
    
-    <div className="mt-10 lg:mt-20 flex flex-col items-center lg:items-end">
+    <div className="mt-10 lg:mt-20 flex flex-col ">
         <div className="w-full lg:w-auto mb-10 lg:mb-20">
             <Typography
                 variant="h2"
