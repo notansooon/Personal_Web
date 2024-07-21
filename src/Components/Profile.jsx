@@ -55,8 +55,6 @@ export const HeroTextTeam = () => {
     );
 };
 
-
-
 export const Profile = ({ user, pic }) => {
     const profile = data.profile.find(profile => profile.name === user);
 

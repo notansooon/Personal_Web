@@ -1,61 +1,50 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore,{Autoplay} from "swiper";
+import React from "react";
+import { Avatar, Typography, Button } from "@material-tailwind/react";
 
-import 'swiper/css';
-import {color} from "framer-motion";
 
-const NewsWire = () => {
 
+
+export function NewsWire() {
     return (
-        <Swiper
-            spaceBetween={50}
-            slidesPerView={1}
-            autoplay={{delay: 2000}}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-        >
-            <SwiperSlide>{Slide()}</SwiperSlide>
-            <SwiperSlide>{Slide()}</SwiperSlide>
-            <SwiperSlide>{Slide()}</SwiperSlide>
-            <SwiperSlide>{Slide()}</SwiperSlide>
-            ...
-        </Swiper>
+        <>
+            <div className="container mx-auto grid h-full min-h-[70vh] w-full grid-cols-1 items-center gap-x-12 gap-y-4 p-6 lg:grid-cols-2">
+                <img
+                    src="https://www.material-tailwind.com/image/blog-5.jpeg"
+                    alt="blog"
+                    className="col-span-1 h-full w-full rounded-lg object-cover shadow-sm lg:h-[20rem]"
+                />
+                <div className="col-span-1">
+                    <Typography
+                        color="blue-gray"
+                        className="mb-2 font-semibold uppercase text-sm"
+                    >
+                        business
+                    </Typography>
+                    <Typography
+                        variant="h3"
+                        color="blue-gray"
+                        className="mb-2 !text-xl !leading-snug lg:!text-2xl"
+                    >
+                        Autodesk looks to future of 3D with Project Escher
+                    </Typography>
+                    <Typography
+                        variant="lead"
+                        className="mb-3 w-full !text-gray-600 text-sm"
+                    >
+                        Warner Music Group announced today it&apos;s acquiring the selected
+                        assets of the music platform Songkick, including its app for finding
+                        concerts and the company&apos;s trademark. Songkick has been
+                        involved in a lawsuit against the major…{" "}
+                        <Button variant="text" size="sm" className="!py-1 !px-3">
+                            Read More
+                        </Button>
+                    </Typography>
+
+                </div>
+            </div>
+        </>
     );
-};
-
-function Slide(){
-    return (
-        <div className="grid md:grid-cols-2">
-            <div className="image">
-                <img alt=""/>
-
-            </div>
-            <div className="info flex justify-center flex-col">
-                <div className="cat">
-                    <p className="text-gray-800 hover:text-gray-600"> date</p>
-
-                </div>
-                <div className="title">
-                    <p className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-600"> Title</p>
-                </div>
-                <p className="text-gray-500 py-3">
-                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind
-                    text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-                </p>
-
-            </div>
-        </div>
-    )
 }
 
-
-
-
-
-
-
 export default NewsWire;
-
-
 

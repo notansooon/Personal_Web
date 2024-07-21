@@ -1,4 +1,11 @@
-import React from 'react'
+import {
+    Card,
+    CardBody,
+    CardHeader,
+    IconButton,
+    Typography,
+} from "@material-tailwind/react";
+import { UserGroupIcon } from "@heroicons/react/24/solid";
 import Ben from '../ProfilePicture/ben.jpg'
 import Ali from '../ProfilePicture/ali.jpg'
 import Roshan from '../ProfilePicture/roshan.jpg'
@@ -10,8 +17,116 @@ import Paul from '../ProfilePicture/paul.jpg'
 import Unknown from '../ProfilePicture/unknown.jpg'
 import Ben_f from '../ProfilePicture/ben_f.jpg'
 import Team from '../Components/Profile'
-import {motion} from 'framer-motion'
-import { HeroTextTeam } from '../Components/Profile'
+import { useEffect, useState } from "react";
+
+
+const members = [
+    {
+        img: Ali,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Ben,
+        name: "Ben Cumming",
+        title: "VP of Client Services",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
+
+const algo = [
+    {
+        img: Ali,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Ben,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Ben_f,
+        name: "Ben Facciani",
+        title: "Algorithmic Developer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
+
+const acedemic = [
+    {
+        img: Paul,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Ben,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
+
+const services = [
+    {
+        img: Alex,
+        name: "Ali Habihnia",
+        title: "Principle Investigator",
+        
+    },
+    {
+        img: Roshan,
+        name: "Jordan Michael",
+        title: "Front-End Developer",
+        
+    },
+    {
+        img: Alex,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+    {
+        img: Roshan,
+        name: "Nora Hazel",
+        title: "UI/UX Designer",
+        
+    },
+];
 
 
 
@@ -19,108 +134,185 @@ import { HeroTextTeam } from '../Components/Profile'
 
 
 
-const People = () => {
+
+
+function TeamCard({ img, name, title, desc }) {
+
+    
     return (
-        <>
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="contain"
-            >
-                <div className="w-full">
-                    
-
-                    <div className=" top-0 overflow-hidden pt-10 pb-12 lg:pt-[50px] lg:pb-[90px] bg-transparent dark:bg-dark">
-                        <div className='flex justify-end '>
-                            <HeroTextTeam />
-
-                        </div>
-                    </div>
-
-                    <section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">our team</h1>
-
-        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
-            Each member brings unique skills and perspectives, working collaboratively to achieve excellence. Get to know the people behind our success and discover the stories that inspire our journey.
-        </p>
-
-        <div class="flex items-center justify-center">
-            <div class="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
-                <button class="px-4 py-2 text-sm font-medium text-white capitalize bg-blue-600 md:py-3 rounded-xl md:px-12">design</button>
-                <button class="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12">development</button>
-                <button class="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12">marketing</button>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
-            <div class="flex flex-col items-center">
-                <img class="object-cover w-full rounded-xl aspect-square" src={Ali} />
-
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
-
-                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">Yes</p>
-
-                
-            </div>
-
-            <div class="flex flex-col items-center">
-                <img class="object-cover w-full rounded-xl aspect-square" src={Ben} />
-
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Name</h1>
-
-                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300">Yes</p>
-
-                
-            </div>
-
-            <div class="flex flex-col items-center">
-                <img class="object-cover w-full rounded-xl aspect-square" src={Raseen} />
-
-                <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">Bob Rob</h1>
-
-                <p class="mt-2 text-gray-500 capitalize dark:text-gray-300"></p>
-
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-                    
-                    
-                    
-                    
-                    {/*<h1 className='flex justify-center font-bold text-4xl mt-20'>Meet The Team</h1>
-                    <div className="flex justify-center mb-4">
-                        <Team user="Ali Habibnia" pic={Ali}/>
-                    </div>
-                    <div className="flex justify-center mb-4">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-40 justify-items-center">
-                            <Team user="Raseen Nirjhar" pic={Raseen}/>
-                            <Team user="Roshan Sanyal" pic={Roshan}/>
-                            <Team user="Gaurav Shah" pic={Gaurav}/>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
-                        <Team user="Ben Cummings" pic={Ben}/>
-                        <Team user="Ryan Bradley" pic={Ryan}/>
-                        <Team user="Alex Jaimes" pic={Alex}/>
-                        <Team/>
-
-                    </div>
-
-                    */}
-
-
+        <Card color="transparent" shadow={false}>
+            <CardHeader shadow={false} floated={false} className="!m-0 w-40">
+                <img
+                    src={img}
+                    alt={name}
+                    className="h-full w-full object-cover object-center"
+                />
+            </CardHeader>
+            <CardBody className="!pl-0 text-left">
+                <Typography variant="h5" color="blue-gray" className="font-medium">
+                    {name}
+                </Typography>
+                <Typography className="mb-2 font-bold !text-gray-500 text-lg">
+                    {title}
+                </Typography>
+                <Typography className="mb-4 max-w-xs !font-normal !text-gray-500">
+                    {desc}
+                </Typography>
+                <div className="flex items-center gap-1.5">
+                    <IconButton variant="text" color="gray">
+                        <i className="fa-brands fa-twitter text-lg" />
+                    </IconButton>
+                    <IconButton variant="text" color="gray">
+                        <i className="fa-brands fa-linkedin text-lg" />
+                    </IconButton>
+                    <IconButton variant="text" color="gray">
+                        <i className="fa-brands fa-dribbble text-lg" />
+                    </IconButton>
                 </div>
-
-            </motion.div>
-
-
-        </>
+            </CardBody>
+        </Card>
     );
 }
 
-export default People
+
+
+export function People() {
+
+   
+    
+    const scrollHandler = (event) => {
+
+        const value = parseInt(event.target.getAttribute('data-scroll'));
+
+        
+        window.scrollTo({
+            top: value,
+            behavior: 'smooth'
+        })
+
+
+
+    }
+
+
+    return (
+        <section className="py-8 px-8 lg:py-28">
+
+
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">our team</h1>
+
+                <p className="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+                    Each member brings unique skills and perspectives, working collaboratively to achieve excellence. Get to know the people behind our success and discover the stories that inspire our journey.
+                </p>
+
+                <div className="flex items-center justify-center">
+                    <div className="flex items-center p-1 border border-blue-600 dark:border-blue-400 rounded-xl">
+                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12" data-scroll='400px' onClick={scrollHandler}>Executive</button>
+                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:mx-8 md:px-12" data-scroll='1000px' onClick={scrollHandler}>Algorithmic </button>
+                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" data-scroll='1600px' onClick={scrollHandler}>Client Servies</button>
+                        <button className="px-4 py-2 text-sm font-medium text-blue-600 capitalize transition-colors duration-300 md:py-3 dark:text-blue-400 dark:hover:text-white focus:outline-none hover:bg-blue-600 hover:text-white rounded-xl md:px-12" data-scroll='2200px' onClick={scrollHandler}>Academic Researcher</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mx-auto">
+
+    <div className="mb-10 lg:mb-20">
+        <Typography
+            variant="h2"
+            color="blue-gray"
+            className="mt-6 mb-3 text-3xl lg:text-4xl"
+        >
+            The Executive Team
+        </Typography>
+        <Typography
+            variant="lead"
+            className="font-normal !text-gray-500 max-w-xl"
+        >
+            We&apos;re constantly trying to express ourselves and actualize our
+            dreams. If you have the opportunity to play this game of life you
+            need to appreciate every moment.
+        </Typography>
+    </div>
+
+    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        {algo.map((props, key) => (
+            <TeamCard key={key} {...props} />
+        ))}
+    </div>
+
+    
+    <div className="mt-10 lg:mt-20 flex flex-col items-center lg:items-end">
+        <div className="w-full lg:w-auto mb-10 lg:mb-20">
+            <Typography
+                variant="h2"
+                color="blue-gray"
+                className="mt-6 mb-3 text-3xl lg:text-4xl"
+            >
+                Algorithmic Developer
+            </Typography>
+        </div>
+
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {algo.map((props, key) => (
+                <TeamCard key={key} {...props} />
+            ))}
+        </div>
+    </div>
+
+   
+    <div className="mt-10 lg:mt-20">
+        <div className="mb-10 lg:mb-20">
+            <Typography
+                variant="h2"
+                color="blue-gray"
+                className="mt-6 mb-3 text-3xl lg:text-4xl"
+            >
+                Client Services
+            </Typography>
+            <Typography
+                variant="lead"
+                className="font-normal !text-gray-500 max-w-xl"
+            >
+                We&apos;re constantly trying to express ourselves and actualize our
+                dreams. If you have the opportunity to play this game of life you
+                need to appreciate every moment.
+            </Typography>
+        </div>
+
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {members.map((props, key) => (
+                <TeamCard key={key} {...props} />
+            ))}
+        </div>
+    </div>
+
+   
+    <div className="mt-10 lg:mt-20 flex flex-col items-center lg:items-end">
+        <div className="w-full lg:w-auto mb-10 lg:mb-20">
+            <Typography
+                variant="h2"
+                color="blue-gray"
+                className="mt-6 mb-3 text-3xl lg:text-4xl"
+            >
+                Academic Researcher
+            </Typography>
+        </div>
+
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {services.map((props, key) => (
+                <TeamCard key={key} {...props} />
+            ))}
+        </div>
+    </div>
+
+</div>
+
+
+
+        </section>
+    );
+}
+
+export default People;

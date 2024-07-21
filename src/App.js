@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Apply from "./Pages/Apply";
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact';
+import Sectors from './Pages/Sectors';
 import ProfilePage from './Pages/ProfilePage.jsx';
 import SponsorPage from './Pages/SponsorPage.jsx';
 import ResearchPage from './Pages/Research.jsx';
@@ -20,6 +21,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
       <>
+          <div className= 'app-container'>
               <Navbar className="p-16"/>
 
               <Routes>
@@ -29,6 +31,7 @@ function App() {
                   <Route path="/Projects" element={<Projects/>}/>
                   <Route path="/About" element={<About/>}/>
                   <Route path='/Contact' element={<Contact/>}/>
+                  <Route path="/Sectors" element={<Sectors />}/>
                   <Route path='/ProfilePage/:name' element={<ProfilePage />}/>
                   <Route path='/Sponsor' element={<SponsorPage />}/>
                   <Route path='/Research' element={<ResearchPage/>}/>
@@ -36,9 +39,11 @@ function App() {
                   <Route path='/*' element={<HttpStatusCodes/>}/>
 
               </Routes>
-              <Footer className='flex-end'>
+              <Footer>
 
               </Footer>
+          </div>
+
       </>
   );
 }

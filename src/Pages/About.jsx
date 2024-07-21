@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import AboutHero from "../Components/About-Hero";
 import ContactUs from './Contact';
 import AboutContent from "../Components/about-content";
+import Sector from "../Components/Sector";
 
 
 
@@ -21,8 +22,9 @@ const About = () => {
                     <AboutHero/>
 
                     <AboutContent/>
+                    <Sector/>
 
-                    {/* Contact Section */}
+
                     
                 </div>
             </div>

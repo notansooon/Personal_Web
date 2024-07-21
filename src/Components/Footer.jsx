@@ -1,40 +1,41 @@
-import React from 'react';
-import {
-    FaFacebook,
-    FaLinkedin,
-    FaWhatsapp,
-    FaEnvelope
-} from 'react-icons/fa'
-import Button from './/IconButton'
+import { Typography, IconButton } from "@material-tailwind/react";
+const currentYear = new Date().getFullYear();
 
-const Footer = () => {
+export function Footer() {
     return (
-        <div className="max-w-[100%] py-8 px-4 grid lg:grid-cols-3 gap-8 text-gray-300 bg-black">
-            <div>
-                <h1 className='w-full text-3xl font-bold'>DLQF</h1>
-                <p className="py-4">ewfwefqeff fwfkwjw rjnfwfkj JWLnrwkf ernjreknfa;/ rjkefg ragkl vlrfgrwjfg gnkrwg jkw fkgv wslksnwf wjka gvrj</p>
-                <div className="flex justify-between md:w-[75%] my-6">
-                    <FaEnvelope size={30} />
-                    <FaWhatsapp size={30} />
-                    <FaFacebook size={30} />
-                    <FaLinkedin size={30} />
+        <footer className="px-8 py-28">
+            <div className="container mx-auto">
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                    <Typography className="!text-sm font-medium text-gray-500 lg:text-left text-center">
+                        All rights reserved. Copyright &copy; {currentYear} Dataism Laboratory For Quantitative Finance
+                    </Typography>
+                    <div className="flex lg:ml-auto place-content-center gap-2">
+                        <a href="www.facebook.com">
+                            <IconButton variant="text" size="sm">
+                                <i className="fa-brands fa-twitter text-lg text-gray-500 transition-colors hover:text-blue-gray-900" />
+                            </IconButton>
+                        </a>
+                        <a href="#buttons-with-link">
+                            <IconButton variant="text" size="sm">
+                                <i className="fa-brands fa-youtube text-lg text-gray-500 transition-colors hover:text-blue-gray-900" />
+                            </IconButton>
+                        </a>
+                        <a href="#buttons-with-link">
+                            <IconButton variant="text" size="sm">
+                                <i className="fa-brands fa-instagram text-lg text-gray-500 transition-colors hover:text-blue-gray-900" />
+                            </IconButton>
+                        </a>
+                        <a href="#buttons-with-link">
+                            <IconButton variant="text" size="sm">
+                                <i className="fa-brands fa-github text-lg text-gray-500 transition-colors hover:text-blue-gray-900" />
+                            </IconButton>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div className='lg:col-span-2 flex justify-between'>
-                <ul>
-                    <li className='py-2 text-sm'>Home</li>
-                    <li className='py-2 text-sm'>About</li>
-                    <li className='py-2 text-sm'>Research</li>
-                    <li className='py-2 text-sm'>Projects</li>
-                    <li className='py-2 text-sm'>People</li>
-                    <li className='py-2 text-sm'>Contact</li>
-                </ul>
-
-            </div>
-        </div>
-    )
+        </footer>
+    );
 }
-
 export default Footer;
 
 

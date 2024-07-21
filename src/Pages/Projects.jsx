@@ -99,8 +99,10 @@ function Projects() {
           <div className='mt-2'>
             
             <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-              <ProjectComp status="ongoing" title="Ongoing Project 1" description="Detailed description of ongoing project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["UI/UX Designer", "Software Engineer"]} />
-              <ProjectComp status="ongoing" title="Ongoing Project 2" description="Detailed description of ongoing project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["Data Scientist", "Backend Developer"]} />
+              <ProjectComp status="ongoing" title="Ongoing Project 1" description="Detailed description of ongoing
+              project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["UI/UX Designer", "Software Engineer"]} />
+              <ProjectComp status="ongoing" title="Ongoing Project 2" description="Detailed description of ongoing
+               project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac erat vitae libero condimentum vehicula." roles={["Data Scientist", "Backend Developer"]} />
             </div>
           </div>
 
