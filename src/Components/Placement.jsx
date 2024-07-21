@@ -21,12 +21,12 @@ const Placement = () => {
     return (
         <section className="py-8 px-8 lg:py-20">
             <Card
-                className="container mx-auto -mt-6 text-center py-10 px-6 bg-transparent"
+                className="container mx-auto -mt-6 text-center py-10 px-6 "
 
             >
 
                 <Typography variant="h2" color="black" className="mb-10">
-                    Placement
+                    Members Placement
                 </Typography>
                 <p className='mb-10 -mt-6'>companies where our students have secured placements,
                 showcasing their skills and the exceptional quality of our programs</p>

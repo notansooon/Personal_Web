@@ -18,12 +18,13 @@ import Unknown from '../ProfilePicture/unknown.jpg'
 import Ben_f from '../ProfilePicture/ben_f.jpg'
 import Team from '../Components/Profile'
 import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 
-const members = [
+const execu = [
     {
         img: Ali,
-        name: "Ali Habihnia",
+        name: "Ali Habibnia",
         title: "Principle Investigator",
         
     },
@@ -35,14 +36,14 @@ const members = [
     },
     {
         img: Alex,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
+        name: "Alex Jaimes",
+        title: "VP of Data Science",
         
     },
     {
         img: Roshan,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
+        name: "Roshan Sanyal",
+        title: "VP of Algorithmic Development",
         
     },
 ];
@@ -50,14 +51,14 @@ const members = [
 const algo = [
     {
         img: Ali,
-        name: "Ali Habihnia",
+        name: "Ali Habibnia",
         title: "Principle Investigator",
         
     },
     {
         img: Ben,
-        name: "Jordan Michael",
-        title: "Front-End Developer",
+        name: "Ben Cummings",
+        title: "VP Of Client Services",
         
     },
     {
@@ -66,15 +67,10 @@ const algo = [
         title: "Algorithmic Developer",
         
     },
-    {
-        img: Roshan,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
-        
-    },
+    
 ];
 
-const acedemic = [
+const academic = [
     {
         img: Paul,
         name: "Ali Habihnia",
@@ -93,12 +89,7 @@ const acedemic = [
         title: "UI/UX Designer",
         
     },
-    {
-        img: Roshan,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
-        
-    },
+    
 ];
 
 const services = [
@@ -138,9 +129,18 @@ const services = [
 
 function TeamCard({ img, name, title, desc }) {
 
+    const nav = useNavigate();
+
+    const profileHandler = () => {
+        nav(`/ProfilePage/${name}`);
+    }
+
+   
+   
+
     
     return (
-        <Card color="transparent" shadow={false}>
+        <Card color="transparent" shadow={false} onClick={profileHandler}>
             <CardHeader shadow={false} floated={false} className="!m-0 w-40">
                 <img
                     src={img}
@@ -233,15 +233,13 @@ export function People() {
             variant="lead"
             className="font-normal !text-gray-500 max-w-xl"
         >
-            We&apos;re constantly trying to express ourselves and actualize our
-            dreams. If you have the opportunity to play this game of life you
-            need to appreciate every moment.
+           
         </Typography>
     </div>
 
     <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-        {algo.map((props, key) => (
-            <TeamCard key={key} {...props} />
+        {execu.map((props, key) => (
+            <TeamCard key={key} {...props}  />
         ))}
     </div>
 
@@ -278,14 +276,12 @@ export function People() {
                 variant="lead"
                 className="font-normal !text-gray-500 max-w-xl"
             >
-                We&apos;re constantly trying to express ourselves and actualize our
-                dreams. If you have the opportunity to play this game of life you
-                need to appreciate every moment.
+               
             </Typography>
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {members.map((props, key) => (
+            {execu.map((props, key) => (
                 <TeamCard key={key} {...props} />
             ))}
         </div>
@@ -304,7 +300,7 @@ export function People() {
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((props, key) => (
+            {academic.map((props, key) => (
                 <TeamCard key={key} {...props} />
             ))}
         </div>
