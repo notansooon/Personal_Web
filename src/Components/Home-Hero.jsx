@@ -12,7 +12,7 @@ const HomeHero = () => {
                         color="white"
                         className="text-4xl !leading-snug lg:text-5xl"
                     >
-                        Work with an amazing
+                        Welcome To Dataism
                     </Typography>
                     <Typography
                         variant="lead"
