@@ -47,6 +47,9 @@ const Home = () => {
                     </div>
                 </section>
 
+
+                
+
                 <div>
                     <Placement/>
                 </div>
