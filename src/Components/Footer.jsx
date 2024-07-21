@@ -22,7 +22,7 @@ export function Footer() {
 
                 <div className="flex gap-2">
                     <a href="#buttons-with-link">
-                        
+
                     </a>
                     <a href="#buttons-with-link">
                         <IconButton variant="text" size="sm">

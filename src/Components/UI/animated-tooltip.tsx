@@ -1,6 +1,6 @@
 "use client";
 // @ts-ignore
-import Image from '../BannerImage.png';
+import Image from '../../assets/Images/BannerImage.png';
 import React, { useState } from "react";
 import {
     motion,

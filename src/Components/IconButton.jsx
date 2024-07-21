@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import React from "react";
+import React, {useRef} from "react";
 
 
 export default function IconButton({ children, color, text, ...props }) {

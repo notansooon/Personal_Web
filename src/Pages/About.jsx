@@ -22,7 +22,7 @@ const About = () => {
                     <AboutHero/>
 
                     <AboutContent/>
-                    <Sector/>
+
 
 
                     
