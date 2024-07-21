@@ -18,7 +18,7 @@ SwiperCore.use([Navigation]);
 const NewsWireCarousel = ()=>{
     return (
         <div className="w-[100%] mx-auto px-4 md:px-20">
-            <h1 className="  container font-bold text-4xl pb-12 text-center">Trending</h1>
+            <h1 className=" container font-bold text-4xl pb-12 text-center">Trending</h1>
             <Swiper
                 spaceBetween={20}
                 slidesPerView={1}

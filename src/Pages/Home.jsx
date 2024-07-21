@@ -13,6 +13,7 @@ import NewsWireCarousel from "../Components/NewsWireCarousel";
 import Sector from "../Components/Sector";
 import {Typography} from "@material-tailwind/react";
 import { motion } from 'framer-motion';
+import Newsletter from '../Components/Newsletter';
 
 const Home = () => {
 
@@ -38,10 +39,15 @@ const Home = () => {
                     <Sector clas></Sector>
                 </section>
 
-                
+          
                 <NewsWireCarousel />
+                <Newsletter />
+
+                
+                
                             
-                        
+                       
+
 
 
 
