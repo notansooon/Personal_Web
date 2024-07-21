@@ -14,16 +14,16 @@ const Navbar = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
-                        <Link to="/" className="text-xl font-bold text-blue-600">Dataism Lab</Link>
+                        <Link to="/" className="text-xl font-bold text-blue-950">Dataism Lab</Link>
                     </div>
                     <div className="hidden md:flex space-x-8">
-                        <Link to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
-                        <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
-                        <Link to="/projects" className="text-gray-700 hover:text-blue-600">Project</Link>
-                        <Link to="/Sectors" className="text-gray-700 hover:text-blue-600">Sectors</Link>
-                        <Link to="/apply" className="text-gray-700 hover:text-blue-600">Apply</Link>
-                        <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
-                        <Link to="/people" className="text-gray-700 hover:text-blue-600">People</Link>
+                        <Link to="/" className="text-gray-700 hover:text-blue-950">Home</Link>
+                        <Link to="/about" className="text-gray-700 hover:text-blue-950">About</Link>
+                        <Link to="/projects" className="text-gray-700 hover:text-blue-950">Project</Link>
+                        <Link to="/Sectors" className="text-gray-700 hover:text-blue-950">Sectors</Link>
+                        <Link to="/apply" className="text-gray-700 hover:text-blue-950">Apply</Link>
+                        <Link to="/contact" className="text-gray-700 hover:text-blue-950">Contact</Link>
+                        <Link to="/people" className="text-gray-700 hover:text-blue-950">People</Link>
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="focus:outline-none">
