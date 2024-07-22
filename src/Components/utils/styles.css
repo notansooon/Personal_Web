@@ -111,20 +111,17 @@
 
 }
 
-.about {
-  font-size: 30px;
-  line-height: 36px;
-  letter-spacing: 10px;
-  font-family: monospace;
-  border-right: 5px solid;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-  animation: 
-        typing 2s steps(14) forwards,
-        cursor .4s step-end infinite alternate
-
+.fade-in {
+  animation: fadeIn 5s ease-in-out;
 }
 
 @keyframes typing{

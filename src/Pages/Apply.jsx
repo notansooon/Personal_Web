@@ -2,6 +2,7 @@ import React from 'react';
 import JobList from '../Components/Jobs-List';
 import { Typography } from "@material-tailwind/react";
 import Typewriter from "typewriter-effect";
+import '../Components/utils/styles.css'
 
 const Apply = () => {
     return (
@@ -18,21 +19,23 @@ const Apply = () => {
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
-                                    .typeString("Discover Opportunities ")
-                                    
-                                    
+                                    .typeString("Discover Opportunities")
                                     .start();
                             }}
                         />
-                        <Typewriter className='ml-10'
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .typeString("Find, Apply, Innovate")
-                                    
-                                    
-                                    .start(2000);
-                            }}
-                        />
+                        
+                        
+                    </Typography>
+
+
+                    <Typography
+                        variant="h1"
+                        color="black"
+                        className="text-4xl !leading-snug lg:text-5xl ml-10 fade-in "
+                    >
+                        
+                        Find, Apply, Innovate
+                        
                     </Typography>
                     
 
