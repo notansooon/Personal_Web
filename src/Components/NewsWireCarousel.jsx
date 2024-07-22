@@ -17,10 +17,11 @@ SwiperCore.use([Navigation]);
 
 const NewsWireCarousel = ()=>{
     return (
-        <div className="w-[100%] mx-auto px-4 md:px-20">
-            <h1 className=" container font-bold text-4xl pb-12 text-center">Trending</h1>
+        <section className="newsWireCarousel py-16">
+        <div className="container mx-auto px-4 md:px-20">
+            <h1 className="font-bold text-4xl pb-12 text-center">Trending</h1>
             <Swiper
-                spaceBetween={20}
+                spaceBetween={50}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
                 autoplay={{
@@ -31,15 +32,15 @@ const NewsWireCarousel = ()=>{
                 navigation={{ enabled: true, hideOnClick: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
-                style={{ overflow: 'hidden' }}
             >
-                <SwiperSlide><NewsWire /></SwiperSlide>
-                <SwiperSlide><NewsWire /></SwiperSlide>
-                <SwiperSlide><NewsWire /></SwiperSlide>
-                <SwiperSlide><NewsWire /></SwiperSlide>
-                
+                <SwiperSlide>{NewsWire}</SwiperSlide>
+                <SwiperSlide>{NewsWire}</SwiperSlide>
+                <SwiperSlide>{NewsWire}</SwiperSlide>
+                <SwiperSlide>{NewsWire}</SwiperSlide>
+                {/* Add more SwiperSlides as needed */}
             </Swiper>
         </div>
+    </section>
     )
 }
 
