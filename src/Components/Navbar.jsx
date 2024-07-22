@@ -19,7 +19,7 @@ const Navbar = () => {
                     <div className="hidden md:flex space-x-8">
                         <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold ">Home</Link>
                         <Link to="/about" className="text-gray-700 hover:text-blue-950 font-semibold">About</Link>
-                        <Link to="/projects" className="text-gray-700 hover:text-blue-950 font-semibold">Project</Link>
+                        {/*<Link to="/projects" className="text-gray-700 hover:text-blue-950 font-semibold">Project</Link>*/}
                         {/*<Link to="/Sectors" className="text-gray-700 hover:text-blue-950 font-semibold">Sectors</Link>*/}
                         <Link to="/apply" className="text-gray-700 hover:text-blue-950 font-semibold">Apply</Link>
                         <Link to="/contact" className="text-gray-700 hover:text-blue-950 font-semibold">Contact</Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <div className="flex flex-col space-y-1 px-4 py-2">
                         <Link to="/" className="text-gray-700 hover:text-blue-950 hover:font-semibold">Home</Link>
                         <Link to="/about" className="text-gray-700 hover:text-blue-950">About</Link>
-                        <Link to="/projects" className="text-gray-700 hover:text-blue-950">Project</Link>
+                        {/*<Link to="/projects" className="text-gray-700 hover:text-blue-950">Project</Link>*/}
                         <Link to="/apply" className="text-gray-700 hover:text-blue-950">Apply</Link>
                         <Link to="/Sectors" className="text-gray-700 hover:text-blue-950">Sectors</Link>
                         <Link to="/contact" className="text-gray-700 hover:text-blue-950">Contact</Link>

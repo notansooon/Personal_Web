@@ -5,6 +5,7 @@ import {
     IconButton,
     Typography,
 } from "@material-tailwind/react";
+import '../Components/utils/styles.css'
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 import Ben from '../ProfilePicture/ben.jpg'
 import Ali from '../ProfilePicture/ali.jpg'
@@ -19,6 +20,7 @@ import Ben_f from '../ProfilePicture/ben_f.jpg'
 import Team from '../Components/Profile'
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 
 const execu = [
@@ -189,32 +191,44 @@ export function People() {
     return (
         <section className="py-8 px-8 lg:py-28">
 
+                <div className="container  relative z-10  my-auto mx-auto grid ml-[10%]">
+                    <Typography
+                        variant="h1"
+                        color="black"
+                        className="text-4xl !leading-snug lg:text-5xl"
+                    >
+                       <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Dataism ")
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .typeString("Meet Our Teams")
+                                    .start();
+                            }}
+                        />
+                    </Typography>
+                   
+                </div>
 
-            <div className="container px-6 py-10 mx-auto">
-                <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl">our team</h1>
+
+            <div className="container px-6 py-10 mx-auto mt-80">
+                
 
                 <p className="max-w-2xl mx-auto my-6 text-center text-gray-500">
                     Each member brings unique skills and perspectives, working collaboratively to achieve excellence.
                     Get to know the people behind our success and discover the stories that inspire our journey.
                 </p>
 
-                <div className="flex items-center justify-center">
-                    <div className="flex items-center p-1 border border-blue-950 rounded-xl">
-                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-950 capitalize
-                        transition-colors duration-300 md:py-3  focus:outline-none hover:bg-blue-950 hover:text-white
-                        rounded-xl md:mx-8 md:px-12" data-scroll='400px' onClick={scrollHandler}>Executive</button>
+                <div className="flex items-center justify-center p-2">
+                    <div className="flex flex-wrap items-center justify-center p-1 border border-blue-950 rounded-xl">
+                        <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='400px' onClick={scrollHandler}>Executive</button>
 
-                        <button className="px-4 py-2 mx-4 text-sm font-medium text-blue-950 capitalize
-                        transition-colors duration-300 md:py-3  focus:outline-none hover:bg-blue-950 hover:text-white
-                        rounded-xl md:mx-8 md:px-12" data-scroll='1000px' onClick={scrollHandler}>Algorithmic </button>
+                        <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='1000px' onClick={scrollHandler}>Algorithmic</button>
 
-                        <button className="px-4 py-2 text-sm font-medium text-blue-950 capitalize
-                        transition-colors duration-300 md:py-3  focus:outline-none hover:bg-blue-950 hover:text-white
-                        rounded-xl md:px-12" data-scroll='1600px' onClick={scrollHandler}>Client Servies</button>
+                        <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='1600px' onClick={scrollHandler}>Client Services</button>
 
-                        <button className="px-4 py-2 text-sm font-medium text-blue-950 capitalize
-                        transition-colors duration-300 md:py-3  focus:outline-none hover:bg-blue-950 hover:text-white
-                        rounded-xl md:px-12" data-scroll='2200px' onClick={scrollHandler}>Academic Researcher</button>
+                        <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='2200px' onClick={scrollHandler}>Academic Researcher</button>
                     </div>
                 </div>
             </div>

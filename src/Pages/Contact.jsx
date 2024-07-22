@@ -6,18 +6,17 @@ export function Contact() {
         <section className="px-8 py-8 lg:py-16">
             <div className="container mx-auto text-center">
                 
-                <Typography
-                    variant="h1"
-                    color="blue-gray"
-                    className="mb-4 !text-3xl lg:!text-5xl"
-                >
-                    We&apos;re Here to Help
-                </Typography>
-                <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
-                    Whether it&apos;s a question about our services, a request for
-                    technical assistance, or suggestions for improvement, our team is
-                    eager to hear from you.
-                </Typography>
+            <div className="container relative z-10 my-auto mx-auto grid text-left">
+                    <Typography
+                        variant="h1"
+                        color="white"
+                        className="text-4xl !leading-snug lg:text-5xl"
+                    >
+                        Meet Our Teams
+                    </Typography>
+                   
+                </div>
+
                 <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
                     <img
                         src={locationImage}

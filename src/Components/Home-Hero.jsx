@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../assets/Images/image.jpg'
 import {IconButton, Typography} from "@material-tailwind/react";
+import Typewriter from "typewriter-effect";
 const HomeHero = () => {
     return (
         <div className="relative min-h-screen w-full bg-[url('https://www.vt.edu/content/vt_edu/en/admissions/undergraduate/visit/campus-photo-tour/jcr:content/content/adaptiveimage_926934412.transform/xl-medium/image.jpg')] bg-bottom bg-cover bg-no-repeat">
@@ -12,7 +13,14 @@ const HomeHero = () => {
                         color="white"
                         className="text-4xl !leading-snug lg:text-5xl"
                     >
-                        Welcome To Dataism
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Welcome to Dataism")
+                                    
+                                    .start();
+                            }}
+                        />
                     </Typography>
                     <Typography
                         variant="lead"

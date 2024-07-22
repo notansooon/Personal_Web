@@ -2,6 +2,7 @@ import React from "react";
 import img1 from '../assets/Images/1712985343744.jpeg'
 import img2 from '../assets/Images/1713572060861.jpeg'
 import img3 from '../assets/Images/1712365057432.jpeg'
+import Typewriter from "typewriter-effect";
 
 const ImageComponent = ({ src, alt }) => {
     return (
@@ -479,8 +480,17 @@ const HeroTextComponent = () => {
     return (
         <div className="mt-10 lg:mt-0">
             <div className='w-full'>
-            <h2 className="about mb-5 leading-tight -tracking-tighter text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-               Get to Know Us
+            <h2 className="mb-5 leading-tight -tracking-tighter text-3xl font-bold text-dark sm:text-[40px]/[48px]">
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Welcome to About")
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .typeString("Get To Know us")
+                                    .start();
+                            }}
+                        />
             </h2>
 
             </div>
