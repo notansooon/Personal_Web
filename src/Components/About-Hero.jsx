@@ -484,9 +484,7 @@ const HeroTextComponent = () => {
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
-                                    .typeString("Welcome to About")
-                                    .pauseFor(1000)
-                                    .deleteAll()
+                                
                                     .typeString("Get To Know us")
                                     .start();
                             }}
