@@ -29,7 +29,7 @@ function BlogPostCard({ img, title, desc }) {
                 <Typography className="mb-6 font-normal !text-gray-500">
                     {desc}
                 </Typography>
-                <Button color="gray">read more</Button>
+                <Button className='bg-blue-950' color="gray">read more</Button>
             </CardBody>
         </Card>
     );
@@ -64,7 +64,6 @@ export function BlogPreview() {
             <div className="container mx-auto lg:mb-20 mb-10 text-center">
                 <Typography
                     variant="h1"
-                    color="blue-gray"
                     className="mb-2 !text-2xl lg:!text-4xl"
                 >
                     Check out what&apos;s new
