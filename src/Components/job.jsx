@@ -44,7 +44,7 @@ const Job = ({ title, description, status, pay, responsibilities }) => {
                     </div>
 
                     <span className='flex justify-center mt-4 px-3 py-1 rounded-full text-sm bg-gray-300 text-green-800 items-center' expand='data-collapse' onClick={clickHandler} >
-                            <FontAwesomeIcon icon={faChevronUp} />
+                            <FontAwesomeIcon icon={faChevronUp} expand='data-expand' onClick={clickHandler}/>
 
                     </span>
                 
@@ -62,7 +62,7 @@ const Job = ({ title, description, status, pay, responsibilities }) => {
                         </span>
                     </div>
                     <span className='flex justify-center mt-4 px-3 py-1 rounded-full text-sm bg-gray-300 text-green-800 items-center' expand='data-expand' onClick={clickHandler} >
-                            <FontAwesomeIcon icon={faChevronDown} />
+                            <FontAwesomeIcon icon={faChevronDown} expand='data-expand' onClick={clickHandler} />
 
                     </span>
                 </>
