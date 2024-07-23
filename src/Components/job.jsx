@@ -9,8 +9,8 @@ const Job = ({ title, description, status, responsibilities }) => {
 
     const [Expanded, setExpanded] = useState(false);
 
-    const clickHandler = (event) => {
-        const exp = event.target.getAttribute('expand');
+    const clickHandler = ({target}) => {
+        const exp = target.getAttribute('expand');
         if (exp === 'data-expand') {
             setExpanded(true);
         } 

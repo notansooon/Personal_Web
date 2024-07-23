@@ -192,7 +192,7 @@ export function People() {
     return (
         <section className="">
 
-<div className='text-white h-svh-50 lg:h-[550px] surface:h-[950px] ipad:h-[700px]   md:h-[550px] sm:h-svh-60 w-full relative'>
+<div className='text-white h-svh-50 lg:h-[550px] md:h-[550px] sm:h-svh-60 w-full relative'>
     <div className='w-full h-full'>
         <img className='absolute inset-0 h-full w-full object-cover' src={group} alt="Group" />
         <div className="absolute inset-0 bg-black opacity-50"></div>
