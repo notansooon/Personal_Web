@@ -1,10 +1,12 @@
 import React from 'react';
-import img from '../assets/Images/image.jpg'
+import img from '../assets/Images/1713572060948.jpeg';
 import {IconButton, Typography} from "@material-tailwind/react";
 import Typewriter from "typewriter-effect";
 const HomeHero = () => {
     return (
-        <div className="relative min-h-screen w-full bg-[url('https://www.vt.edu/content/vt_edu/en/admissions/undergraduate/visit/campus-photo-tour/jcr:content/content/adaptiveimage_926934412.transform/xl-medium/image.jpg')] bg-bottom bg-cover bg-no-repeat">
+        <div className="relative min-h-screen w-full bg-bottom bg-cover bg-no-repeat"
+             style={{ backgroundImage: `url(${img})` }}
+        >
             <div className="absolute inset-0 h-full w-full bg-black/70" />
             <div className="grid min-h-screen px-8">
                 <div className="container relative z-10 my-auto mx-auto grid text-left">
@@ -27,16 +29,12 @@ const HomeHero = () => {
                         color="white"
                         className="mt-4 mb-6 w-full md:max-w-full lg:mb-12 lg:max-w-3xl"
                     >
-                        We&apos;re constantly trying to express ourselves and actualize
-                        our dreams. If you have the opportunity to play this game
+                        Leveraging dataism, which emphasizes the importance of data in decision-making, to harness the
+                        power of AI/Machine Learning, Big Data, and High Performance Computing (HPC) in finance. By
+                        integrating these advanced technologies, we aim to revolutionize financial analysis,
+                        prediction, and automation for more accurate and efficient outcomes
                     </Typography>
-                    <Typography
-                        variant="paragraph"
-                        color="white"
-                        className="mt-1 mb-7 font-normal uppercase"
-                    >
-                        Connect with us on:
-                    </Typography>
+
                     <div className="flex !gap-4">
 
                     </div>

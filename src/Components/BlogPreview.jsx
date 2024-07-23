@@ -72,8 +72,7 @@ export function BlogPreview() {
                     variant="lead"
                     className="mx-auto max-w-xl !font-normal !text-gray-500"
                 >
-                    We get insulted by others, lose trust for those others. We get back
-                    freezes every winter
+                    Change to Check out the latest DLQF announcements and updates
                 </Typography>
             </div>
             <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">

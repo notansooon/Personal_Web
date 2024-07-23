@@ -1,50 +1,35 @@
-import {Typography, IconButton, Button} from "@material-tailwind/react";
-const currentYear = new Date().getFullYear();
+import React from 'react';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
-export function Footer() {
+const Footer = () => {
     return (
-        <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
-            <div className="text-center">
-                <div>
-                    <a className="flex-none text-xl font-semibold text-black" href="#"
-                       aria-label="Brand">Brand</a>
-                </div>
-
-
-                <div className="mt-3">
-                    <p className="text-gray-500">We're part of the <a
-                        className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400"
-                        href="#">Htmlstream</a> family.</p>
-                    <p className="text-gray-500 dark:text-neutral-500">© Preline. 2022 Htmlstream. All rights
-                        reserved.</p>
-                </div>
-
-
-                <div className="flex gap-2">
-                    <a href="#buttons-with-link">
-
+        <footer className="bg-white text-gray-800 py-8 border-t border-gray-200">
+            <div className="container mx-auto flex flex-col items-center">
+                <h1 className="text-2xl font-bold mb-4">DLQF</h1>
+                <address className="not-italic mb-4 text-center">
+                    Pamplin Hall | 880 West Campus Drive | Blacksburg | VA 24060
+                </address>
+                <div className="flex space-x-4">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <FaFacebook className="text-2xl text-gray-800 hover:text-blue-600" />
                     </a>
-                    <a href="#buttons-with-link">
-                        <IconButton variant="text" size="sm">
-                            <i className="fa-brands fa-youtube text-lg text-gray-500 transition-colors hover:text-blue-gray-900"/>
-                        </IconButton>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <FaTwitter className="text-2xl text-gray-800 hover:text-blue-400" />
                     </a>
-                    <a href="#buttons-with-link">
-                        <IconButton variant="text" size="sm">
-                            <i className="fa-brands fa-instagram text-lg text-gray-500 transition-colors hover:text-blue-gray-900"/>
-                        </IconButton>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700" />
                     </a>
-                    <a href="#buttons-with-link">
-                        <IconButton variant="text" size="sm">
-                            <i className="fa-brands fa-github text-lg text-gray-500 transition-colors hover:text-blue-gray-900"/>
-                        </IconButton>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className="text-2xl text-gray-800 hover:text-pink-500" />
                     </a>
                 </div>
             </div>
         </footer>
     );
-}
+};
 
 export default Footer;
+
+
 
 

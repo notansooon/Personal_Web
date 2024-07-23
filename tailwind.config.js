@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {string[]} */
 
 const plugin = require('tailwindcss/plugin');
 
@@ -58,5 +58,10 @@ module.exports = {
     }),
   ],
 }
+
+
+
+
+
 
 
