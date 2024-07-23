@@ -25,8 +25,8 @@ const JobList = () => {
         },
         { title: 'Algorithmic Developer',
             description: 'Are you enthusiastic about developing sophisticated trading algorithms and contributing to advancements in quantitative finance?' + 
-                ' The Dataism Laboratory for Quantitative Finance at Virginia Tech is seeking a talented and motivated Algorithmic Developer to assist the Head of Algorithmic Development.' + 
-                ' This role is open to both graduate and undergraduate students pursuing degrees in Computational Modeling and Data Analytics (CMDA), Computer Science, Finance, Financial Technology, and related majors.'
+                'The Dataism Laboratory for Quantitative Finance at Virginia Tech is seeking a talented and motivated Algorithmic Developer to assist the Head of Algorithmic Development.' + 
+                'This role is open to both graduate and undergraduate students pursuing degrees in Computational Modeling and Data Analytics (CMDA), Computer Science, Finance, Financial Technology, and related majors.'
         ,
             status: 'Active',
 
@@ -107,13 +107,13 @@ const JobList = () => {
 
             responsibilities:[
                 
-                '- Assist in the development and implementation of financial models and algorithms.', 
-                '- Conduct data collection, cleaning, and analysis to support ongoing research projects.',
-                '- Collaborate with graduate students and faculty members on various research initiatives.',
-                '- Participate in literature reviews and summarize relevant academic papers and industry reports.',
-                '- Contribute to the preparation of research reports, presentations, and publications.',
-                '- Assist in the debugging and optimization of algorithms and models.',
-                '- Attend lab meetings and contribute to discussions on research progress and findings.'
+                'Assist in the development and implementation of financial models and algorithms.', 
+                'Conduct data collection, cleaning, and analysis to support ongoing research projects.',
+                'Collaborate with graduate students and faculty members on various research initiatives.',
+                'Participate in literature reviews and summarize relevant academic papers and industry reports.',
+                'Contribute to the preparation of research reports, presentations, and publications.',
+                'Assist in the debugging and optimization of algorithms and models.',
+                'Attend lab meetings and contribute to discussions on research progress and findings.'
             ]  
 
             

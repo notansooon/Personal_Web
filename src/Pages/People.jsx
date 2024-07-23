@@ -192,25 +192,18 @@ export function People() {
     return (
         <section className="">
 
-<div className='text-white h-svh-50 lg:h-[550px] md:h-[550px] sm:h-svh-60 w-full relative'>
-    <div className='w-full h-full'>
-        <img className='absolute inset-0 h-full w-full object-cover' src={group} alt="Group" />
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className='absolute top-[10%] ml-[8%] p-4 md:p-8'>
             <Typography
                 variant="h1"
-                color="white"
-                className="text-4xl !leading-snug lg:text-5xl"
+                color="black"
+                className="text-4xl !leading-snug lg:text-5xl text-center mt-20"
             >
                 <Typewriter
                     onInit={(typewriter) => {
-                        typewriter.typeString("Meet Our Team").start();
+                        typewriter.typeString("Meet Our Team")
+                        .start();
                     }}
                 />
             </Typography>
-        </div>
-    </div>
-</div>
 
 <div className="container px-6 py-10 mx-auto">
     <div className="flex items-center justify-center p-2">
