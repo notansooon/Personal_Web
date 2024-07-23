@@ -205,24 +205,7 @@ export function People() {
                 />
             </Typography>
 
-<div className="container px-6 py-10 mx-auto">
-    <div className="flex items-center justify-center p-2">
-        <div className="flex flex-wrap items-center justify-center p-1 border border-blue-950 rounded-xl">
-            <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='400px' onClick={scrollHandler}>Executive</button>
 
-            <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='1000px' onClick={scrollHandler}>Algorithmic</button>
-
-            <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='1600px' onClick={scrollHandler}>Client Services</button>
-
-            <button className="px-4 py-2 mx-2 my-1 text-xs font-medium text-blue-950 capitalize transition-colors duration-300 md:text-sm md:py-3 md:mx-4 lg:mx-8 lg:px-12 focus:outline-none hover:bg-blue-950 hover:text-white rounded-xl" data-scroll='2200px' onClick={scrollHandler}>Academic Researcher</button>
-        </div>
-    </div>
-
-    <p className="max-w-2xl mx-auto my-6 text-center text-gray-500">
-        Each member brings unique skills and perspectives, working collaboratively to achieve excellence.
-        Get to know the people behind our success and discover the stories that inspire our journey.
-    </p>
-</div>
 
             <div className="container px-5">
 
