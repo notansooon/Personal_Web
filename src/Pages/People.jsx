@@ -231,7 +231,7 @@ export function People() {
     </p>
 </div>
 
-            <div className="container ">
+            <div className="container px-5">
 
     <div className="mb-10 lg:mb-20 responsive-margin-height responsive-margin-height-md">
         <Typography
