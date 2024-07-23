@@ -19,7 +19,7 @@ const Home = () => {
 
                     <Typography variant='h3'
                                 className=' mx-auto max-w-xl text-center mb-20'>
-                        Our Focused Sector
+                        Sectors
                     </Typography>
                     <Sector />
                 </section>

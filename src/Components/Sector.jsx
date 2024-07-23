@@ -24,12 +24,12 @@ const Sector = () => {
 
 const SectorCard = ({ title, description }) => {
     return (
-        <div className="w-full max-w-xs md:max-w-sm lg:max-w-md">
-            <Card className="w-full bg-transparent">
+        <div className="w-full max-w-xs md:max-w-sm lg:max-w-md ">
+            <Card className="w-full bg-white">
                 <CardHeader floated={false} shadow={false} className="rounded-none bg-transparent">
                     <Typography
                         variant="h4"
-                        className="font-semibold font-sans text-blue-950"
+                        className="font-semibold font-sans text-blue-950 ml-5"
                     >
                         {title}
                     </Typography>
