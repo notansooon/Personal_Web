@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const Job = ({ title, description, status, pay, responsibilities }) => {
+const Job = ({ title, description, status, responsibilities }) => {
 
     const [Expanded, setExpanded] = useState(false);
 
@@ -38,9 +38,7 @@ const Job = ({ title, description, status, pay, responsibilities }) => {
                         <span className={`inline-block mt-4 px-3 py-1 rounded-full text-sm  ${status === 'Active' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
                             {status === 'Active' ? 'Actively Hiring' : 'Not Hiring'}
                         </span>
-                        <span className={`inline-block mt-4 px-3 py-1 rounded-full text-sm ${pay === 'Paid' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
-                            {pay === 'Paid' ? 'Paid' : 'Not Paid'}
-                        </span>
+
                     </div>
 
                     <span className='flex justify-center mt-4 px-3 py-1 rounded-full text-sm bg-gray-300 text-green-800 items-center' expand='data-collapse' onClick={clickHandler} >
@@ -57,9 +55,7 @@ const Job = ({ title, description, status, pay, responsibilities }) => {
                         <span className={`inline-block mt-4 px-3 py-1 rounded-full text-sm ${status === 'Active' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
                             {status === 'Active' ? 'Actively Hiring' : 'Not Hiring'}
                         </span>
-                        <span className={`inline-block mt-4 px-3 py-1 rounded-full text-sm ${pay === 'Paid' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
-                            {pay === 'Paid' ? 'Paid' : 'Not Paid'}
-                        </span>
+
                     </div>
                     <span className='flex justify-center mt-4 px-3 py-1 rounded-full text-sm bg-gray-300 text-green-800 items-center' expand='data-expand' onClick={clickHandler} >
                             <FontAwesomeIcon icon={faChevronDown} expand='data-expand' onClick={clickHandler} />

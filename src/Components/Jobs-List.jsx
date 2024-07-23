@@ -4,17 +4,14 @@ import Job from './job';
 
 const JobList = () => {
     const jobs = [
-        { title: 'Senior Algorithmic Development',
+        { title: 'Project Manager, Algorithmic Development',
             description: 'Are you passionate about developing cutting-edge trading algorithms and driving innovation ' +
                 'in the field of quantitative finance. Join our dynamic team at the Dataism Laboratory for Quantitative ' +
                 'Finance at Virginia Tech as the Head of Algorithmic Development. This role is open to both graduate and ' +
                 'undergraduate students pursuing degrees in Computational Modeling and Data Analytics (CMDA), ' +
                 'Computer Science, Finance, Financial Technology, and related majors.\n',
-            responsibilities:'Oversee the development of state-of-the-art trading algorithms.\n' +
-                'Lead and mentor a team of developers in creating AI and ML algorithms for financial forecasting and analysis.\n',
    
             status: 'Active',
-            pay: ' Not Paid',
             responsibilities: [
                 'Oversee the development of state-of-the-art trading algorithms.', 
                 'Lead and mentor a team of developers in creating AI and ML algorithms for financial forecasting and analysis.', 
@@ -31,8 +28,8 @@ const JobList = () => {
                 ' The Dataism Laboratory for Quantitative Finance at Virginia Tech is seeking a talented and motivated Algorithmic Developer to assist the Head of Algorithmic Development.' + 
                 ' This role is open to both graduate and undergraduate students pursuing degrees in Computational Modeling and Data Analytics (CMDA), Computer Science, Finance, Financial Technology, and related majors.'
         ,
-            status: 'Not Hiring',
-            pay: ' Not Paid',
+            status: 'Active',
+
             responsibilities: [
                 'Collaborate with the Head of Algorithmic Development and other team members to create, test, and implement AI and ML algorithms for financial forecasting and trading.',
                 'Assist in the debugging and optimization of algorithms to enhance their performance, reliability, and scalability.',
@@ -49,8 +46,7 @@ const JobList = () => {
                 'In this role, you will work directly with investment banks to design, develop, and implement advanced data-driven solutions that enhance their strategic decision-making and operational efficiency.' +
                 'If you are passionate about applying data science techniques to solve complex financial challenges, we want to hear from you.'
         ,
-            status: 'Not Hiring',
-            pay: ' Not Paid',
+            status: 'Active',
             responsibilities: [
                 'Collaborate with clients to understand their business needs and translate them into data-driven solutions.',
                 'Develop and implement machine learning models and algorithms for financial forecasting, risk management, and trading strategies.',
@@ -70,7 +66,7 @@ const JobList = () => {
                 'If you have a passion for creating seamless user experiences and a keen eye for design, we would love to have you on our team.'
             ,
             status: 'Active',
-            pay: 'Paid',
+
             responsibilities:[
                 'Collaborate with clients and internal teams to understand user requirements and translate them into effective UI/UX designs.',
                 'Design and prototype user interfaces for web and mobile applications that are visually appealing, user-friendly, and aligned with client needs.',
@@ -90,7 +86,6 @@ const JobList = () => {
                 'This role offers a platform to work on pioneering projects, collaborate with experts, and contribute to advancements in the field of quantitative finance.'
             ,
             status: 'Active',
-            pay: ' Not Paid',
             responsibilities:[
                 'Lead and participate in research projects focused on developing and refining financial models and algorithms.',
                 'Conduct advanced data collection, cleaning, and analysis to support research objectives.',
@@ -109,7 +104,7 @@ const JobList = () => {
                 'This role offers a unique opportunity to work alongside experienced researchers and gain hands-on experience in the exciting field of quantitative finance.'
             ,
             status: 'Active',
-            pay: 'Paid',
+
             responsibilities:[
                 
                 '- Assist in the development and implementation of financial models and algorithms.', 
@@ -128,7 +123,7 @@ const JobList = () => {
     return (
         <div className="space-y-4">
             {jobs.map((job, index) => (
-                <Job key={index} title={job.title} description={job.description} status={job.status} pay={job.pay} responsibilities={job.responsibilities}/>
+                <Job key={index} title={job.title} description={job.description} status={job.status} responsibilities={job.responsibilities}/>
             ))}
         </div>
     );

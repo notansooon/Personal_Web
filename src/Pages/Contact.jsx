@@ -127,7 +127,7 @@ export function Contact() {
                                 }}
                             />
                         </div>
-                        <Button className="w-full" color="gray">
+                        <Button className="w-full bg-blue-950" color="gray">
                             Send message
                         </Button>
                     </form>
