@@ -58,7 +58,74 @@
                      
       },
       {
-        "name": "Forrest Meng"
+        "name": "Forrest Meng",
+        "interest": ["Coming Soon"],
+        "Title": "Graduate Researcher",
+       
+        "education": ["Coming Soon"],
+        "About": [
+          "Coming Soon"
+        ]
+
+
+      },
+      {
+        "name": "Max Brenner",
+        "interest": ["Coming Soon"],
+        "Title": "Graduate Researcher",
+       
+        "education": ["Coming Soon"],
+        "About": [
+          "Coming Soon"
+        ]
+
+
+      },
+      {
+        "name": "Jamshid Ardalankia",
+        "interest": ["Coming Soon"],
+        "Title": "Graduate Researcher",
+       
+        "education": ["Coming Soon"],
+        "About": [
+          "Coming Soon"
+        ]
+
+
+      },
+      {
+        "name": "Alexander Ardiaz",
+        "interest": ["Coming Soon"],
+        "Title": "Graduate Researcher",
+       
+        "education": ["Coming Soon"],
+        "About": [
+          "Coming Soon"
+        ]
+
+
+      },
+      {
+        "name": "Anson Jiang",
+        "interest": ["Coming Soon"],
+        "Title": "Graduate Researcher",
+       
+        "education": ["Coming Soon"],
+        "About": [
+          "Coming Soon"
+        ]
+
+
+      },
+      {
+        "name": "Aryan Paliet",
+        "interest": ["Coming Soon"],
+        "Title": "Graduate Researcher",
+       
+        "education": ["Coming Soon"],
+        "About": [
+          "Coming Soon"
+        ]
 
 
       },
@@ -114,8 +181,7 @@
         "role": "Undergraduate Research Assistant",
         "education": ["BS in Computational Modeling and Data Analytics, 2027"],
         "About": [
-          "Paul Chau is a Sophomore pursuing a Bachelor of Science in Finance within the Pamplin College of Business.", 
-          "His experience lies in Wealth Management, Corporate Finance, and Statistical Analysis."
+          "Benjamin Facciani is a freshman in the CMDA program at Virginia Tech. His experience lies in quantitative analysis, value investing, and analyzing market trends."
         ]
         
       },

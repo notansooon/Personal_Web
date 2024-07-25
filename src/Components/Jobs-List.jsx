@@ -20,6 +20,23 @@ const JobList = () => {
                 'Conduct research to identify and incorporate the latest advancements in AI, ML, and quantitative finance into our projects.',
                 'Ensure the accuracy, reliability, and scalability of all developed algorithms.',
                 'Present findings and progress to stakeholders and contribute to strategic decision-making.'
+            ],
+            skills:[
+                "Currently enrolled in a graduate or undergraduate program at Virginia Tech in" +
+                " CMDA, Computer Science, Finance, Financial Technology, or related fields.",
+                "Strong understanding of AI and ML techniques and their applications in finance.",
+                "Proficiency in programming languages such as Python, R, or C++.",
+                "Experience with financial modeling and quantitative analysis.",
+                "Excellent problem-solving skills and the ability to debug complex algorithms.",
+                "Strong leadership and project management skills.",
+                "Ability to work collaboratively in a team environment and communicate effectively",
+                "with diverse stakeholders.",
+                "Passion for continuous learning and staying updated with industry trends."
+            ],
+            preQualifications:[
+                "Previous experience in developing trading algorithms or working in quantitative finance.",
+                "Knowledge of financial markets and trading strategies.",
+                "Experience with data visualization tools and techniques."
             ]
 
         },
@@ -38,6 +55,22 @@ const JobList = () => {
                 'Analyze financial data and apply quantitative techniques to develop innovative trading strategies.',
                 'Contribute to the documentation of algorithmic solutions and processes.', 
                 'Assist in presenting research findings and project progress to stakeholders.'
+            ],
+            skills:[
+                "Currently enrolled in a graduate or undergraduate program at Virginia Tech in" +
+                " CMDA, Computer Science, Finance, Financial Technology, or related fields.",
+                "Proficiency in programming languages such as Python, R, or C++.",
+                "Strong understanding of AI and ML techniques and their applications in finance.",
+                "Experience with financial modeling and quantitative analysis.",
+                "Excellent problem-solving skills and the ability to debug complex algorithms.",
+                "Ability to work collaboratively in a team environment and communicate" +
+                "effectively with diverse stakeholders.",
+                "Passion for continuous learning and staying updated with industry trends."
+                ],
+            preQualifications:[
+                "Previous experience in developing trading algorithms or working in quantitative finance.",
+                "Knowledge of financial markets and trading strategies.",
+                "Experience with data visualization tools and techniques."
             ]
 
         },
@@ -57,6 +90,24 @@ const JobList = () => {
                 'Work with cross-functional teams, including developers and financial analysts, to integrate data solutions into existing systems and processes.',
                 'Stay updated with the latest advancements in data science, AI, and finance to continually enhance the solutions provided to clients.'
 
+            ],
+            skills:[
+                "Pursuing a Bachelor’s or Master’s degree in Data Science, Computer Science," +
+                " Finance, Financial Technology, or a related field.",
+                "Strong proficiency in programming languages such as Python, R, or Scala.",
+                "Experience with machine learning frameworks and libraries such as TensorFlow, PyTorch, or Scikit-learn.",
+                "Solid understanding of statistical analysis and quantitative methods.",
+                "Experience with data visualization tools such as Tableau, Power BI, or Matplotlib.",
+                "Strong problem-solving skills and ability to work with complex datasets.",
+                "Excellent communication skills, both written and verbal, with the ability to" +
+                " explain technical concepts to non-technical stakeholders.",
+                "Ability to work independently and as part of a collaborative team environment."
+            ],
+            preQualifications:[
+                "Previous experience in the financial industry or with financial data analysis.",
+                "Knowledge of financial markets, trading strategies, and risk management practices.",
+                "Experience with cloud platforms such as AWS, Google Cloud, or Azure.",
+                "Familiarity with big data technologies such as Hadoop, Spark, or Kafka."
             ]
 
         },
@@ -77,6 +128,24 @@ const JobList = () => {
                 'Stay updated with the latest UI/UX trends, techniques, and technologies to continuously improve design processes.',
                 'Produce high-quality visual designs, including layouts, color schemes, typography, and iconography.'
 
+            ],
+            skills:[
+                "Pursuing Bachelor’s or Master’s degree in UI/UX Design, Graphic Design," +
+                " Human-Computer Interaction, or a related field.",
+                "Strong portfolio demonstrating expertise in UI/UX design for web and mobile applications.",
+                "Proficiency in design tools such as Adobe Creative Suite, Sketch, Figma, or similar.",
+                "Experience with prototyping tools such as InVision, Axure, or Marvel.",
+                "Solid understanding of user-centered design principles and usability best practices.",
+                "Strong visual design skills, including an eye for typography, color, and layout.",
+                "Excellent communication skills, with the ability to articulate design decisions" +
+                " and collaborate effectively with clients and team members.",
+                "Ability to work independently and manage multiple projects simultaneously."
+            ],
+            preQualifications:[
+                "Previous experience designing financial applications or working in the financial industry.",
+                "Familiarity with front-end development technologies such as HTML, CSS, and JavaScript.",
+                "Experience with agile development methodologies.",
+                "Understanding of accessibility standards and guidelines."
             ]
 
         },
@@ -96,6 +165,25 @@ const JobList = () => {
                 'Contribute to the mentoring of undergraduate research assistants and foster a collaborative research environment.'
 
 
+            ],
+            skills:[ 
+                "Currently enrolled in a graduate program at Virginia Tech in Computational" +
+                " Modeling and Data Analytics (CMDA), Computer Science, Finance, Financial" +
+                " Technology, or related fields.", 
+                "Strong foundation in quantitative analysis and financial modeling.",
+                "Proficiency in programming languages such as Python, R, or C++.",
+                "In-depth understanding of AI and ML techniques and their applications in finance.",
+                "Experience with data analysis and statistical methods.",
+                "Strong research and problem-solving skills.",
+                "Excellent written and verbal communication skills.",
+                "Ability to work independently and collaboratively within a research team.",
+                "Commitment to rigorous academic research and continuous learning."
+            ],
+            preQualifications:[
+                "Previous experience in quantitative finance or financial technology research.",
+                "Knowledge of financial markets, trading strategies, and risk management practices.", 
+                "Experience with data visualization and advanced statistical software.",
+                "Record of published research in academic journals or conference proceedings."
             ]
         },
         { title: 'Undergraduate Research Assistant',
@@ -114,6 +202,23 @@ const JobList = () => {
                 'Contribute to the preparation of research reports, presentations, and publications.',
                 'Assist in the debugging and optimization of algorithms and models.',
                 'Attend lab meetings and contribute to discussions on research progress and findings.'
+            ],
+            skills:[
+                "Currently enrolled in an undergraduate program at Virginia Tech in" +
+                " Computational Modeling and Data Analytics (CMDA), Computer Science," +
+                " Finance, Financial Technology, or related fields.",
+                "Strong analytical and quantitative skills.",
+                "Proficiency in programming languages such as Python, R, or C++.",
+                "Basic understanding of AI and ML techniques and their applications in finance.",
+                "Ability to work independently and collaboratively in a team environment.",
+                "Strong attention to detail and excellent organizational skills.",
+                "Effective communication skills, both written and verbal.",
+                "Enthusiasm for learning and staying updated with industry trends."
+            ],
+            preQualifications:[
+                "Previous experience in financial modeling or data analysis.",
+                "Knowledge of financial markets and trading strategies.",
+                "Experience with data visualization tools and techniques."
             ]  
 
             
@@ -123,7 +228,7 @@ const JobList = () => {
     return (
         <div className="space-y-4">
             {jobs.map((job, index) => (
-                <Job key={index} title={job.title} description={job.description} status={job.status} responsibilities={job.responsibilities}/>
+                <Job key={index} title={job.title} description={job.description} status={job.status} responsibilities={job.responsibilities} skills={job.skills} qual={job.preQualifications}/>
             ))}
         </div>
     );

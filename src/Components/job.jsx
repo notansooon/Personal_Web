@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const Job = ({ title, description, status, responsibilities }) => {
+const Job = ({ title, description, status, responsibilities, skills, qual }) => {
 
     const [Expanded, setExpanded] = useState(false);
 
@@ -26,10 +26,25 @@ const Job = ({ title, description, status, responsibilities }) => {
                 <>
                     <h2 className="text-xl font-semibold">{title}</h2>
                     <p className="mt-2">{description}</p>
+                    
                     <h1 className='text-sm font-bold mt-5'>Responsibilities</h1>
                     <ul className="list-disc list-inside">
                         {responsibilities.map((responsibility, index) => (
                             <li key={index}>{responsibility}</li>
+                        ))}
+                    </ul>
+
+                    <h1 className='text-sm font-bold mt-5'>Required Skills and Qualifications</h1>
+                    <ul className="list-disc list-inside">
+                        {skills.map((skills, index) => (
+                            <li key={index}>{skills}</li>
+                        ))}
+                    </ul>
+
+                    <h1 className='text-sm font-bold mt-5'>Preferred Qualifications:</h1>
+                    <ul className="list-disc list-inside">
+                        {qual.map((qual, index) => (
+                            <li key={index}>{qual}</li>
                         ))}
                     </ul>
                     

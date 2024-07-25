@@ -6,7 +6,7 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Sectors from '../Pages/Sectors';
 
@@ -23,6 +23,21 @@ const Sector = () => {
 }
 
 const SectorCard = ({ title, description }) => {
+
+    const [isExpand, setIsExpand] = useState(false);
+
+    const expandHandler = ({target}) => {
+        const exp = target.getAttribute('dataExpand');
+
+        if (exp === 'show more') {
+            setIsExpand(true);
+        }
+        else if (exp === 'show less'){
+            setIsExpand(false);
+        }
+
+
+    }
     return (
         <div className="w-full max-w-xs md:max-w-sm lg:max-w-md ">
             <Card className="w-full bg-white">
@@ -36,14 +51,45 @@ const SectorCard = ({ title, description }) => {
                 </CardHeader>
 
                 <CardBody>
+
+
+                    
                     <Typography
                         color="blue-gray"
                         className="mt-1 mb-2 text-[16px] font-normal"
                     >
                         {description}
-                        <Link to={'/Sectors'} className="text-blue-600 hover:text-blue-950 ml-1">
-                            Learn more
-                        </Link>
+                    
+                        <Typography
+                            variant="h4"
+                            className="text-[16px] font-normal  text-blue-600 hover:text-blue-950 "
+                            
+                    >
+                        {
+                            isExpand ? 
+                            (<>
+                                <br />
+                                <p>Algorithmic Development is at the heart of our lab's technological innovations. 
+                                We specialize in creating sophisticated algorithms that enhance data analysis, 
+                                machine learning, and decision-making processes. 
+                                Our team is committed to developing cutting-edge solutions that address complex problems and drive advancements in various sectors.
+                                <br />
+                                <h4 dataExpand="show less" 
+                                    onClick={expandHandler}
+                                    className="text-[16px] font-normal  text-blue-600 hover:text-blue-950 ">
+                                        show less
+                                </h4>
+                                </p>
+                            </>) 
+                            : (<><h4 dataExpand="show more"
+                                onClick={expandHandler}> show more</h4></>)
+                               
+
+                            
+                        }
+                        
+                    </Typography>
+                         
                     </Typography>
                 </CardBody>
                 <CardFooter className="pt-0 px-4 ">

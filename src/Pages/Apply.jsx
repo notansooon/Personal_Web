@@ -8,7 +8,7 @@ const Apply = () => {
     return (
         <div className="min-h-screen bg-gray-100 py-8">
             <div className="container mx-auto px-4">
-            <header className='relative h-[400px]  w-full overflow-hidden '>
+            <header className='relative h-[250px]  w-full overflow-hidden '>
 
                 <div className="container relative z-10 my-auto mx-auto grid text-left ml-[10%]">
                     <Typography

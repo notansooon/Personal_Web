@@ -7,38 +7,17 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Ben from '../ProfilePicture/ben.jpg'
+import Ali from '../ProfilePicture/ali.jpg'
+import Roshan from '../ProfilePicture/roshan.jpg'
+import Ryan from '../ProfilePicture/ryan.jpg'
+import Raseen from '../ProfilePicture/Raseen.jpg'
+import Gaurav from '../ProfilePicture/Gaurav.jpg'
+import Alex from '../ProfilePicture/alex.jpg'
+import Paul from '../ProfilePicture/paul.jpg'
+import Unknown from '../ProfilePicture/unknown.jpg'
 
 
-const Team = ({ user, pic }) => {
-    const navigate = useNavigate();
-    const profile = data.profile.find(profile => profile.name === user);
-
-    const clickHandler = (name) => {
-        navigate(`/ProfilePage/${name}`);
-    };
-
-    return (
-        <div>
-            <div className="relative flex justify-center cursor-pointer" onClick={() => clickHandler(profile.name)}>
-                <div className="hexagon">
-                    <img className="object-fill h-[100%] w-[100%] rotate-90" src={pic} alt={`${user}'s profile pic`} />
-                </div>
-            </div>
-            <div className="flex flex-col items-center justify-center mt-1 text-black">
-                <h1 className="text-3xl lg:text-4xl font-bold">{user}</h1>
-                {profile && (
-                    <h2 className="text-xl lg:text-2xl font-semibold opacity-75">{profile.Title}</h2>
-                )}
-            </div>
-            <div className="flex justify-center space-x-6 mt-3">
-                <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:z-50 hover:scale-150 duration-500" />
-                <FontAwesomeIcon icon={faEnvelope} size="2x" className="hover:z-50 hover:scale-150 duration-500" />
-            </div>
-        </div>
-    );
-};
-
-export default Team;
 
 export const HeroTextTeam = () => {
     return (
@@ -62,8 +41,8 @@ export const Profile = ({ user, pic }) => {
         <div className="flex flex-col lg:flex-row justify-center space-x-10">
             <div className='mt-[-150px] relative'>
                 <div className="flex justify-center">
-                    <div className="hexagon">
-                        <img className="object-fill h-[100%] w-[100%] rotate-90" src={pic} alt={`${user}'s profile pic`} />
+                    <div className="aspect-square ">
+                        <img className="object-cover rounded-lg h-[100%] w-[100%] size-[70%] mt-[50%]" src={Ben} alt={`${user}'s profile pic`} />
                     </div>
                 </div>
                 <div className="flex tracking-tighter flex-col items-center justify-center mt-1 space-y-5 text-black">
@@ -71,7 +50,7 @@ export const Profile = ({ user, pic }) => {
                     {profile && (
                         <h2 className="text-xl lg:text-xl tracking-tight  font-semibold opacity-75">{profile.Title}</h2>
                     )}
-                    <h1 className="text-xl lg:text-2xl">College</h1>
+                    
                 </div>
                 <div className="flex justify-center space-x-6 mt-3">
                     <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:z-50 hover:scale-150 duration-500" />
@@ -79,7 +58,7 @@ export const Profile = ({ user, pic }) => {
                 </div>
             </div>
 
-            <div className="bg-white shadow-lg rounded-lg p-6 mb-8 h-[100%] bg-opacity-10">
+            <div className="bg-white shadow-lg rounded-lg p-6 mb-8 h-[100%] bg-opacity-70">
                 <div className='max-w-3xl mx-auto min-h-96 '>
                     <p className="text-base lg:text-lg tracking-wider leading-relaxed">{profile.About}</p>
 

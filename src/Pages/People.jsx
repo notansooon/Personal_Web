@@ -53,15 +53,15 @@ const execu = [
 
 const algo = [
     {
-        img: Ali,
-        name: "Ali Habibnia",
-        title: "Principle Investigator",
+        img: Unknown,
+        name: "Max Brenner",
+        title: "Head of Algorithmic Development",
         
     },
     {
-        img: Ben,
-        name: "Ben Cummings",
-        title: "VP Of Client Services",
+        img: Unknown,
+        name: "Forrest Meng",
+        title: "Algorithimic Development",
         
     },
     {
@@ -75,21 +75,21 @@ const algo = [
 
 const academic = [
     {
+        img: Unknown,
+        name: "Jamshid Ardalankia",
+        title: "Graduate Researcher",
+        
+    },
+    {
         img: Paul,
-        name: "Ali Habihnia",
-        title: "Principle Investigator",
+        name: "Paul Chau",
+        title: "Undergraduate Research Assistant",
         
     },
     {
-        img: Ben,
-        name: "Jordan Michael",
-        title: "Front-End Developer",
-        
-    },
-    {
-        img: Alex,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
+        img: Unknown,
+        name: "Alexander Ardiaz",
+        title: "Undergraduate Researcher",
         
     },
     
@@ -97,27 +97,27 @@ const academic = [
 
 const services = [
     {
+        img: Unknown,
+        name: "Anson Jiang",
+        title: "ML/AI Engineer",
+        
+    },
+    {
+        img: Unknown,
+        name: "Aryan Paliet",
+        title: "ML/AI Engineer",
+        
+    },
+    {
         img: Alex,
-        name: "Ali Habihnia",
-        title: "Principle Investigator",
+        name: "Alex Jaimes",
+        title: "Project Manager",
         
     },
     {
         img: Roshan,
-        name: "Jordan Michael",
-        title: "Front-End Developer",
-        
-    },
-    {
-        img: Alex,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
-        
-    },
-    {
-        img: Roshan,
-        name: "Nora Hazel",
-        title: "UI/UX Designer",
+        name: "Roshan Sanyal",
+        title: "Project Manager",
         
     },
 ];
@@ -215,7 +215,7 @@ export function People() {
             color="blue-gray"
             className="mt-6 mb-3 text-3xl lg:text-4xl"
         >
-            The Executive Team
+            The Adminstrative Team
         </Typography>
         <Typography
             variant="lead"
@@ -269,7 +269,7 @@ export function People() {
         </div>
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {execu.map((props, key) => (
+            {services.map((props, key) => (
                 <TeamCard key={key} {...props} />
             ))}
         </div>
