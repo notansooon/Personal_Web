@@ -104,7 +104,7 @@ const services = [
     },
     {
         img: Unknown,
-        name: "Aryan Paliet",
+        name: "Aryan Palit",
         title: "ML/AI Engineer",
         
     },

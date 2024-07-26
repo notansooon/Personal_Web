@@ -14,15 +14,37 @@ const Sector = () => {
     return (
         <section className="container mx-auto p-4">
             <div className="flex flex-wrap justify-center gap-4 ">
-                <SectorCard title="Algorithmic Trading" description='Revolutionizing financial predictions and strategies through advanced AI and ML algorithms.' />
-                <SectorCard title="Client Services" description="Providing innovative, tailored solutions for optimal performance in investment banking." />
-                <SectorCard title="Academic Research" description="Advancing financial research with pioneering studies and interdisciplinary collaboration." />
+                <SectorCard title="Algorithmic Trading" sector='Algorithmic' description='Revolutionizing financial predictions and strategies through advanced AI and ML algorithms.' />
+                <SectorCard title="Client Services" sector='Client' description="Providing innovative, tailored solutions for optimal performance in investment banking." />
+                <SectorCard title="Academic Research" sector='Academic' description="Advancing financial research with pioneering studies and interdisciplinary collaboration." />
             </div>
         </section>
     );
 }
 
-const SectorCard = ({ title, description }) => {
+const SectorCard = ({ title, description, sector }) => {
+
+
+    const info = [
+        {
+          sector: 'Algorithmic',
+          description: "Algorithmic Development is at the heart of our lab's technological innovations. " + 
+            "We specialize in creating sophisticated algorithms that enhance data analysis, " +
+            "machine learning, and decision-making processes. " +
+            "Our team is committed to developing cutting-edge solutions that address complex problems and drive advancements in various sectors."
+        },
+        {
+          sector: 'Client',
+          description: 'Our Client Services sector focuses on providing tailored solutions to meet the unique needs of our clients. From consultancy to hands-on support, we offer a range of services designed to optimize performance and drive success. Our team works closely with clients to understand their challenges and deliver customized strategies that align with their goals.'
+        },
+        {
+          sector: 'Academic',
+          description: 'In the realm of Academic Research, our lab is dedicated to pioneering advancements in various fields of study. Our researchers delve into theoretical and applied aspects, pushing the boundaries of knowledge and innovation. With a focus on cutting-edge methodologies and collaborative projects, we aim to contribute significantly to academic literature and practical applications.'
+        }
+    ];
+
+
+    const obj = info.find(value => (sector === value.sector))
 
     const [isExpand, setIsExpand] = useState(false);
 
@@ -69,10 +91,10 @@ const SectorCard = ({ title, description }) => {
                             isExpand ? 
                             (<>
                                 <br />
-                                <p>Algorithmic Development is at the heart of our lab's technological innovations. 
-                                We specialize in creating sophisticated algorithms that enhance data analysis, 
-                                machine learning, and decision-making processes. 
-                                Our team is committed to developing cutting-edge solutions that address complex problems and drive advancements in various sectors.
+                                <p>
+                                    
+                                    {obj.description}
+
                                 <br />
                                 <h4 dataExpand="show less" 
                                     onClick={expandHandler}
