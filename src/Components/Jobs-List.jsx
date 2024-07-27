@@ -226,7 +226,7 @@ const JobList = () => {
     ];
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 -mt-24">
             {jobs.map((job, index) => (
                 <Job key={index} title={job.title} description={job.description} status={job.status} responsibilities={job.responsibilities} skills={job.skills} qual={job.preQualifications}/>
             ))}

@@ -1,96 +1,67 @@
 import React from 'react';
 import data from '../assets/data/profile.json';
-
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import Ben from '../ProfilePicture/ben.jpg';
 import '../Components/utils/styles.css';
-import { useNavigate } from 'react-router-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Ben from '../ProfilePicture/ben.jpg'
-import Ali from '../ProfilePicture/ali.jpg'
-import Roshan from '../ProfilePicture/roshan.jpg'
-import Ryan from '../ProfilePicture/ryan.jpg'
-import Raseen from '../ProfilePicture/Raseen.jpg'
-import Gaurav from '../ProfilePicture/Gaurav.jpg'
-import Alex from '../ProfilePicture/alex.jpg'
-import Paul from '../ProfilePicture/paul.jpg'
-import Unknown from '../ProfilePicture/unknown.jpg'
-
-
-
-export const HeroTextTeam = () => {
-    return (
-        <div className="mt-5 lg:mt-0">
-            <div className='w-full'>
-            <h2 className="about mb-5 leading-tight -tracking-tighter text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-               Meet Our Team
+export const HeroTextTeam = () => (
+    <div className="mt-5 lg:mt-0">
+        <div className="w-full text-center lg:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Meet Our Team
             </h2>
-
-            </div>
-            
-            
         </div>
-    );
-};
+    </div>
+);
 
 export const Profile = ({ user, pic }) => {
     const profile = data.profile.find(profile => profile.name === user);
+    const profilePic = pic || Ben; // Default to Ben's picture if pic is not provided
 
     return (
-        <div className="flex flex-col lg:flex-row justify-center space-x-10">
-            <div className='mt-[-150px] relative'>
-                <div className="flex justify-center">
-                    <div className="aspect-square ">
-                        <img className="object-cover rounded-lg h-[100%] w-[100%] size-[70%] mt-[50%]" src={Ben} alt={`${user}'s profile pic`} />
-                    </div>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center space-y-6 lg:space-y-0 lg:space-x-10 p-4 bg-gray-100 rounded-lg shadow-lg max-w-5xl mx-auto">
+            <div className="flex flex-col items-center">
+                <div className="w-32 h-32 lg:w-48 lg:h-48">
+                    <img className="object-cover rounded-full w-full h-full" src={profilePic} alt={`${user}'s profile pic`} />
                 </div>
-                <div className="flex tracking-tighter flex-col items-center justify-center mt-1 space-y-5 text-black">
-                    <h1 className="text-3xl lg:text-4xl font-bold">{user}</h1>
+                <div className="text-center mt-4">
+                    <h1 className="text-xl font-bold">{user}</h1>
                     {profile && (
-                        <h2 className="text-xl lg:text-xl tracking-tight  font-semibold opacity-75">{profile.Title}</h2>
+                        <h2 className="text-lg font-semibold text-gray-600">{profile.Title}</h2>
                     )}
-                    
                 </div>
-                <div className="flex justify-center space-x-6 mt-3">
-                    <FontAwesomeIcon icon={faLinkedin} size="2x" className="hover:z-50 hover:scale-150 duration-500" />
-                    <FontAwesomeIcon icon={faEnvelope} size="2x" className="hover:z-50 hover:scale-150 duration-500" />
+                <div className="flex justify-center space-x-4 mt-3 text-gray-600">
+                    <a href={profile?.linkedin} aria-label="LinkedIn" className="hover:text-blue-600">
+                        <FaLinkedin size={20} />
+                    </a>
+                    <a href={`mailto:${profile?.email}`} aria-label="Email" className="hover:text-red-600">
+                        <FaEnvelope size={20} />
+                    </a>
                 </div>
             </div>
 
-            <div className="bg-white shadow-lg rounded-lg p-6 mb-8 h-[100%] bg-opacity-70">
-                <div className='max-w-3xl mx-auto min-h-96 '>
-                    <p className="text-base lg:text-lg tracking-wider leading-relaxed">{profile.About}</p>
-
-                    <div className='flex justify-around h-[100%] mt-10'>
-                        <div>
-                            <h1 className='font-bold text-2xl lg:text-3xl'>Interests</h1>
-                            {profile.interest && profile.interest.map((interest, index) => (
-                                <div key={index} className="flex items-center">
-                                    <svg className="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M12.293 3.293a1 1 0 011.414 0L18 7.586a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0L7.293 10.414a1 1 0 011.414-1.414L12 12.586l5.293-5.293a1 1 0 00-1.414-1.414L12 10.586 8.707 7.293a1 1 0 00-1.414 1.414L12.293 12l6-6-6-6a1 1 0 010-1.414z" />
-                                    </svg>
-                                    <p className="text-base lg:text-lg">{interest}</p>
-                                </div>
-                            ))}
-                        </div>
-
-                        <div>
-                            <h1 className='font-bold text-2xl lg:text-3xl'>Education</h1>
-                            {profile.education && profile.education.map((education, index) => (
-                                <div key={index} className="flex items-center">
-                                    <svg className="w-5 h-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M12.293 3.293a1 1 0 011.414 0L18 7.586a1 1 0 010 1.414l-6 6a1 1 0 01-1.414 0L7.293 10.414a1 1 0 011.414-1.414L12 12.586l5.293-5.293a1 1 0 00-1.414-1.414L12 10.586 8.707 7.293a1 1 0 00-1.414 1.414L12.293 12l6-6-6-6a1 1 0 010-1.414z" />
-                                    </svg>
-                                    <p className="text-base lg:text-lg">{education}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg w-full lg:w-2/3">
+                <p className="text-gray-800 text-base lg:text-lg leading-relaxed">
+                    {profile?.About}
+                </p>
+                <div className="mt-6">
+                    <h3 className="text-lg font-bold text-gray-800">Interests</h3>
+                    <ul className="list-disc list-inside space-y-2 mt-2">
+                        {profile?.interest?.map((interest, index) => (
+                            <li key={index} className="text-gray-700">{interest}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="mt-6">
+                    <h3 className="text-lg font-bold text-gray-800">Education</h3>
+                    <ul className="list-disc list-inside space-y-2 mt-2">
+                        {profile?.education?.map((education, index) => (
+                            <li key={index} className="text-gray-700">{education}</li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>
     );
 };
-
 

@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-transparent shadow-md">
+        <nav className="bg-transparent font-sans shadow-md">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
@@ -43,10 +43,9 @@ const Navbar = () => {
                         <Link to="/about" className="text-gray-700 hover:text-blue-950">About</Link>
                         {/*<Link to="/projects" className="text-gray-700 hover:text-blue-950">Project</Link>*/}
                         <Link to="/apply" className="text-gray-700 hover:text-blue-950">Apply</Link>
-                        <Link to="/Sectors" className="text-gray-700 hover:text-blue-950">Sectors</Link>
+                        {/* <Link to="/Sectors" className="text-gray-700 hover:text-blue-950">Sectors</Link>*/}
                         <Link to="/contact" className="text-gray-700 hover:text-blue-950">Contact</Link>
                         <Link to="/people" className="text-gray-700 hover:text-blue-950">People</Link>
-
                     </div>
                 </div>
             )}

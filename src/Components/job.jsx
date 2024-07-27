@@ -1,85 +1,54 @@
-// Job.js
-import React from 'react';
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Job = ({ title, description, status, responsibilities, skills, qual }) => {
+    const [expanded, setExpanded] = useState(false);
 
-    const [Expanded, setExpanded] = useState(false);
-
-    const clickHandler = ({target}) => {
-        const exp = target.getAttribute('expand');
-        if (exp === 'data-expand') {
-            setExpanded(true);
-        } 
-        else if (exp === 'data-collapse') {
-            setExpanded(false);
-        }
-        
+    const clickHandler = () => {
+        setExpanded(!expanded);
     };
 
     return (
-        <div className={`p-4  rounded-lg shadow-md bg-white border-solid border-2 ${status === 'Active' ? 'border-green-400' : 'border-red-400'}`} >
-            {Expanded ? (
-                <>
-                    <h2 className="text-xl font-semibold">{title}</h2>
-                    <p className="mt-2">{description}</p>
-                    
-                    <h1 className='text-sm font-bold mt-5'>Responsibilities</h1>
-                    <ul className="list-disc list-inside">
+        <div className={`p-4 rounded-lg shadow-md bg-white border ${status === 'Active' ? 'border-green-400' : 'border-red-400'}`}>
+            <div className="mb-2">
+                <h2 className="text-2xl font-semibold">{title}</h2>
+                <p className="mt-2 text-gray-700">{description}</p>
+            </div>
+
+            {expanded && (
+                <div>
+                    <h3 className="text-lg font-medium mt-5">Responsibilities</h3>
+                    <ul className="list-disc list-inside ml-4 mt-1">
                         {responsibilities.map((responsibility, index) => (
-                            <li key={index}>{responsibility}</li>
+                            <li key={index} className="text-gray-700">{responsibility}</li>
                         ))}
                     </ul>
 
-                    <h1 className='text-sm font-bold mt-5'>Required Skills and Qualifications</h1>
-                    <ul className="list-disc list-inside">
-                        {skills.map((skills, index) => (
-                            <li key={index}>{skills}</li>
+                    <h3 className="text-lg font-medium mt-5">Required Skills and Qualifications</h3>
+                    <ul className="list-disc list-inside ml-4 mt-1">
+                        {skills.map((skill, index) => (
+                            <li key={index} className="text-gray-700">{skill}</li>
                         ))}
                     </ul>
 
-                    <h1 className='text-sm font-bold mt-5'>Preferred Qualifications:</h1>
-                    <ul className="list-disc list-inside">
-                        {qual.map((qual, index) => (
-                            <li key={index}>{qual}</li>
+                    <h3 className="text-lg font-medium mt-5">Preferred Qualifications</h3>
+                    <ul className="list-disc list-inside ml-4 mt-1">
+                        {qual.map((qualification, index) => (
+                            <li key={index} className="text-gray-700">{qualification}</li>
                         ))}
                     </ul>
-                    
-
-                    <div className='space-x-5'>
-                        <span className={`inline-block mt-4 px-3 py-1 rounded-full text-sm  ${status === 'Active' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
-                            {status === 'Active' ? 'Actively Hiring' : 'Not Hiring'}
-                        </span>
-
-                    </div>
-
-                    <span className='flex justify-center mt-4 px-3 py-1 rounded-full text-sm bg-gray-300 text-green-800 items-center' expand='data-collapse' onClick={clickHandler} >
-                            <FontAwesomeIcon icon={faChevronUp} expand='data-expand' onClick={clickHandler}/>
-
-                    </span>
-                
-                </>
-            ) : (
-                <>
-                    <h2 className="text-xl font-semibold">{title}</h2>
-                    <p className="mt-2">{description}</p>
-                    <div className='space-x-5'>
-                        <span className={`inline-block mt-4 px-3 py-1 rounded-full text-sm ${status === 'Active' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
-                            {status === 'Active' ? 'Actively Hiring' : 'Not Hiring'}
-                        </span>
-
-                    </div>
-                    <span className='flex justify-center mt-4 px-3 py-1 rounded-full text-sm bg-gray-300 text-green-800 items-center' expand='data-expand' onClick={clickHandler} >
-                            <FontAwesomeIcon icon={faChevronDown} expand='data-expand' onClick={clickHandler} />
-
-                    </span>
-                </>
+                </div>
             )}
 
-                        
+            <div className="flex justify-between items-center mt-4">
+                <span className={`inline-block px-3 py-1 rounded-full text-sm ${status === 'Active' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
+                    {status === 'Active' ? 'Actively Hiring' : 'Not Hiring'}
+                </span>
+                <span className="text-gray-600 cursor-pointer" onClick={clickHandler}>
+                    <FontAwesomeIcon icon={expanded ? faChevronUp : faChevronDown} />
+                </span>
+            </div>
         </div>
     );
 };

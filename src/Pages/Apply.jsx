@@ -14,35 +14,11 @@ const Apply = () => {
                     <Typography
                         variant="h1"
                         color="black"
-                        className="text-4xl !leading-snug lg:text-5xl"
+                        className="text-4xl font-extralight font-serif !leading-snug lg:text-5xl"
                     >
-                        <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .typeString("Discover Opportunities")
-                                    .start();
-                            }}
-                        />
-                        
-                        
+                        Discover Opportunities
                     </Typography>
-
-
-                    <Typography
-                        variant="h1"
-                        color="black"
-                        className="text-4xl !leading-snug lg:text-5xl ml-10 fade-in "
-                    >
-                        
-                        Find, Apply, Innovate
-                        
-                    </Typography>
-                    
-
-                    
                 </div>
-
-
             </header>
                 <JobList />
             </div>
