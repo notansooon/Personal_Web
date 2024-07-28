@@ -195,14 +195,10 @@ export function People() {
             <Typography
                 variant="h1"
                 color="black"
-                className="text-4xl !leading-snug lg:text-5xl text-center mt-20"
+                className="text-4xl font-black font-serif !leading-snug lg:text-5xl text-center mt-20"
             >
-                <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter.typeString("Meet Our Team")
-                        .start();
-                    }}
-                />
+                Meet Our Team
+
             </Typography>
 
 

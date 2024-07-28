@@ -480,15 +480,8 @@ const HeroTextComponent = () => {
     return (
         <div className="mt-10 lg:mt-0">
             <div className='w-full'>
-            <h2 className="mb-5 leading-tight -tracking-tighter text-3xl font-bold text-dark sm:text-[40px]/[48px]">
-                        <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter
-                                
-                                    .typeString("Get To Know us")
-                                    .start();
-                            }}
-                        />
+            <h2 className="mb-5 leading-tight -tracking-tighter text-3xl font-black font-serif text-dark sm:text-[40px]/[48px]">
+                        Get To Know Us
             </h2>
 
             </div>
@@ -505,31 +498,31 @@ const HeroTextComponent = () => {
 
 
 const AboutHero = () => {
-    return (
-        <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-transparent dark:bg-dark">
-            <div className="container mx-auto">
-                <div className="flex flex-wrap items-center justify-between -mx-4">
-                    <div className="w-full px-4 lg:w-6/12">
-                        <div className="flex items-center -mx-3 sm:-mx-4">
-                            <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                                <ImageComponent src={img1} alt="" />
-                                <ImageComponent src={img2} alt="" />
+        return (
+            <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-transparent dark:bg-dark">
+                    <div className="container mx-auto">
+                            <div className="flex flex-wrap items-center justify-between -mx-4">
+                                    <div className="w-full px-4 lg:w-6/12">
+                                            <div className="flex items-center -mx-3 sm:-mx-4">
+                                                    <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                                                            <ImageComponent src={img1} alt="Image 1 description" />
+                                                            <ImageComponent src={img2} alt="Image 2 description" />
+                                                    </div>
+                                                    <div className="w-full px-3 sm:px-4 xl:w-1/2">
+                                                            <div className="relative z-10 my-4">
+                                                                    <ImageComponent src={img3} alt="Image 3 description" />
+                                                                    <SvgComponent />
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                    <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+                                            <HeroTextComponent />
+                                    </div>
                             </div>
-                            <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                                <div className="relative z-10 my-4">
-                                    <ImageComponent src={img3} alt="" />
-                                    <SvgComponent />
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-                        <HeroTextComponent />
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+            </section>
+        );
 };
 
 export default AboutHero;

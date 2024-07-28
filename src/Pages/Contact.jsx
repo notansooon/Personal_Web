@@ -1,20 +1,19 @@
 import React from "react";
 import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
-import locationImage from "../assets/Images/Screenshot 2024-07-20 at 1.45.48 PM.png"
+import locationImage from "../assets/Images/Screenshot 2024-07-20 at 1.45.48 PM.png";
+
 export function Contact() {
     return (
         <section className="px-8 py-8 lg:py-16">
             <div className="container mx-auto text-center">
-                
-            <div className="container relative z-10 my-auto mx-auto grid text-left">
+
+                <div className="container relative z-10 my-auto mx-auto grid text-left">
                     <Typography
                         variant="h1"
-                        color="white"
-                        className="text-4xl !leading-snug lg:text-5xl"
+                        className="text-4xl font-black font-serif !leading-snug lg:text-5xl"
                     >
                         Meet Our Teams
                     </Typography>
-                   
                 </div>
 
                 <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
@@ -29,7 +28,7 @@ export function Contact() {
                     >
                         <Typography
                             variant="small"
-                            className="text-left !font-semibold !text-gray-600"
+                            className="text-left font-semibold !text-gray-600 font-serif"
                         >
                             Select Options for Business Engagement
                         </Typography>
@@ -45,7 +44,7 @@ export function Contact() {
                             <div>
                                 <Typography
                                     variant="small"
-                                    className="mb-2 text-left font-medium !text-gray-900"
+                                    className="mb-2 text-left font-medium !text-gray-900 font-serif"
                                 >
                                     First Name
                                 </Typography>
@@ -66,7 +65,7 @@ export function Contact() {
                             <div>
                                 <Typography
                                     variant="small"
-                                    className="mb-2 text-left font-medium !text-gray-900"
+                                    className="mb-2 text-left font-medium !text-gray-900 font-serif"
                                 >
                                     Last Name
                                 </Typography>
@@ -88,7 +87,7 @@ export function Contact() {
                         <div>
                             <Typography
                                 variant="small"
-                                className="mb-2 text-left font-medium !text-gray-900"
+                                className="mb-2 text-left font-medium !text-gray-900 font-serif"
                             >
                                 Your Email
                             </Typography>
@@ -109,7 +108,7 @@ export function Contact() {
                         <div>
                             <Typography
                                 variant="small"
-                                className="mb-2 text-left font-medium !text-gray-900"
+                                className="mb-2 text-left font-medium !text-gray-900 font-serif"
                             >
                                 Your Message
                             </Typography>
@@ -138,6 +137,7 @@ export function Contact() {
 }
 
 export default Contact;
+
 
 
 

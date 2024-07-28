@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const Job = ({ title, description, status, responsibilities, skills, qual }) => {
     const [expanded, setExpanded] = useState(false);
 
-    const clickHandler = () => {
+    const toggleExpanded = () => {
         setExpanded(!expanded);
     };
 
@@ -45,8 +44,11 @@ const Job = ({ title, description, status, responsibilities, skills, qual }) => 
                 <span className={`inline-block px-3 py-1 rounded-full text-sm ${status === 'Active' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'}`}>
                     {status === 'Active' ? 'Actively Hiring' : 'Not Hiring'}
                 </span>
-                <span className="text-gray-600 cursor-pointer" onClick={clickHandler}>
-                    <FontAwesomeIcon icon={expanded ? faChevronUp : faChevronDown} />
+                <span
+                    className="text-gray-600 cursor-pointer transition-transform duration-300 hover:scale-110"
+                    onClick={toggleExpanded}
+                >
+                    {expanded ? <FaChevronUp size={20} /> : <FaChevronDown size={20} />}
                 </span>
             </div>
         </div>
@@ -54,3 +56,4 @@ const Job = ({ title, description, status, responsibilities, skills, qual }) => 
 };
 
 export default Job;
+
