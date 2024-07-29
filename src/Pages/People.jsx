@@ -9,10 +9,11 @@ import '../Components/utils/styles.css'
 import { UserGroupIcon } from "@heroicons/react/24/solid";
 import Ben from '../ProfilePicture/ben.jpg'
 import Ali from '../ProfilePicture/ali.jpg'
+import Alexander from '../ProfilePicture/Alexander.jpg'
 import Roshan from '../ProfilePicture/roshan.jpg'
+import Forrest from '../ProfilePicture/Forrest.jpg'
 import Ryan from '../ProfilePicture/ryan.jpg'
-import Raseen from '../ProfilePicture/Raseen.jpg'
-import Gaurav from '../ProfilePicture/Gaurav.jpg'
+import Jamshid from '../ProfilePicture/Jamshid.jpg'
 import Alex from '../ProfilePicture/alex.jpg'
 import Paul from '../ProfilePicture/paul.jpg'
 import Unknown from '../ProfilePicture/unknown.jpg'
@@ -59,7 +60,7 @@ const algo = [
         
     },
     {
-        img: Unknown,
+        img: Forrest,
         name: "Forrest Meng",
         title: "Algorithimic Development",
         
@@ -75,7 +76,7 @@ const algo = [
 
 const academic = [
     {
-        img: Unknown,
+        img: Jamshid,
         name: "Jamshid Ardalankia",
         title: "Graduate Researcher",
         
@@ -87,7 +88,7 @@ const academic = [
         
     },
     {
-        img: Unknown,
+        img: Alexander,
         name: "Alexander Ardiaz",
         title: "Undergraduate Researcher",
         
@@ -144,7 +145,7 @@ function TeamCard({ img, name, title, desc }) {
     
     return (
         <Card color="transparent" shadow={false} onClick={profileHandler}>
-            <CardHeader shadow={false} floated={false} className="!m-0 w-40">
+            <CardHeader shadow={false} floated={false} className="!m-0 w-40 rounded-lg">
                 <img
                     src={img}
                     alt={name}
@@ -180,14 +181,7 @@ function TeamCard({ img, name, title, desc }) {
 
 
 export function People() {
-    const scrollHandler = (event) => {
-        const value = parseInt(event.target.getAttribute('data-scroll'));
-        window.scrollTo({
-            top: value,
-            behavior: 'smooth'
-        })
-    }
-
+    
 
     return (
         <section className="">
