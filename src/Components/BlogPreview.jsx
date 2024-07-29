@@ -5,6 +5,12 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
+import Apl12 from './LabPicture/4.12.jpg'
+import Forrest_spot from './LabPicture/Forrest_Spot.jpg'
+import Join from './LabPicture/Join.jpg'
+import Apl19 from './LabPicture/4.19.jpg'
+
+
 
 function BlogPostCard({ img, title, desc }) {
     return (
@@ -37,24 +43,24 @@ function BlogPostCard({ img, title, desc }) {
 
 const posts = [
     {
-        img: "https://www.material-tailwind.com/image/blog-1.png",
-        title: "Siri brings hands-free",
-        desc: "Siri's latest trick is offering a hands-free TV viewing experience, that will allow consumers",
+        img: Forrest_spot,
+        title: "DLQF Spotlight",
+        desc: "Forrest Meng is a dedicated industry professional and senior at Virginia Tech who joined the Dataism Laboratory last semester. With robust quantitative abilities and a proven track record, Forrest has swiftly integrated into our team dynamics. ",
     },
     {
-        img: "https://www.material-tailwind.com/image/blog-2.png",
-        title: "More Comfort",
-        desc: "Siri's latest trick is offering a hands-free TV viewing experience, that will allow consumers",
+        img: Apl19,
+        title: "Portfolio Optimization",
+        desc: "Gurkirat Singh, Alexander Ardaiz, Benjamin Cummings, and Sahith Kancharla delved into the intricacies of Machine Learning, particularly in the context of Portfolio Optimization. ",
     },
     {
-        img: "https://www.material-tailwind.com/image/blog-3.png",
-        title: "Train Your Brain",
-        desc: "Siri's latest trick is offering a hands-free TV viewing experience, that will allow consumers",
+        img: Join,
+        title: "Unlock Your Future in Quantitative Finance",
+        desc: "Join the Dataism Laboratory for Quantitative Finance this next semester at Virginia Tech to stand out in your quantitative finance job search. ",
     },
     {
-        img: "https://www.material-tailwind.com/image/blog-4.png",
-        title: "Grow Your Business",
-        desc: "Siri's latest trick is offering a hands-free TV viewing experience, that will allow consumers",
+        img: Apl12,
+        title: "Initial Coin Offering",
+        desc: "Two of our assistant researchers explored the intricacies of decentralized finance through a quantitative finance lens.",
     },
 ];
 
@@ -76,8 +82,8 @@ export function BlogPreview() {
                 </Typography>
             </div>
             <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
-                {posts.map(({ img, title, desc }) => (
-                    <BlogPostCard key={title} img={img} title={title} desc={desc} />
+                {posts.map((props) => (
+                    <BlogPostCard {...props} />
                 ))}
             </div>
         </section>
