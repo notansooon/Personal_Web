@@ -76,7 +76,7 @@ export function AboutContent() {
                             </Option>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 items-center place-items-center gap-10 md:gap-16 lg:grid-cols-2">
+                    <div className=" grid grid-cols-1 items-center place-items-center gap-10 md:gap-16 lg:grid-cols-2">
                         <div className="lg:row-auto row-start-2 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Data-Driven Decisions">
                                 We empower financial institutions to make informed decisions based on comprehensive data analysis. Our algorithms process vast amounts of data to provide actionable insights.
