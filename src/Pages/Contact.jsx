@@ -4,7 +4,7 @@ import locationImage from "../assets/Images/Screenshot 2024-07-20 at 1.45.48 P
 
 export function Contact() {
     return (
-        <section className="px-8 py-8 lg:py-16">
+        <section className="px-8 py-8 lg:py-16 mb-24">
             <div className="container mx-auto text-center">
 
                 <div className="container relative z-10 my-auto mx-auto grid text-left">
@@ -26,20 +26,7 @@ export function Contact() {
                         action="#"
                         className="flex flex-col gap-4 lg:max-w-sm"
                     >
-                        <Typography
-                            variant="small"
-                            className="text-left font-semibold !text-gray-600 font-serif"
-                        >
-                            Select Options for Business Engagement
-                        </Typography>
-                        <div className="flex gap-4">
-                            <Button variant="outlined" className="max-w-fit">
-                                General inquiry
-                            </Button>
-                            <Button variant="outlined" className="max-w-fit">
-                                Product Support
-                            </Button>
-                        </div>
+
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <Typography

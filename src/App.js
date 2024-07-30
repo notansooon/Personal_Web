@@ -14,6 +14,7 @@ import People from "./Pages/People";
 import HttpStatusCodes from "./HttpStatusCodes/HttpStatusCode";
 import React from "react";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/UI/ScrollToTop";
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <>
           <div className= 'app-container'>
               <Navbar className="p-16"/>
+              <ScrollToTop/>
 
               <Routes>
                   <Route path="/" element={<Home/>}/>

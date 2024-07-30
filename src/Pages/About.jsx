@@ -7,7 +7,7 @@ import Sector from "../Components/Sector";
 const About = () => {
     return (
         <>
-            <div className="py-10">
+            <div className="bg-gray-100 py-10">
                 <div className="mx-auto px-4 lg:px-20">
                
                     <AboutHero/>
