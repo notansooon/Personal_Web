@@ -2,7 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Typography, Button } from "@material-tailwind/react";
 import bgImage1 from '../assets/Images/1712711055874.jpeg'; // replace with your actual path
-import bgImage2 from '../assets/Images/1712985343744.jpeg'; // replace with your actual path
+import bgImage2 from '../assets/Images/1712985343744.jpeg';
+import LinkedInArrowLink from "./LinkedInArrow";
+import ClickableLink from "./ClickableLink"; // replace with your actual path
 
 function Option({ title, children }) {
     return (
@@ -96,9 +98,8 @@ export function AboutContent() {
                             <Typography className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
                                 We believe that collaboration is key to innovation. By bringing together experts from various fields, we create a dynamic environment where new ideas can flourish and lead to groundbreaking advancements in quantitative finance.
                             </Typography>
-                            <Button className="max-w-fit mx-auto bg-blue-950">
-                                Join Us
-                            </Button>
+                            <ClickableLink  to="/apply" label="Join Us"/>
+
                         </div>
                     </div>
                 </div>

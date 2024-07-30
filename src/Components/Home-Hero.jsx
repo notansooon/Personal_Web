@@ -13,16 +13,9 @@ const HomeHero = () => {
                     <Typography
                         variant="h1"
                         color="white"
-                        className="text-4xl !leading-snug lg:text-5xl"
+                        className="text-4xl font-serif !leading-snug lg:text-5xl"
                     >
-                        <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .typeString("Welcome to Dataism")
-                                    
-                                    .start();
-                            }}
-                        />
+                     Welcome To Dataism
                     </Typography>
                     <Typography
                         variant="lead"

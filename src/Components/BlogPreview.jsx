@@ -9,6 +9,7 @@ import Apl12 from './LabPicture/4.12.jpg'
 import Forrest_spot from './LabPicture/Forrest_Spot.jpg'
 import Join from './LabPicture/Join.jpg'
 import Apl19 from './LabPicture/4.19.jpg'
+import LinkedInArrowLink from "./LinkedInArrow";
 
 
 
@@ -35,7 +36,7 @@ function BlogPostCard({ img, title, desc }) {
                 <Typography className="mb-6 font-normal !text-gray-500">
                     {desc}
                 </Typography>
-                <Button className='bg-blue-950' color="gray">read more</Button>
+                <LinkedInArrowLink/>
             </CardBody>
         </Card>
     );
