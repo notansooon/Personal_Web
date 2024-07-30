@@ -18,7 +18,7 @@ import Alex from '../ProfilePicture/alex.jpg'
 import Paul from '../ProfilePicture/paul.jpg'
 import Unknown from '../ProfilePicture/unknown.jpg'
 import Ben_f from '../ProfilePicture/ben_f.jpg'
-import Team from '../Components/Profile'
+
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -144,7 +144,7 @@ function TeamCard({ img, name, title, desc }) {
 
     
     return (
-        <Card color="transparent" shadow={false} onClick={profileHandler}>
+        <Card color="transparent" shadow={false}>
             <CardHeader shadow={false} floated={false} className="!m-0 w-40 rounded-lg">
                 <img
                     src={img}
