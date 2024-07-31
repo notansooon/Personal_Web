@@ -84,7 +84,7 @@ const teamData = {
     ],
     "Academic Research": [
         {img: PaulC, name: "Paul Chau", title: "Undergraduate Research Assistant" },
-            { img: Jamshid, name: "Jamshid", title: "Graduate Research Assistant" },
+        { img: Jamshid, name: "Jamshid", title: "Graduate Research Assistant" },
     ],
     "Client Services": [
         { img: Alex, name: "Alex Jaimes", title: "Project Manager" },
@@ -101,7 +101,6 @@ export function People() {
         <section className="py-10 px-8 bg-gray-100 lg:py-28">
             <div className="container mx-auto">
                 <div className="mx-auto mb-10 lg:mb-28 lg:text-center">
-
                     <Typography
                         variant="h2"
                         color="blue-gray"
@@ -120,11 +119,11 @@ export function People() {
                 </div>
 
                 {Object.keys(teamData).map((division) => (
-                    <div key={division} className="mb-12">
-                        <Typography variant="h4" className="text-center mb-8">
+                    <div key={division} className="mb-16 lg:mb-32">
+                        <Typography variant="h4" className="text-center mb-12 text-xl lg:text-2xl font-semibold">
                             {division}
                         </Typography>
-                        <div className="grid gap-16 md:grid-cols-2 lg:gap-y-32 xl:grid-cols-3">
+                        <div className="grid gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-3">
                             {teamData[division].map((member, index) => (
                                 <TeamCard key={index} {...member} />
                             ))}
@@ -135,5 +134,4 @@ export function People() {
         </section>
     );
 }
-
-export default People;
+export default People

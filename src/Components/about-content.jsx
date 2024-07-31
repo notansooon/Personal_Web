@@ -61,7 +61,7 @@ export function AboutContent() {
                             <Typography className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
                                 Our team is dedicated to developing advanced algorithmic solutions that address real-world financial challenges. By leveraging cutting-edge technology and data analytics, we aim to enhance the efficiency and effectiveness of financial markets.
                             </Typography>
-                         
+
                         </div>
                         <div className="flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Cutting-Edge Research">
