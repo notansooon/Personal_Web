@@ -1,3 +1,4 @@
+import { UserGroupIcon } from "@heroicons/react/24/solid";
 import {
     Card,
     CardBody,
@@ -5,289 +6,132 @@ import {
     IconButton,
     Typography,
 } from "@material-tailwind/react";
-import '../Components/utils/styles.css'
-import { UserGroupIcon } from "@heroicons/react/24/solid";
-import Ben from '../ProfilePicture/ben.jpg'
-import Ali from '../ProfilePicture/ali.jpg'
-import Alexander from '../ProfilePicture/Alexander.jpg'
-import Roshan from '../ProfilePicture/roshan.jpg'
-import Forrest from '../ProfilePicture/Forrest.jpg'
-import Ryan from '../ProfilePicture/ryan.jpg'
-import Jamshid from '../ProfilePicture/Jamshid.jpg'
-import Alex from '../ProfilePicture/alex.jpg'
-import Paul from '../ProfilePicture/paul.jpg'
-import Unknown from '../ProfilePicture/unknown.jpg'
-import Ben_f from '../ProfilePicture/ben_f.jpg'
-
-import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import Typewriter from "typewriter-effect";
-import group from '../ProfilePicture/GroupPic.png'
+import DrAli from '../assets/ProfilePicture/ali.jpg'
+import BenC from '../assets/ProfilePicture/ben.jpg'
+import Alex from '../assets/ProfilePicture/alex.jpg'
+import Roshan from '../assets/ProfilePicture/roshan.jpg'
+import Forrest from '../assets/ProfilePicture/Forrest.jpg'
+import PaulC from '../assets/ProfilePicture/paul.jpg'
+import BenF from '../assets/ProfilePicture/ben_f.jpg'
+import Jamshid from '../assets/ProfilePicture/Jamshid.jpg'
+import Alexander from '../assets/ProfilePicture/Alexander.jpg'
+import missing from '../assets/ProfilePicture/profile-svgrepo-com.svg'
+import {FaFacebook, FaInstagram, FaLinkedin, FaGithub} from "react-icons/fa";
+import {BsTwitterX} from "react-icons/bs";
+import React from "react";
 
 
-const execu = [
-    {
-        img: Ali,
-        name: "Ali Habibnia",
-        title: "Principle Investigator",
-        
-    },
-    {
-        img: Ben,
-        name: "Ben Cummings",
-        title: "VP of Client Services",
-        
-    },
-    {
-        img: Alex,
-        name: "Alex Jaimes",
-        title: "VP of Data Science",
-        
-    },
-    {
-        img: Roshan,
-        name: "Roshan Sanyal",
-        title: "VP of Algorithmic Development",
-        
-    },
-];
-
-const algo = [
-    {
-        img: Unknown,
-        name: "Max Brenner",
-        title: "Head of Algorithmic Development",
-        
-    },
-    {
-        img: Forrest,
-        name: "Forrest Meng",
-        title: "Algorithimic Development",
-        
-    },
-    {
-        img: Ben_f,
-        name: "Ben Facciani",
-        title: "Algorithmic Developer",
-        
-    },
-    
-];
-
-const academic = [
-    {
-        img: Jamshid,
-        name: "Jamshid Ardalankia",
-        title: "Graduate Researcher",
-        
-    },
-    {
-        img: Paul,
-        name: "Paul Chau",
-        title: "Undergraduate Research Assistant",
-        
-    },
-    {
-        img: Alexander,
-        name: "Alexander Ardiaz",
-        title: "Undergraduate Researcher",
-        
-    },
-    
-];
-
-const services = [
-    {
-        img: Unknown,
-        name: "Anson Jiang",
-        title: "ML/AI Engineer",
-        
-    },
-    {
-        img: Unknown,
-        name: "Aryan Palit",
-        title: "ML/AI Engineer",
-        
-    },
-    {
-        img: Alex,
-        name: "Alex Jaimes",
-        title: "Project Manager",
-        
-    },
-    {
-        img: Roshan,
-        name: "Roshan Sanyal",
-        title: "Project Manager",
-        
-    },
-];
-
-
-
-
-
-
-
-
-
-function TeamCard({ img, name, title, desc }) {
-
-    const nav = useNavigate();
-
-    const profileHandler = () => {
-        nav(`/ProfilePage/${name}`);
-    }
-
-   
-   
-
-    
+function TeamCard({ img, name, title }) {
     return (
-        <Card color="transparent" shadow={false}>
-            <CardHeader shadow={false} floated={false} className="!m-0 w-40 rounded-lg">
+        <Card
+            color="transparent"
+            shadow={false}
+            className="grid grid-cols-12 items-center gap-6"
+        >
+            <CardHeader
+                shadow={false}
+                floated={false}
+                className="col-span-4 !m-0 h-full max-h-32 w-full"
+            >
                 <img
                     src={img}
                     alt={name}
                     className="h-full w-full object-cover object-center"
                 />
             </CardHeader>
-            <CardBody className="!pl-0 text-left">
-                <Typography variant="h5" color="blue-gray" className="font-medium">
+            <CardBody className="col-span-8 p-0">
+                <Typography variant="h5" color="blue-gray">
                     {name}
                 </Typography>
-                <Typography className="mb-2 font-bold !text-gray-500 text-lg">
+                <Typography
+                    variant="small"
+                    className="mb-4 mt-2 font-bold uppercase !text-gray-500"
+                >
                     {title}
                 </Typography>
-                <Typography className="mb-4 max-w-xs !font-normal !text-gray-500">
-                    {desc}
-                </Typography>
-                <div className="flex items-center gap-1.5">
-                    <IconButton variant="text" color="gray">
-                        <i className="fa-brands fa-twitter text-lg" />
-                    </IconButton>
-                    <IconButton variant="text" color="gray">
-                        <i className="fa-brands fa-linkedin text-lg" />
-                    </IconButton>
-                    <IconButton variant="text" color="gray">
-                        <i className="fa-brands fa-dribbble text-lg" />
-                    </IconButton>
+                <div className="-ml-1 flex items-center gap-4">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <FaFacebook className="text-2xl text-gray-800 hover:text-blue-600"/>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <BsTwitterX className="text-2xl text-gray-800 hover:text-blue-400"/>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700"/>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className="text-2xl text-gray-800 hover:text-pink-500"/>
+                    </a>
                 </div>
             </CardBody>
         </Card>
     );
 }
 
+const teamData = {
+    "Principal Investigators": [
+        {img: DrAli, name: "Dr. Ali Habibnia ", title: "Principal Investigator"},
+    ],
+    "Vice Presidents": [
+        {img: BenC, name: "Benjamin Cummings", title: "Vice President"},
+        {img: Alex, name: "Alex Jaimes", title: "Vice President"},
+        {img: Roshan, name: "Roshan Sanyal", title: "Vice President"},
+    ],
+    "Algorithmic Development": [
+        {img: missing, name: "Max Brenner", title: "Head of Algorithmic Development"},
+        {img: Forrest, name: "Forrest Meng", title: "Algorithmic Development"},
+        {img: BenF, name: "Ben F", title: "Algorithmic Development"},
+    ],
+    "Academic Research": [
+        {img: PaulC, name: "Paul Chau", title: "Undergraduate Research Assistant" },
+            { img: Jamshid, name: "Jamshid", title: "Graduate Research Assistant" },
+    ],
+    "Client Services": [
+        { img: Alex, name: "Alex Jaimes", title: "Project Manager" },
+        { img: Roshan, name: "Roshan Sanyal", title: "Project Manager" },
+        { img:  Alexander, name: "Alexander Ardiaz", title: "Undergraduate Research Assistant" },
+        { img: missing, name: "Anson Jiang", title: "AI/ML Engineer" },
+        { img: missing, name: "Aryan Palit", title: "AI/ML Engineer" },
 
+    ],
+};
 
 export function People() {
-    
-
     return (
-        <section className="">
+        <section className="py-10 px-8 bg-gray-100 lg:py-28">
+            <div className="container mx-auto">
+                <div className="mx-auto mb-10 lg:mb-28 lg:text-center">
 
-            <Typography
-                variant="h1"
-                color="black"
-                className="text-4xl font-black font-serif !leading-snug lg:text-5xl text-center mt-20"
-            >
-                Meet Our Team
+                    <Typography
+                        variant="h2"
+                        color="blue-gray"
+                        className="my-4 text-3xl lg:text-4xl"
+                    >
+                        Our Awesome Team
+                    </Typography>
+                    <Typography
+                        variant="lead"
+                        className="mx-auto max-w-4xl !text-gray-500"
+                    >
+                        We&apos;re constantly trying to express ourselves and actualize our
+                        dreams. If you have the opportunity to play this game of life you
+                        need to appreciate every moment.
+                    </Typography>
+                </div>
 
-            </Typography>
-
-
-
-            <div className="container px-5">
-
-    <div className="mb-10 lg:mb-20 responsive-margin-height responsive-margin-height-md">
-        <Typography
-            variant="h2"
-            color="blue-gray"
-            className="mt-6 mb-3 text-3xl lg:text-4xl"
-        >
-            The Adminstrative Team
-        </Typography>
-        <Typography
-            variant="lead"
-            className="font-normal !text-gray-500 max-w-xl"
-        >
-           
-        </Typography>
-    </div>
-
-    <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-        {execu.map((props, key) => (
-            <TeamCard key={key} {...props}  />
-        ))}
-    </div>
-
-    
-    <div className="mt-10 lg:mt-20 flex flex-col">
-        <div className="w-full lg:w-auto mb-10 lg:mb-20">
-            <Typography
-                variant="h2"
-                color="blue-gray"
-                className="mt-6 mb-3 text-3xl lg:text-4xl"
-            >
-                Algorithmic Developer
-            </Typography>
-        </div>
-
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {algo.map((props, key) => (
-                <TeamCard key={key} {...props} />
-            ))}
-        </div>
-    </div>
-
-   
-    <div className="mt-10 lg:mt-20">
-        <div className="mb-10 lg:mb-20">
-            <Typography
-                variant="h2"
-                color="blue-gray"
-                className="mt-6 mb-3 text-3xl lg:text-4xl"
-            >
-                Client Services
-            </Typography>
-            <Typography
-                variant="lead"
-                className="font-normal !text-gray-500 max-w-xl"
-            >
-               
-            </Typography>
-        </div>
-
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {services.map((props, key) => (
-                <TeamCard key={key} {...props} />
-            ))}
-        </div>
-    </div>
-
-   
-    <div className="mt-10 lg:mt-20 flex flex-col ">
-        <div className="w-full lg:w-auto mb-10 lg:mb-20">
-            <Typography
-                variant="h2"
-                color="blue-gray"
-                className="mt-6 mb-3 text-3xl lg:text-4xl"
-            >
-                Academic Researcher
-            </Typography>
-        </div>
-
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-            {academic.map((props, key) => (
-                <TeamCard key={key} {...props} />
-            ))}
-        </div>
-    </div>
-
-</div>
-
-
-
+                {Object.keys(teamData).map((division) => (
+                    <div key={division} className="mb-12">
+                        <Typography variant="h4" className="text-center mb-8">
+                            {division}
+                        </Typography>
+                        <div className="grid gap-16 md:grid-cols-2 lg:gap-y-32 xl:grid-cols-3">
+                            {teamData[division].map((member, index) => (
+                                <TeamCard key={index} {...member} />
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                         <FaFacebook className="text-2xl text-gray-800 hover:text-blue-600" />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter className="text-2xl text-gray-800 hover:text-blue-400" />
+                        <BsTwitterX className="text-2xl text-gray-800 hover:text-blue-400" />
                     </a>
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700" />

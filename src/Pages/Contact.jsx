@@ -4,7 +4,7 @@ import locationImage from "../assets/Images/Screenshot 2024-07-20 at 1.45.48 P
 
 export function Contact() {
     return (
-        <section className="px-8 py-8 lg:py-16 mb-24">
+        <section className="px-8 bg-gray-100 py-8 lg:py-16 pb-16 lg:pb-28 ">
             <div className="container mx-auto text-center">
 
                 <div className="container relative z-10 my-auto mx-auto grid text-left">

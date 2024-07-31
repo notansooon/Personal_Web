@@ -18,10 +18,6 @@ function Projects() {
   return (
     <>
 
-     
-      
-
-      
       <div className='relative flex flex-col justify-center items-center p-8'>
 
         <header className="bg-white p-8">

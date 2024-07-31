@@ -10,6 +10,8 @@ import Forrest_spot from './LabPicture/Forrest_Spot.jpg'
 import Join from './LabPicture/Join.jpg'
 import Apl19 from './LabPicture/4.19.jpg'
 import LinkedInArrowLink from "./LinkedInArrow";
+import {ArrowSmallRightIcon} from "@heroicons/react/20/solid";
+import React from "react";
 
 
 
@@ -36,7 +38,18 @@ function BlogPostCard({ img, title, desc }) {
                 <Typography className="mb-6 font-normal !text-gray-500">
                     {desc}
                 </Typography>
-                <LinkedInArrowLink/>
+                <Button
+                    color="gray"
+                    variant="text"
+                    size="sm"
+                    className="flex items-center"
+                >
+                    Read More on LinkedIn
+                    <ArrowSmallRightIcon
+                        className="ml-2 h-3.5 w-3.5"
+                        strokeWidth={3}
+                    />
+                </Button>
             </CardBody>
         </Card>
     );
@@ -79,7 +92,7 @@ export function BlogPreview() {
                     variant="lead"
                     className="mx-auto max-w-xl !font-normal !text-gray-500"
                 >
-                    Change to Check out the latest DLQF announcements and updates
+                    Check out the latest DLQF announcements and updates
                 </Typography>
             </div>
             <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">

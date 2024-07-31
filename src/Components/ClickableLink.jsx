@@ -5,7 +5,7 @@ const ClickableLink = ({ to, label }) => {
     return (
         <Link
             to={to}
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-300"
+            className="inline-flex items-center text-blue-950 hover:text-blue-800 transition-colors duration-300"
         >
             {label}
             <svg

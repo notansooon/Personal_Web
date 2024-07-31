@@ -12,7 +12,7 @@ import Sectors from '../Pages/Sectors';
 
 const Sector = () => {
     return (
-        <section className="container mx-auto p-4">
+        <section className="container -mt-12 mx-auto p-4">
             <div className="flex flex-wrap justify-center gap-4 ">
                 <SectorCard title="Algorithmic Trading" sector='Algorithmic' description='Revolutionizing financial predictions and strategies through advanced AI and ML algorithms.' />
                 <SectorCard title="Client Services" sector='Client' description="Providing innovative, tailored solutions for optimal performance in investment banking." />
@@ -28,7 +28,7 @@ const SectorCard = ({ title, description, sector }) => {
     const info = [
         {
           sector: 'Algorithmic',
-          description: "Algorithmic Development is at the heart of our lab's technological innovations. " + 
+          description: "Algorithmic Development is at the heart of our lab's technological innovations. " +
             "We specialize in creating sophisticated algorithms that enhance data analysis, " +
             "machine learning, and decision-making processes. " +
             "Our team is committed to developing cutting-edge solutions that address complex problems and drive advancements in various sectors."
@@ -75,43 +75,43 @@ const SectorCard = ({ title, description, sector }) => {
                 <CardBody>
 
 
-                    
+
                     <Typography
                         color="blue-gray"
                         className="mt-1 mb-2 text-[16px] font-normal"
                     >
                         {description}
-                    
+
                         <Typography
                             variant="h4"
                             className="text-[16px] font-normal  text-blue-600 hover:text-blue-950 "
-                            
+
                     >
                         {
-                            isExpand ? 
+                            isExpand ?
                             (<>
                                 <br />
                                 <p>
-                                    
+
                                     {obj.description}
 
                                 <br />
-                                <h4 dataExpand="show less" 
+                                <h4 dataExpand="show less"
                                     onClick={expandHandler}
                                     className="text-[16px] font-normal  text-blue-600 hover:text-blue-950 ">
                                         show less
                                 </h4>
                                 </p>
-                            </>) 
+                            </>)
                             : (<><h4 dataExpand="show more"
                                 onClick={expandHandler}> show more</h4></>)
-                               
 
-                            
+
+
                         }
-                        
+
                     </Typography>
-                         
+
                     </Typography>
                 </CardBody>
                 <CardFooter className="pt-0 px-4 ">
