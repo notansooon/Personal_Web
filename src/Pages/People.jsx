@@ -21,7 +21,7 @@ import {BsTwitterX} from "react-icons/bs";
 import React from "react";
 
 
-function TeamCard({ img, name, title }) {
+function TeamCard({ img, name, title, socialLinks }) {
     return (
         <Card
             color="transparent"
@@ -50,49 +50,161 @@ function TeamCard({ img, name, title }) {
                     {title}
                 </Typography>
                 <div className="-ml-1 flex items-center gap-4">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="text-2xl text-gray-800 hover:text-blue-600"/>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <BsTwitterX className="text-2xl text-gray-800 hover:text-blue-400"/>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700"/>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="text-2xl text-gray-800 hover:text-pink-500"/>
-                    </a>
+                    {socialLinks?.linkedin && (
+                        <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700"/>
+                        </a>
+                    )}
+                    {socialLinks?.twitter && (
+                        <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+                            <BsTwitterX className="text-2xl text-gray-800 hover:text-blue-400"/>
+                        </a>
+                    )}
+                    {socialLinks?.facebook && (
+                        <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer">
+                            <FaFacebook className="text-2xl text-gray-800 hover:text-blue-600"/>
+                        </a>
+                    )}
+                    {socialLinks?.instagram && (
+                        <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
+                            <FaInstagram className="text-2xl text-gray-800 hover:text-pink-500"/>
+                        </a>
+                    )}
+                    {socialLinks?.github && (
+                        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer">
+                            <FaGithub className="text-2xl text-gray-800 hover:text-gray-600"/>
+                        </a>
+                    )}
                 </div>
             </CardBody>
         </Card>
     );
 }
 
+
 const teamData = {
     "Principal Investigators": [
-        {img: DrAli, name: "Dr. Ali Habibnia ", title: "Principal Investigator"},
+        {
+            img: DrAli,
+            name: "Dr. Ali Habibnia",
+            title: "Principal Investigator",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/dr-alihabibnia",
+                github: "https://github.com/forrestmeng"
+            }
+        },
     ],
     "Vice Presidents": [
-        {img: BenC, name: "Benjamin Cummings", title: "Vice President"},
-        {img: Alex, name: "Alex Jaimes", title: "Vice President"},
-        {img: Roshan, name: "Roshan Sanyal", title: "Vice President"},
+        {
+            img: BenC,
+            name: "Benjamin Cummings",
+            title: "Vice President",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/benjamincummings"
+            }
+        },
+        {
+            img: Alex,
+            name: "Alex Jaimes",
+            title: "Vice President",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/alexjaimes"
+            }
+        },
+        {
+            img: Roshan,
+            name: "Roshan Sanyal",
+            title: "Vice President",
+            socialLinks: {
+                twitter: "https://twitter.com/roshansanyal"
+            }
+        },
     ],
     "Algorithmic Development": [
-        {img: missing, name: "Max Brenner", title: "Head of Algorithmic Development"},
-        {img: Forrest, name: "Forrest Meng", title: "Algorithmic Development"},
-        {img: BenF, name: "Ben F", title: "Algorithmic Development"},
+        {
+            img: missing,
+            name: "Max Brenner",
+            title: "Head of Algorithmic Development",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/maxbrenner"
+            }
+        },
+        {
+            img: Forrest,
+            name: "Forrest Meng",
+            title: "Algorithmic Development",
+            socialLinks: {
+                github: "https://github.com/forrestmeng"
+            }
+        },
+        {
+            img: BenF,
+            name: "Ben F",
+            title: "Algorithmic Development",
+            socialLinks: {
+                twitter: "https://twitter.com/benf"
+            }
+        },
     ],
     "Academic Research": [
-        {img: PaulC, name: "Paul Chau", title: "Undergraduate Research Assistant" },
-        { img: Jamshid, name: "Jamshid", title: "Graduate Research Assistant" },
+        {
+            img: PaulC,
+            name: "Paul Chau",
+            title: "Undergraduate Research Assistant",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/paulchau"
+            }
+        },
+        {
+            img: Jamshid,
+            name: "Jamshid",
+            title: "Graduate Research Assistant",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/jamshid"
+            }
+        },
     ],
     "Client Services": [
-        { img: Alex, name: "Alex Jaimes", title: "Project Manager" },
-        { img: Roshan, name: "Roshan Sanyal", title: "Project Manager" },
-        { img:  Alexander, name: "Alexander Ardiaz", title: "Undergraduate Research Assistant" },
-        { img: missing, name: "Anson Jiang", title: "AI/ML Engineer" },
-        { img: missing, name: "Aryan Palit", title: "AI/ML Engineer" },
-
+        {
+            img: Alex,
+            name: "Alex Jaimes",
+            title: "Project Manager",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/alexjaimes"
+            }
+        },
+        {
+            img: Roshan,
+            name: "Roshan Sanyal",
+            title: "Project Manager",
+            socialLinks: {
+                twitter: "https://twitter.com/roshansanyal"
+            }
+        },
+        {
+            img: Alexander,
+            name: "Alexander Ardiaz",
+            title: "Undergraduate Research Assistant",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/alexanderardiaz"
+            }
+        },
+        {
+            img: missing,
+            name: "Anson Jiang",
+            title: "AI/ML Engineer",
+            socialLinks: {
+                github: "https://github.com/ansonjiang"
+            }
+        },
+        {
+            img: missing,
+            name: "Aryan Palit",
+            title: "AI/ML Engineer",
+            socialLinks: {
+                linkedin: "https://linkedin.com/in/aryanpalit"
+            }
+        },
     ],
 };
 
