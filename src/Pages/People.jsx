@@ -36,7 +36,7 @@ function TeamCard({ img, name, title }) {
                 <img
                     src={img}
                     alt={name}
-                    className="h-full w-full object-cover object-center"
+                    className="h-full w-full object-cover object-center rounded-lg"
                 />
             </CardHeader>
             <CardBody className="col-span-8 p-0">
