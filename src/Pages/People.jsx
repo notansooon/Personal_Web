@@ -89,8 +89,8 @@ const teamData = {
             name: "Dr. Ali Habibnia",
             title: "Principal Investigator",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/dr-alihabibnia",
-                github: "https://github.com/forrestmeng"
+                linkedin: "https://www.linkedin.com/in/ali-habibnia-a970b76/",
+                github: "https://github.com/AliHabibnia"
             }
         },
     ],
@@ -100,7 +100,7 @@ const teamData = {
             name: "Benjamin Cummings",
             title: "Vice President",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/benjamincummings"
+                linkedin: "https://www.linkedin.com/in/benc25/"
             }
         },
         {
@@ -108,7 +108,7 @@ const teamData = {
             name: "Alex Jaimes",
             title: "Vice President",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/alexjaimes"
+                linkedin: "https://www.linkedin.com/in/alex-jaimes-48281a241/"
             }
         },
         {
@@ -116,7 +116,8 @@ const teamData = {
             name: "Roshan Sanyal",
             title: "Vice President",
             socialLinks: {
-                twitter: "https://twitter.com/roshansanyal"
+                linkedin: "https://www.linkedin.com/in/roshan-sanyal-960b21191/",
+                
             }
         },
     ],
@@ -142,7 +143,7 @@ const teamData = {
             name: "Ben F",
             title: "Algorithmic Development",
             socialLinks: {
-                twitter: "https://twitter.com/benf"
+                linkedin: "https://www.linkedin.com/in/ben-facciani/"
             }
         },
     ],
@@ -152,7 +153,7 @@ const teamData = {
             name: "Paul Chau",
             title: "Undergraduate Research Assistant",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/paulchau"
+                linkedin: "https://www.linkedin.com/in/paul-chau-93047924b/"
             }
         },
         {
@@ -170,7 +171,7 @@ const teamData = {
             name: "Alex Jaimes",
             title: "Project Manager",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/alexjaimes"
+                linkedin: "https://www.linkedin.com/in/alex-jaimes-48281a241/"
             }
         },
         {
@@ -178,7 +179,7 @@ const teamData = {
             name: "Roshan Sanyal",
             title: "Project Manager",
             socialLinks: {
-                twitter: "https://twitter.com/roshansanyal"
+                linkedin: "https://www.linkedin.com/in/roshan-sanyal-960b21191/",
             }
         },
         {
@@ -194,7 +195,8 @@ const teamData = {
             name: "Anson Jiang",
             title: "AI/ML Engineer",
             socialLinks: {
-                github: "https://github.com/ansonjiang"
+                linkedin: "https://www.linkedin.com/in/anson-jiang-6834232aa/",
+                github: "https://github.com/notansooon"
             }
         },
         {
@@ -202,7 +204,8 @@ const teamData = {
             name: "Aryan Palit",
             title: "AI/ML Engineer",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/aryanpalit"
+                linkedin: "https://www.linkedin.com/in/aryan-palit-141777279/",
+                github: "https://github.com/devnumber7"
             }
         },
     ],
