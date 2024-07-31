@@ -14,15 +14,8 @@ const Home = () => {
         <>
             <div className="contain fadeInUp">
                 <HomeHero />
+                <Sector />
 
-                <section className=' mx-auto mt-40'>
-
-                    <Typography variant='h3'
-                                className=' mx-auto max-w-xl text-center mb-20'>
-                        Sectors
-                    </Typography>
-                    <Sector />
-                </section>
                 <BlogPreview />
                 <Placement />
             </div>

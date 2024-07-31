@@ -1,5 +1,5 @@
 import  Navbar from './Components/Navbar';
-import Projects from './Pages/Projects';
+
 import Home from './Pages/Home';
 import Apply from "./Pages/Apply";
 import About from './Pages/About.jsx';
@@ -7,7 +7,7 @@ import Contact from './Pages/Contact';
 import Sectors from './Pages/Sectors';
 
 import SponsorPage from './Pages/SponsorPage.jsx';
-import ResearchPage from './Pages/Research.jsx';
+
 import { Route, Routes } from 'react-router-dom';
 import People from "./Pages/People";
 
@@ -30,13 +30,13 @@ function App() {
                   <Route path="/" element={<Home/>}/>
                   <Route path="/People" element={<People/>}/>
                   <Route path="/Apply" element={<Apply/>}/>
-                  <Route path="/Projects" element={<Projects/>}/>
+
                   <Route path="/About" element={<About/>}/>
                   <Route path='/Contact' element={<Contact/>}/>
                   <Route path="/Sectors" element={<Sectors />}/>
                   
                   <Route path='/Sponsor' element={<SponsorPage />}/>
-                  <Route path='/Research' element={<ResearchPage/>}/>
+
                   <Route path='/HttpsStatusCodes' element={<HttpStatusCodes/>}/>
                   <Route path='/*' element={<HttpStatusCodes/>}/>
 
