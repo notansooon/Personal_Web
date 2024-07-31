@@ -80,7 +80,7 @@ const posts = [
 
 export function BlogPreview() {
     return (
-        <section className="lg:py-28 py-10 px-8 mt-4 sm:mt-20 md:mt-12 lg:mt-16 xl:mt-20">
+        <div className="lg:py-28 py-10 px-8 mt-4 w-screen bg-amber-200 sm:mt-20 md:mt-12 lg:mt-16 xl:mt-20">
             <div className="container mx-auto lg:mb-20 mb-10 text-center">
                 <Typography
                     variant="h1"
@@ -100,9 +100,9 @@ export function BlogPreview() {
                     <BlogPostCard {...props} />
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
 
-export default BlogPreview;
+
 
