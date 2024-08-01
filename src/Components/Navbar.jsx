@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../utils/navbar.css'; // Make sure this path is correct
+import '../utils/navbar.css';
+import logo from '../assets/logos/dataismLogo.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,20 +11,18 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-transparent font-sans shadow-md">
+        <nav className="bg-transparent font-sans -mb-1.5">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
-                        <Link to="/" className="text-xl font-bold text-blue-950">Dataism Lab</Link>
+                        <Link to="/"><img src={logo} alt="Dataism Lab Logo" className="size-28 mt-4 -ml-3" /></Link>
                     </div>
                     <div className="hidden md:flex space-x-8">
-                        <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold ">Home</Link>
-                        <Link to="/about" className="text-gray-700 hover:text-blue-950 font-semibold">About</Link>
-                        {/*<Link to="/projects" className="text-gray-700 hover:text-blue-950 font-semibold">Project</Link>*/}
-                        {/*<Link to="/Sectors" className="text-gray-700 hover:text-blue-950 font-semibold">Sectors</Link>*/}
-                        <Link to="/apply" className="text-gray-700 hover:text-blue-950 font-semibold">Apply</Link>
-                        <Link to="/contact" className="text-gray-700 hover:text-blue-950 font-semibold">Contact</Link>
-                        <Link to="/people" className="text-gray-700 hover:text-blue-950 font-semibold">People</Link>
+                        <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Home</Link>
+                        <Link to="/about" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">About</Link>
+                        <Link to="/apply" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Apply</Link>
+                        <Link to="/contact" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Contact</Link>
+                        <Link to="/people" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">People</Link>
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="focus:outline-none">
@@ -39,13 +38,11 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden">
                     <div className="flex flex-col space-y-1 px-4 py-2">
-                        <Link to="/" className="text-gray-700 hover:text-blue-950 hover:font-semibold">Home</Link>
-                        <Link to="/about" className="text-gray-700 hover:text-blue-950">About</Link>
-                        {/*<Link to="/projects" className="text-gray-700 hover:text-blue-950">Project</Link>*/}
-                        <Link to="/apply" className="text-gray-700 hover:text-blue-950">Apply</Link>
-                        {/* <Link to="/Sectors" className="text-gray-700 hover:text-blue-950">Sectors</Link>*/}
-                        <Link to="/contact" className="text-gray-700 hover:text-blue-950">Contact</Link>
-                        <Link to="/people" className="text-gray-700 hover:text-blue-950">People</Link>
+                        <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Home</Link>
+                        <Link to="/about" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">About</Link>
+                        <Link to="/apply" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Apply</Link>
+                        <Link to="/contact" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Contact</Link>
+                        <Link to="/people" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">People</Link>
                     </div>
                 </div>
             )}
@@ -54,6 +51,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 

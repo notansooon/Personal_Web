@@ -221,7 +221,7 @@ export function People() {
                         color="blue-gray"
                         className="my-4 text-3xl lg:text-4xl"
                     >
-                        Our Awesome Team
+                        Meet Our Team
                     </Typography>
                     <Typography
                         variant="lead"

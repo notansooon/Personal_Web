@@ -32,26 +32,46 @@ export function AboutContent() {
                 <meta property="og:image" content={bgImage2} />
                 <meta property="og:url" content="https://yourwebsite.com/about" />
             </Helmet>
-            <section className="mx-auto container max-w-5xl px-4 py-8 md:px-8 md:py-10">
-                <div className="text-center mb-8 md:mb-10 lg:mb-24">
+            <div className="mx-auto w-screen container max-w-5xl px-4 py-8 md:px-8 md:py-10">
+                <div className="text-center mb-24 sm:mb-24  md:mb-20 lg:mb-24">
                     <Typography
-                        variant="lead"
-                        className="mt-2 max-w-4xl mx-auto !text-blue-950 leading-relaxed"
+                        variant="h4" // Assuming h4 for the heading, adjust as needed
+                        className="font-semibold text-blue-950 mb-4"
                     >
-                        Our mission at the Dataism Laboratory for Quantitative Finance is to revolutionize the financial industry through innovative algorithmic solutions, advanced data analytics, and cutting-edge research. We aim to bridge the gap between theoretical research and practical applications, ensuring our work is both scientifically robust and practically effective.
+                        Our Mission
+                    </Typography>
+                    <Typography
+                        variant="body1"
+                        className="mt-2 max-w-4xl mx-auto text-gray-700 leading-relaxed text-lg"
+                    >
+                        Our mission at the Dataism Laboratory for Quantitative Finance is to revolutionize the financial
+                        industry through innovative algorithmic solutions, advanced data analytics, and cutting-edge
+                        research. We aim to bridge the gap between theoretical research and practical applications,
+                        ensuring our work is both scientifically robust and practically effective.
                     </Typography>
                 </div>
                 <div className="text-center mb-8 md:mb-10 lg:mb-24">
                     <Typography
-                        variant="lead"
-                        className="mt-2 max-w-4xl mx-auto !text-blue-950 leading-relaxed"
+                        variant="h4"
+                        className="font-semibold text-blue-950 mb-4"
                     >
-                        We envision a future where financial markets are driven by intelligent algorithms and data-driven decisions. Our goal is to lead this transformation by continuously advancing the field of quantitative finance and fostering a collaborative environment that promotes innovation and excellence.
+                        Our Vision
+                    </Typography>
+                    <Typography
+                        variant="body1"
+                        className="mt-2 max-w-4xl mx-auto text-gray-700 leading-relaxed text-lg"
+                    >
+                        We envision a future where financial markets are driven by intelligent algorithms and
+                        data-driven decisions. Our goal is to lead this transformation by continuously advancing the
+                        field of quantitative finance and fostering a collaborative environment that promotes innovation
+                        and excellence.
                     </Typography>
                 </div>
-                <div className="lg:space-y-24 space-y-12">
+
+                <div className="lg:space-y-24 sm:mt-12 space-y-12">
                     <div className="grid grid-cols-1 items-center place-items-center gap-10 md:gap-16 lg:grid-cols-2">
-                        <div className="h-auto md:h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-transparent p-8 md:p-14">
+                        <div
+                            className="h-auto md:h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-transparent p-8 md:p-14">
                             <Typography variant="h6" className="mb-4">
                                 INNOVATIVE SOLUTIONS
                             </Typography>
@@ -59,35 +79,49 @@ export function AboutContent() {
                                 Transforming the Financial Industry
                             </Typography>
                             <Typography className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
-                                Our team is dedicated to developing advanced algorithmic solutions that address real-world financial challenges. By leveraging cutting-edge technology and data analytics, we aim to enhance the efficiency and effectiveness of financial markets.
+                                Our team is dedicated to developing advanced algorithmic solutions that address
+                                real-world financial challenges. By leveraging cutting-edge technology and data
+                                analytics, we aim to enhance the efficiency and effectiveness of financial markets.
                             </Typography>
 
                         </div>
                         <div className="flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Cutting-Edge Research">
-                                Our research efforts are focused on pushing the boundaries of quantitative finance. We collaborate with leading academic institutions to ensure our work is grounded in the latest scientific advancements.
+                                Our research efforts are focused on pushing the boundaries of quantitative finance. We
+                                collaborate with leading academic institutions to ensure our work is grounded in the
+                                latest scientific advancements.
                             </Option>
                             <Option title="2. Practical Applications">
-                                We bridge the gap between theory and practice by implementing our research findings in real-world financial systems. Our solutions are designed to be both scientifically robust and practically effective.
+                                We bridge the gap between theory and practice by implementing our research findings in
+                                real-world financial systems. Our solutions are designed to be both scientifically
+                                robust and practically effective.
                             </Option>
                             <Option title="3. Collaborative Environment">
-                                Innovation thrives in a collaborative environment. We foster a culture of teamwork and continuous learning, where experts from various fields work together to achieve common goals.
+                                Innovation thrives in a collaborative environment. We foster a culture of teamwork and
+                                continuous learning, where experts from various fields work together to achieve common
+                                goals.
                             </Option>
                         </div>
                     </div>
                     <div className=" grid grid-cols-1 items-center place-items-center gap-10 md:gap-16 lg:grid-cols-2">
                         <div className="lg:row-auto row-start-2 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Data-Driven Decisions">
-                                We empower financial institutions to make informed decisions based on comprehensive data analysis. Our algorithms process vast amounts of data to provide actionable insights.
+                                We empower financial institutions to make informed decisions based on comprehensive data
+                                analysis. Our algorithms process vast amounts of data to provide actionable insights.
                             </Option>
                             <Option title="2. Intelligent Algorithms">
-                                Our intelligent algorithms are designed to adapt to changing market conditions, ensuring they remain effective over time. We continuously refine our models to improve their performance.
+                                Our intelligent algorithms are designed to adapt to changing market conditions, ensuring
+                                they remain effective over time. We continuously refine our models to improve their
+                                performance.
                             </Option>
                             <Option title="3. Leading the Transformation">
-                                As pioneers in quantitative finance, we are committed to leading the transformation of the financial industry. Our vision is to create a future where data-driven decisions and intelligent algorithms drive market success.
+                                As pioneers in quantitative finance, we are committed to leading the transformation of
+                                the financial industry. Our vision is to create a future where data-driven decisions and
+                                intelligent algorithms drive market success.
                             </Option>
                         </div>
-                        <div className="h-auto md:h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-transparent p-8 md:p-14">
+                        <div
+                            className="h-auto md:h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-transparent p-8 md:p-14">
                             <Typography variant="h6" className="mb-4">
                                 COLLABORATIVE ENVIRONMENT
                             </Typography>
@@ -95,7 +129,9 @@ export function AboutContent() {
                                 Promoting Innovation and Excellence
                             </Typography>
                             <Typography className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
-                                We believe that collaboration is key to innovation. By bringing together experts from various fields, we create a dynamic environment where new ideas can flourish and lead to groundbreaking advancements in quantitative finance.
+                                We believe that collaboration is key to innovation. By bringing together experts from
+                                various fields, we create a dynamic environment where new ideas can flourish and lead to
+                                groundbreaking advancements in quantitative finance.
                             </Typography>
                             <Button
                                 color="gray"
@@ -113,7 +149,7 @@ export function AboutContent() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     );
 }

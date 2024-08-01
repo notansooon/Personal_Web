@@ -19,7 +19,7 @@ const customLogos = [
 
 const Placement = () => {
     return (
-        <section  style={{ backgroundColor: '#FFEBD4' }} className="py-8 w-screen px-8 lg:py-20">
+        <section className="py-8 w-screen px-8 lg:py-20">
             <div
                 className="container bg-transparent mx-auto -mt-6 text-center py-10 px-6 "
 

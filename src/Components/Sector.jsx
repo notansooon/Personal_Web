@@ -89,7 +89,7 @@ const features = [
 
 export function Sector() {
     return (
-        <section className="lg:py-28 py-16 px-8 w-screen bg-gray-100">
+        <section style={{backgroundColor: 'FFE6E6'}}  className="lg:py-28 py-16 -mb-24 px-8 w-screen">
             <div className="container mx-auto mb-24 text-center">
                 <Typography
                     variant="h2"
