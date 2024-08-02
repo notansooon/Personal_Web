@@ -28,7 +28,7 @@ const Placement = () => {
                 <Typography variant="h2" color="black" className="mb-10">
                     Placement
                 </Typography>
-                <p className='mb-10 -mt-6'>Companies where our students have secured placements, showcasing their skills and the exceptional quality of our programs</p>
+                <p className="mx-auto max-w-xl text-gray-500 text-lg lg:text-xl">Companies where our students have secured placements, showcasing their skills and the exceptional quality of our programs</p>
 
 
                 <div className="flex flex-wrap items-center justify-center gap-6">
