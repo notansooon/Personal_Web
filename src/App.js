@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Apply from "./Pages/Apply";
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact';
-import Sectors from './Pages/Sectors';
+
 
 import SponsorPage from './Pages/SponsorPage.jsx';
 
@@ -33,7 +33,7 @@ function App() {
 
                   <Route path="/About" element={<About/>}/>
                   <Route path='/Contact' element={<Contact/>}/>
-                  <Route path="/Sectors" element={<Sectors />}/>
+
                   
                   <Route path='/Sponsor' element={<SponsorPage />}/>
 

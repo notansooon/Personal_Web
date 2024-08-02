@@ -19,7 +19,7 @@ const customLogos = [
 
 const Placement = () => {
     return (
-        <section className="py-8 w-screen px-8 lg:py-20">
+        <section className="py-8 w-screen lg:-mt-24 md:mt-5 px-8 lg:py-20">
             <div
                 className="container bg-transparent mx-auto -mt-6 text-center py-10 px-6 "
 
@@ -28,7 +28,7 @@ const Placement = () => {
                 <Typography variant="h2" color="black" className="mb-10">
                     Placement
                 </Typography>
-                <p className="mx-auto max-w-xl text-gray-500 text-lg lg:text-xl">Companies where our students have secured placements, showcasing their skills and the exceptional quality of our programs</p>
+                <p className="mx-auto max-w-xl mb-16 -mt-6 text-gray-500">Companies where our students have secured placements, showcasing their skills and the exceptional quality of our programs</p>
 
 
                 <div className="flex flex-wrap items-center justify-center gap-6">

@@ -54,7 +54,7 @@ function FeatureCard({ icon, title, description }) {
 
 const features = [
     {
-        icon: <VscGraphLine color="" className='h-6 w-6' />,
+        icon: <VscGraphLine color="black" className='h-6 w-6' />,
         title: "Algorithmic Development",
         description:
             "Our team designs, implements, and refines AI and ML algorithms tailored " +
@@ -65,7 +65,7 @@ const features = [
             "applications, ensuring our algorithms are both scientifically robust and practically effective.",
     },
     {
-        icon: <FaHandshake color="" className="h-6 w-6" />,
+        icon: <FaHandshake color="black" className="h-6 bg-transparent w-6" />,
         title: "Client Services",
         description:
             "We create tailored trading algorithms and financial models that align with the specific needs and " +
@@ -76,7 +76,7 @@ const features = [
             "industry.",
     },
     {
-        icon: <HiOutlineAcademicCap color="" className="h-6 w-6" />,
+        icon: <HiOutlineAcademicCap color="black" className="h-6 w-6" />,
         title: "Academic Research",
         description:
             "Our team conducts pioneering research on a wide range of topics within quantitative finance, including " +
@@ -90,7 +90,7 @@ const features = [
 
 export function Sector() {
     return (
-        <section style={{backgroundColor: '#FFE6E6'}} className="lg:py-28 py-16 -mb-24 px-8 w-screen">
+        <section style={{backgroundColor: 'FFE6E6'}} className="lg:py-28 py-16 -mb-24 px-8 w-screen">
             <div className="container mx-auto mb-24 text-center">
                 <Typography
                     variant="h2"

@@ -12,6 +12,7 @@ import Apl19 from './LabPicture/4.19.jpg'
 import LinkedInArrowLink from "./LinkedInArrow";
 import {ArrowSmallRightIcon} from "@heroicons/react/20/solid";
 import React from "react";
+import {ArrowRightIcon} from "@heroicons/react/24/outline";
 
 
 
@@ -43,10 +44,11 @@ function BlogPostCard({ img, title, desc }) {
                     variant="text"
                     size="sm"
                     className="flex items-center"
+                    style={{fontSize:12}}
                 >
                     Read More on LinkedIn
-                    <ArrowSmallRightIcon
-                        className="ml-2 h-3.5 w-3.5"
+                    <ArrowRightIcon
+                        className="size-3.5 text-gray-900"
                         strokeWidth={3}
                     />
                 </Button>

@@ -32,7 +32,7 @@ export function AboutContent() {
                 <meta property="og:image" content={bgImage2} />
                 <meta property="og:url" content="https://yourwebsite.com/about" />
             </Helmet>
-            <div className="mx-auto w-screen container max-w-5xl px-4 py-8 md:px-8 md:py-10">
+            <div className="mx-auto w-screen container max-w-5xl lg:mb-12 mb-12 sm:mb-16 px-4 py-8 md:px-8 md:py-10">
                 <div className="text-center mb-24 sm:mb-24  md:mb-20 lg:mb-24">
                     <Typography
                         variant="h4" // Assuming h4 for the heading, adjust as needed
@@ -85,7 +85,7 @@ export function AboutContent() {
                             </Typography>
 
                         </div>
-                        <div className="flex flex-col gap-6 md:gap-10 lg:max-w-sm">
+                        <div className="md:-mt-48 md:-mb-16 lg:mt-0 lg:mb-0 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Cutting-Edge Research">
                                 Our research efforts are focused on pushing the boundaries of quantitative finance. We
                                 collaborate with leading academic institutions to ensure our work is grounded in the
@@ -104,7 +104,7 @@ export function AboutContent() {
                         </div>
                     </div>
                     <div className=" grid grid-cols-1 items-center place-items-center gap-10 md:gap-16 lg:grid-cols-2">
-                        <div className="lg:row-auto row-start-2 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
+                        <div className="md:-mt-36 lg:-mt-0 lg:row-auto row-start-2 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Data-Driven Decisions">
                                 We empower financial institutions to make informed decisions based on comprehensive data
                                 analysis. Our algorithms process vast amounts of data to provide actionable insights.
@@ -137,7 +137,7 @@ export function AboutContent() {
                                 color="gray"
                                 variant="text"
                                 size="sm"
-                                className="flex items-center"
+                                className="flex md:-mt-8 items-center"
                             >
                                 Join Us
                                 <ArrowSmallRightIcon
