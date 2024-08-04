@@ -1,20 +1,10 @@
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
-    Button,
-} from "@material-tailwind/react";
-import Apl12 from './LabPicture/4.12.jpg'
-import Forrest_spot from './LabPicture/Forrest_Spot.jpg'
-import Join from './LabPicture/Join.jpg'
-import Apl19 from './LabPicture/4.19.jpg'
-import LinkedInArrowLink from "./LinkedInArrow";
-import {ArrowSmallRightIcon} from "@heroicons/react/20/solid";
 import React from "react";
-import {ArrowRightIcon} from "@heroicons/react/24/outline";
-
-
+import Apl12 from './LabPicture/4.12.jpg';
+import Forrest_spot from './LabPicture/Forrest_Spot.jpg';
+import Join from './LabPicture/Join.jpg';
+import Apl19 from './LabPicture/4.19.jpg';
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { Card, CardHeader, CardBody, Button } from "@material-tailwind/react";
 
 function BlogPostCard({ img, title, desc }) {
     return (
@@ -27,24 +17,18 @@ function BlogPostCard({ img, title, desc }) {
                 />
             </CardHeader>
             <CardBody className="p-0">
-                <Typography
-                    as="a"
-                    href="#"
-                    variant="h4"
-                    color="blue-gray"
-                    className="mb-2 normal-case"
-                >
+                <a href="#" className="text-2xl lg:text-3xl mb-2 font-bold text-blue-gray-900 normal-case">
                     {title}
-                </Typography>
-                <Typography className="mb-6 font-normal !text-gray-500">
+                </a>
+                <p className="mb-6 text-sm lg:text-base font-normal text-gray-500">
                     {desc}
-                </Typography>
+                </p>
                 <Button
                     color="gray"
                     variant="text"
                     size="sm"
                     className="flex items-center"
-                    style={{fontSize:12}}
+                    style={{ fontSize: 12 }}
                 >
                     Read More on LinkedIn
                     <ArrowRightIcon
@@ -82,29 +66,22 @@ const posts = [
 
 export function BlogPreview() {
     return (
-        <div style={{backgroundColor: 'FFE6E6'}}  className="lg:py-28 py-10 px-8 mt-24 sm:mt-24 md:mt-24 lg:mt-16 w-screen ">
+        <div className="lg:py-28 py-10 px-8 mt-24 sm:mt-24 md:mt-24 lg:mt-16 w-screen">
             <div className="container mx-auto lg:mb-20 mb-10 text-center">
-                <Typography
-                    variant="h1"
-                    className="mb-2 !text-2xl lg:!text-4xl"
-                >
+                <h1 className="text-2xl lg:text-4xl mb-2 font-bold text-black">
                     Check out what&apos;s new
-                </Typography>
-                <Typography
-                    variant="lead"
-                    className="mx-auto max-w-xl !font-normal !text-gray-500"
-                >
+                </h1>
+                <p className="mx-auto max-w-xl text-gray-500 text-lg lg:text-xl font-normal">
                     Check out the latest DLQF announcements and updates
-                </Typography>
+                </p>
             </div>
             <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
                 {posts.map((props) => (
-                    <BlogPostCard {...props} />
+                    <BlogPostCard key={props.title} {...props} />
                 ))}
             </div>
         </div>
     );
 }
 
-
-
+export default BlogPreview;

@@ -18,7 +18,7 @@ const Apply = () => {
                 <div className="container mx-auto px-4">
                     <header className='relative h-[250px] w-full overflow-hidden'>
                         <div className="container relative z-10 my-auto mx-auto grid text-left ml-[10%]">
-                            <h1 className="text-4xl -ml-36 font-black leading-snug lg:text-5xl text-black">
+                            <h1 className="text-4xl -ml-32 leading-snug lg:text-5xl text-black">
                                 Discover Opportunities
                             </h1>
                         </div>
