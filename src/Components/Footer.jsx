@@ -11,18 +11,12 @@ const Footer = () => {
                     Pamplin Hall | 880 West Campus Drive | Blacksburg | VA 24060
                 </address>
                 <div className="flex space-x-4">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="text-2xl text-gray-800 hover:text-blue-600" />
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <BsTwitterX className="text-2xl text-gray-800 hover:text-blue-400" />
-                    </a>
+                   
+                    
                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700" />
                     </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="text-2xl text-gray-800 hover:text-pink-500" />
-                    </a>
+                   
                 </div>
             </div>
         </footer>
