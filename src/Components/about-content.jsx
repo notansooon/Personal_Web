@@ -50,7 +50,7 @@ export function AboutContent() {
                         ensuring our work is both scientifically robust and practically effective.
                     </Typography>
                 </div>
-                <div className="text-center mb-8 md:mb-10 lg:mb-24">
+                <div className="text-center -mt-12 mb-20 md:mb-10 lg:mb-24">
                     <Typography
                         variant="h4"
                         className="font-semibold text-blue-950 mb-4"
@@ -85,7 +85,7 @@ export function AboutContent() {
                             </Typography>
 
                         </div>
-                        <div className="md:-mt-48 md:-mb-16 lg:mt-0 lg:mb-0 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
+                        <div className="md:-mt-48 md:-mb-16 -mt-16 lg:mt-0 lg:mb-0 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Cutting-Edge Research">
                                 Our research efforts are focused on pushing the boundaries of quantitative finance. We
                                 collaborate with leading academic institutions to ensure our work is grounded in the
