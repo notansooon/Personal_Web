@@ -7,13 +7,19 @@ export function Contact() {
         <section className="px-8 bg-gray-100 py-8 lg:py-16 pb-16 lg:pb-28 ">
             <div className="container mx-auto text-center">
 
-                <div className="container relative z-10 my-auto mx-auto grid text-left">
+                <div className="container relative z-10 my-auto mx-auto grid mb-8">
                     <Typography
                         variant="h1"
                         className="text-4xl font-black !leading-snug lg:text-5xl"
                     >
                         Meet Our Teams
                     </Typography>
+                </div>
+
+                <div className="container relative z-10 my-auto mx-auto grid mb-8">
+                    <ul>
+                        <li></li>
+                    </ul>
                 </div>
 
                 <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
