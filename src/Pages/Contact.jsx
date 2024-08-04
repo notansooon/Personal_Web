@@ -10,7 +10,7 @@ export function Contact() {
                 <div className="container relative z-10 my-auto mx-auto grid text-left">
                     <Typography
                         variant="h1"
-                        className="text-4xl font-black font-serif !leading-snug lg:text-5xl"
+                        className="text-4xl font-black !leading-snug lg:text-5xl"
                     >
                         Meet Our Teams
                     </Typography>
@@ -36,11 +36,11 @@ export function Contact() {
                                     First Name
                                 </Typography>
                                 <Input
-                                    color="gray"
+
                                     size="lg"
                                     placeholder="First Name"
                                     name="first-name"
-                                    className="focus:border-t-gray-900"
+                                    className="focus:border-t-gray-900 border-blue-950"
                                     containerProps={{
                                         className: "!min-w-full",
                                     }}
@@ -61,7 +61,7 @@ export function Contact() {
                                     size="lg"
                                     placeholder="Last Name"
                                     name="last-name"
-                                    className="focus:border-t-gray-900"
+                                    className="focus:border-t-gray-900 border-blue-950"
                                     containerProps={{
                                         className: "!min-w-full",
                                     }}
@@ -79,11 +79,11 @@ export function Contact() {
                                 Your Email
                             </Typography>
                             <Input
-                                color="gray"
+
                                 size="lg"
                                 placeholder="name@email.com"
                                 name="email"
-                                className="focus:border-t-gray-900"
+                                className="focus:border-t-gray-900 border-blue-950"
                                 containerProps={{
                                     className: "!min-w-full",
                                 }}
@@ -101,10 +101,10 @@ export function Contact() {
                             </Typography>
                             <Textarea
                                 rows={6}
-                                color="gray"
+
                                 placeholder="Message"
                                 name="message"
-                                className="focus:border-t-gray-900"
+                                className="focus:border-t-gray-900 border-blue-950"
                                 containerProps={{
                                     className: "!min-w-full",
                                 }}

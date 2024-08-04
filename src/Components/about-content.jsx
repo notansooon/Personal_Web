@@ -1,21 +1,15 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Typography, Button } from "@material-tailwind/react";
+import { Button } from "@material-tailwind/react";
 import bgImage1 from '../assets/Images/1712711055874.jpeg'; // replace with your actual path
 import bgImage2 from '../assets/Images/1712985343744.jpeg';
-import LinkedInArrowLink from "./LinkedInArrow";
-import ClickableLink from "./ClickableLink";
-import {ArrowSmallRightIcon} from "@heroicons/react/20/solid"; // replace with your actual path
+import { ArrowSmallRightIcon } from "@heroicons/react/20/solid"; // replace with your actual path
 
 function Option({ title, children }) {
     return (
         <div className="mb-6 lg:mb-0">
-            <Typography variant="h5" color="blue-gray" className="mb-2">
-                {title}
-            </Typography>
-            <Typography className="font-normal !text-gray-500 md:w-10/12">
-                {children}
-            </Typography>
+            <h5 className="text-2xl text-blue-gray-900 mb-2">{title}</h5>
+            <p className="text-base text-gray-500 md:w-10/12">{children}</p>
         </div>
     );
 }
@@ -33,57 +27,36 @@ export function AboutContent() {
                 <meta property="og:url" content="https://yourwebsite.com/about" />
             </Helmet>
             <div className="mx-auto w-screen container max-w-5xl lg:mb-12 mb-12 sm:mb-16 px-4 py-8 md:px-8 md:py-10">
-                <div className="text-center mb-24 sm:mb-24  md:mb-20 lg:mb-24">
-                    <Typography
-                        variant="h4" // Assuming h4 for the heading, adjust as needed
-                        className="font-semibold text-blue-950 mb-4"
-                    >
-                        Our Mission
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        className="mt-2 max-w-4xl mx-auto text-gray-700 leading-relaxed text-lg"
-                    >
+                <div className="text-center mb-24 sm:mb-24 md:mb-20 lg:mb-24">
+                    <h4 className="text-3xl font-semibold text-blue-950 mb-4">Our Mission</h4>
+                    <p className="mt-2 max-w-4xl mx-auto text-gray-700 leading-relaxed text-lg">
                         Our mission at the Dataism Laboratory for Quantitative Finance is to revolutionize the financial
                         industry through innovative algorithmic solutions, advanced data analytics, and cutting-edge
                         research. We aim to bridge the gap between theoretical research and practical applications,
                         ensuring our work is both scientifically robust and practically effective.
-                    </Typography>
+                    </p>
                 </div>
                 <div className="text-center -mt-12 mb-20 md:mb-10 lg:mb-24">
-                    <Typography
-                        variant="h4"
-                        className="font-semibold text-blue-950 mb-4"
-                    >
-                        Our Vision
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        className="mt-2 max-w-4xl mx-auto text-gray-700 leading-relaxed text-lg"
-                    >
+                    <h4 className="text-3xl font-semibold text-blue-950 mb-4">Our Vision</h4>
+                    <p className="mt-2 max-w-4xl mx-auto text-gray-700 leading-relaxed text-lg">
                         We envision a future where financial markets are driven by intelligent algorithms and
                         data-driven decisions. Our goal is to lead this transformation by continuously advancing the
                         field of quantitative finance and fostering a collaborative environment that promotes innovation
                         and excellence.
-                    </Typography>
+                    </p>
                 </div>
 
                 <div className="lg:space-y-24 sm:mt-12 space-y-12">
                     <div className="grid grid-cols-1 items-center place-items-center gap-10 md:gap-16 lg:grid-cols-2">
                         <div
                             className="h-auto md:h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-transparent p-8 md:p-14">
-                            <Typography variant="h6" className="mb-4">
-                                INNOVATIVE SOLUTIONS
-                            </Typography>
-                            <Typography variant="h4">
-                                Transforming the Financial Industry
-                            </Typography>
-                            <Typography className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
+                            <h6 className="text-xl mb-4">INNOVATIVE SOLUTIONS</h6>
+                            <h4 className="text-2xl">Transforming the Financial Industry</h4>
+                            <p className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
                                 Our team is dedicated to developing advanced algorithmic solutions that address
                                 real-world financial challenges. By leveraging cutting-edge technology and data
                                 analytics, we aim to enhance the efficiency and effectiveness of financial markets.
-                            </Typography>
-
+                            </p>
                         </div>
                         <div className="md:-mt-48 md:-mb-16 -mt-16 lg:mt-0 lg:mb-0 flex flex-col gap-6 md:gap-10 lg:max-w-sm">
                             <Option title="1. Cutting-Edge Research">
@@ -122,17 +95,13 @@ export function AboutContent() {
                         </div>
                         <div
                             className="h-auto md:h-[480px] text-center flex flex-col justify-center lg:max-w-md mx-auto rounded-2xl bg-transparent p-8 md:p-14">
-                            <Typography variant="h6" className="mb-4">
-                                COLLABORATIVE ENVIRONMENT
-                            </Typography>
-                            <Typography variant="h4">
-                                Promoting Innovation and Excellence
-                            </Typography>
-                            <Typography className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
+                            <h6 className="text-xl mb-4">COLLABORATIVE ENVIRONMENT</h6>
+                            <h4 className="text-2xl">Promoting Innovation and Excellence</h4>
+                            <p className="mt-2 mb-8 md:mb-10 text-base font-normal leading-relaxed">
                                 We believe that collaboration is key to innovation. By bringing together experts from
                                 various fields, we create a dynamic environment where new ideas can flourish and lead to
                                 groundbreaking advancements in quantitative finance.
-                            </Typography>
+                            </p>
                             <Button
                                 color="gray"
                                 variant="text"
@@ -145,7 +114,6 @@ export function AboutContent() {
                                     strokeWidth={3}
                                 />
                             </Button>
-
                         </div>
                     </div>
                 </div>
@@ -155,6 +123,7 @@ export function AboutContent() {
 }
 
 export default AboutContent;
+
 
 
 

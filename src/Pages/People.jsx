@@ -1,11 +1,4 @@
-import { UserGroupIcon } from "@heroicons/react/24/solid";
-import {
-    Card,
-    CardBody,
-    CardHeader,
-    IconButton,
-    Typography,
-} from "@material-tailwind/react";
+import {Card, CardBody, CardHeader} from "@material-tailwind/react";
 import DrAli from '../assets/ProfilePicture/ali.jpg'
 import BenC from '../assets/ProfilePicture/ben.jpg'
 import Alex from '../assets/ProfilePicture/alex.jpg'
@@ -16,10 +9,9 @@ import BenF from '../assets/ProfilePicture/ben_f.jpg'
 import Jamshid from '../assets/ProfilePicture/Jamshid.jpg'
 import Alexander from '../assets/ProfilePicture/Alexander.jpg'
 import missing from '../assets/ProfilePicture/profile-svgrepo-com.svg'
-import {FaFacebook, FaInstagram, FaLinkedin, FaGithub} from "react-icons/fa";
+import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
 import React from "react";
-
 
 function TeamCard({ img, name, title, socialLinks }) {
     return (
@@ -40,15 +32,8 @@ function TeamCard({ img, name, title, socialLinks }) {
                 />
             </CardHeader>
             <CardBody className="col-span-8 p-0">
-                <Typography variant="h5" color="blue-gray">
-                    {name}
-                </Typography>
-                <Typography
-                    variant="small"
-                    className="mb-4 mt-2 font-bold uppercase !text-gray-500"
-                >
-                    {title}
-                </Typography>
+                <h5 className="text-blue-gray-700 font-semibold text-lg">{name}</h5>
+                <p className="mb-4 mt-2 font-bold uppercase text-gray-500">{title}</p>
                 <div className="-ml-1 flex items-center gap-4">
                     {socialLinks?.linkedin && (
                         <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
@@ -80,7 +65,6 @@ function TeamCard({ img, name, title, socialLinks }) {
         </Card>
     );
 }
-
 
 const teamData = {
     "Principal Investigators": [
@@ -117,7 +101,6 @@ const teamData = {
             title: "Vice President",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/roshan-sanyal-960b21191/",
-                
             }
         },
     ],
@@ -216,28 +199,17 @@ export function People() {
         <section className="py-10 px-8 bg-gray-100 lg:py-28">
             <div className="container mx-auto">
                 <div className="mx-auto mb-10 lg:mb-28 lg:text-center">
-                    <Typography
-                        variant="h2"
-                        color="blue-gray"
-                        className="my-4 text-3xl lg:text-4xl"
-                    >
-                        Meet Our Team
-                    </Typography>
-                    <Typography
-                        variant="lead"
-                        className="mx-auto max-w-4xl !text-gray-500"
-                    >
+                    <h2 className="my-4 text-3xl lg:text-4xl text-blue-gray-700">Meet Our Team</h2>
+                    <p className="mx-auto max-w-4xl text-gray-500">
                         We&apos;re constantly trying to express ourselves and actualize our
                         dreams. If you have the opportunity to play this game of life you
                         need to appreciate every moment.
-                    </Typography>
+                    </p>
                 </div>
 
                 {Object.keys(teamData).map((division) => (
                     <div key={division} className="mb-16 lg:mb-32">
-                        <Typography variant="h4" className="text-center mb-12 text-xl lg:text-2xl font-semibold">
-                            {division}
-                        </Typography>
+                        <h4 className="text-center mb-12 text-xl lg:text-2xl font-semibold">{division}</h4>
                         <div className="grid gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-3">
                             {teamData[division].map((member, index) => (
                                 <TeamCard key={index} {...member} />
@@ -249,4 +221,6 @@ export function People() {
         </section>
     );
 }
-export default People
+
+export default People;
+

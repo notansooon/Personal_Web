@@ -1,8 +1,6 @@
 import React from 'react';
 import AboutHero from "../Components/About-Hero";
-import ContactUs from './Contact';
 import AboutContent from "../Components/about-content";
-import Sector from "../Components/Sector";
 
 const About = () => {
     return (

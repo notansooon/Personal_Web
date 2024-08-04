@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
+
+
 body {
 
     background-color: rgb(243, 244, 246);
-    font-family: 'Latos',Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 
   }
 
@@ -75,6 +77,7 @@ footer {
 .fadeInUp {
     animation: fadeInUp 0.5s ease-out forwards;
 }
+
 
 
 
