@@ -8,7 +8,7 @@ const HomeHero = () => {
              style={{ backgroundImage: `url(${img})` }}
         >
             <div className="absolute inset-0 h-full w-full bg-black/70" />
-            <div className="grid -mt-8 min-h-screen px-8">
+            <div className="grid -mt-4 min-h-screen px-8">
                 <div className="container relative z-10 my-auto mx-auto grid text-left">
                     <img src={logo} alt="Logo" className="mb-4 h-64 w-64 object-contain" />
                     <h1 className="text-4xl leading-snug text-white lg:text-5xl">
