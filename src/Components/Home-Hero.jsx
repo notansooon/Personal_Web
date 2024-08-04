@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../assets/Images/1713572060948.jpeg';
-import logo from '../assets/logos/dataismLogo.png'; // Add your logo image import here
+import logo from '../assets/logos/dataismLogo.svg'; // Add your logo image import here
 
 const HomeHero = () => {
     return (
@@ -10,7 +10,7 @@ const HomeHero = () => {
             <div className="absolute inset-0 h-full w-full bg-black/70" />
             <div className="grid -mt-4 min-h-screen px-8">
                 <div className="container relative z-10 my-auto mx-auto grid text-left">
-                    <img src={logo} alt="Logo" className="mb-4 h-64 w-64 object-contain" />
+                    <img src={logo} alt="Logo" className="mb-4 size-80 object-contain" />
                     <h1 className="text-4xl leading-snug text-white lg:text-5xl">
                         Dataism Laboratory for Quantitative Finance
                     </h1>
