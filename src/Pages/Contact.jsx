@@ -3,47 +3,45 @@ import { Button, Input, Textarea } from "@material-tailwind/react";
 import locationImage from "../assets/Images/Screenshot 2024-07-20 at 1.45.48 PM.png";
 
 export function Contact() {
-    const [formData, setFormData] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: "",
-    });
 
-    const [formErrors, setFormErrors] = useState({});
+   const [firstName, setName] = useState("");
+   const [phone, setPhone] = useState("");
+   const [email, setEmail] = useState("");
+   const [message, setMessage] = useState("");
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
+   const [formErrors, setFormErrors] = useState({});
 
-    const validateForm = () => {
-        let errors = {};
-        if (!formData.firstName) errors.firstName = "First name is required";
-        if (!formData.lastName) errors.lastName = "Last name is required";
-        if (!formData.email) errors.email = "Email is required";
-        if (!formData.message) errors.message = "Message is required";
-        return errors;
-    };
+   
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const errors = validateForm();
-        if (Object.keys(errors).length === 0) {
-            console.log("Form submitted:", formData);
-            // Simulate form submission
-            alert("Form submitted successfully!");
-            // Reset form
-            setFormData({
-                firstName: "",
-                lastName: "",
-                email: "",
-                message: "",
-            });
-        } else {
-            setFormErrors(errors);
-        }
-    };
+   /*
+   const validateForm = () => {
+      let errors = {};
+      if (!formData.firstName) errors.firstName = "First name is required";
+      if (!formData.lastName) errors.lastName = "Last name is required";
+      if (!formData.email) errors.email = "Email is required";
+      if (!formData.message) errors.message = "Message is required";
+      return errors;
+   };
+   */
+
+   const handleSubmit = (e) => {
+      e.preventDefault();
+      /*
+      const errors = validateForm();
+      if (Object.keys(errors).length === 0) {
+         console.log("Form submitted:", formData);
+         // Simulate form submission
+         alert("Form submitted successfully!");
+         // Reset form
+         setName('');
+         setPhone('');
+         setEmail('');
+         
+      } else {
+         setFormErrors(errors);
+      }
+         */
+   };
 
     return (
        
@@ -91,6 +89,7 @@ export function Contact() {
                      <input
                         type="text"
                         placeholder="Your Name"
+                        onChange={((e) => {setName(e.target.value)})}
                         class="
                         w-full
                         rounded
@@ -108,6 +107,7 @@ export function Contact() {
                      <input
                         type="email"
                         placeholder="Your Email"
+                        onChange={((e) => {setEmail(e.target.value)})}
                         class="
                         w-full
                         rounded
@@ -125,6 +125,7 @@ export function Contact() {
                      <input
                         type="text"
                         placeholder="Your Phone"
+                        onChange={((e) => {setPhone(e.target.value)})}
                         class="
                         w-full
                         rounded
