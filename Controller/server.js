@@ -1,7 +1,7 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
-const path = require('path'); // Import path module
+const path = require('path'); 
 const cors = require('cors');
 
 const app = express();
@@ -18,7 +18,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // To parse form data
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   res.send('home');
@@ -43,13 +43,13 @@ app.post('/send', (req, res) => {
     secure: false,
     auth: {
       user: "ansonjiang043@gmail.com",
-      pass: "pppt pdoy qkft yvju", // Replace with your actual App Password
+      pass: "pppt pdoy qkft yvju", 
     },
   });
 
   const mailOptions = {
     from: '"NodeMailer" <ansonjiang043@gmail.com>',
-    to: 'ajgaming4172004@gmail.com', // Replace with the recipient's email address
+    to: 'ajgaming4172004@gmail.com', 
     subject: 'Contact Form Submission',
     text: 'You have a new contact form submission',
     html: output
