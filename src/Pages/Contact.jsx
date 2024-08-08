@@ -24,24 +24,40 @@ export function Contact() {
    };
    */
 
-   const handleSubmit = (e) => {
+   const handleSubmit = async (e) => {
       e.preventDefault();
-      /*
-      const errors = validateForm();
-      if (Object.keys(errors).length === 0) {
-         console.log("Form submitted:", formData);
-         // Simulate form submission
-         alert("Form submitted successfully!");
-         // Reset form
-         setName('');
-         setPhone('');
-         setEmail('');
-         
-      } else {
-         setFormErrors(errors);
+    
+      const formData = {
+        name: firstName,
+        email: email,
+        phone: phone,
+        message: message
+      };
+    
+      try {
+        const response = await fetch('/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+    
+        if (response.ok) {
+          alert('Form submitted successfully!');
+          // Reset form
+          setName('');
+          setPhone('');
+          setEmail('');
+          setMessage('');
+        } else {
+          alert('Error submitting form');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error submitting form');
       }
-         */
-   };
+    };
 
     return (
        
@@ -84,10 +100,11 @@ export function Contact() {
          </div>
          <div class="w-full lg:w-1/2 xl:w-5/12 md:mx-auto sm:mx-auto px-4">
             <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
-               <form>
+               <form method="POST" action="/send" onSubmit={handleSubmit}>
                   <div class="mb-6">
                      <input
                         type="text"
+                        name="name"
                         placeholder="Your Name"
                         onChange={((e) => {setName(e.target.value)})}
                         class="
@@ -106,6 +123,7 @@ export function Contact() {
                   <div class="mb-6">
                      <input
                         type="email"
+                        name="email"
                         placeholder="Your Email"
                         onChange={((e) => {setEmail(e.target.value)})}
                         class="
@@ -124,6 +142,7 @@ export function Contact() {
                   <div class="mb-6">
                      <input
                         type="text"
+                        name="phone"
                         placeholder="Your Phone"
                         onChange={((e) => {setPhone(e.target.value)})}
                         class="
@@ -143,6 +162,7 @@ export function Contact() {
                      <textarea
                         rows="6"
                         placeholder="Your Message"
+                        name="message"
                         class="
                         w-full
                         rounded
@@ -162,7 +182,7 @@ export function Contact() {
                         type="submit"
                         class="
                         w-full
-                        text-white
+                        text-black
                         bg-primary
                         rounded
                         border border-primary
