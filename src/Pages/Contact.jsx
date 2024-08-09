@@ -25,39 +25,37 @@ export function Contact() {
    */
 
    const handleSubmit = async (e) => {
-      e.preventDefault();
-    
-      const formData = {
-        name: firstName,
-        email: email,
-        phone: phone,
-        message: message
-      };
-    
-      try {
-        const response = await fetch('/send', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-    
-        if (response.ok) {
-          alert('Form submitted successfully!');
-          // Reset form
-          setName('');
-          setPhone('');
-          setEmail('');
-          setMessage('');
-        } else {
-          alert('Error submitting form');
-        }
-      } catch (error) {
-        console.error('Error:', error);
+    e.preventDefault();
+
+    const formData = {
+      name: firstName,
+      email: email,
+      phone: phone,
+      message: message
+    };
+  
+    console.log('Form Data:', formData); // Log form data
+  
+    try {
+      const response = await fetch('/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+  
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        
+      } else {
         alert('Error submitting form');
       }
-    };
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error submitting form');
+    }
+  };
 
     return (
        
@@ -163,6 +161,7 @@ export function Contact() {
                         rows="6"
                         placeholder="Your Message"
                         name="message"
+                        onChange={((e) => {setMessage(e.target.value)})}
                         class="
                         w-full
                         rounded
