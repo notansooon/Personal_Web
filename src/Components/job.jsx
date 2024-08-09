@@ -49,7 +49,7 @@ const Job = ({ title, description, status, responsibilities, skills, qual, formL
                         variant="text"
                         size="sm"
                         className="flex items-center"
-                        style={{ fontSize: 12 }}
+                        style={{ fontSize: 16 }}
                         onClick={HandleForms} // Handle redirection
                     >
                         Apply Here
