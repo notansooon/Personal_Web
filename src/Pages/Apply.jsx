@@ -9,7 +9,7 @@ const Apply = () => {
         <>
             <Helmet>
                 <meta charSet="utf-8"/>
-                <title>Job Listings - DLQF</title>
+                <title>Job Listings | Dataism Laboratory for Quantitative Finance</title>
                 <meta name="description" content="Student Employment Opportunities"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Helmet>

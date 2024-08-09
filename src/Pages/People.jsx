@@ -12,9 +12,15 @@ import missing from '../assets/ProfilePicture/profile-svgrepo-com.svg'
 import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
 import React from "react";
+import {Helmet} from "react-helmet";
+
+
+
 
 function TeamCard({ img, name, title, socialLinks }) {
     return (
+
+
         <Card
             color="transparent"
             shadow={false}
@@ -196,29 +202,36 @@ const teamData = {
 
 export function People() {
     return (
-        <section className="py-10 px-8 bg-gray-100 lg:py-28">
-            <div className="container mx-auto">
-                <div className="mx-auto mb-10 lg:mb-28 lg:text-center">
-                    <h2 className="my-4 text-3xl lg:text-4xl text-blue-gray-700">Meet Our Team</h2>
-                    <p className="mx-auto max-w-4xl text-gray-500">
-                        We&apos;re constantly trying to express ourselves and actualize our
-                        dreams. If you have the opportunity to play this game of life you
-                        need to appreciate every moment.
-                    </p>
-                </div>
-
-                {Object.keys(teamData).map((division) => (
-                    <div key={division} className="mb-16 lg:mb-32">
-                        <h4 className="text-center mb-12 text-xl lg:text-2xl font-semibold">{division}</h4>
-                        <div className="grid gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-3">
-                            {teamData[division].map((member, index) => (
-                                <TeamCard key={index} {...member} />
-                            ))}
-                        </div>
+        <><Helmet>
+            <meta charSet="utf-8"/>
+            <title>People | Dataism Laboratory for Quantitative Finance</title>
+            <meta name="description" content="Discover the diverse team behind DLQF, committed to excellence in research and development."/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        </Helmet>
+            <section className="py-10 px-8 bg-gray-100 lg:py-28">
+                <div className="container mx-auto">
+                    <div className="mx-auto mb-10 lg:mb-28 lg:text-center">
+                        <h2 className="my-4 text-3xl lg:text-4xl text-blue-gray-700">Meet Our Team</h2>
+                        <p className="mx-auto max-w-4xl text-gray-500">
+                            We&apos;re constantly trying to express ourselves and actualize our
+                            dreams. If you have the opportunity to play this game of life you
+                            need to appreciate every moment.
+                        </p>
                     </div>
-                ))}
-            </div>
-        </section>
+
+                    {Object.keys(teamData).map((division) => (
+                        <div key={division} className="mb-16 lg:mb-32">
+                            <h4 className="text-center mb-12 text-xl lg:text-2xl font-semibold">{division}</h4>
+                            <div className="grid gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-3">
+                                {teamData[division].map((member, index) => (
+                                    <TeamCard key={index} {...member} />
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </>
     );
 }
 
