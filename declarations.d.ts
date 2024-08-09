@@ -3,4 +3,9 @@ declare module "*.png" {
     export default value;
 }
 
-declare module "react-helmet"
+declare module
+
+export class Helmet {
+}
+
+"react-helmet"
