@@ -98,13 +98,8 @@ export function Contact() {
                </h2>
                <ul >
                     <p class="text-2xl text-body-color leading-relaxed mb-9">
-                    Need to get in touch with us? Fill out this form or directly email us!
+                    Need to get in touch with us? Fill out this form or directly email us at Benc23@vt.edu
                     </p>
-                    <li >Our Location</li>
-
-                    <li>Email Us At: </li>
-  
-
                </ul>
                
             </div>
