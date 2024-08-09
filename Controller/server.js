@@ -39,8 +39,8 @@ app.post('/send', (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "your-email@gmail.com",
-      pass: "your-email-password", 
+      user: "ansonjiang043@gmail.com",
+      pass: "pppt pdoy qkft yvju", 
     },
   });
 
