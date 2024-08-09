@@ -111,14 +111,7 @@ const teamData = {
         },
     ],
     "Algorithmic Development": [
-        {
-            img: missing,
-            name: "Max Brenner",
-            title: "Head of Algorithmic Development",
-            socialLinks: {
-                linkedin: "https://linkedin.com/in/maxbrenner"
-            }
-        },
+        
         {
             img: Forrest,
             name: "Forrest Meng",
@@ -129,7 +122,7 @@ const teamData = {
         },
         {
             img: BenF,
-            name: "Ben F",
+            name: "Ben Facciani",
             title: "Algorithmic Development",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/ben-facciani/"
