@@ -143,7 +143,7 @@ const teamData = {
             name: "Jamshid ArdalanKia",
             title: "Graduate Research Assistant",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/jamshid"
+                linkedin: "https://www.linkedin.com/in/jamshid-ardalankia-3039581a9/"
             }
         },
     ],
@@ -166,10 +166,10 @@ const teamData = {
         },
         {
             img: Alexander,
-            name: "Alexander Ardiaz",
+            name: "Alexander Ardaiz",
             title: "Undergraduate Research Assistant",
             socialLinks: {
-                linkedin: "https://linkedin.com/in/alexanderardiaz"
+                linkedin: "https://www.linkedin.com/in/alexander-ardaiz/"
             }
         },
         {
