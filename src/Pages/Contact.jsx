@@ -1,5 +1,5 @@
 import React from "react";
-import { EnvelopeIcon, TicketIcon, PhoneIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon} from "@heroicons/react/24/solid";
 import {HomeIcon} from "@heroicons/react/16/solid";
 import {FaCompass} from "react-icons/fa";
 import {Helmet} from "react-helmet";
@@ -93,7 +93,7 @@ export function Contact() {
                       Get in Touch
                    </h2>
                    <p className="text-lg lg:text-xl font-normal text-gray-500 max-w-md mb-16">
-                      Need more information? Feel free to reach out via email or the contact form 
+                      Need more information? Feel free to reach out via email or the contact form
                    </p>
                    <div className="flex items-center gap-5 mb-4">
                       <HomeIcon className="h-5 w-5 text-gray-700"/>
