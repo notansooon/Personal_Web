@@ -117,7 +117,7 @@ const teamData = {
             name: "Forrest Meng",
             title: "Algorithmic Development",
             socialLinks: {
-                github: "https://github.com/forrestmeng"
+                
             }
         },
         {
@@ -178,7 +178,7 @@ const teamData = {
             title: "AI/ML Engineer",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/anson-jiang-6834232aa/",
-                github: "https://github.com/notansooon"
+                
             }
         },
         {
@@ -187,7 +187,7 @@ const teamData = {
             title: "AI/ML Engineer",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/aryan-palit-141777279/",
-                github: "https://github.com/devnumber7"
+                
             }
         },
     ],
