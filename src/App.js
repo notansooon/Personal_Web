@@ -1,16 +1,10 @@
 import  Navbar from './Components/Navbar';
-
 import Home from './Pages/Home';
 import Apply from "./Pages/Apply";
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact';
-
-
-
-
 import { Route, Routes } from 'react-router-dom';
 import People from "./Pages/People";
-
 import HttpStatusCodes from "./HttpStatusCodes/HttpStatusCode";
 import React from "react";
 import Footer from "./Components/Footer";
