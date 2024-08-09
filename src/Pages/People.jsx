@@ -140,7 +140,7 @@ const teamData = {
         },
         {
             img: Jamshid,
-            name: "Jamshid",
+            name: "Jamshid ArdalanKia",
             title: "Graduate Research Assistant",
             socialLinks: {
                 linkedin: "https://linkedin.com/in/jamshid"
