@@ -1,18 +1,15 @@
 const express = require('express');
-const exphbs = require('express-handlebars');
+const { engine } = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const path = require('path'); 
 const cors = require('cors');
 
 const app = express();
 
-
 app.use(cors());
 
-
-app.engine('handlebars', exphbs());
+app.engine('handlebars', engine()); // Use 'engine()' from 'express-handlebars'
 app.set('view engine', 'handlebars');
-
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
@@ -42,14 +39,14 @@ app.post('/send', (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "ansonjiang043@gmail.com",
-      pass: "pppt pdoy qkft yvju", 
+      user: "your-email@gmail.com",
+      pass: "your-email-password", 
     },
   });
 
   const mailOptions = {
-    from: '"NodeMailer" <ansonjiang043@gmail.com>',
-    to: 'ajgaming4172004@gmail.com', 
+    from: '"NodeMailer" <your-email@gmail.com>',
+    to: 'recipient-email@example.com', 
     subject: 'Contact Form Submission',
     text: 'You have a new contact form submission',
     html: output
@@ -68,4 +65,4 @@ app.post('/send', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-});
+})

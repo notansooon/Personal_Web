@@ -38,19 +38,22 @@ export function Contact() {
   
     try {
       const response = await fetch('/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-  
-      if (response.ok) {
-        alert('Form submitted successfully!');
-        
-      } else {
-        alert('Error submitting form');
-      }
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify(formData)
+       });
+       
+       if (response.ok) {
+         console.log('Response Status:', response.status); // Log the status
+         console.log('Response Body:', await response.text()); // Log the body
+         alert('Form submitted successfully!');
+       } else {
+         console.log('Error Response Status:', response.status); // Log the status
+         console.log('Error Response Body:', await response.text()); // Log the body
+         alert('Error submitting form');
+       }
     } catch (error) {
       console.error('Error:', error);
       alert('Error submitting form');
