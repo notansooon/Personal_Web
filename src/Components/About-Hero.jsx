@@ -2,7 +2,7 @@ import React from "react";
 import img1 from '../assets/Images/1712985343744.jpeg'
 import img2 from '../assets/Images/1713572060861.jpeg'
 import img3 from '../assets/Images/1712365057432.jpeg'
-import Typewriter from "typewriter-effect";
+
 
 const ImageComponent = ({ src, alt }) => {
     return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const Job = ({ title, description, status, responsibilities, skills, qual }) => {
+const Job = ({ title, description, status, responsibilities, skills, qual, formLink, jobCode }) => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpanded = () => {
@@ -13,6 +13,15 @@ const Job = ({ title, description, status, responsibilities, skills, qual }) => 
             <div className="mb-2">
                 <h2 className="text-2xl font-semibold">{title}</h2>
                 <p className="mt-2 text-gray-700">{description}</p>
+                <p className="mt-1 text-sm text-black font-black">Job Code: {jobCode}</p>
+                <a
+                    href={formLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                >
+                    Apply Here
+                </a>
             </div>
 
             {expanded && (
@@ -56,4 +65,5 @@ const Job = ({ title, description, status, responsibilities, skills, qual }) => 
 };
 
 export default Job;
+
 

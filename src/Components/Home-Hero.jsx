@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../assets/Images/1713572060948.jpeg';
-import logo from '../assets/logos/dataismLogo.svg'; // Add your logo image import here
+
 
 const HomeHero = () => {
     return (

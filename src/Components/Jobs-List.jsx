@@ -37,7 +37,9 @@ const JobList = () => {
                 "Previous experience in developing trading algorithms or working in quantitative finance.",
                 "Knowledge of financial markets and trading strategies.",
                 "Experience with data visualization tools and techniques."
-            ]
+            ],
+            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
+            jobCode: '5678',
 
         },
         { title: 'Algorithmic Developer',
@@ -71,7 +73,9 @@ const JobList = () => {
                 "Previous experience in developing trading algorithms or working in quantitative finance.",
                 "Knowledge of financial markets and trading strategies.",
                 "Experience with data visualization tools and techniques."
-            ]
+            ],
+            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
+            jobCode: '5678',
 
         },
         { title: 'Data Scientist',
@@ -108,7 +112,9 @@ const JobList = () => {
                 "Knowledge of financial markets, trading strategies, and risk management practices.",
                 "Experience with cloud platforms such as AWS, Google Cloud, or Azure.",
                 "Familiarity with big data technologies such as Hadoop, Spark, or Kafka."
-            ]
+            ],
+            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
+            jobCode: '5678',
 
         },
         { title: 'UI/UX Designer',
@@ -146,7 +152,9 @@ const JobList = () => {
                 "Familiarity with front-end development technologies such as HTML, CSS, and JavaScript.",
                 "Experience with agile development methodologies.",
                 "Understanding of accessibility standards and guidelines."
-            ]
+            ],
+            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
+            jobCode: '5678',
 
         },
         { title: 'Graduate Researcher',
@@ -184,7 +192,9 @@ const JobList = () => {
                 "Knowledge of financial markets, trading strategies, and risk management practices.", 
                 "Experience with data visualization and advanced statistical software.",
                 "Record of published research in academic journals or conference proceedings."
-            ]
+            ],
+            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
+            jobCode: '5678',
         },
         { title: 'Undergraduate Research Assistant',
             description: 'Are you an undergraduate student passionate about quantitative finance and eager to contribute to cutting-edge research?' + 
@@ -219,16 +229,26 @@ const JobList = () => {
                 "Previous experience in financial modeling or data analysis.",
                 "Knowledge of financial markets and trading strategies.",
                 "Experience with data visualization tools and techniques."
-            ]  
-
-            
+            ] ,
+            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
+            jobCode: '5678',
         },
     ];
 
     return (
         <div className="space-y-4 -mt-24">
             {jobs.map((job, index) => (
-                <Job key={index} title={job.title} description={job.description} status={job.status} responsibilities={job.responsibilities} skills={job.skills} qual={job.preQualifications}/>
+                <Job
+                    key={index}
+                    title={job.title}
+                    description={job.description}
+                    status={job.status}
+                    responsibilities={job.responsibilities}
+                    skills={job.skills}
+                    qual={job.preQualifications}
+                    formLink={job.formLink}
+                    jobCode={job.jobCode}
+                />
             ))}
         </div>
     );

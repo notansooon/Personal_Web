@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Button } from "@material-tailwind/react";
-import bgImage1 from '../assets/Images/1712711055874.jpeg'; // replace with your actual path
 import bgImage2 from '../assets/Images/1712985343744.jpeg';
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid"; // replace with your actual path
 import { useNavigate } from "react-router-dom";
