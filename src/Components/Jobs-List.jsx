@@ -39,7 +39,7 @@ const JobList = () => {
                 "Experience with data visualization tools and techniques."
             ],
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '5678',
+            jobCode: '4030',
 
         },
         { title: 'Algorithmic Developer',
@@ -75,7 +75,7 @@ const JobList = () => {
                 "Experience with data visualization tools and techniques."
             ],
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '5678',
+            jobCode: '4031',
 
         },
         { title: 'Data Scientist',
@@ -114,7 +114,7 @@ const JobList = () => {
                 "Familiarity with big data technologies such as Hadoop, Spark, or Kafka."
             ],
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '5678',
+            jobCode: '4032',
 
         },
         { title: 'UI/UX Designer',
@@ -154,7 +154,7 @@ const JobList = () => {
                 "Understanding of accessibility standards and guidelines."
             ],
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '5678',
+            jobCode: '4033',
 
         },
         { title: 'Graduate Researcher',
@@ -194,7 +194,7 @@ const JobList = () => {
                 "Record of published research in academic journals or conference proceedings."
             ],
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '5678',
+            jobCode: '4034',
         },
         { title: 'Undergraduate Research Assistant',
             description: 'Are you an undergraduate student passionate about quantitative finance and eager to contribute to cutting-edge research?' + 
@@ -231,7 +231,7 @@ const JobList = () => {
                 "Experience with data visualization tools and techniques."
             ] ,
             formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '5678',
+            jobCode: '4035',
         },
     ];
 
