@@ -1,8 +1,7 @@
 import React from 'react';
 import JobList from '../Components/Jobs-List';
-import Typewriter from "typewriter-effect";
-import '../Components/utils/styles.css';
 import { Helmet } from "react-helmet";
+import '../Components/utils/styles.css';
 
 const Apply = () => {
     return (
@@ -16,9 +15,9 @@ const Apply = () => {
 
             <div className="min-h-screen bg-gray-100 py-8">
                 <div className="container mx-auto px-4">
-                    <header className='relative h-[250px] w-full overflow-hidden'>
-                        <div className="container relative z-10 my-auto mx-auto grid text-left ml-[10%]">
-                            <h1 className="text-4xl -ml-32 leading-snug lg:text-5xl text-black">
+                    <header className='relative h-[200px] sm:h-[250px] w-full overflow-hidden'>
+                        <div className="relative z-10 my-auto mx-auto text-left ml-6 sm:ml-10 lg:ml-[10%]">
+                            <h1 className="text-3xl sm:text-4xl leading-snug lg:text-5xl text-black">
                                 Discover Opportunities
                             </h1>
                         </div>
@@ -31,6 +30,7 @@ const Apply = () => {
 };
 
 export default Apply;
+
 
 
 
