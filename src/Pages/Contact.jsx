@@ -93,8 +93,7 @@ export function Contact() {
                       Get in Touch
                    </h2>
                    <p className="text-lg lg:text-xl font-normal text-gray-500 max-w-md mb-16">
-                      Need more information? Check what others are saying about our product.
-                      They are very happy with their purchase.
+                      Need more information? Feel free to reach out via email or the contact form 
                    </p>
                    <div className="flex items-center gap-5 mb-4">
                       <HomeIcon className="h-5 w-5 text-gray-700"/>
