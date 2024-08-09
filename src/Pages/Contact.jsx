@@ -18,7 +18,7 @@ export function Contact() {
                  className="container mx-auto my-auto grid items-center place-items-center gap-y-10 gap-x-28 grid-cols-1 lg:grid-cols-2">
                 <div className="w-full lg:max-w-lg">
                    <div className="p-6 bg-white shadow-lg rounded-lg">
-                      <h4 className="text-2xl font-semibold text-blue-gray-900 mb-6">
+                      <h4 className="text-2xl text-blue-gray-900 mb-6">
                          Contact us
                       </h4>
                       <form action="https://api.web3forms.com/submit" method="POST" className="flex flex-col gap-6">
@@ -89,7 +89,7 @@ export function Contact() {
                    </div>
                 </div>
                 <div className="w-full lg:pb-0 pb-2">
-                   <h2 className="text-3xl lg:text-4xl font-semibold text-blue-gray-900 mb-4">
+                   <h2 className="text-3xl lg:text-4xl text-blue-gray-900 mb-4">
                       Get in Touch
                    </h2>
                    <p className="text-lg lg:text-xl font-normal text-gray-500 max-w-md mb-16">

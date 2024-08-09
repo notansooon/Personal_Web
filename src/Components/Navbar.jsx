@@ -15,9 +15,7 @@ const Navbar = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center h-full">
-                        <Link to="/">
-                            <img src={logo} alt="Dataism Logo" className="h-10 bg-blue-950 w-auto" />
-                        </Link>
+                        <p className="text-lg font-black text-gray-900"> DLQF</p>
                     </div>
                     <div className="hidden md:flex space-x-8">
                         <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Home</Link>

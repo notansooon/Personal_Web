@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import {Button} from "@material-tailwind/react";
+import {ArrowRightIcon} from "@heroicons/react/24/outline";
 
 const Job = ({ title, description, status, responsibilities, skills, qual, formLink, jobCode }) => {
     const [expanded, setExpanded] = useState(false);
@@ -8,20 +10,16 @@ const Job = ({ title, description, status, responsibilities, skills, qual, formL
         setExpanded(!expanded);
     };
 
+    const HandleForms = () => {
+        window.open(formLink, "_blank");
+    };
+
     return (
         <div className={`p-4 rounded-lg shadow-md bg-white border ${status === 'Active' ? 'border-green-400' : 'border-red-400'}`}>
             <div className="mb-2">
                 <h2 className="text-2xl font-semibold">{title}</h2>
                 <p className="mt-2 text-gray-700">{description}</p>
                 <p className="mt-1 text-sm text-black font-black">Job Code: {jobCode}</p>
-                <a
-                    href={formLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                >
-                    Apply Here
-                </a>
             </div>
 
             {expanded && (
@@ -46,6 +44,20 @@ const Job = ({ title, description, status, responsibilities, skills, qual, formL
                             <li key={index} className="text-gray-700">{qualification}</li>
                         ))}
                     </ul>
+                    <Button
+                        color="gray"
+                        variant="text"
+                        size="sm"
+                        className="flex items-center"
+                        style={{ fontSize: 12 }}
+                        onClick={HandleForms} // Handle redirection
+                    >
+                        Apply Here
+                        <ArrowRightIcon
+                            className="size-3.5 text-gray-900"
+                            strokeWidth={3}
+                        />
+                    </Button>
                 </div>
             )}
 
