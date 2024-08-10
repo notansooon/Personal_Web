@@ -128,7 +128,7 @@ const teamData = {
         {
             img: Alexander,
             name: "Alexander Ardaiz",
-            title: "Undergraduate Research Assistant",
+            title: "Algorithmic Development",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/alexander-ardaiz/"
             }
