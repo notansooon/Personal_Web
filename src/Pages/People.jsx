@@ -8,6 +8,8 @@ import PaulC from '../assets/ProfilePicture/paul.jpg'
 import BenF from '../assets/ProfilePicture/ben_f.jpg'
 import Jamshid from '../assets/ProfilePicture/Jamshid.jpg'
 import Alexander from '../assets/ProfilePicture/Alexander.jpg'
+import AryanP from '../assets/ProfilePicture/AryanP.jpeg'
+import Anson from '../assets/ProfilePicture/Anson.jpeg'
 import missing from '../assets/ProfilePicture/profile-svgrepo-com.svg'
 import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
@@ -122,7 +124,7 @@ const teamData = {
                 
             }
         },
-        
+
         {
             img: Alexander,
             name: "Alexander Ardaiz",
@@ -178,7 +180,7 @@ const teamData = {
         },
 
         {
-            img: missing,
+            img: Anson,
             name: "Anson Jiang",
             title: "AI/ML Engineer",
             socialLinks: {
@@ -187,7 +189,7 @@ const teamData = {
             }
         },
         {
-            img: missing,
+            img: AryanP,
             name: "Aryan Palit",
             title: "AI/ML Engineer",
             socialLinks: {
