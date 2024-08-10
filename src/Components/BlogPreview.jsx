@@ -21,7 +21,7 @@ function BlogPostCard({ img, title, desc, link }) {
                 />
             </CardHeader>
             <CardBody className="p-0">
-                <a href={link} target="_blank" rel="noopener noreferrer" className="text-2xl lg:text-3xl mb-2 font-bold text-blue-gray-900 normal-case">
+                <a href={link} target="_blank" rel="noopener noreferrer" className="text-2xl lg:text-3xl mb-6 font-bold text-blue-gray-900 normal-case">
                     {title}
                 </a>
                 <p className="mb-6 text-sm lg:text-base font-normal text-gray-500">
