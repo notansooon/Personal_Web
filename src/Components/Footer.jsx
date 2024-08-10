@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="flex space-x-4">
                    
                     
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/company/dataism-laboratory-for-quantitative-finance/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="text-2xl text-gray-800 hover:text-blue-700" />
                     </a>
                    
