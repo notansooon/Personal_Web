@@ -117,6 +117,7 @@ const teamData = {
             name: "Forrest Meng",
             title: "Algorithmic Development",
             socialLinks: {
+                linkedin: "https://www.linkedin.com/in/forrestmeng629/",
                 github: "https://github.com/forrestmeng"
             }
         },
