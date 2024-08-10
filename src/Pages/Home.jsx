@@ -10,7 +10,7 @@ import {Helmet} from "react-helmet";
 
 const Home = () => {
     return (
-        <>#aryan suk
+        <>
             <Helmet>
                 <meta charSet="utf-8"/>
                 <title>Home | Dataism Laboratory for Quantitative Finance</title>
