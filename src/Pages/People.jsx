@@ -10,7 +10,7 @@ import Jamshid from '../assets/ProfilePicture/Jamshid.jpg'
 import Alexander from '../assets/ProfilePicture/Alexander.jpg'
 import AryanP from '../assets/ProfilePicture/AryanP.jpeg'
 import Anson from '../assets/ProfilePicture/Anson.jpeg'
-import missing from '../assets/ProfilePicture/profile-svgrepo-com.svg'
+
 import {FaFacebook, FaGithub, FaInstagram, FaLinkedin} from "react-icons/fa";
 import {BsTwitterX} from "react-icons/bs";
 import React from "react";
