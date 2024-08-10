@@ -122,6 +122,16 @@ const teamData = {
                 
             }
         },
+        
+        {
+            img: Alexander,
+            name: "Alexander Ardaiz",
+            title: "Undergraduate Research Assistant",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/alexander-ardaiz/"
+            }
+        },
+
         {
             img: BenF,
             name: "Ben Facciani",
@@ -166,14 +176,7 @@ const teamData = {
                 linkedin: "https://www.linkedin.com/in/roshan-sanyal-960b21191/",
             }
         },
-        {
-            img: Alexander,
-            name: "Alexander Ardaiz",
-            title: "Undergraduate Research Assistant",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/alexander-ardaiz/"
-            }
-        },
+
         {
             img: missing,
             name: "Anson Jiang",
