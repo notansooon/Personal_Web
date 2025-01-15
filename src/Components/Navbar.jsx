@@ -18,10 +18,9 @@ const Navbar = () => {
                     </div>
                     <div className="hidden md:flex space-x-8">
                         <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Home</Link>
-                        <Link to="/about" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">About</Link>
-                        <Link to="/apply" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Apply</Link>
-                        <Link to="/contact" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Contact</Link>
-                        <Link to="/people" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">People</Link>
+
+                        <Link to="/Project" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Project</Link>
+                        
                     </div>
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="focus:outline-none">

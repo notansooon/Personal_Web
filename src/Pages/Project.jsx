@@ -3,7 +3,7 @@ import JobList from '../Components/Jobs-List';
 import { Helmet } from "react-helmet";
 import '../Components/utils/styles.css';
 
-const Apply = () => {
+const project = () => {
     return (
         <>
             <Helmet>
@@ -29,7 +29,7 @@ const Apply = () => {
     );
 };
 
-export default Apply;
+export default project;
 
 
 
