@@ -1,6 +1,6 @@
 # DLQF Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is tailored for the DLQF (Digital Lab for Quantitative Finance) website.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
