@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
 import '../utils/navbar.css';
 
+   
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -10,18 +12,24 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-transparent font-sans -mb-1.5">
-            <div className="max-w-6xl mx-auto px-4">
+        <nav className="bg-slate-800 font-sans -mb-1.5 h-64 opacity-50 ">
+            <div className="max-w-6xl mx-auto px-4 mt-24 ">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center h-full">
-                        <p className="text-lg font-black text-blue-950"> DLQF</p>
-                    </div>
-                    <div className="hidden md:flex space-x-8">
-                        <Link to="/" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Home</Link>
+                    <div className="flex items-center h-full grid  ">
+                        <p className="text-3xl font-black text-white"> Anson Jiang</p>
+                        <div className="flex items-center justify-around gap mt-4">
+                            <a className='text-3xl' href=''> <FaGithub/> </a>
+                            <a className='text-3xl' hre='' > <FaInstagram/> </a>
+                            <a className='text-3xl' href=''> <FaLinkedin/> </a>
+                        </div>
+                        <div className=" mt-4 space-x-8 flex items-center">
+                            <Link to="/" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Home</Link>
 
-                        <Link to="/Project" className="text-gray-700 hover:text-blue-950 font-semibold border-b-2 border-transparent hover:border-current">Project</Link>
+                            <Link to="/Project" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Project</Link>
                         
+                        </div>
                     </div>
+                    
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="focus:outline-none">
                             <div className={`hamburger ${isOpen ? 'open' : ''}`}>
