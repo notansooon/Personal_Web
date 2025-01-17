@@ -4,7 +4,7 @@ import Job from './job';
 
 const JobList = () => {
     const jobs = [
-        { title: 'Project Manager, Algorithmic Development',
+        { title: 'OllamaGen',
             description: 'Are you passionate about developing cutting-edge trading algorithms and driving innovation ' +
                 'in the field of quantitative finance. Join our dynamic team at the Dataism Laboratory for Quantitative ' +
                 'Finance at Virginia Tech as the Head of Algorithmic Development. This role is open to both graduate and ' +
@@ -33,16 +33,10 @@ const JobList = () => {
                 "with diverse stakeholders.",
                 "Passion for continuous learning and staying updated with industry trends."
             ],
-            preQualifications:[
-                "Previous experience in developing trading algorithms or working in quantitative finance.",
-                "Knowledge of financial markets and trading strategies.",
-                "Experience with data visualization tools and techniques."
-            ],
-            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '4030',
+            
 
         },
-        { title: 'Algorithmic Developer',
+        { title: 'AI Recruiting',
             description: 'Are you enthusiastic about developing sophisticated trading algorithms and contributing to advancements in quantitative finance?' + 
                 'The Dataism Laboratory for Quantitative Finance at Virginia Tech is seeking a talented and motivated Algorithmic Developer to assist the Head of Algorithmic Development.' + 
                 'This role is open to both graduate and undergraduate students pursuing degrees in Computational Modeling and Data Analytics (CMDA), Computer Science, Finance, Financial Technology, and related majors.'
@@ -69,21 +63,15 @@ const JobList = () => {
                 "effectively with diverse stakeholders.",
                 "Passion for continuous learning and staying updated with industry trends."
                 ],
-            preQualifications:[
-                "Previous experience in developing trading algorithms or working in quantitative finance.",
-                "Knowledge of financial markets and trading strategies.",
-                "Experience with data visualization tools and techniques."
-            ],
-            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '4031',
+            
 
         },
-        { title: 'Data Scientist',
+        { title: 'Chrome Extension',
             description: 'The Dataism Laboratory for Quantitative Finance at Virginia Tech is seeking a talented and motivated Data Scientist to join our Client Services Sector.' + 
                 'In this role, you will work directly with investment banks to design, develop, and implement advanced data-driven solutions that enhance their strategic decision-making and operational efficiency.' +
                 'If you are passionate about applying data science techniques to solve complex financial challenges, we want to hear from you.'
         ,
-            status: 'Active',
+            status: 'NA',
             responsibilities: [
                 'Collaborate with clients to understand their business needs and translate them into data-driven solutions.',
                 'Develop and implement machine learning models and algorithms for financial forecasting, risk management, and trading strategies.',
@@ -107,17 +95,12 @@ const JobList = () => {
                 " explain technical concepts to non-technical stakeholders.",
                 "Ability to work independently and as part of a collaborative team environment."
             ],
-            preQualifications:[
-                "Previous experience in the financial industry or with financial data analysis.",
-                "Knowledge of financial markets, trading strategies, and risk management practices.",
-                "Experience with cloud platforms such as AWS, Google Cloud, or Azure.",
-                "Familiarity with big data technologies such as Hadoop, Spark, or Kafka."
-            ],
-            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '4032',
+            
+            
+            
 
         },
-        { title: 'UI/UX Designer',
+        { title: 'Memior',
             description: 'The Dataism Laboratory for Quantitative Finance at Virginia Tech is seeking a talented UI/UX Designer to join our Client Services Sector.' + 
                 'This role involves designing intuitive and engaging user interfaces for advanced financial applications used by leading investment banks.' + 
                 'If you have a passion for creating seamless user experiences and a keen eye for design, we would love to have you on our team.'
@@ -147,92 +130,10 @@ const JobList = () => {
                 " and collaborate effectively with clients and team members.",
                 "Ability to work independently and manage multiple projects simultaneously."
             ],
-            preQualifications:[
-                "Previous experience designing financial applications or working in the financial industry.",
-                "Familiarity with front-end development technologies such as HTML, CSS, and JavaScript.",
-                "Experience with agile development methodologies.",
-                "Understanding of accessibility standards and guidelines."
-            ],
-            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '4033',
+
 
         },
-        { title: 'Graduate Researcher',
-            description: 'Are you a graduate student driven by a passion for quantitative finance and eager to engage in high-impact research?' +
-                'The Dataism Laboratory for Quantitative Finance at Virginia Tech invites you to join our team as a Graduate Researcher.' + 
-                'This role offers a platform to work on pioneering projects, collaborate with experts, and contribute to advancements in the field of quantitative finance.'
-            ,
-            status: 'Active',
-            responsibilities:[
-                'Lead and participate in research projects focused on developing and refining financial models and algorithms.',
-                'Conduct advanced data collection, cleaning, and analysis to support research objectives.',
-                'Collaborate with faculty members, postdoctoral researchers, and undergraduate assistants on interdisciplinary research initiatives.',
-                'Perform comprehensive literature reviews and synthesize findings to inform research direction.',
-                'Prepare and present research reports, papers, and presentations for academic journals and conferences.',
-                'Develop and optimize algorithms for financial forecasting, risk management, and trading strategies.',
-                'Contribute to the mentoring of undergraduate research assistants and foster a collaborative research environment.'
-
-
-            ],
-            skills:[ 
-                "Currently enrolled in a graduate program at Virginia Tech in Computational" +
-                " Modeling and Data Analytics (CMDA), Computer Science, Finance, Financial" +
-                " Technology, or related fields.", 
-                "Strong foundation in quantitative analysis and financial modeling.",
-                "Proficiency in programming languages such as Python, R, or C++.",
-                "In-depth understanding of AI and ML techniques and their applications in finance.",
-                "Experience with data analysis and statistical methods.",
-                "Strong research and problem-solving skills.",
-                "Excellent written and verbal communication skills.",
-                "Ability to work independently and collaboratively within a research team.",
-                "Commitment to rigorous academic research and continuous learning."
-            ],
-            preQualifications:[
-                "Previous experience in quantitative finance or financial technology research.",
-                "Knowledge of financial markets, trading strategies, and risk management practices.", 
-                "Experience with data visualization and advanced statistical software.",
-                "Record of published research in academic journals or conference proceedings."
-            ],
-            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '4034',
-        },
-        { title: 'Undergraduate Research Assistant',
-            description: 'Are you an undergraduate student passionate about quantitative finance and eager to contribute to cutting-edge research?' + 
-                'Join our dynamic team at the Dataism Laboratory for Quantitative Finance as an Undergraduate Research Assistant.' + 
-                'This role offers a unique opportunity to work alongside experienced researchers and gain hands-on experience in the exciting field of quantitative finance.'
-            ,
-            status: 'Active',
-
-            responsibilities:[
-                
-                'Assist in the development and implementation of financial models and algorithms.', 
-                'Conduct data collection, cleaning, and analysis to support ongoing research projects.',
-                'Collaborate with graduate students and faculty members on various research initiatives.',
-                'Participate in literature reviews and summarize relevant academic papers and industry reports.',
-                'Contribute to the preparation of research reports, presentations, and publications.',
-                'Assist in the debugging and optimization of algorithms and models.',
-                'Attend lab meetings and contribute to discussions on research progress and findings.'
-            ],
-            skills:[
-                "Currently enrolled in an undergraduate program at Virginia Tech in" +
-                " Computational Modeling and Data Analytics (CMDA), Computer Science," +
-                " Finance, Financial Technology, or related fields.",
-                "Strong analytical and quantitative skills.",
-                "Proficiency in programming languages such as Python, R, or C++.",
-                "Basic understanding of AI and ML techniques and their applications in finance.",
-                "Ability to work independently and collaboratively in a team environment.",
-                "Strong attention to detail and excellent organizational skills.",
-                "Effective communication skills, both written and verbal.",
-                "Enthusiasm for learning and staying updated with industry trends."
-            ],
-            preQualifications:[
-                "Previous experience in financial modeling or data analysis.",
-                "Knowledge of financial markets and trading strategies.",
-                "Experience with data visualization tools and techniques."
-            ] ,
-            formLink: 'https://docs.google.com/forms/d/e/1FAIpQLSe5TNzRAGljJQJL_ZHv_NLTSYKFPLSHxVQXvCdF9CBg_5bQCQ/viewform', // Google Form link
-            jobCode: '4035',
-        },
+        
     ];
 
     return (
@@ -245,9 +146,7 @@ const JobList = () => {
                     status={job.status}
                     responsibilities={job.responsibilities}
                     skills={job.skills}
-                    qual={job.preQualifications}
-                    formLink={job.formLink}
-                    jobCode={job.jobCode}
+                    
                 />
             ))}
         </div>

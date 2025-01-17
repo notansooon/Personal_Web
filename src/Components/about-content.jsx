@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Button } from "@material-tailwind/react";
-import bgImage2 from '../assets/Images/1712985343744.jpeg';
+
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid"; // replace with your actual path
 import { useNavigate } from "react-router-dom";
 
@@ -36,7 +36,7 @@ export function AboutContent() {
                 <meta name="keywords" content="Quantitative Finance, Algorithmic Solutions, Data Analytics, Financial Research" />
                 <meta property="og:title" content="About Us | Dataism Laboratory for Quantitative Finance" />
                 <meta property="og:description" content="Discover our mission and vision for transforming the financial industry with cutting-edge research and innovative solutions." />
-                <meta property="og:image" content={bgImage2} />
+                <meta property="og:image" content={''} />
                 <meta property="og:url" content="https://yourwebsite.com/about" />
             </Helmet>
             <div className="mx-auto w-screen container max-w-5xl lg:mb-12 mb-12 sm:mb-16 px-4 py-8 md:px-8 md:py-10">
