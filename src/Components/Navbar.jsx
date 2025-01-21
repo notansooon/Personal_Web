@@ -39,8 +39,8 @@ const Navbar = () => {
                         <div className=" mt-4 space-x-8 flex items-center justify-between">
                             
                             <Link to="/OpenSource" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Open Source</Link>
-
-                            <Link to="/" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Project</Link>
+                            <Link to="/Project" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Project</Link>
+                            <Link to="/" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">About</Link>
                         
                         </div>
                     </div>
