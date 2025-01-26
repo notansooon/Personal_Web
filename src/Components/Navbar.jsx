@@ -1,22 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa";
-import '../utils/navbar.css';
+import '../styles/navbar.css';
 
-import img from '../Components/Images/Anson.jpeg'
-
-
-
-
-const imageComp = ({ src, alt }) => {
-
-    return (
-        <div className="py-3 sm:py-4">
-            <img src={src} alt={alt} className="w-full rounded-2xl" />
-        </div>
-    );
-
-}
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -25,40 +10,85 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-slate-800 font-sans -mb-1.5 h-64 opacity-50 ">
-            <div className="max-w-6xl mx-auto px-4 mt-24 ">
+        <nav className="bg-white shadow-md font-sans">
+            <div className="max-w-6xl mx-auto px-4">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center h-full grid">
-                        <p className="text-3xl font-black text-white "> Anson Jiang</p>
-                        <p className="text-md text-white "> AI Enthusiast and Software Engineer</p>
-                        <div className="flex items-center justify-between mt-4">
-                            <a className='text-3xl' href=''> <FaGithub/> </a>
-                            <a className='text-3xl' hre='' > <FaInstagram/> </a>
-                            <a className='text-3xl' href=''> <FaLinkedin/> </a>
-                        </div>
-                        <div className=" mt-4 space-x-8 flex items-center justify-between">
-                            
-                            <Link to="/OpenSource" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Open Source</Link>
-                            <Link to="/Project" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">Project</Link>
-                            <Link to="/" className="text-gray-100 hover:text-white font-semibold border-b-2 border-transparent hover:border-current">About</Link>
-                        
-                        </div>
+                    {/* Logo Section */}
+                    <div className="flex items-center">
+                        <p className="text-2xl font-extrabold text-blue-900">Anson Jiang</p>
                     </div>
 
-                    <div className='w-full px-4 lg:w-1/4'> <imageComp src={img} alt={'my pfp'} /> </div>
-                    
-                    
+                    {/* Desktop Menu */}
+                    <div className="hidden md:flex space-x-8">
+                        <Link
+                            to="/"
+                            className="text-gray-700 hover:text-blue-700 font-semibold transition-all duration-300 border-b-2 border-transparent hover:border-blue-700"
+                        >
+                            Home
+                        </Link>
+
+                        <Link
+                            to="/experience"
+                            className="text-gray-700 hover:text-blue-700 font-semibold transition-all duration-300 border-b-2 border-transparent hover:border-blue-700"
+                        >
+                            Experience
+                        </Link>
+                        
+
+                        <Link 
+                            
+                            to="/Project"
+                            className="text-gray-700 hover:text-blue-700 font-semibold transition-all duration-300 border-b-2 border-transparent hover:border-blue-700"
+                        >
+                            Project
+                        </Link>
+                    </div>
+
+                    {/* Mobile Menu Toggle */}
+                    <div className="md:hidden">
+                        <button
+                            onClick={toggleMenu}
+                            className="focus:outline-none flex items-center justify-center w-10 h-10 border rounded-lg bg-gray-100 hover:bg-gray-200 transition duration-300"
+                        >
+                            <div className={`hamburger ${isOpen ? 'open' : ''}`}>
+                                <span className="block w-6 h-0.5 bg-gray-800 transition-transform duration-300 mb-1"></span>
+                                <span className="block w-6 h-0.5 bg-gray-800 transition-transform duration-300 mb-1"></span>
+                                <span className="block w-6 h-0.5 bg-gray-800 transition-transform duration-300"></span>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
-            
+
+            {/* Mobile Menu */}
+            {isOpen && (
+                <div className="md:hidden bg-gray-100 shadow-md py-4">
+                    <div className="flex flex-col space-y-2 px-4">
+                        <Link
+                            to="/"
+                            className="text-gray-700 hover:text-blue-700 font-semibold transition-all duration-300 border-b-2 border-transparent hover:border-blue-700"
+                        >
+                            Home
+                        </Link>
+
+                        <Link
+                            to="/experience"
+                            className="text-gray-700 hover:text-blue-700 font-semibold transition-all duration-300 border-b-2 border-transparent hover:border-blue-700"
+                        >
+                            Experience
+                        </Link>
+
+                        <Link
+                            to="/Project"
+                            className="text-gray-700 hover:text-blue-700 font-semibold transition-all duration-300 border-b-2 border-transparent hover:border-blue-700"
+                        >
+                            Project
+                        </Link>
+                    </div>
+                </div>
+            )}
         </nav>
     );
 };
 
 export default Navbar;
-
-
-
-
-
-

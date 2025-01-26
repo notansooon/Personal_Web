@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/about.css"
+import anson from "../Components/Images/Anson.jpeg"
 
 
 const ImageComponent = ({ src, alt }) => {
@@ -477,17 +479,25 @@ const HeroTextComponent = () => {
     return (
         <div className="mt-10 lg:mt-0">
             <div className='w-full'>
-            <h2 className="mb-5 leading-tight -tracking-tighter text-3xl text-dark sm:text-[40px]/[48px]">
-                        Get To Know Us
-            </h2>
+
+                <div className="contain">
+
+                    <h2 className="mb-5 typewritter text-dark sm:text-[40px]/[48px]">
+                        Get To Know Me
+                    </h2>
+
+                </div>
+            
 
             </div>
             
             <span className=" block mb-4 text-lg font-semibold text-primary">
-                Who We Are
+                Hey There👋, Anson here
             </span>
             <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                Founded in 2024, The Dataism Lab at Virginia Tech stands as an interdisciplinary powerhouse dedicated to pushing the boundaries of Quantitative Finance and Econometrics.
+            I am an undergraduate student at Virginia Tech majoring in Computer Science. 
+            As an AI enthusiast, I am deeply passionate about exploring the potential of artificial intelligence, 
+            while also being captivated by a wide range of software development applications.
             </p>
         </div>
     );
@@ -502,12 +512,12 @@ const AboutHero = () => {
                                     <div className="w-full px-4 lg:w-6/12">
                                             <div className="flex items-center -mx-3 sm:-mx-4">
                                                     <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                                                            <ImageComponent src={''} alt="Image 1 description" />
-                                                            <ImageComponent src={''} alt="Image 2 description" />
+                                                            <ImageComponent src={anson} alt="Image 1 description" />
+                                                            <ImageComponent src={anson} alt="Image 2 description" />
                                                     </div>
                                                     <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                                             <div className="relative z-10 my-4">
-                                                                    <ImageComponent src={''} alt="Image 3 description" />
+                                                                    <ImageComponent src={anson} alt="Image 3 description" />
                                                                     <SvgComponent />
                                                             </div>
                                                     </div>

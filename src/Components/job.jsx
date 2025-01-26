@@ -3,7 +3,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import {Button} from "@material-tailwind/react";
 import {ArrowRightIcon} from "@heroicons/react/24/outline";
 
-const Job = ({ title, description, status, responsibilities, skills }) => {
+const Job = ({ title, description, status, skills }) => {
     const [expanded, setExpanded] = useState(false);
 
     const toggleExpanded = () => {
@@ -22,10 +22,10 @@ const Job = ({ title, description, status, responsibilities, skills }) => {
 
             {expanded && (
                 <div>
-                    <h3 className="text-lg font-medium mt-5">Responsibilities</h3>
+                    <h3 className="text-lg font-medium mt-5">Skills</h3>
                     <ul className="list-disc list-inside ml-4 mt-1">
-                        {responsibilities.map((responsibility, index) => (
-                            <li key={index} className="text-gray-700">{responsibility}</li>
+                        {skills.map((skills, index) => (
+                            <li key={index} className="text-gray-700">{skills}</li>
                         ))}
                     </ul>
 

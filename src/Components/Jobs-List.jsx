@@ -4,7 +4,7 @@ import Job from './job';
 
 const JobList = () => {
     const jobs = [
-        { title: 'OllamaGen',
+        { title: 'AI Document Assister',
             description: 'Are you passionate about developing cutting-edge trading algorithms and driving innovation ' +
                 'in the field of quantitative finance. Join our dynamic team at the Dataism Laboratory for Quantitative ' +
                 'Finance at Virginia Tech as the Head of Algorithmic Development. This role is open to both graduate and ' +
@@ -12,15 +12,7 @@ const JobList = () => {
                 'Computer Science, Finance, Financial Technology, and related majors.\n',
    
             status: 'Active',
-            responsibilities: [
-                'Oversee the development of state-of-the-art trading algorithms.', 
-                'Lead and mentor a team of developers in creating AI and ML algorithms for financial forecasting and analysis.', 
-                'Collaborate with cross-functional teams to design and implement robust algorithmic solutions.', 
-                'Assist the development team in debugging and optimizing algorithms to enhance performance and efficiency.',
-                'Conduct research to identify and incorporate the latest advancements in AI, ML, and quantitative finance into our projects.',
-                'Ensure the accuracy, reliability, and scalability of all developed algorithms.',
-                'Present findings and progress to stakeholders and contribute to strategic decision-making.'
-            ],
+            
             skills:[
                 "Currently enrolled in a graduate or undergraduate program at Virginia Tech in" +
                 " CMDA, Computer Science, Finance, Financial Technology, or related fields.",
@@ -43,15 +35,7 @@ const JobList = () => {
         ,
             status: 'Active',
 
-            responsibilities: [
-                'Collaborate with the Head of Algorithmic Development and other team members to create, test, and implement AI and ML algorithms for financial forecasting and trading.',
-                'Assist in the debugging and optimization of algorithms to enhance their performance, reliability, and scalability.',
-                'Conduct research and stay updated with the latest advancements in AI, ML, and quantitative finance to integrate into ongoing projects.',
-                'Participate in code reviews and provide constructive feedback to ensure high-quality code development.',
-                'Analyze financial data and apply quantitative techniques to develop innovative trading strategies.',
-                'Contribute to the documentation of algorithmic solutions and processes.', 
-                'Assist in presenting research findings and project progress to stakeholders.'
-            ],
+            
             skills:[
                 "Currently enrolled in a graduate or undergraduate program at Virginia Tech in" +
                 " CMDA, Computer Science, Finance, Financial Technology, or related fields.",
@@ -72,17 +56,7 @@ const JobList = () => {
                 'If you are passionate about applying data science techniques to solve complex financial challenges, we want to hear from you.'
         ,
             status: 'NA',
-            responsibilities: [
-                'Collaborate with clients to understand their business needs and translate them into data-driven solutions.',
-                'Develop and implement machine learning models and algorithms for financial forecasting, risk management, and trading strategies.',
-                'Analyze large financial datasets to identify trends, patterns, and actionable insights.',
-                'Design and build data pipelines and automated workflows to streamline data processing and analysis.',
-                'Perform rigorous testing and validation of models to ensure accuracy, reliability, and scalability.',
-                'Communicate findings and recommendations to clients through detailed reports and presentations.',
-                'Work with cross-functional teams, including developers and financial analysts, to integrate data solutions into existing systems and processes.',
-                'Stay updated with the latest advancements in data science, AI, and finance to continually enhance the solutions provided to clients.'
-
-            ],
+            
             skills:[
                 "Pursuing a Bachelor’s or Master’s degree in Data Science, Computer Science," +
                 " Finance, Financial Technology, or a related field.",
@@ -107,17 +81,7 @@ const JobList = () => {
             ,
             status: 'Active',
 
-            responsibilities:[
-                'Collaborate with clients and internal teams to understand user requirements and translate them into effective UI/UX designs.',
-                'Design and prototype user interfaces for web and mobile applications that are visually appealing, user-friendly, and aligned with client needs.',
-                'Conduct user research and usability testing to gather insights and refine designs.',
-                'Create wireframes, storyboards, user flows, and interactive prototypes to communicate design ideas effectively.',
-                'Develop and maintain design systems and style guides to ensure consistency across all products.',
-                'Work closely with developers to ensure the implementation of designs is pixel-perfect and meets usability standards.',
-                'Stay updated with the latest UI/UX trends, techniques, and technologies to continuously improve design processes.',
-                'Produce high-quality visual designs, including layouts, color schemes, typography, and iconography.'
-
-            ],
+            
             skills:[
                 "Pursuing Bachelor’s or Master’s degree in UI/UX Design, Graphic Design," +
                 " Human-Computer Interaction, or a related field.",
@@ -144,7 +108,7 @@ const JobList = () => {
                     title={job.title}
                     description={job.description}
                     status={job.status}
-                    responsibilities={job.responsibilities}
+                    
                     skills={job.skills}
                     
                 />
