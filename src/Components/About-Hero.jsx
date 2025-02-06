@@ -480,7 +480,7 @@ const HeroTextComponent = () => {
         <div className="mt-10 lg:mt-0">
             <div className='w-full'>
 
-                <div className="contain">
+                <div className="containe">
 
                     <h2 className="mb-5 typewritter text-dark sm:text-[40px]/[48px]">
                         Get To Know Me

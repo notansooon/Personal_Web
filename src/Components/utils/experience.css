@@ -1,0 +1,22 @@
+ 
+
+ .contain {
+    padding: 10px 50px;
+    place-self: relative;
+    width: 50%;
+    background: rgb(0, 0, 0.3);
+
+ }
+ .timeline {
+
+    margin: 100px auto;
+    position: relative;
+    max-width: 1200px;
+ }
+ .textbox {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+ }
