@@ -2,21 +2,63 @@
 
  .contain {
     padding: 10px 50px;
-    place-self: relative;
+    position: relative;
     width: 50%;
-    background: rgb(0, 0, 0.3);
-
+   
+    
  }
- .timeline {
 
-    margin: 100px auto;
+ .timeline {
+    margin: 10px auto;
     position: relative;
     max-width: 1200px;
+    
  }
+
  .textbox {
     padding: 20px 30px;
     background: #fff;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+ }
+
+ .right-container{
+   left: 50%;
+ }
+
+ .left-container{
+   left: 0;
+ }
+
+ .image-left {
+   position: absolute;
+   border-radius: 50%;
+   width: 40px;
+   right: -20px;
+   top: 32px;
+   z-index: 10;
+
+ }
+
+ .image-right {
+   position: absolute;
+   border-radius: 50%;
+   width: 40px;
+   left: -20px;
+   top: 32px;
+   z-index: 10;
+
+ }
+
+ .timeline::after {
+   content: '';
+   position: absolute;
+   width: 6px;
+   height: 100%;
+   background: #fff;
+   top: 0;
+   left: 50%;
+   margin-left: -3px;
+   z-index: -1;
  }
